@@ -17,10 +17,13 @@ public class Menu extends Components{
 	private static final String HOME_BUTTON = "//ul[@class='nav navbar-nav']/li/a[@href='#'][text()='Home']";
 	private static final String PROFILE_BUTTON = "//ul[@class='nav navbar-nav']/li/a[@href='#'][text()='Profile']";
 	private static final String DEPARTMENT_BUTTON = "//a[contains(@href,'departments')]";
+	private static final String ALL_CANDIDATES_TAB="//a[contains(@href,'candidates')]";
 	private static final String HELP_BUTTON = "//ul[@class='nav navbar-nav']/li/a[@href='#'][text()='Help']";
 	private static final String LOGOUT_BUTTON = "//ul[@class='nav navbar-nav']/li[6]/a";
 	private static final String GLOBAL_SEARCH_FIELD = "//div[@class='form-group has-feedback']/input";
 	
+	@FindBy(xpath = ALL_CANDIDATES_TAB)
+	private WebElement candidatesTab;
 	
 	@FindBy(xpath = HOME_BUTTON)
 	private WebElement homeButton;
@@ -53,10 +56,10 @@ public class Menu extends Components{
 		isElementExist( "helpButton", helpButton, true);
 		isElementExist( "LogOutButton", LogOutButton, true);
 		isElementExist( "globalSearchField", globalSearchField, true);
+		isElementExist("candidatesTab", candidatesTab, true);
 
 		TestReporter.writeToReportPositiveResult("All fields are present");
 
 	}
 
-	
 }
