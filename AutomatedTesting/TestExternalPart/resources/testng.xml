@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SmokeTestSuite">
+	<test name="CTC Smoke Tests" verbose="10" parallel="false">
+		<classes>
+			<class name="com.epam.testexternalpart.tests.SmokeTest" />
+		</classes>
+		
+	</test>
+	
+</suite>
