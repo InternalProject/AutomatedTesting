@@ -41,7 +41,7 @@ public class ViewProfilePage extends Components{
 	private WebElement closePopUpButton;
 	
 	public ViewProfilePage(WebDriver driver) {
-		//driver=driver;
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 
@@ -49,24 +49,25 @@ public class ViewProfilePage extends Components{
 	public void allTabsArePresent(){
 		Reporter.log("<br><b>"+"Checking the presence of  ViewProfilePage elements"+"</b><br>");
 		isElementExist( "Profile Delete Button", buttonDelete, true);
+		isElementExist( "Profile Edit Button", buttonEdit, true);
+		isElementExist( "Profile Tittle", profileTittle, true);
 		Reporter.log("<br><br><b>"+"All  ViewProfilePage elements are present"+"</b><br>");
 	}
 
 	public void checkAllTittles(String text){
-		String []textForEachElement=text.split(";");
+		String []textForEachElement = text.split(";");
 		for(int i=0;i<textForEachElement.length;i++){
 		checkElementText(textForEachElement[i], textForEachElement[i], allTittles.get(i));
 		}
 		
 	}
 	public void checkEditButton(){
-		clickElement(buttonEdit, "buttonEdit");
+		buttonEdit.click();
 	}
 	public void checkPopUpForm(){
-		clickElement(buttonDelete, "buttonDelete");
-		clickElement(deletePopUpForm, "deletePopUpForm");
-		clickElement(closePopUpButton, "closePopUpButton");
-	
+		buttonDelete.click();
+		deletePopUpForm.click();
+		closePopUpButton.click();
 	}
 	
 	

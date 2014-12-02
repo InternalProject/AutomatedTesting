@@ -1,43 +1,25 @@
 package com.epam.testexternalpart.core;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.lang.reflect.Method;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.concurrent.TimeUnit;
 
-import org.apache.bcel.generic.Select;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DateUtil;
-import org.apache.poi.ss.usermodel.FormulaEvaluator;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
-import org.apache.poi.ss.usermodel.Cell;
 
-import com.epam.testexternalpart.screen.Departments;
 import com.epam.testexternalpart.screen.Menu;
+import com.epam.testexternalpart.screen.departments.AddDepartmentPage;
+import com.epam.testexternalpart.screen.departments.Departments;
 import com.epam.testexternalpart.screen.profile.CreateProfilePage;
+import com.epam.testexternalpart.screen.profile.EditProfilePage;
 import com.epam.testexternalpart.screen.profile.ViewProfilePage;
 
 //import com.google.common.collect.Table.Cell;
@@ -45,28 +27,17 @@ import com.epam.testexternalpart.screen.profile.ViewProfilePage;
 public abstract class BaseTest {
 	protected WebDriver driver;
 	protected Menu menuComp;
-	protected Departments department;
 	protected Departments pageDepartment;
-	 protected CreateProfilePage pageCreateProfile;
-	 protected ViewProfilePage pageViewProfile;
-	private static final String URL= "http://epuakhaw0693:8081/KhExternalPreProdPortal/departments;jsessionid=F57EDD7A8B4036299E6CC6D03847B599";
-
-	@BeforeClass
+	protected CreateProfilePage pageCreateProfile;
+	protected ViewProfilePage pageViewProfile;
+	protected EditProfilePage pageEditProfile;
 	public abstract void setUp();
-	
-	@BeforeMethod
-	public void getStartPage() {
-		driver.get(URL);	}
+	protected AddDepartmentPage pageAddDepartment;
 	
 	@AfterMethod
-	public void resetFoMethod() {
-	driver.manage().deleteAllCookies();
-	}
-	
-	@AfterClass
 	public void tearDown() {
 		driver.close();
-	    driver.quit();
+	    //driver.quit();
 	   // driver=null;
 	}
 
@@ -76,7 +47,7 @@ public abstract class BaseTest {
 		String a = testMethod.getName();
 		String b = testMethod.getDeclaringClass().getSimpleName();
 		int numberOfParameters = testMethod.getParameterTypes().length;
-		String path = "C:/ExternalProject/TestExternalPart/data/" + b + ".xlsx";
+		String path = "D:/workspace/TestExternalPart/data/" + b + ".xlsx";
 
 		try {
 			FileInputStream file = new FileInputStream(path);

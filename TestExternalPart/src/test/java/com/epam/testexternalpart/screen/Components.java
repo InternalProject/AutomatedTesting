@@ -11,24 +11,20 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 
-import com.epam.testexternalpart.core.TestReporter;
-
 public class Components {
-	  WebDriver driver;
+	  protected WebDriver driver;
 	  
 	  public  void isElementExist( String item, WebElement welement, boolean refer) {
 		
 		 boolean value = isElementPresent(welement);
-		 	   TestReporter.writeToReportTitle("Checking the presence of the elemen"+"["+item+"]");	
-		 		if (refer) {
-	            Assert.assertTrue(value,"No element ["+item+"] on the page ");
-	 			TestReporter.writeToReportPositiveResult("[" + item + "]"+"is Present");
-
+		 	Reporter.log("<br>Checking the presence of the elemen ["+item+"]");
+	        if (refer) {
+	            Assert.assertTrue(value,item+ "No element ["+item+"] on the page ");
+	            Reporter.log("<br>"+"[" + item + "]"+"is Present");
 	           
 	        } else {
 	            Assert.assertFalse(value,"element ["+item+"] is present on the page");
-	            TestReporter.writeToReportPositiveResult("[" + item + "]"+"is Not Present");
-
+	            Reporter.log("<br>"+"[" + item + "]"+"is Not Present");
 	        }
 	        
 }
@@ -42,13 +38,13 @@ public class Components {
 	  }
 
 	  public  void clickElement(WebElement webElement, String item) {
-		  TestReporter.writeToReportTitle("Click on ["+item+"]");
+          Reporter.log("<br>"+"Click on ["+item+"]");
           (new WebDriverWait(driver, 3000)).until(ExpectedConditions.elementToBeClickable(webElement)).click();
 
 	    }
 	  
 	  public  void checkElementText(String expectedText, String elementName, WebElement element) {
-		  TestReporter.writeToReportTitle("Checking text of element "+elementName);
+          Reporter.log("<br>"+"Checking text of element "+elementName);
           	String elementText;
 			if (element.getTagName().equals("input")) {
 			elementText = element.getAttribute("value");
@@ -60,31 +56,7 @@ public class Components {
 			elementText = elementText.trim();
 			
 			Assert.assertEquals(elementText, expectedText);
-			TestReporter.writeToReportPositiveResult("Text of ["+elementName+"] is correct");
+	        Reporter.log("<br>"+"Text of ["+elementName+"] is correct");
 
 	  }
-
-	  public void isElementVisibleState(String item, String xpath) {
-		  TestReporter.writeToReportTitle("Checking visibility of element "+item+"]");
-
-	        boolean state = false;
-	        try {
-	        	
-	        	//Wait<WebDriver> wait = new WebDriverWait(driver, delay).ignoring(org.openqa.selenium.NoSuchElementException.class);
-	         // waitForCondition(500, ExpectedConditions.visibilityOfElementLocated(by), driver);
-	        	WebDriverWait wait = new WebDriverWait(driver, 10);
-	        	wait.until(ExpectedConditions.elementToBeClickable(By.id("someid")));
-	            state = true;
-	        } catch (org.openqa.selenium.TimeoutException e) {
-	        }
-
-	        if (state) {
-	        	TestReporter.writeToReportPositiveResult("Element [" + item  + "]  is visible");
-	        	 Reporter.log( "Element [" + item  + "]  is visible");
-	        } else {
-	        	TestReporter.writeToReportNegativeResult("Field [" + item  + "]  is Not visible");
-	        	
-	        }
-	    }
-
 }

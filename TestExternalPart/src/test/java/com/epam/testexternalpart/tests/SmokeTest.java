@@ -1,56 +1,72 @@
 package com.epam.testexternalpart.tests;
 
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import java.util.concurrent.TimeUnit;
 
 import com.epam.testexternalpart.core.BaseTest;
-import com.epam.testexternalpart.core.TestReporter;
 import com.epam.testexternalpart.core.WebDriverFactory;
-import com.epam.testexternalpart.screen.AllCandidatesPage;
-import com.epam.testexternalpart.screen.Departments;
 import com.epam.testexternalpart.screen.Menu;
+import com.epam.testexternalpart.screen.departments.Departments;
 import com.epam.testexternalpart.screen.profile.CreateProfilePage;
+import com.epam.testexternalpart.screen.profile.EditProfilePage;
 import com.epam.testexternalpart.screen.profile.ViewProfilePage;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
 public class SmokeTest extends BaseTest{
-	AllCandidatesPage pg;
-	@BeforeClass
-	@Override
-	public void setUp() {
-		driver = WebDriverFactory.getDriverInstance("");//new FirefoxDriver();
+	
+	@BeforeMethod
+	public void setUp(){
+		driver = WebDriverFactory.initDriver("");//new FirefoxDriver();
 		menuComp=new Menu(driver);
-		pageViewProfile = new ViewProfilePage(driver);
+		
 		pageDepartment=new Departments(driver);
-		pageCreateProfile = new CreateProfilePage(driver);
-		 pg= new AllCandidatesPage(driver);
+		
 	}
 	
+	
+ 
+	@Test(dataProvider="testData")
+	public void testView(String textView) {
+		pageViewProfile = new ViewProfilePage(driver);
+		driver.get("http://epuakhaw0693:8081/KhExternalPreProdPortal/candidate/1");
+		pageViewProfile.allTabsArePresent();
+		pageViewProfile.checkAllTittles(textView);
+	}
 	
 	@Test(dataProvider="testData")
-	public void test (String url,String text) {
-		driver.get(url);
-		
-		menuComp.allTabsArePresent();
-		TestReporter.writeToReportHeader("1 test");
-		
-		pg.checkAllTittles(text);
-		pg.getCheckbox(3).click();
-	
-		pg.isCheckboxSelected(3, true);
-		
-		pg.checkElementText("Ivan", "Name", pg.getTableEl(1, 3));
-		pg.additionalEducationCheckBox.click();
-		
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		TestReporter.writeToReportPositiveResult("1 test complite");
+	public void testEdit(String textEdit) {
+		pageEditProfile=new EditProfilePage(driver);
+		driver.get("http://epuakhaw0693:8081/KhExternalPreProdPortal/editCandidate/1");
+		pageEditProfile.allTabsArePresent();
+		pageEditProfile.checkAllTittles(textEdit);
+		Assert.assertEquals(pageEditProfile.checkAllInputesAmount(16), true, "There are not right input's amount");
+		Assert.assertEquals(pageEditProfile.checkAllTextareaAmount(4), true, "There are not right textarea's amount");
 	}
-
-
-
 	
+	@Test(dataProvider="testData")
+	public void testCreate(String textCreate) {
+		pageCreateProfile = new CreateProfilePage(driver);
+		driver.get("http://epuakhaw0693:8081/KhExternalPreProdPortal/addCandidate/1");
+		pageCreateProfile.allTabsArePresent();
+		pageCreateProfile.checkAllTittles(textCreate);
+	}
+	
+	@Test(dataProvider="testData")
+	public void testCreateNewCandidate(String data){
+		pageCreateProfile = new CreateProfilePage(driver);
+		driver.get("http://epuakhaw0693:8081/KhExternalPreProdPortal/addCandidate/1");
+		pageCreateProfile.createNewCandidate(data);
+	}
 }

@@ -9,7 +9,6 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.epam.testexternalpart.core.BaseTest;
-import com.epam.testexternalpart.core.TestReporter;
 import com.epam.testexternalpart.core.WebDriverFactory;
 
 public class Menu extends Components{
@@ -17,13 +16,8 @@ public class Menu extends Components{
 	private static final String HOME_BUTTON = "//ul[@class='nav navbar-nav']/li/a[@href='#'][text()='Home']";
 	private static final String PROFILE_BUTTON = "//ul[@class='nav navbar-nav']/li/a[@href='#'][text()='Profile']";
 	private static final String DEPARTMENT_BUTTON = "//a[contains(@href,'departments')]";
-	private static final String ALL_CANDIDATES_TAB="//a[contains(@href,'candidates')]";
 	private static final String HELP_BUTTON = "//ul[@class='nav navbar-nav']/li/a[@href='#'][text()='Help']";
-	private static final String LOGOUT_BUTTON = "//ul[@class='nav navbar-nav']/li[6]/a";
-	private static final String GLOBAL_SEARCH_FIELD = "//div[@class='form-group has-feedback']/input";
-	
-	@FindBy(xpath = ALL_CANDIDATES_TAB)
-	private WebElement candidatesTab;
+	private static final String LOGOUT_BUTTON = "//ul[@class='nav navbar-nav navbar-right']//a";
 	
 	@FindBy(xpath = HOME_BUTTON)
 	private WebElement homeButton;
@@ -40,26 +34,23 @@ public class Menu extends Components{
 	@FindBy(xpath = HELP_BUTTON)
 	private WebElement helpButton;
 	
-	@FindBy(xpath = GLOBAL_SEARCH_FIELD)
-	private WebElement globalSearchField;
-	
 	public Menu(WebDriver driver){
 	this.driver=driver;
 	PageFactory.initElements(driver, this);
 	}
 	
 	public void allTabsArePresent(){
-		TestReporter.writeToReportStep("Chaking all menu fields");
+        Reporter.log("<br><b>"+"Checking the presence of Menu's elements"+"</b><br>");
+
 		isElementExist( "Department Button", departmentButton, true);
 		isElementExist( "homeButton", homeButton, true);
 		isElementExist( "profileButton", profileButton, true);
 		isElementExist( "helpButton", helpButton, true);
 		isElementExist( "LogOutButton", LogOutButton, true);
-		isElementExist( "globalSearchField", globalSearchField, true);
-		isElementExist("candidatesTab", candidatesTab, true);
-
-		TestReporter.writeToReportPositiveResult("All fields are present");
+		
+        Reporter.log("<br><br><b>"+"All Menu's elements are present"+"</b><br>");
 
 	}
 
+	
 }

@@ -1,281 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[<br><b><font size = 2 color = #000000>Chaking all menu fields</font></b><br>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen[Department Button]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Department Button]is Present</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen[homeButton]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[homeButton]is Present</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen[profileButton]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[profileButton]is Present</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen[helpButton]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[helpButton]is Present</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen[LogOutButton]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[LogOutButton]is Present</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen[globalSearchField]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[globalSearchField]is Present</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen[candidatesTab]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[candidatesTab]is Present</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All fields are present</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><b><font size = 2 color = #000099>1 test</font></b><br/>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element </font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element ¹</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [¹] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element First Name</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [First Name] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Last Name</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Last Name] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Middle Name</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Middle Name] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Phone</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Phone] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element BirthDate</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [BirthDate] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Email</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Email] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Fill Date</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Fill Date] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br><b><font size = 2 color = #000000>Check is checkbox N3 selected</font></b><br>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Checkbox is selected</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Name</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Name] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;1 test complite</font>]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18860" started-at="2014-12-01T16:06:20Z" finished-at="2014-12-01T16:06:39Z">
+  <suite name="Default suite" duration-ms="12163" started-at="2014-12-01T18:50:49Z" finished-at="2014-12-01T18:51:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18860" started-at="2014-12-01T16:06:20Z" finished-at="2014-12-01T16:06:39Z">
+    <test name="Default test" duration-ms="12163" started-at="2014-12-01T18:50:49Z" finished-at="2014-12-01T18:51:01Z">
       <class name="com.epam.testexternalpart.tests.SmokeTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@2c8d66b2]" name="setUp" is-config="true" duration-ms="9037" started-at="2014-12-01T19:06:20Z" finished-at="2014-12-01T19:06:29Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7dc36524]" name="setUp" is-config="true" duration-ms="7747" started-at="2014-12-01T20:50:50Z" finished-at="2014-12-01T20:50:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="getStartPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@2c8d66b2]" name="getStartPage" is-config="true" duration-ms="776" started-at="2014-12-01T19:06:31Z" finished-at="2014-12-01T19:06:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getStartPage -->
-        <test-method status="PASS" signature="test(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@2c8d66b2]" name="test" duration-ms="6982" started-at="2014-12-01T19:06:32Z" data-provider="testData" finished-at="2014-12-01T19:06:39Z">
+        <test-method status="PASS" signature="testCreateNewCandidate(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7dc36524]" name="testCreateNewCandidate" duration-ms="3150" started-at="2014-12-01T20:50:58Z" data-provider="testData" finished-at="2014-12-01T20:51:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[http://epuakhaw0693:8081/KhExternalPreProdPortal/candidates/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[;¹;First Name;Last Name;Middle Name;Phone;BirthDate;Email;Fill Date]]>
+                <![CDATA[Ololo;Ololoev;Olololoevich;02.12.2014;sdhgjshgj@mail.ru;+380505465345;]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[<br><b><font size = 2 color = #000000>Chaking all menu fields</font></b><br>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen[Department Button]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Department Button]is Present</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen[homeButton]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[homeButton]is Present</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen[profileButton]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[profileButton]is Present</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen[helpButton]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[helpButton]is Present</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen[LogOutButton]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[LogOutButton]is Present</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen[globalSearchField]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[globalSearchField]is Present</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen[candidatesTab]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[candidatesTab]is Present</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All fields are present</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><b><font size = 2 color = #000099>1 test</font></b><br/>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element </font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element ¹</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [¹] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element First Name</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [First Name] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Last Name</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Last Name] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Middle Name</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Middle Name] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Phone</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Phone] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element BirthDate</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [BirthDate] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Email</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Email] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Fill Date</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Fill Date] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br><b><font size = 2 color = #000000>Check is checkbox N3 selected</font></b><br>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Checkbox is selected</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Name</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Name] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;1 test complite</font>]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="resetFoMethod()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@2c8d66b2]" name="resetFoMethod" is-config="true" duration-ms="18" started-at="2014-12-01T19:06:39Z" finished-at="2014-12-01T19:06:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- resetFoMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@2c8d66b2]" name="tearDown" is-config="true" duration-ms="267" started-at="2014-12-01T19:06:39Z" finished-at="2014-12-01T19:06:39Z">
+        </test-method> <!-- testCreateNewCandidate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7dc36524]" name="tearDown" is-config="true" duration-ms="18" started-at="2014-12-01T20:51:01Z" finished-at="2014-12-01T20:51:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

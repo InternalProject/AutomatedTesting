@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.epam.testexternalpart.tests.SmokeTest">
+      <class name="com.epam.testexternalpart.tests.DepartmentTest">
         <methods>
-          <include name="setUp"/>
+          <include name="testClickCreateDepartmentButton"/>
           <include name="tearDown"/>
-          <include name="resetFoMethod"/>
-          <include name="test" invocation-numbers="0"/>
-          <include name="getStartPage"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.epam.testexternalpart.tests.SmokeTest -->
+      </class> <!-- com.epam.testexternalpart.tests.DepartmentTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

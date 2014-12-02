@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testClickCreateDepartmentButton"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.267">
+  <properties />
+  
+  
+            <testcase name="testClickCreateDepartmentButton" time="3.267" classname="com.epam.testexternalpart.tests.DepartmentTest" />
+      
+</testsuite>

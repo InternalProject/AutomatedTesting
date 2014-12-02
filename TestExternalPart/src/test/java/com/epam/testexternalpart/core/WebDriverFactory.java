@@ -8,18 +8,19 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class WebDriverFactory {
-	private static WebDriverFactory instance;
 	private static WebDriver driver;
 	
-	private static WebDriver initDriver(String browserName) {
+	public static WebDriver initDriver(String browserName) {
 		if(browserName.contentEquals("chrome")) {
+			System.setProperty("webdriver.chrome.driver", "D:/workspace/TestExternalPart/chromedriver.exe");
 			driver = new ChromeDriver();
 		   	driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+			driver.manage().deleteAllCookies();
 			return driver;
 		
 		}
 		 else if(browserName.contentEquals("explorer")){
-			 System.setProperty("webdriver.ie.driver", "C:/ExternalProject/IEDriverServer.exe");
+			 System.setProperty("webdriver.ie.driver", "D:/workspace/TestExternalPart/IEDriverServer.exe");
 			 
 			driver = new InternetExplorerDriver();
 			driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
@@ -32,20 +33,5 @@ public class WebDriverFactory {
 		}
 	}
 
-	
-	public static WebDriver getDriverInstance(String browserName) {
-		try {
-			if (driver == null) {
-				System.out.println("driver == null");
-				return initDriver(browserName);
 
-			}else{
-				System.out.println("driver != null");
-			return initDriver(browserName);
-			}
-		} catch (Exception e) {
-			
-		}
-		return driver;
-	}
 }
