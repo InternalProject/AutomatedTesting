@@ -1,37 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
 
-<suite name="Smoke Tests" parallel="tests" thread-count="3">
-    <test name="smokeMenuTest" verbose="10" parallel="true">
-        <classes>
-            <class name="com.epam.testexternalpart.tests.SmokeTest">
-            </class>
-        </classes>
-    </test>
-    <test name="smokeDepartmentTest" verbose="10" parallel="true">
-        <classes>
-            <class name="com.epam.testexternalpart.tests.SmokeTest">
-              </class>
-        </classes>
-    </test>
+<suite name="Smoke Tests" thread-count="3">
 
-    <test name="smokeProfileViewTest" verbose="10" parallel="true">
+    <test name="smokeMenuTest" verbose="10" parallel="false">
         <classes>
-            <class name="com.epam.testexternalpart.tests.SmokeTest">
-            	</class>
+            <class name="com.epam.testexternalpart.tests.SmokeTest"></class>
+       		<class name="com.epam.testexternalpart.tests.DepartmentTest"></class>
         </classes>
     </test>
     
-    <test name="smokeProfileEditTest" verbose="10" parallel="true">
-        <classes>
-            <class name="com.epam.testexternalpart.tests.SmokeTest">
-            	</class>
-        </classes>
-    </test>
-    
-    <test name="smokeMenuTest" verbose="10" parallel="true">
-        <classes>
-            <class name="com.epam.testexternalpart.tests.SmokeTest">
-            	</class>
-        </classes>
-    </test>
 </suite>

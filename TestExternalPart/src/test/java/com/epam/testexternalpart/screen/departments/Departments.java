@@ -9,12 +9,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 
+import com.epam.testexternalpart.core.TestReporter;
 import com.epam.testexternalpart.screen.Components;
 
 public class Departments extends Components{
 	
-	WebDriver driver;
-	
+
 	private static final String DEPARTMENT_CREATE_BUTTON = "//div[@class='btn-toolbar']/a[1]";
 	private static final String DEPARTMENT_EDIT_BUTTON = "//div[@class='btn-toolbar']/a[2]";
 	private static final String DEPARTMENT_DELETE_BUTTON = "//div[@class='btn-toolbar']/a[3]";
@@ -32,6 +32,8 @@ public class Departments extends Components{
 	private static final String DEPARTMENT_TABLE_ALL_EDIT_BUTTON = "//table[@id='manualTable']//tr//td[7]//a[1]";
 	private static final String DEPARTMENT_TABLE_ALL_DELETE_BUTTON = "//table[@id='manualTable']//tr//td[7]//a[2]";
 	
+	
+	private static final String DEPARTMENT_ALL_DEP = "//ul[@id='depTab']/li/a";
 	private static final String DEPARTMENT_JAVA_TAB = "//ul[@id='depTab']/li[1]/a";
 	private static final String DEPARTMENT_NET_TAB = "//ul[@id='depTab']/li[2]/a";
 	private static final String DEPARTMENT_FRONT_AND_TAB = "//ul[@id='depTab']/li[3]/a";
@@ -39,78 +41,101 @@ public class Departments extends Components{
 	private static final String DEPARTMENT_SOFTTEST_TAB = "//ul[@id='depTab']/li[5]/a";
 	private static final String DEPARTMENT_EDIT_BUTONS = "//div[@id='actions']a[1]";
 	private static final String DEPARTMENT_TITTLE_TEXT = "//h1[text()='Candidate Automation System']";
+	public int depNumb;
+	private static final String DEPARTMENT_DELETE_BUTTON_ON_POPAP = "//div[@class='modal-footer']/a";
 	
 	public Departments(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
+	@FindBy(xpath = DEPARTMENT_ALL_DEP)
+	public List<WebElement> allDep;
+	
+	@FindBy(xpath = DEPARTMENT_DELETE_BUTTON_ON_POPAP)
+	public WebElement delDepPopAp;
+	
 	@FindBy(xpath = DEPARTMENT_JAVA_TAB)
-	private WebElement javaTab;
+	public WebElement javaTab;
 	
 	@FindBy(xpath = DEPARTMENT_NET_TAB)
-	private WebElement netTab;
+	public WebElement netTab;
 	
 	@FindBy(xpath = DEPARTMENT_FRONT_AND_TAB)
-	private WebElement frontandTab;
+	public WebElement frontandTab;
 	
 	@FindBy(xpath = DEPARTMENT_AUTOTEST_TAB)
-	private WebElement autotestTab;
+	public WebElement autotestTab;
 	
 	@FindBy(xpath = DEPARTMENT_SOFTTEST_TAB)
-	private WebElement softtestTab;
+	public WebElement softtestTab;
 
 	@FindBy(xpath = DEPARTMENT_CREATE_BUTTON)
-	private WebElement createDepartmentButton;
+	public WebElement createDepartmentButton;
 	
 	@FindBy(xpath = DEPARTMENT_EDIT_BUTTON)
-	private WebElement editDepartmentButton;
+	public WebElement editDepartmentButton;
 	
 	@FindBy(xpath = DEPARTMENT_DELETE_BUTTON)
-	private WebElement deleteDepartmentButton;
+	public WebElement deleteDepartmentButton;
 	
 	@FindBy(xpath = DEPARTMENT_ADD_STREAM_BUTTON)
-	private WebElement addStreamButton;
+	public WebElement addStreamButton;
 
 	@FindBy(xpath = DEPARTMENT_TABLE)
-	private WebElement table;
+	public WebElement table;
 	
 	@FindBy(xpath = DEPARTMENT_TABLE_NUMBER_COLUMN)
-	private WebElement tableNumberColumn;
+	public WebElement tableNumberColumn;
 	
 	@FindBy(xpath = DEPARTMENT_TABLE_STREAM_COLUMN)
-	private WebElement tableStreamColumn;
+	public WebElement tableStreamColumn;
 	
 	
 	@FindBy(xpath = DEPARTMENT_TABLE_DEPARTMENT_COLUMN)
-	private WebElement tableDepartmentColumn;
+	public WebElement tableDepartmentColumn;
 	
 	@FindBy(xpath = DEPARTMENT_TABLE_DATE_START_COLUMN)
-	private WebElement tableDateStartColumn;
+	public WebElement tableDateStartColumn;
 	
 	@FindBy(xpath = DEPARTMENT_TABLE_DATE_END_COLUMN)
-	private WebElement tableDateEndColumn;
+	public WebElement tableDateEndColumn;
 	
 	@FindBy(xpath = DEPARTMENT_TABLE_STATUS_COLUMN)
-	private WebElement tableStatusColumn;
+	public WebElement tableStatusColumn;
 	
 	@FindBy(xpath = DEPARTMENT_TABLE_ACTIONS_COLUMN)
-	private WebElement tableActionsColumn;
+	public WebElement tableActionsColumn;
 	
 	@FindBy(xpath = DEPARTMENT_TABLE_ALL_EDIT_BUTTON)
-	private List <WebElement> allEditButtons;
+	public List <WebElement> allEditButtons;
 	
 	@FindBy(xpath = DEPARTMENT_TABLE_ALL_DELETE_BUTTON)
-	private List <WebElement> allDeleteButtons;
+	public List <WebElement> allDeleteButtons;
 	
 	public void clickCreateDepartmentButton(){
-		 Reporter.log("<br><b>"+"Checking that Department Create Button reffering to Create Department Page"+"</b><br>");
+		
+		 TestReporter.writeToReportTitle("Checking that Department Create Button reffering to Create Department Page");
 		 createDepartmentButton.click();
+		 isElementExist("javaTab",javaTab,false);
 
 	}
 	
+	public WebElement getlastDep(){
+		depNumb=allDep.size();
+		return allDep.get(allDep.size()-1);
+		
+	}
+	
+	
+	public void clickCreateStreamButton(){
+		TestReporter.writeToReportTitle("Checking that Stream Create Button reffering to Stream Page");
+		 addStreamButton.click();
+		 isElementExist("javaTab",javaTab,false);
+	}
+	
 	public void allTabsArePresent(){
-		Reporter.log("<br><b>"+"Checking the presence of Department's elements"+"</b><br>");
+		TestReporter.writeToReportTitle("Checking the presence of Department's elements");
 
 		
 		isElementExist( "Department Create Button", createDepartmentButton, true);
@@ -118,7 +143,8 @@ public class Departments extends Components{
 		isElementExist( "Department Delete Button", deleteDepartmentButton, true);
 		isElementExist("Department Front And TAB ", frontandTab, true);
 		
-		Reporter.log("<br><br><b>"+"All Departments elements are present"+"</b><br>");
+		TestReporter.writeToReportPositiveResult("All Departments elements are present");
+		
 	}
 	
 	

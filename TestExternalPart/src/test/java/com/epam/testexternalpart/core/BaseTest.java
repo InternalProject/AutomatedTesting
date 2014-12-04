@@ -12,7 +12,12 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 
 import com.epam.testexternalpart.screen.Menu;
@@ -21,24 +26,50 @@ import com.epam.testexternalpart.screen.departments.Departments;
 import com.epam.testexternalpart.screen.profile.CreateProfilePage;
 import com.epam.testexternalpart.screen.profile.EditProfilePage;
 import com.epam.testexternalpart.screen.profile.ViewProfilePage;
+import com.epam.testexternalpart.screen.stream.AddStreamPage;
+import com.epam.testexternalpart.screen.stream.EditStreamPage;
+import com.epam.testexternalpart.screen.stream.StreamPage;
 
 //import com.google.common.collect.Table.Cell;
 
 public abstract class BaseTest {
 	protected WebDriver driver;
+	private final String START_TEST="http://epuakhaw0694:8080/KhExternalPreProdPortal/departments";
 	protected Menu menuComp;
 	protected Departments pageDepartment;
 	protected CreateProfilePage pageCreateProfile;
 	protected ViewProfilePage pageViewProfile;
 	protected EditProfilePage pageEditProfile;
-	public abstract void setUp();
 	protected AddDepartmentPage pageAddDepartment;
+	protected StreamPage pageStream;
+	protected AddStreamPage pageAddStream;
+	protected EditStreamPage pageEditStream;
+	@BeforeClass
+	public void init() {
+		driver = WebDriverFactory.initDriver("");//new FirefoxDriver();
+		
+	
+	}
+	
+	@BeforeMethod
+	public void startPage() {
+		driver.get(START_TEST);
+		pageDepartment = new Departments(driver);
+		pageAddDepartment =new AddDepartmentPage(driver);
+	}
+	
 	
 	@AfterMethod
+	public void renew() {
+		driver.manage().deleteAllCookies();
+	
+	}
+	
+	@AfterClass
 	public void tearDown() {
 		driver.close();
-	    //driver.quit();
-	   // driver=null;
+	    driver.quit();
+	
 	}
 
 	@DataProvider(name = "testData")
@@ -47,7 +78,7 @@ public abstract class BaseTest {
 		String a = testMethod.getName();
 		String b = testMethod.getDeclaringClass().getSimpleName();
 		int numberOfParameters = testMethod.getParameterTypes().length;
-		String path = "D:/workspace/TestExternalPart/data/" + b + ".xlsx";
+		String path = "C:/ExternalProject/TestExternalPart/data/" + b + ".xlsx";
 
 		try {
 			FileInputStream file = new FileInputStream(path);

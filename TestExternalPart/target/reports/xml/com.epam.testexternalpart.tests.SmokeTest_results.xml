@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test1"
-           tests="1"
+<testsuite name="smokeMenuTest"
+           tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="17.254">
+           time="2.437">
   <properties />
   
   
-            <testcase name="test2" time="17.254" classname="com.epam.testexternalpart.tests.SmokeTest" />
+            <testcase name="testView" time="1.984" classname="com.epam.testexternalpart.tests.SmokeTest" />
+                <testcase name="testView2" time="0.453" classname="com.epam.testexternalpart.tests.SmokeTest" />
       
 </testsuite>

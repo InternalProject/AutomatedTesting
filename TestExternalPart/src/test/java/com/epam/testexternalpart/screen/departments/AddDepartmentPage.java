@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 
+import com.epam.testexternalpart.core.TestReporter;
 import com.epam.testexternalpart.screen.Components;
 
 public class AddDepartmentPage extends Components{
@@ -23,19 +24,19 @@ public class AddDepartmentPage extends Components{
 	public static final String LABEL_EXCEL_NAME = "//form//div[2]//label[@class='col-lg-2 control-label']";
 	
 	@FindBy(xpath = NAME_INPUT)
-	private WebElement name_input;
+	public WebElement name_input;
 	
 	@FindBy(xpath = EXCEL_NAME_INPUT)
-	private WebElement excel_name_input;
+	public WebElement excel_name_input;
 	
 	@FindBy(xpath = SUBMIT)
-	private WebElement submit;
+	public WebElement submit;
 	
 	@FindBy(xpath = LABEL_NAME)
-	private WebElement label_name;
+	public WebElement label_name;
 	
 	@FindBy(xpath = LABEL_EXCEL_NAME)
-	private WebElement label_excel_name;
+	public WebElement label_excel_name;
 	
 	public void allTabsArePresent(){
 		Reporter.log("<br><b>"+"Checking the presence of AddDepartmentPage elements"+"</b><br>");
@@ -50,10 +51,13 @@ public class AddDepartmentPage extends Components{
 		Reporter.log("<br><br><b>"+"All AddDepartmentPage elements are present"+"</b><br>");
 	}
 	
-	public void addNewDepartment(){
-		name_input.sendKeys("new department");
+	public void addNewDepartment(String depName){
+		TestReporter.writeToReportStep("Fill required fields");
+		name_input.sendKeys(depName);
 		excel_name_input.sendKeys("new");
 		submit.click();
+		isElementExist("AddDepartmentPage-label_name", label_name, false);
+		
 	}
 	
 	

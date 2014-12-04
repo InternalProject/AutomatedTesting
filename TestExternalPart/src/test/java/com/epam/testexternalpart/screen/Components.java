@@ -11,20 +11,22 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 
+import com.epam.testexternalpart.core.TestReporter;
+
 public class Components {
 	  protected WebDriver driver;
 	  
 	  public  void isElementExist( String item, WebElement welement, boolean refer) {
 		
 		 boolean value = isElementPresent(welement);
-		 	Reporter.log("<br>Checking the presence of the elemen ["+item+"]");
+		 TestReporter.writeToReportTitle("Checking the presence of the elemen ["+item+"]");
 	        if (refer) {
 	            Assert.assertTrue(value,item+ "No element ["+item+"] on the page ");
-	            Reporter.log("<br>"+"[" + item + "]"+"is Present");
+	            TestReporter.writeToReportPositiveResult("[" + item + "]"+"is Present");
 	           
 	        } else {
 	            Assert.assertFalse(value,"element ["+item+"] is present on the page");
-	            Reporter.log("<br>"+"[" + item + "]"+"is Not Present");
+	            TestReporter.writeToReportPositiveResult("[" + item + "]"+"is Not Present");
 	        }
 	        
 }
@@ -38,13 +40,14 @@ public class Components {
 	  }
 
 	  public  void clickElement(WebElement webElement, String item) {
-          Reporter.log("<br>"+"Click on ["+item+"]");
-          (new WebDriverWait(driver, 3000)).until(ExpectedConditions.elementToBeClickable(webElement)).click();
+		  TestReporter.writeToReportTitle("Click on ["+item+"]");
+          (new WebDriverWait(driver, 6000)).until(ExpectedConditions.elementToBeClickable(webElement)).click();
 
 	    }
 	  
 	  public  void checkElementText(String expectedText, String elementName, WebElement element) {
-          Reporter.log("<br>"+"Checking text of element "+elementName);
+		  TestReporter.writeToReportTitle("Checking text of element "+elementName);
+        
           	String elementText;
 			if (element.getTagName().equals("input")) {
 			elementText = element.getAttribute("value");
@@ -56,7 +59,7 @@ public class Components {
 			elementText = elementText.trim();
 			
 			Assert.assertEquals(elementText, expectedText);
-	        Reporter.log("<br>"+"Text of ["+elementName+"] is correct");
+			TestReporter.writeToReportPositiveResult("Text of ["+elementName+"] is correct");
 
 	  }
 }

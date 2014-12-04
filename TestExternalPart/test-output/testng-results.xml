@@ -1,32 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[<br /><b><font size = 2 color = #000099>Check the possibility of adding new department</font></b><br/>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking that Department Create Button reffering to Create Department Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br><b><font size = 2 color = #000000>Fill required fields</font></b><br>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [AddDepartmentPage-label_name]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[AddDepartmentPage-label_name]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element New Dep</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [New Dep] is correct</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [deleteDepartmentButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [deleteDepartmentButton]</font>]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12163" started-at="2014-12-01T18:50:49Z" finished-at="2014-12-01T18:51:01Z">
+  <suite name="Default suite" duration-ms="22718" started-at="2014-12-04T10:26:43Z" finished-at="2014-12-04T10:27:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12163" started-at="2014-12-01T18:50:49Z" finished-at="2014-12-01T18:51:01Z">
-      <class name="com.epam.testexternalpart.tests.SmokeTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7dc36524]" name="setUp" is-config="true" duration-ms="7747" started-at="2014-12-01T20:50:50Z" finished-at="2014-12-01T20:50:58Z">
+    <test name="Default test" duration-ms="22718" started-at="2014-12-04T10:26:43Z" finished-at="2014-12-04T10:27:06Z">
+      <class name="com.epam.testexternalpart.tests.DepartmentTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@75bd9247]" name="init" is-config="true" duration-ms="9072" started-at="2014-12-04T13:26:43Z" finished-at="2014-12-04T13:26:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCreateNewCandidate(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7dc36524]" name="testCreateNewCandidate" duration-ms="3150" started-at="2014-12-01T20:50:58Z" data-provider="testData" finished-at="2014-12-01T20:51:01Z">
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@75bd9247]" name="startPage" is-config="true" duration-ms="625" started-at="2014-12-04T13:26:54Z" finished-at="2014-12-04T13:26:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="PASS" signature="testAddDepartment(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@75bd9247]" name="testAddDepartment" duration-ms="11544" started-at="2014-12-04T13:26:54Z" data-provider="testData" finished-at="2014-12-04T13:27:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Ololo;Ololoev;Olololoevich;02.12.2014;sdhgjshgj@mail.ru;+380505465345;]]>
+                <![CDATA[NewDep]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[<br /><b><font size = 2 color = #000099>Check the possibility of adding new department</font></b><br/>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking that Department Create Button reffering to Create Department Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br><b><font size = 2 color = #000000>Fill required fields</font></b><br>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [AddDepartmentPage-label_name]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[AddDepartmentPage-label_name]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element New Dep</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [New Dep] is correct</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [deleteDepartmentButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [deleteDepartmentButton]</font>]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- testCreateNewCandidate -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7dc36524]" name="tearDown" is-config="true" duration-ms="18" started-at="2014-12-01T20:51:01Z" finished-at="2014-12-01T20:51:01Z">
+        </test-method> <!-- testAddDepartment -->
+        <test-method status="PASS" signature="renew()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@75bd9247]" name="renew" is-config="true" duration-ms="47" started-at="2014-12-04T13:27:06Z" finished-at="2014-12-04T13:27:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- renew -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@75bd9247]" name="tearDown" is-config="true" duration-ms="267" started-at="2014-12-04T13:27:06Z" finished-at="2014-12-04T13:27:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.epam.testexternalpart.tests.SmokeTest -->
+      </class> <!-- com.epam.testexternalpart.tests.DepartmentTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
