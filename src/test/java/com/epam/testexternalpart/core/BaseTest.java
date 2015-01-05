@@ -84,9 +84,9 @@ public abstract class BaseTest {
 	@AfterClass
 	public void tearDown() {
 		driver.manage().deleteAllCookies();
+		
 		driver.close();
-	    driver.quit();
-	
+		driver.quit();	
 	}
 
 	@DataProvider(name = "testData")

@@ -1,29 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [logginButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click readMessages]</font>]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="66420" started-at="2015-01-05T10:18:21Z" finished-at="2015-01-05T10:19:27Z">
+  <suite name="Default suite" duration-ms="21319" started-at="2015-01-05T15:03:11Z" finished-at="2015-01-05T15:03:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="66420" started-at="2015-01-05T10:18:21Z" finished-at="2015-01-05T10:19:27Z">
+    <test name="Default test" duration-ms="21319" started-at="2015-01-05T15:03:11Z" finished-at="2015-01-05T15:03:33Z">
       <class name="com.epam.testexternalpart.tests.AssigningToTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="init" is-config="true" duration-ms="9892" started-at="2015-01-05T12:18:21Z" finished-at="2015-01-05T12:18:31Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="init" is-config="true" duration-ms="6960" started-at="2015-01-05T17:03:11Z" finished-at="2015-01-05T17:03:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initEmails()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="initEmails" is-config="true" duration-ms="20" started-at="2015-01-05T12:18:31Z" finished-at="2015-01-05T12:18:31Z">
+        <test-method status="PASS" signature="initEmails()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="initEmails" is-config="true" duration-ms="16" started-at="2015-01-05T17:03:18Z" finished-at="2015-01-05T17:03:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initEmails -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="startPage" is-config="true" duration-ms="562" started-at="2015-01-05T12:18:31Z" finished-at="2015-01-05T12:18:31Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="startPage" is-config="true" duration-ms="312" started-at="2015-01-05T17:03:18Z" finished-at="2015-01-05T17:03:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="responseFromCandidates()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="responseFromCandidates" duration-ms="48313" started-at="2015-01-05T12:18:31Z" finished-at="2015-01-05T12:19:20Z">
+        <test-method status="PASS" signature="checkDublicateAnswer()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="checkDublicateAnswer" duration-ms="12013" started-at="2015-01-05T17:03:19Z" finished-at="2015-01-05T17:03:31Z">
           <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [logginButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click readMessages]</font>]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- responseFromCandidates -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="tearDown" is-config="true" duration-ms="7593" started-at="2015-01-05T12:19:20Z" finished-at="2015-01-05T12:19:27Z">
+        </test-method> <!-- checkDublicateAnswer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="tearDown" is-config="true" duration-ms="2018" started-at="2015-01-05T17:03:31Z" finished-at="2015-01-05T17:03:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

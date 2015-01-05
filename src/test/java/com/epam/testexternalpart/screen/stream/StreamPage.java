@@ -595,10 +595,10 @@ public class StreamPage extends Components {
 		String []fields = field.split(";");		
 		List<WebElement> row;
 		Boolean flag = false;
-					
+							
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		row = driver.findElements(By.xpath(STREAM_TABLE_ROW + "[" + i + "]/td"));
-						
+								
 		for (String currentField : fields){	
 			for (WebElement el : row){		
 				if (el.getText().replaceAll("-", ".").equals(currentField))

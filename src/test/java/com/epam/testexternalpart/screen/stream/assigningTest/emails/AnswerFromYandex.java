@@ -39,16 +39,15 @@ public class AnswerFromYandex extends Components{
 	
 	public AnswerFromYandex(WebDriver driver){
 		this.driver = driver;
-		PageFactory.initElements(driver, this);
-			
+		PageFactory.initElements(driver, this);			
 	}
 	
 	public void logOn(){
 		
 		driver.get(yandex);	
-		driver.manage().timeouts().pageLoadTimeout(2, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		loginField.sendKeys(login);
-		passwordField.sendKeys(password);		
+		passwordField.sendKeys(password);
 		clickElement(logginButton,"logginButton");
 	}
 	
@@ -62,6 +61,7 @@ public class AnswerFromYandex extends Components{
 		
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		clickElement(notActualAnswer,"not Actual Answer");
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 	}
 	
 }

@@ -57,7 +57,7 @@ public class AnswerFromRambler extends Components{
 	public void logOn(){
 		
 		driver.get(site);
-		driver.manage().timeouts().pageLoadTimeout(2, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		buttonInput.click();
 		loginField.sendKeys(login);
 		passwordField.sendKeys(password);
@@ -74,6 +74,7 @@ public class AnswerFromRambler extends Components{
 		
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		clickElement(newTimeAnswer, "click newTimeAnswer");
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 	}
 	
 }
