@@ -1,8 +1,5 @@
 package com.epam.testexternalpart.screen.stream.assigningTest;
 
-import java.util.NoSuchElementException;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,12 +13,9 @@ import com.epam.testexternalpart.screen.Components;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AssignToTestPage extends Components{
-	
-	static WebDriver driver;
 	
 	private static final String SELECT_UNIVERSITY="//select[@id='university-list']";
 	private static final String SELECT_BUILDING="//select[@id='building-list']";
@@ -83,10 +77,10 @@ public class AssignToTestPage extends Components{
 		selectDateTime.sendKeys("29.11.2015 18:30");
 		duration.sendKeys("1.5");
 		deadLine.sendKeys("6");
-		invitationButton.click();
+		clickElement(invitationButton, "click invitationButton");
 		
 		try{
-			long timeOutInSeconds = 15;
+			long timeOutInSeconds = 20;
 			WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds, 500);
 			WebElement overlay = driver.findElement(By.xpath("//div[@id='assign-candidates-invitation'][@style='display: block;']"));
 			wait.until(ExpectedConditions.stalenessOf(overlay));

@@ -63,7 +63,6 @@ public class Components {
 	  public  void clickElement(WebElement webElement, String item) {
 		  TestReporter.writeToReportTitle("Click on ["+item+"]");
           (new WebDriverWait(driver, 6000)).until(ExpectedConditions.elementToBeClickable(webElement)).click();
-
 	    }
 	  
 	  public  void checkElementText(String expectedText, String elementName, WebElement element) {

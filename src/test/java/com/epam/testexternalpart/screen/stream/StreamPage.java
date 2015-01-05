@@ -1,6 +1,5 @@
 package com.epam.testexternalpart.screen.stream;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -581,7 +580,7 @@ public class StreamPage extends Components {
 	public void selectCandidatesForTest() {		
 		 
 		clickElement(checkboxForAll, "Select cabdidates to assigning to test");		
-		clickElement(assignTestButton, "Click assignTestButton");		
+		clickElement(assignTestButton, "Click assignTestButton");	
 	}
 
 	public void clickNotTestedTab() {
