@@ -11,7 +11,6 @@ import com.epam.testexternalpart.screen.Components;
 
 public class AnswerFromYandex extends Components{
 
-	private WebDriver driver;	
 	final static String yandex = "https://mail.yandex.ua/";
 	final static String login = "vasya.pupkin379";
 	final static String password = "pupkin379";
@@ -47,25 +46,22 @@ public class AnswerFromYandex extends Components{
 	public void logOn(){
 		
 		driver.get(yandex);	
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(2, TimeUnit.SECONDS);
 		loginField.sendKeys(login);
-		passwordField.sendKeys(password);
-		logginButton.click();
-		//clickElement(logginButton,"logginButton");
+		passwordField.sendKeys(password);		
+		clickElement(logginButton,"logginButton");
 	}
 	
 	public void enterIntoUnreadMessage(){
 		
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		inputBoxRow.click();
-		//clickElement(inputBoxRow,"inputBoxRow");		
+		clickElement(inputBoxRow,"inputBoxRow");		
 	}
 	
 	public void responseNotActualAnswer(){
 		
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		notActualAnswer.click();
-		//clickElement(notActualAnswer,"not Actual Answer");
+		clickElement(notActualAnswer,"not Actual Answer");
 	}
 	
 }

@@ -2,7 +2,6 @@ package com.epam.testexternalpart.screen.stream.assigningTest.emails;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,7 +14,6 @@ import com.epam.testexternalpart.screen.Components;
 
 public class AnswerFromIUa extends Components{
 
-	private WebDriver driver;	
 	final static String iUa = "http://mbox2.i.ua/read/INBOX";
 	final static String login = "pupkin379";
 	final static String password = "pupkin379p";
@@ -75,42 +73,31 @@ public class AnswerFromIUa extends Components{
 	public void logOn(){
 		
 		driver.get(iUa);		
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(2, TimeUnit.SECONDS);
 		loginField.clear();
 		loginField.sendKeys(login);
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		passwordField.sendKeys(password);
-		
-		
-		logginButton.click();
-		//clickElement(logginButton,"logginButton");
+		clickElement(logginButton,"logginButton");
 	}
 	
 	public void enterIntoUnreadMessage(){
 		
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		//clickElement(inputBoxRow,"inputBoxRow");
-		inputBoxRow.click();
+		clickElement(inputBoxRow,"inputBoxRow");
 	}
 	
 	public void responseConfirmedAnswer(){
 		
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		//clickElement(confirmedAnswer,"confirmed Answer");
-		confirmedAnswer.click();
+		clickElement(confirmedAnswer,"confirmed Answer");
 	}
 
 	public void clickDublicateAnswer() {
 		
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		
-		readMessages.click();
-		confirmedAnswer.click();
+		clickElement(readMessages, "click readMessages");
+		clickElement(confirmedAnswer, "click confirmedAnswer");
 	}
 
 	public void checkDublicateAnswerMessage() {
