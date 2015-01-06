@@ -90,9 +90,6 @@ public class AddStreamPage extends Components{
 	
 	@FindBy(xpath = STREAM_SUBMIT_BUTTON)
 	private WebElement submitButton;
-
-	
-	WebDriver driver;
 	
 	public AddStreamPage(WebDriver driver) {
 		this.driver=driver;
@@ -146,7 +143,6 @@ public class AddStreamPage extends Components{
 		TestReporter.writeToReportTitle("Create new Stream with name "+name);
 		input_name_stream.sendKeys(name);
 		clickElement(add_strem_button,"AddStreamButton");
-
 	}
 
 	public void chekStreamPageOpen() {

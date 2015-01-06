@@ -15,10 +15,10 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 
 import com.epam.testexternalpart.screen.AllCandidatesPage;
+import com.epam.testexternalpart.screen.LoginPage;
 import com.epam.testexternalpart.screen.Menu;
 import com.epam.testexternalpart.screen.departments.AddDepartmentPage;
 import com.epam.testexternalpart.screen.departments.Departments;
@@ -28,9 +28,11 @@ import com.epam.testexternalpart.screen.profile.ViewProfilePage;
 import com.epam.testexternalpart.screen.stream.AddStreamPage;
 import com.epam.testexternalpart.screen.stream.EditStreamPage;
 import com.epam.testexternalpart.screen.stream.StreamPage;
-import com.epam.testexternalpart.screen.LoginPage;
-import com.epam.testexternalpart.screen.stream.assigningTest.emails.*;
-import com.epam.testexternalpart.screen.stream.assigningTest.*;
+import com.epam.testexternalpart.screen.stream.assigningTest.AssignToTestPage;
+import com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromGMail;
+import com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromIUa;
+import com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromRambler;
+import com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromYandex;
 
 public abstract class BaseTest {
 	protected WebDriver driver;
@@ -76,6 +78,7 @@ public abstract class BaseTest {
 		menuComp = new Menu(driver);
 		pageAllCandidate = new AllCandidatesPage(driver);
 		pageEditProfile = new EditProfilePage(driver);
+		pageAssignTest = new AssignToTestPage(driver);
 	}
 	
 	@AfterClass
@@ -92,8 +95,8 @@ public abstract class BaseTest {
 		String a = testMethod.getName();
 		String b = testMethod.getDeclaringClass().getSimpleName();
 		int numberOfParameters = testMethod.getParameterTypes().length;
-		String path = "C:/ExternalProject/AutomatedTesting/" + b + ".xlsx";
 
+String path = "C:/ExternalProject/AutomatedTesting/" + b + ".xlsx";
 		try {
 			FileInputStream file = new FileInputStream(path);
 			XSSFWorkbook workbook = new XSSFWorkbook(file);

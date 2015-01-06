@@ -130,7 +130,7 @@ public class AssigningToTest extends BaseTest{
 	}
 	
 	//не проверено
-	@Test(dataProvider = "testData",priority = 11)
+	@Test(dataProvider = "testData",priority = 12)
 	public void invitateThirdTime(String streamName, String candidateFields, String row){	
 				
 		pageDepartment.clickSelectedStream(streamName);
@@ -144,7 +144,7 @@ public class AssigningToTest extends BaseTest{
 	}
 	
 	//не проверено
-	@Test(dataProvider = "testData",priority = 11)
+	@Test(dataProvider = "testData",priority = 13)
 	public void checkBannedCandidate(String streamName, String candidateFields, String row){	
 				
 		pageDepartment.clickSelectedStream(streamName);
