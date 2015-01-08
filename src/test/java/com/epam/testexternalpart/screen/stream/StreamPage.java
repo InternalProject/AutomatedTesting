@@ -17,6 +17,7 @@ import org.testng.Assert;
 import com.epam.testexternalpart.core.TestReporter;
 import com.epam.testexternalpart.screen.Components;
 import com.epam.testexternalpart.screen.departments.Departments;
+import com.sun.javafx.print.Units;
 
 public class StreamPage extends Components {
 	
@@ -579,7 +580,10 @@ public class StreamPage extends Components {
 
 	public void selectCandidatesForTest() {		
 		 
-		clickElement(checkboxForAll, "Select cabdidates to assigning to test");		
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		clickElement(checkboxForAll, "Select cabdidates to assigning to test");	
+		
+        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(assignTestButton));
 		clickElement(assignTestButton, "Click assignTestButton");	
 	}
 
@@ -591,14 +595,19 @@ public class StreamPage extends Components {
 	public void checkCandidates(String field, String i) {
 		
 		TestReporter.writeToReportTitle("Checking not testing Candidates");
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		String []fields = field.split(";");		
 		List<WebElement> row;
 		Boolean flag = false;
-							
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		
 		row = driver.findElements(By.xpath(STREAM_TABLE_ROW + "[" + i + "]/td"));
-								
+				
 		for (String currentField : fields){	
 			for (WebElement el : row){		
 				if (el.getText().replaceAll("-", ".").equals(currentField))

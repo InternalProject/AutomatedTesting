@@ -5,7 +5,7 @@
     <classes>
       <class name="com.epam.testexternalpart.tests.AssigningToTest">
         <methods>
-          <include name="checkBannedCandidate" invocation-numbers="0"/>
+          <include name="assignTest" invocation-numbers="0"/>
           <include name="initEmails"/>
           <include name="init"/>
           <include name="tearDown"/>

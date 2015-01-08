@@ -2,6 +2,7 @@ package com.epam.testexternalpart.screen;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -58,6 +59,9 @@ public class Components {
 	        }
 	       }
 	  
+//	  public WebElement find(By by){
+//		return  getWaiter().until(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
+//	  }
 
 
 	  public  void clickElement(WebElement webElement, String item) {

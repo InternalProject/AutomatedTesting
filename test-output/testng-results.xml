@@ -1,41 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [logginButton]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [click readMessages]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select cabdidates to assigning to test]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click assignTestButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Send invitation to candidates</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Invitation were sent</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Check results of sending invitation</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Results pop up]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Results pop up]is Present</font>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21319" started-at="2015-01-05T15:03:11Z" finished-at="2015-01-05T15:03:33Z">
+  <suite name="Default suite" duration-ms="19902" started-at="2015-01-08T13:42:45Z" finished-at="2015-01-08T13:43:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21319" started-at="2015-01-05T15:03:11Z" finished-at="2015-01-05T15:03:33Z">
+    <test name="Default test" duration-ms="19902" started-at="2015-01-08T13:42:45Z" finished-at="2015-01-08T13:43:05Z">
       <class name="com.epam.testexternalpart.tests.AssigningToTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="init" is-config="true" duration-ms="6960" started-at="2015-01-05T17:03:11Z" finished-at="2015-01-05T17:03:18Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="init" is-config="true" duration-ms="7320" started-at="2015-01-08T15:42:45Z" finished-at="2015-01-08T15:42:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initEmails()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="initEmails" is-config="true" duration-ms="16" started-at="2015-01-05T17:03:18Z" finished-at="2015-01-05T17:03:18Z">
+        <test-method status="PASS" signature="initEmails()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="initEmails" is-config="true" duration-ms="34" started-at="2015-01-08T15:42:52Z" finished-at="2015-01-08T15:42:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initEmails -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="startPage" is-config="true" duration-ms="312" started-at="2015-01-05T17:03:18Z" finished-at="2015-01-05T17:03:19Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="startPage" is-config="true" duration-ms="243" started-at="2015-01-08T15:42:53Z" finished-at="2015-01-08T15:42:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="checkDublicateAnswer()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="checkDublicateAnswer" duration-ms="12013" started-at="2015-01-05T17:03:19Z" finished-at="2015-01-05T17:03:31Z">
+        <test-method status="FAIL" signature="assignTest(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="assignTest" duration-ms="9607" started-at="2015-01-08T15:42:53Z" data-provider="testData" finished-at="2015-01-08T15:43:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Sending invitation is success! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Sending invitation is success! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.epam.testexternalpart.screen.stream.assigningTest.AssignToTestPage.checkResults(AssignToTestPage.java:109)
+	at com.epam.testexternalpart.tests.AssigningToTest.assignTest(AssigningToTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [logginButton]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [click readMessages]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select cabdidates to assigning to test]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click assignTestButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Send invitation to candidates</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Invitation were sent</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Check results of sending invitation</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Results pop up]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Results pop up]is Present</font>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- checkDublicateAnswer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="tearDown" is-config="true" duration-ms="2018" started-at="2015-01-05T17:03:31Z" finished-at="2015-01-05T17:03:33Z">
+        </test-method> <!-- assignTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="tearDown" is-config="true" duration-ms="1979" started-at="2015-01-08T15:43:03Z" finished-at="2015-01-08T15:43:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

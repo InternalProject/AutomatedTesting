@@ -70,21 +70,24 @@ public class AssignToTestPage extends Components{
 	public void sendInvitation(){
 		
 		TestReporter.writeToReportTitle("Send invitation to candidates");
-		
+
+        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(selectUniversity));
 		new Select(selectUniversity).selectByIndex(1);
 		new Select(selectBuilding).selectByIndex(1);
 		new Select(selectRoom).selectByIndex(1);
 		selectDateTime.sendKeys("29.11.2015 18:30");
 		duration.sendKeys("1.5");
 		deadLine.sendKeys("6");
-		clickElement(invitationButton, "click invitationButton");
 		
-		try{
-			long timeOutInSeconds = 20;
-			WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds, 500);
-			WebElement overlay = driver.findElement(By.xpath("//div[@id='assign-candidates-invitation'][@style='display: block;']"));
-			wait.until(ExpectedConditions.stalenessOf(overlay));
-		} catch (Exception e) {	}	
+		invitationButton.click();
+		System.out.println("2");
+
+//		try{
+//			long timeOutInSeconds = 20;
+//			WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds, 500);
+//			WebElement overlay = driver.findElement(By.xpath("//div[@id='assign-candidates-invitation'][@style='display: block;']"));
+//			wait.until(ExpectedConditions.stalenessOf(overlay));
+//		} catch (Exception e) {	}	
 						
 		TestReporter.writeToReportPositiveResult("Invitation were sent");
 	}

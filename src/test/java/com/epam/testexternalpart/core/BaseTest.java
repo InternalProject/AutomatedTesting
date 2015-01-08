@@ -58,7 +58,7 @@ public abstract class BaseTest {
 	
 	@BeforeClass
 	public void init() {
-		driver = WebDriverFactory.initDriver("");//new FirefoxDriver();
+		driver = WebDriverFactory.initDriver("chrome");//new FirefoxDriver();
 		driver.get(START_TEST);
 		LoginPage=new LoginPage(driver);
 		LoginPage.signIn("admin","admin");	
@@ -86,7 +86,8 @@ public abstract class BaseTest {
 		driver.manage().deleteAllCookies();
 		
 		driver.close();
-		driver.quit();	
+		driver.quit();
+	
 	}
 
 	@DataProvider(name = "testData")
