@@ -66,7 +66,7 @@ public class AssigningToTest extends BaseTest{
 	public void responseFromCandidates(){	
 				
 		pageIUa.logOn();
-		pageIUa.enterIntoUnreadMessage();
+		pageIUa.enterIntoUnreadMessage();		
 		pageIUa.responseConfirmedAnswer();	
 		
 		pageIUa.logOn();
@@ -79,7 +79,7 @@ public class AssigningToTest extends BaseTest{
 		
 		pageRambler.logOn();
 		pageRambler.enterIntoUnreadMessage();
-		pageRambler.responseNewTimeAnswer();
+		pageRambler.responseNewTimeAnswer();		
 	}
 	
 	@Test(dataProvider = "testData",priority = 7)

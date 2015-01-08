@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.epam.testexternalpart.screen.Components;
 
@@ -57,7 +59,7 @@ public class AnswerFromRambler extends Components{
 	public void logOn(){
 		
 		driver.get(site);
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        (new WebDriverWait(driver, 2000)).until(ExpectedConditions.visibilityOf(buttonInput));
 		buttonInput.click();
 		loginField.sendKeys(login);
 		passwordField.sendKeys(password);
@@ -66,15 +68,14 @@ public class AnswerFromRambler extends Components{
 	
 	public void enterIntoUnreadMessage(){
 		
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(inputBoxRow));
 		clickElement(inputBoxRow, "click inputBoxRow");
 	}
 	
 	public void responseNewTimeAnswer(){
 		
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(newTimeAnswer));
 		clickElement(newTimeAnswer, "click newTimeAnswer");
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 	}
 	
 }

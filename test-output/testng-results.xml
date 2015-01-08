@@ -1,6 +1,366 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="12" failed="11" total="31" passed="8">
   <reporter-output>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [java Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[java Tab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Create new Stream with name Autumn 2015</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [AddStreamButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Creating new candidates for test</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Creating new candidates for test</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Creating new candidates for test</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Creating new candidates for test</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Creating new candidates for test</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Creating new candidates for test</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Creating new candidates for test</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+    </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
     </line>
@@ -20,6 +380,9 @@
       <![CDATA[<br /><font size = 2 color = #000000>Send invitation to candidates</font>]]>
     </line>
     <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click sendInvitationButton]</font>]]>
+    </line>
+    <line>
       <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Invitation were sent</font>]]>
     </line>
     <line>
@@ -31,25 +394,1194 @@
     <line>
       <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Results pop up]is Present</font>]]>
     </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click assignedToTestTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click assignedToTestTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click assignedToTestTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19902" started-at="2015-01-08T13:42:45Z" finished-at="2015-01-08T13:43:05Z">
+  <suite name="Default suite" duration-ms="212290" started-at="2015-01-08T14:13:32Z" finished-at="2015-01-08T14:17:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19902" started-at="2015-01-08T13:42:45Z" finished-at="2015-01-08T13:43:05Z">
+    <test name="Default test" duration-ms="212290" started-at="2015-01-08T14:13:32Z" finished-at="2015-01-08T14:17:04Z">
       <class name="com.epam.testexternalpart.tests.AssigningToTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="init" is-config="true" duration-ms="7320" started-at="2015-01-08T15:42:45Z" finished-at="2015-01-08T15:42:52Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="init" is-config="true" duration-ms="6939" started-at="2015-01-08T16:13:32Z" finished-at="2015-01-08T16:13:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initEmails()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="initEmails" is-config="true" duration-ms="34" started-at="2015-01-08T15:42:52Z" finished-at="2015-01-08T15:42:52Z">
+        <test-method status="PASS" signature="initEmails()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="initEmails" is-config="true" duration-ms="12" started-at="2015-01-08T16:13:39Z" finished-at="2015-01-08T16:13:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initEmails -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="startPage" is-config="true" duration-ms="243" started-at="2015-01-08T15:42:53Z" finished-at="2015-01-08T15:42:53Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="259" started-at="2015-01-08T16:13:40Z" finished-at="2015-01-08T16:13:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="FAIL" signature="assignTest(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="assignTest" duration-ms="9607" started-at="2015-01-08T15:42:53Z" data-provider="testData" finished-at="2015-01-08T15:43:03Z">
+        <test-method status="PASS" signature="addStream(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="addStream" duration-ms="12352" started-at="2015-01-08T16:13:40Z" data-provider="testData" finished-at="2015-01-08T16:13:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [java Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[java Tab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Create new Stream with name Autumn 2015</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [AddStreamButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addStream -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="196" started-at="2015-01-08T16:13:52Z" finished-at="2015-01-08T16:13:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="PASS" signature="addCandidates(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="addCandidates" duration-ms="13839" started-at="2015-01-08T16:13:52Z" data-provider="testData" finished-at="2015-01-08T16:14:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Олег;Ромашкин;Федорович;21.09.1990;pupkin379@rambler.ru;+397894164112;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Creating new candidates for test</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCandidates -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="135" started-at="2015-01-08T16:14:06Z" finished-at="2015-01-08T16:14:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="PASS" signature="addCandidates(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="addCandidates" duration-ms="13498" started-at="2015-01-08T16:14:06Z" data-provider="testData" finished-at="2015-01-08T16:14:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Денис;Петрушкин;Геннадьевич;16.04.1991;pupkin379@i.ua;+087894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Creating new candidates for test</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCandidates -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="130" started-at="2015-01-08T16:14:20Z" finished-at="2015-01-08T16:14:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="PASS" signature="addCandidates(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="addCandidates" duration-ms="13571" started-at="2015-01-08T16:14:20Z" data-provider="testData" finished-at="2015-01-08T16:14:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Семен;Пяточкин;Сергеевич;04.02.1990;vasya.pupkin379@yandex.ru;+087894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Creating new candidates for test</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCandidates -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="123" started-at="2015-01-08T16:14:34Z" finished-at="2015-01-08T16:14:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="PASS" signature="addCandidates(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="addCandidates" duration-ms="13461" started-at="2015-01-08T16:14:34Z" data-provider="testData" finished-at="2015-01-08T16:14:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Илья;Сметанкин;Олегович;13.05.1992;student19843@mail.ru;+045894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Creating new candidates for test</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCandidates -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="126" started-at="2015-01-08T16:14:47Z" finished-at="2015-01-08T16:14:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="PASS" signature="addCandidates(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="addCandidates" duration-ms="13346" started-at="2015-01-08T16:14:47Z" data-provider="testData" finished-at="2015-01-08T16:15:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Лев;Топорин;Борисович;15.06.1992;student18844@gmail.com;+045894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Creating new candidates for test</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCandidates -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="144" started-at="2015-01-08T16:15:01Z" finished-at="2015-01-08T16:15:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="PASS" signature="addCandidates(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="addCandidates" duration-ms="13471" started-at="2015-01-08T16:15:01Z" data-provider="testData" finished-at="2015-01-08T16:15:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Леонид;Незнающий;Клементьевич;15.06.1992;student@com;+045894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Creating new candidates for test</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCandidates -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="137" started-at="2015-01-08T16:15:14Z" finished-at="2015-01-08T16:15:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="PASS" signature="addCandidates(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="addCandidates" duration-ms="13572" started-at="2015-01-08T16:15:14Z" data-provider="testData" finished-at="2015-01-08T16:15:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Кирилл;Хмельной;Артурович;15.06.1992;student19843@ukr.net;+045894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Creating new candidates for test</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCandidates -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="112" started-at="2015-01-08T16:15:28Z" finished-at="2015-01-08T16:15:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="FAIL" signature="checkNotTestedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="checkNotTestedCand" duration-ms="5568" started-at="2015-01-08T16:15:28Z" data-provider="testData" finished-at="2015-01-08T16:15:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Кирилл;Хмельной;Артурович;15.06.1992;student19843@ukr.net;+045894156114]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 76 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0083', ip: '192.168.153.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3f73c43abf6957bd71a69adb3275f70]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 76 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0083', ip: '192.168.153.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3f73c43abf6957bd71a69adb3275f70
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkNotTestedCand -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="173" started-at="2015-01-08T16:15:34Z" finished-at="2015-01-08T16:15:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="FAIL" signature="checkNotTestedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="checkNotTestedCand" duration-ms="5638" started-at="2015-01-08T16:15:34Z" data-provider="testData" finished-at="2015-01-08T16:15:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Леонид;Незнающий;Клементьевич;15.06.1992;student@com;+045894156114]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 79 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0083', ip: '192.168.153.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3f73c43abf6957bd71a69adb3275f70]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 79 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0083', ip: '192.168.153.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3f73c43abf6957bd71a69adb3275f70
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkNotTestedCand -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="189" started-at="2015-01-08T16:15:40Z" finished-at="2015-01-08T16:15:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="FAIL" signature="checkNotTestedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="checkNotTestedCand" duration-ms="5506" started-at="2015-01-08T16:15:40Z" data-provider="testData" finished-at="2015-01-08T16:15:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Лев;Топорин;Борисович;15.06.1992;student18844@gmail.com;+045894156114]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 64 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0083', ip: '192.168.153.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3f73c43abf6957bd71a69adb3275f70]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 64 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0083', ip: '192.168.153.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3f73c43abf6957bd71a69adb3275f70
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkNotTestedCand -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="163" started-at="2015-01-08T16:15:45Z" finished-at="2015-01-08T16:15:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="FAIL" signature="checkNotTestedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="checkNotTestedCand" duration-ms="5659" started-at="2015-01-08T16:15:45Z" data-provider="testData" finished-at="2015-01-08T16:15:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Илья;Сметанкин;Олегович;13.05.1992;student19843@mail.ru;+045894156114]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 67 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0083', ip: '192.168.153.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3f73c43abf6957bd71a69adb3275f70]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 67 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0083', ip: '192.168.153.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3f73c43abf6957bd71a69adb3275f70
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkNotTestedCand -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="177" started-at="2015-01-08T16:15:51Z" finished-at="2015-01-08T16:15:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="FAIL" signature="checkNotTestedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="checkNotTestedCand" duration-ms="5706" started-at="2015-01-08T16:15:51Z" data-provider="testData" finished-at="2015-01-08T16:15:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Семен;Пяточкин;Сергеевич;04.02.1990;vasya.pupkin379@yandex.ru;+087894156114]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 66 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0083', ip: '192.168.153.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3f73c43abf6957bd71a69adb3275f70]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 66 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0083', ip: '192.168.153.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3f73c43abf6957bd71a69adb3275f70
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkNotTestedCand -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="166" started-at="2015-01-08T16:15:57Z" finished-at="2015-01-08T16:15:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="FAIL" signature="checkNotTestedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="checkNotTestedCand" duration-ms="5625" started-at="2015-01-08T16:15:57Z" data-provider="testData" finished-at="2015-01-08T16:16:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Денис;Петрушкин;Геннадьевич;16.04.1991;pupkin379@i.ua;+087894156114]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[6.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 68 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0083', ip: '192.168.153.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3f73c43abf6957bd71a69adb3275f70]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 68 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0083', ip: '192.168.153.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3f73c43abf6957bd71a69adb3275f70
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkNotTestedCand -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="169" started-at="2015-01-08T16:16:03Z" finished-at="2015-01-08T16:16:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="FAIL" signature="checkNotTestedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="checkNotTestedCand" duration-ms="5698" started-at="2015-01-08T16:16:03Z" data-provider="testData" finished-at="2015-01-08T16:16:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Олег;Ромашкин;Федорович;21.09.1990;pupkin379@rambler.ru;+397894164112]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[7.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 71 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0083', ip: '192.168.153.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3f73c43abf6957bd71a69adb3275f70]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 71 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0083', ip: '192.168.153.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3f73c43abf6957bd71a69adb3275f70
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkNotTestedCand -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="176" started-at="2015-01-08T16:16:09Z" finished-at="2015-01-08T16:16:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="FAIL" signature="assignTest(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="assignTest" duration-ms="28019" started-at="2015-01-08T16:16:09Z" data-provider="testData" finished-at="2015-01-08T16:16:37Z">
           <params>
             <param index="0">
               <value>
@@ -66,7 +1598,7 @@
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.epam.testexternalpart.screen.stream.assigningTest.AssignToTestPage.checkResults(AssignToTestPage.java:109)
+	at com.epam.testexternalpart.screen.stream.assigningTest.AssignToTestPage.checkResults(AssignToTestPage.java:104)
 	at com.epam.testexternalpart.tests.AssigningToTest.assignTest(AssigningToTest.java:54)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -115,6 +1647,9 @@
               <![CDATA[<br /><font size = 2 color = #000000>Send invitation to candidates</font>]]>
             </line>
             <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click sendInvitationButton]</font>]]>
+            </line>
+            <line>
               <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Invitation were sent</font>]]>
             </line>
             <line>
@@ -128,7 +1663,548 @@
             </line>
           </reporter-output>
         </test-method> <!-- assignTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="tearDown" is-config="true" duration-ms="1979" started-at="2015-01-08T15:43:03Z" finished-at="2015-01-08T15:43:05Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="249" started-at="2015-01-08T16:16:37Z" finished-at="2015-01-08T16:16:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="FAIL" signature="checkAssignedToTestCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="checkAssignedToTestCand" duration-ms="5717" started-at="2015-01-08T16:16:37Z" data-provider="testData" finished-at="2015-01-08T16:16:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Кирилл;Хмельной;Артурович;15.06.1992;student19843@ukr.net;+045894156114]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:616)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand(AssigningToTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click assignedToTestTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkAssignedToTestCand -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="148" started-at="2015-01-08T16:16:43Z" finished-at="2015-01-08T16:16:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="FAIL" signature="checkAssignedToTestCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="checkAssignedToTestCand" duration-ms="10573" started-at="2015-01-08T16:16:43Z" data-provider="testData" finished-at="2015-01-08T16:16:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Лев;Топорин;Борисович;15.06.1992;student18844@gmail.com;+045894156114]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:616)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand(AssigningToTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click assignedToTestTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkAssignedToTestCand -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="173" started-at="2015-01-08T16:16:54Z" finished-at="2015-01-08T16:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="FAIL" signature="checkAssignedToTestCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="checkAssignedToTestCand" duration-ms="9742" started-at="2015-01-08T16:16:54Z" data-provider="testData" finished-at="2015-01-08T16:17:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Илья;Сметанкин;Олегович;13.05.1992;student19843@mail.ru;+045894156114]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:386)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:453)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:340)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:608)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand(AssigningToTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click assignedToTestTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking not testing Candidates</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkAssignedToTestCand -->
+        <test-method status="FAIL" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="0" started-at="2015-01-08T16:17:04Z" finished-at="2015-01-08T16:17:04Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0083', ip: '192.168.153.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3f73c43abf6957bd71a69adb3275f70]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0083', ip: '192.168.153.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3f73c43abf6957bd71a69adb3275f70
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at com.epam.testexternalpart.core.BaseTest.startPage(BaseTest.java:70)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="SKIP" signature="checkAssignedToTestCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="checkAssignedToTestCand" duration-ms="1" started-at="2015-01-08T16:17:04Z" data-provider="testData" finished-at="2015-01-08T16:17:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Семен;Пяточкин;Сергеевич;04.02.1990;vasya.pupkin379@yandex.ru;+087894156114]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAssignedToTestCand -->
+        <test-method status="SKIP" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="0" started-at="2015-01-08T16:17:04Z" finished-at="2015-01-08T16:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="SKIP" signature="checkAssignedToTestCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="checkAssignedToTestCand" duration-ms="1" started-at="2015-01-08T16:17:04Z" data-provider="testData" finished-at="2015-01-08T16:17:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Денис;Петрушкин;Геннадьевич;16.04.1991;pupkin379@i.ua;+087894156114]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAssignedToTestCand -->
+        <test-method status="SKIP" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="0" started-at="2015-01-08T16:17:04Z" finished-at="2015-01-08T16:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="SKIP" signature="checkAssignedToTestCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="checkAssignedToTestCand" duration-ms="1" started-at="2015-01-08T16:17:04Z" data-provider="testData" finished-at="2015-01-08T16:17:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Олег;Ромашкин;Федорович;21.09.1990;pupkin379@rambler.ru;+397894164112]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[6.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAssignedToTestCand -->
+        <test-method status="SKIP" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="0" started-at="2015-01-08T16:17:04Z" finished-at="2015-01-08T16:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="SKIP" signature="responseFromCandidates()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="responseFromCandidates" duration-ms="0" started-at="2015-01-08T16:17:04Z" finished-at="2015-01-08T16:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- responseFromCandidates -->
+        <test-method status="SKIP" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="0" started-at="2015-01-08T16:17:04Z" finished-at="2015-01-08T16:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="SKIP" signature="checkConfirmedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="checkConfirmedCand" duration-ms="2" started-at="2015-01-08T16:17:04Z" data-provider="testData" finished-at="2015-01-08T16:17:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Денис;Петрушкин;Геннадьевич;16.04.1991;pupkin379@i.ua;+087894156114]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkConfirmedCand -->
+        <test-method status="SKIP" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="0" started-at="2015-01-08T16:17:04Z" finished-at="2015-01-08T16:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="SKIP" signature="checkNotActualCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="checkNotActualCand" duration-ms="0" started-at="2015-01-08T16:17:04Z" data-provider="testData" finished-at="2015-01-08T16:17:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Семен;Пяточкин;Сергеевич;04.02.1990;vasya.pupkin379@yandex.ru;+087894156114]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNotActualCand -->
+        <test-method status="SKIP" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="0" started-at="2015-01-08T16:17:04Z" finished-at="2015-01-08T16:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="SKIP" signature="checkNewTimeCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="checkNewTimeCand" duration-ms="1" started-at="2015-01-08T16:17:04Z" data-provider="testData" finished-at="2015-01-08T16:17:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Леонид;Незнающий;Клементьевич;15.06.1992;student@com;+045894156114]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNewTimeCand -->
+        <test-method status="SKIP" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="0" started-at="2015-01-08T16:17:04Z" finished-at="2015-01-08T16:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="SKIP" signature="checkNewTimeCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="checkNewTimeCand" duration-ms="4" started-at="2015-01-08T16:17:04Z" data-provider="testData" finished-at="2015-01-08T16:17:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Олег;Ромашкин;Федорович;21.09.1990;pupkin379@rambler.ru;+397894164112]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNewTimeCand -->
+        <test-method status="SKIP" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="0" started-at="2015-01-08T16:17:04Z" finished-at="2015-01-08T16:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="SKIP" signature="checkDublicateAnswer()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="checkDublicateAnswer" duration-ms="0" started-at="2015-01-08T16:17:04Z" finished-at="2015-01-08T16:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDublicateAnswer -->
+        <test-method status="SKIP" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="0" started-at="2015-01-08T16:17:04Z" finished-at="2015-01-08T16:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="SKIP" signature="invitateSecondTime(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="invitateSecondTime" duration-ms="2" started-at="2015-01-08T16:17:04Z" data-provider="testData" finished-at="2015-01-08T16:17:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invitateSecondTime -->
+        <test-method status="SKIP" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="0" started-at="2015-01-08T16:17:04Z" finished-at="2015-01-08T16:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="SKIP" signature="invitateThirdTime(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="invitateThirdTime" duration-ms="0" started-at="2015-01-08T16:17:04Z" data-provider="testData" finished-at="2015-01-08T16:17:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invitateThirdTime -->
+        <test-method status="SKIP" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="startPage" is-config="true" duration-ms="0" started-at="2015-01-08T16:17:04Z" finished-at="2015-01-08T16:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="SKIP" signature="checkBannedCandidate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="checkBannedCandidate" duration-ms="1" started-at="2015-01-08T16:17:04Z" data-provider="testData" finished-at="2015-01-08T16:17:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Autumn 2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Олег;Ромашкин;Федорович;21.09.1990;pupkin379@rambler.ru;+397894164112]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBannedCandidate -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@75bd9247]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-01-08T16:17:04Z" finished-at="2015-01-08T16:17:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -79,15 +79,14 @@ public class AssignToTestPage extends Components{
 		duration.sendKeys("1.5");
 		deadLine.sendKeys("6");
 		
-		invitationButton.click();
-		System.out.println("2");
+		clickElementJS(SEND_INVITATION_BUTTON, "click sendInvitationButton");
 
-//		try{
-//			long timeOutInSeconds = 20;
-//			WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds, 500);
-//			WebElement overlay = driver.findElement(By.xpath("//div[@id='assign-candidates-invitation'][@style='display: block;']"));
-//			wait.until(ExpectedConditions.stalenessOf(overlay));
-//		} catch (Exception e) {	}	
+		try{
+			long timeOutInSeconds = 20;
+			WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds, 500);
+			WebElement overlay = driver.findElement(By.xpath("//div[@id='assign-candidates-invitation'][@style='display: block;']"));
+			wait.until(ExpectedConditions.stalenessOf(overlay));
+		} catch (Exception e) {	}	
 						
 		TestReporter.writeToReportPositiveResult("Invitation were sent");
 	}

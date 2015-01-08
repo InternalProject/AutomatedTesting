@@ -5,11 +5,20 @@
     <classes>
       <class name="com.epam.testexternalpart.tests.AssigningToTest">
         <methods>
+          <include name="checkBannedCandidate"/>
+          <include name="checkConfirmedCand"/>
+          <include name="invitateSecondTime"/>
+          <include name="invitateThirdTime"/>
+          <include name="startPage"/>
+          <include name="checkNotActualCand"/>
+          <include name="checkDublicateAnswer"/>
           <include name="assignTest" invocation-numbers="0"/>
           <include name="initEmails"/>
           <include name="init"/>
-          <include name="tearDown"/>
-          <include name="startPage"/>
+          <include name="responseFromCandidates"/>
+          <include name="checkNewTimeCand"/>
+          <include name="checkNotTestedCand" invocation-numbers="0 1 2 3 4 5 6"/>
+          <include name="checkAssignedToTestCand" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- com.epam.testexternalpart.tests.AssigningToTest -->
     </classes>
