@@ -20,6 +20,7 @@ import org.testng.annotations.DataProvider;
 import com.epam.testexternalpart.screen.AllCandidatesPage;
 import com.epam.testexternalpart.screen.LoginPage;
 import com.epam.testexternalpart.screen.Menu;
+import com.epam.testexternalpart.screen.PlaceForTestingPage;
 import com.epam.testexternalpart.screen.departments.AddDepartmentPage;
 import com.epam.testexternalpart.screen.departments.Departments;
 import com.epam.testexternalpart.screen.profile.CreateProfilePage;
@@ -37,7 +38,9 @@ import com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromYa
 public abstract class BaseTest {
 	protected WebDriver driver;
 	private final String START_TEST="http://epuakhaw0694:8080/KhExternalPreProdPortal";
+	//private final String START_TEST= "http://epuakhaw0681:8080/KhExternalPreProdPortal";
 	private final String START_DEPARTMENT="http://epuakhaw0694:8080/KhExternalPreProdPortal/departments";
+//	private final String START_DEPARTMENT= "http://epuakhaw0681:8080/KhExternalPreProdPortal/departments";
 	protected Menu menuComp;
 	protected Departments pageDepartment;
 	protected CreateProfilePage pageCreateProfile;
@@ -55,10 +58,11 @@ public abstract class BaseTest {
 	protected AnswerFromRambler pageRambler;
 	protected AnswerFromGMail pageGmail;
 	protected AssignToTestPage pageAssignTest;
+	protected PlaceForTestingPage pagePlaceForTesting;
 	
 	@BeforeClass
 	public void init() {
-		driver = WebDriverFactory.initDriver("");//new FirefoxDriver();
+		driver = WebDriverFactory.initDriver("chrome");//new FirefoxDriver();
 		driver.get(START_TEST);
 		LoginPage=new LoginPage(driver);
 		LoginPage.signIn("admin","admin");	
@@ -79,15 +83,16 @@ public abstract class BaseTest {
 		pageAllCandidate = new AllCandidatesPage(driver);
 		pageEditProfile = new EditProfilePage(driver);
 		pageAssignTest = new AssignToTestPage(driver);
+		pagePlaceForTesting = new PlaceForTestingPage(driver);
 	}
 	
-	@AfterClass
-	public void tearDown() {
-		driver.manage().deleteAllCookies();
-		
-		driver.close();
-		driver.quit();	
-	}
+//	@AfterClass
+//	public void tearDown() {
+//		driver.manage().deleteAllCookies();
+//		
+//		driver.close();
+//		driver.quit();	
+//	}
 
 	@DataProvider(name = "testData")
 	public Object[][] getTestData(Method testMethod) {
@@ -95,7 +100,7 @@ public abstract class BaseTest {
 		String a = testMethod.getName();
 		String b = testMethod.getDeclaringClass().getSimpleName();
 		int numberOfParameters = testMethod.getParameterTypes().length;
-		String path = "D:/Internal_project/Project/AutomatedTesting/data/" + b + ".xlsx";
+		String path = "D:/AutomatedTesting/data/" + b + ".xlsx";
 
 		try {
 			FileInputStream file = new FileInputStream(path);

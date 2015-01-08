@@ -1,45 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [logginButton]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on placeForTestingButton]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [click readMessages]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click add_testing_place]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click add_testing_place_popup]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on placeForTestingButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on placeForTestingButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on checkbox]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on edit_testing_place button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on delete button in pop up]</font>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21319" started-at="2015-01-05T15:03:11Z" finished-at="2015-01-05T15:03:33Z">
+  <suite name="Default suite" duration-ms="8380" started-at="2015-01-08T16:46:28Z" finished-at="2015-01-08T16:46:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21319" started-at="2015-01-05T15:03:11Z" finished-at="2015-01-05T15:03:33Z">
-      <class name="com.epam.testexternalpart.tests.AssigningToTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="init" is-config="true" duration-ms="6960" started-at="2015-01-05T17:03:11Z" finished-at="2015-01-05T17:03:18Z">
+    <test name="Default test" duration-ms="8380" started-at="2015-01-08T16:46:28Z" finished-at="2015-01-08T16:46:37Z">
+      <class name="com.epam.testexternalpart.tests.PlaceForTestingTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@1b66a538]" name="init" is-config="true" duration-ms="3642" started-at="2015-01-08T18:46:28Z" finished-at="2015-01-08T18:46:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initEmails()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="initEmails" is-config="true" duration-ms="16" started-at="2015-01-05T17:03:18Z" finished-at="2015-01-05T17:03:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initEmails -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="startPage" is-config="true" duration-ms="312" started-at="2015-01-05T17:03:18Z" finished-at="2015-01-05T17:03:19Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@1b66a538]" name="startPage" is-config="true" duration-ms="178" started-at="2015-01-08T18:46:32Z" finished-at="2015-01-08T18:46:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="checkDublicateAnswer()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="checkDublicateAnswer" duration-ms="12013" started-at="2015-01-05T17:03:19Z" finished-at="2015-01-05T17:03:31Z">
+        <test-method status="PASS" signature="addNewPlaceForTesting(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@1b66a538]" name="addNewPlaceForTesting" duration-ms="1529" started-at="2015-01-08T18:46:33Z" data-provider="testData" finished-at="2015-01-08T18:46:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ХАА]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[23Б]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Бекетова]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Boston]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [logginButton]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on placeForTestingButton]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [click readMessages]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click add_testing_place]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click add_testing_place_popup]</font>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- checkDublicateAnswer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="tearDown" is-config="true" duration-ms="2018" started-at="2015-01-05T17:03:31Z" finished-at="2015-01-05T17:03:33Z">
+        </test-method> <!-- addNewPlaceForTesting -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@1b66a538]" name="startPage" is-config="true" duration-ms="154" started-at="2015-01-08T18:46:34Z" finished-at="2015-01-08T18:46:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.epam.testexternalpart.tests.AssigningToTest -->
+        </test-method> <!-- startPage -->
+        <test-method status="PASS" signature="deleteNewPlaceForTesting(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@1b66a538]" name="deleteNewPlaceForTesting" duration-ms="459" started-at="2015-01-08T18:46:34Z" data-provider="testData" finished-at="2015-01-08T18:46:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EDIT]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EDIT building]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Edit Location]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Edit room]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on placeForTestingButton]</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteNewPlaceForTesting -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@1b66a538]" name="startPage" is-config="true" duration-ms="141" started-at="2015-01-08T18:46:35Z" finished-at="2015-01-08T18:46:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="PASS" signature="editNewPlaceForTesting(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@1b66a538]" name="editNewPlaceForTesting" duration-ms="1695" started-at="2015-01-08T18:46:35Z" data-provider="testData" finished-at="2015-01-08T18:46:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ХАА]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[23Б]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Бекетова]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Boston]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[EDIT]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[EDIT building]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Edit Location]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Edit room]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on placeForTestingButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on checkbox]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on edit_testing_place button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on delete button in pop up]</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- editNewPlaceForTesting -->
+      </class> <!-- com.epam.testexternalpart.tests.PlaceForTestingTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

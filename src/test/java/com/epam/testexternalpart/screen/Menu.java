@@ -35,7 +35,7 @@ public class Menu extends Components{
 	public WebElement allCandidatesButton;
 	
 	@FindBy(xpath = PLACES_FOR_TESTING_BUTTON)
-	private WebElement placeForTestingButton;
+	public WebElement placeForTestingButton;
 	
 	@FindBy(xpath = SUBGROUP_BUTTON)
 	private WebElement subgroupsButton;

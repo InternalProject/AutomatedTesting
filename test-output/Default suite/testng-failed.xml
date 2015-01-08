@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.epam.testexternalpart.tests.AssigningToTest">
+      <class name="com.epam.testexternalpart.tests.PlaceForTestingTest">
         <methods>
-          <include name="checkBannedCandidate" invocation-numbers="0"/>
-          <include name="initEmails"/>
+          <include name="editNewPlaceForTesting" invocation-numbers="0"/>
           <include name="init"/>
-          <include name="tearDown"/>
           <include name="startPage"/>
         </methods>
-      </class> <!-- com.epam.testexternalpart.tests.AssigningToTest -->
+      </class> <!-- com.epam.testexternalpart.tests.PlaceForTestingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
