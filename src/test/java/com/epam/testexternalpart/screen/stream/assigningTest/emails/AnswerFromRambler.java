@@ -10,8 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.epam.testexternalpart.screen.Components;
 
 public class AnswerFromRambler extends Components{
-
-	private WebDriver driver;	
+	
 	final static String site = "https://rambler.ru/";
 	final static String login = "pupkin379";
 	final static String password = "pupkin379";
@@ -58,6 +57,7 @@ public class AnswerFromRambler extends Components{
 	public void logOn(){
 		
 		driver.get(site);
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		buttonInput.click();
 		loginField.sendKeys(login);
 		passwordField.sendKeys(password);
@@ -67,13 +67,14 @@ public class AnswerFromRambler extends Components{
 	public void enterIntoUnreadMessage(){
 		
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		inputBoxRow.click();		
+		clickElement(inputBoxRow, "click inputBoxRow");
 	}
 	
 	public void responseNewTimeAnswer(){
 		
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		newTimeAnswer.click();
+		clickElement(newTimeAnswer, "click newTimeAnswer");
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 	}
 	
 }

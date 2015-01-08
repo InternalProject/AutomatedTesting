@@ -1,33 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[<br /><b><font size = 2 color = #000099>Delete all Candidates</font></b><br/>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Table Row</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Table Row] is correct</font>]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="66420" started-at="2015-01-05T10:18:21Z" finished-at="2015-01-05T10:19:27Z">
+  <suite name="Default suite" duration-ms="14107" started-at="2015-01-08T10:33:05Z" finished-at="2015-01-08T10:33:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="66420" started-at="2015-01-05T10:18:21Z" finished-at="2015-01-05T10:19:27Z">
-      <class name="com.epam.testexternalpart.tests.AssigningToTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="init" is-config="true" duration-ms="9892" started-at="2015-01-05T12:18:21Z" finished-at="2015-01-05T12:18:31Z">
+    <test name="Default test" duration-ms="14107" started-at="2015-01-08T10:33:05Z" finished-at="2015-01-08T10:33:19Z">
+      <class name="com.epam.testexternalpart.tests.AddCandidateTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@2c8d66b2]" name="init" is-config="true" duration-ms="10343" started-at="2015-01-08T13:33:05Z" finished-at="2015-01-08T13:33:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initEmails()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="initEmails" is-config="true" duration-ms="20" started-at="2015-01-05T12:18:31Z" finished-at="2015-01-05T12:18:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initEmails -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="startPage" is-config="true" duration-ms="562" started-at="2015-01-05T12:18:31Z" finished-at="2015-01-05T12:18:31Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@2c8d66b2]" name="startPage" is-config="true" duration-ms="437" started-at="2015-01-08T13:33:17Z" finished-at="2015-01-08T13:33:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="responseFromCandidates()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="responseFromCandidates" duration-ms="48313" started-at="2015-01-05T12:18:31Z" finished-at="2015-01-05T12:19:20Z">
+        <test-method status="PASS" signature="deleteAllCandidates(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@2c8d66b2]" name="deleteAllCandidates" duration-ms="1724" started-at="2015-01-08T13:33:17Z" data-provider="testData" finished-at="2015-01-08T13:33:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[No matching records found]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[<br /><b><font size = 2 color = #000099>Delete all Candidates</font></b><br/>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Table Row</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Table Row] is correct</font>]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- responseFromCandidates -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="tearDown" is-config="true" duration-ms="7593" started-at="2015-01-05T12:19:20Z" finished-at="2015-01-05T12:19:27Z">
+        </test-method> <!-- deleteAllCandidates -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@2c8d66b2]" name="tearDown" is-config="true" duration-ms="313" started-at="2015-01-08T13:33:19Z" finished-at="2015-01-08T13:33:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.epam.testexternalpart.tests.AssigningToTest -->
+      </class> <!-- com.epam.testexternalpart.tests.AddCandidateTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -84,9 +84,9 @@ public abstract class BaseTest {
 	@AfterClass
 	public void tearDown() {
 		driver.manage().deleteAllCookies();
+		
 		driver.close();
-	    driver.quit();
-	
+		driver.quit();	
 	}
 
 	@DataProvider(name = "testData")
@@ -96,7 +96,7 @@ public abstract class BaseTest {
 		String b = testMethod.getDeclaringClass().getSimpleName();
 		int numberOfParameters = testMethod.getParameterTypes().length;
 
-String path = "C:/ExternalProject/AutomatedTesting/" + b + ".xlsx";
+String path = "C:/ExternalProject/AutomatedTesting/data/" + b + ".xlsx";
 		try {
 			FileInputStream file = new FileInputStream(path);
 			XSSFWorkbook workbook = new XSSFWorkbook(file);

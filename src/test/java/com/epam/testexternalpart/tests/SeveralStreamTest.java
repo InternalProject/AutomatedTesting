@@ -13,9 +13,9 @@ public class SeveralStreamTest extends BaseTest{
 		   pageStream.clickElement(pageStream.addCandidateButton, "Click addCandidateButton");
 		   pageCreateProfile.createNewCandidate(candData);
 		   pageStream.clickElement(pageStream.crumbs, "Click on crumbs");
-		   pageDepartment.clickElement(pageDepartment.netTab, "Click netTab");
-		   pageDepartment.clickElement(pageDepartment.first_stream, "Click first_stream");
-		   pageStream.clickElement(pageStream.addCandidateButton, "Click addCandidateButton");
+		   pageDepartment.clickElement(pageDepartment.netTab, "Click on netTab");
+		   pageDepartment.clickElement(pageDepartment.first_stream, "Click on first_stream");
+		   pageStream.clickElement(pageStream.addCandidateButton, "Click on addCandidateButton");
 		   pageCreateProfile.createNewCandidate(candData);
 		   System.out.println("  mailName  "+pageCreateProfile.mailName);
 		   System.out.println("  phoneNumber  "+pageCreateProfile.phoneNumber);

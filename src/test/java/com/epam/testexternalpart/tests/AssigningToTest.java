@@ -67,7 +67,9 @@ public class AssigningToTest extends BaseTest{
 				
 		pageIUa.logOn();
 		pageIUa.enterIntoUnreadMessage();
-		pageIUa.responseConfirmedAnswer();		
+		pageIUa.responseConfirmedAnswer();	
+		
+		pageIUa.sendDublicateAnswer();
 		
 		pageYandex.logOn();
 		pageYandex.enterIntoUnreadMessage();
@@ -105,19 +107,17 @@ public class AssigningToTest extends BaseTest{
 		pageStream.clickNotTestedTab();
 		pageStream.checkCandidates(candidateFields, row);	
 	}
-	//не проверено
+
 	@Test(priority = 10)
 	public void checkDublicateAnswer(){	
 				
 		pageIUa.logOn();
 		pageIUa.enterIntoUnreadMessage();
-		pageIUa.clickDublicateAnswer();
 		pageIUa.checkDublicateAnswerMessage();
-	}
+	}	
 	
-	//не проверено
-	@Test(dataProvider = "testData",priority = 11)
-	public void invitateSecondTime(String streamName, String candidateFields, String row){	
+	@Test(dataProvider = "testData", priority = 11)
+	public void invitateSecondTime(String streamName){	
 				
 		pageDepartment.clickSelectedStream(streamName);
 		pageStream.clickNotTestedTab();
@@ -129,9 +129,8 @@ public class AssigningToTest extends BaseTest{
 		pageRambler.responseNewTimeAnswer();
 	}
 	
-	//не проверено
-	@Test(dataProvider = "testData",priority = 12)
-	public void invitateThirdTime(String streamName, String candidateFields, String row){	
+	@Test(dataProvider = "testData", priority = 12)
+	public void invitateThirdTime(String streamName){	
 				
 		pageDepartment.clickSelectedStream(streamName);
 		pageStream.clickNotTestedTab();
@@ -143,7 +142,6 @@ public class AssigningToTest extends BaseTest{
 		pageRambler.responseNewTimeAnswer();
 	}
 	
-	//не проверено
 	@Test(dataProvider = "testData",priority = 13)
 	public void checkBannedCandidate(String streamName, String candidateFields, String row){	
 				
