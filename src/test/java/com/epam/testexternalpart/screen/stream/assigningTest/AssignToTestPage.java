@@ -70,15 +70,17 @@ public class AssignToTestPage extends Components{
 	public void sendInvitation(){
 		
 		TestReporter.writeToReportTitle("Send invitation to candidates");
-		
+
+        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(selectUniversity));
 		new Select(selectUniversity).selectByIndex(1);
 		new Select(selectBuilding).selectByIndex(1);
 		new Select(selectRoom).selectByIndex(1);
 		selectDateTime.sendKeys("29.11.2015 18:30");
 		duration.sendKeys("1.5");
 		deadLine.sendKeys("6");
-		clickElement(invitationButton, "click invitationButton");
 		
+		clickElementJS(SEND_INVITATION_BUTTON, "click sendInvitationButton");
+
 		try{
 			long timeOutInSeconds = 20;
 			WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds, 500);

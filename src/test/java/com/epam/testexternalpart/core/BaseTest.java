@@ -58,7 +58,7 @@ public abstract class BaseTest {
 	
 	@BeforeClass
 	public void init() {
-		driver = WebDriverFactory.initDriver("");//new FirefoxDriver();
+		driver = WebDriverFactory.initDriver("chrome");//new FirefoxDriver();
 		driver.get(START_TEST);
 		LoginPage=new LoginPage(driver);
 		LoginPage.signIn("admin","admin");	
@@ -85,8 +85,16 @@ public abstract class BaseTest {
 	public void tearDown() {
 		driver.manage().deleteAllCookies();
 		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		driver.close();
-		driver.quit();	
+		driver.quit();
+	
 	}
 
 	@DataProvider(name = "testData")
@@ -95,8 +103,8 @@ public abstract class BaseTest {
 		String a = testMethod.getName();
 		String b = testMethod.getDeclaringClass().getSimpleName();
 		int numberOfParameters = testMethod.getParameterTypes().length;
-		String path = "D:/Internal_project/Project/AutomatedTesting/data/" + b + ".xlsx";
 
+String path = "D:/Internal_project/Project/AutomatedTesting/data/" + b + ".xlsx";
 		try {
 			FileInputStream file = new FileInputStream(path);
 			XSSFWorkbook workbook = new XSSFWorkbook(file);

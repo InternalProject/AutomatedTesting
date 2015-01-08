@@ -12,15 +12,402 @@
 <body>
 <h1>smokeMenuTest</h1>
 <p>
-  Test duration: 31.948s
+  Test duration: 0.004s
 </p>
 
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">com.epam.testexternalpart.tests.SmokeTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  init
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.<br/>
+Command duration or timeout: 250 milliseconds<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;EPUAKHAW0194&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=34.0.5, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: a522bfb3-7c66-4bfd-8a7c-8ee6927082c3</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:408)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)<br />
+              org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:483)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:50)<br />
+              com.sun.proxy.$Proxy7.sendKeys(Unknown Source)<br />
+              com.epam.testexternalpart.screen.LoginPage.signIn(LoginPage.java:31)<br />
+              com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:64)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:483)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br />
+              org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:348)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:254)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:483)<br />
+              org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)<br />
+              org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)<br />
+              org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;EPUAKHAW0194&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-1">
+                      &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/OLHA_M~1/AppData/Local/Temp/anonymous1225881417161896342webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11706:23)<br />
+                      &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/OLHA_M~1/AppData/Local/Temp/anonymous1225881417161896342webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:8437:5)<br />
+                      &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/OLHA_M~1/AppData/Local/Temp/anonymous1225881417161896342webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:8584:219)<br />
+                      &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/OLHA_M~1/AppData/Local/Temp/anonymous1225881417161896342webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:8531:36)<br />
+                      &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/OLHA_M~1/AppData/Local/Temp/anonymous1225881417161896342webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:11489:5)<br />
+                      &lt;anonymous class&gt;.createHandlerFunc/&lt;(file:///C:/Users/OLHA_M~1/AppData/Local/Temp/anonymous1225881417161896342webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935:41)<br />
+                      &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/OLHA_M~1/AppData/Local/Temp/anonymous1225881417161896342webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261:15)<br />
+                      &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/OLHA_M~1/AppData/Local/Temp/anonymous1225881417161896342webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168:5)<br />
+                      &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/OLHA_M~1/AppData/Local/Temp/anonymous1225881417161896342webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616:5)<br />
+                      &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/OLHA_M~1/AppData/Local/Temp/anonymous1225881417161896342webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464:9)<br />
+                      &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/OLHA_M~1/AppData/Local/Temp/anonymous1225881417161896342webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333:9)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+    
+          <tr><td colspan="3">&nbsp;</td></tr>
+      <tr><td colspan="3" class="header skippedConfig">Skipped Configuration</td></tr>
+                    <tr>
+          <td colspan="3" class="group">com.epam.testexternalpart.tests.DepartmentTest</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  init
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  tearDown
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+              <tr>
+          <td colspan="3" class="group">com.epam.testexternalpart.tests.SmokeTest</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  tearDown
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+            </table>
 
 
 
-
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
           <tr>
         <td colspan="3" class="group">com.epam.testexternalpart.tests.DepartmentTest</td>
       </tr>
@@ -30,26 +417,43 @@
                   testAddDepartment
       </td>
   <td class="duration">
-    11.426s
+    0.001s
   </td>
   <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"….."</span><br />
+    
         
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  testAddDepartmentWithValidName
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
           <i>Method arguments: </i><span class="arguments">"NewDep"</span><br />
     
-            <div class="testOutput">
-                        <br /><b><font size = 2 color = #000099>Check the possibility of adding new department</font></b><br/>
-                                <br /><font size = 2 color = #000000>Checking that Department Create Button reffering to Create Department Page</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>
-                                <br><b><font size = 2 color = #000000>Fill required fields</font></b><br>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [AddDepartmentPage-label_name]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[AddDepartmentPage-label_name]is Not Present</font>
-                                <br /><font size = 2 color = #000000>Checking text of element New Dep</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [New Dep] is correct</font>
-                                <br /><font size = 2 color = #000000>Click on [deleteDepartmentButton]</font>
-                                <br /><font size = 2 color = #000000>Click on [deleteDepartmentButton]</font>
-                  </div>
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  testEditDepartmentName
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"depNameFirst", "depNameSecond"</span><br />
     
+        
 
       </td>
 </tr>
@@ -59,14 +463,14 @@
             
 <tr>
   <td class="method">
-                  testView
+                  checkElAllCandiadtesMenu
       </td>
   <td class="duration">
-    1.984s
+    0.002s
   </td>
   <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"First name;Last name;Middle name;Birth date;Email;Primary phone number;Secondary phone number;University;Faculty;Degree;Education start date;Graduation date;Extra education;Relevant skills;Language;Referrer;Banned;Stream;Attempt amount;Filling date"</span><br />
+                               
+          <i>Method arguments: </i><span class="arguments">"¹;First Name;Last Name;Middle Name;Phone;BirthDate;Email;Fill Date;Stream;Department"</span><br />
     
         
 
@@ -74,19 +478,192 @@
 </tr>
 <tr>
   <td class="method">
-                  testView2
+                  checkElStreamPage
       </td>
   <td class="duration">
-    0.453s
+    0.000s
   </td>
   <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">";¹;First Name;Last Name;Middle Name;Phone;BirthDate;Email;Fill Date"</span><br />
+    
         
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  checkElementsAddCandidate
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"First name;Last name;Middle name;Birth date;Email;Phone;Secondary phone;University name;Faculty name;Academic degree;Education start year;Graduation year;Additional education;Relevant skills;Languages;Referrer;Attempt count;Stream;Status;Fill date;Comment"</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  checkElementsEditCandidate
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj@mail.ru;+380505465345;", "First name;Last name;Middle name;Birth date;Email;Phone;Secondary phone;University name;Faculty name;Academic degree;Education start year;Graduation year;Additional education;Relevant skills;Languages;Referrer;Attempt count;Stream;Status;Fill date;Comment"</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  checkElementsViewCandidate
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj@mail.ru;+380505465345;", "First name;Last name;Middle name;Birth date;Email;Primary phone number;Secondary phone number;University;Faculty;Degree;Education start date;Graduation date;Extra education;Relevant skills;Language;Referrer;Stream;Status;Attempt amount;Filling date;Comment"</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  checkMenu
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  testCheckElementsPresentAddDepartmentPage
+      </td>
+  <td class="duration">
+    0.001s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  testCheckElementsPresentAddStreamPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  testCheckElementsPresentDepartmentPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  testcheckAddStreamPageInDepartmentAutoTest
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  testcheckAddStreamPageInDepartmentFrontEnd
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  testcheckAddStreamPageInDepartmentJava
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  testcheckAddStreamPageInDepartmentNet
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  testcheckAddStreamPageInDepartmentSofttest
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
     
         
 
       </td>
 </tr>
       </table>
+
   
 </body>
 </html>

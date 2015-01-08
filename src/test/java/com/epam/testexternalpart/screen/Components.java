@@ -2,6 +2,10 @@ package com.epam.testexternalpart.screen;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
+
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -58,12 +62,34 @@ public class Components {
 	        }
 	       }
 	  
+//	  public WebElement find(By by){
+//		return  getWaiter().until(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
+//	  }
 
 
 	  public  void clickElement(WebElement webElement, String item) {
 		  TestReporter.writeToReportTitle("Click on ["+item+"]");
           (new WebDriverWait(driver, 6000)).until(ExpectedConditions.elementToBeClickable(webElement)).click();
 	    }
+	  
+	  public  void clickElementJS(String  xpath, String item) {
+//		  try {
+//				Thread.sleep(1000);
+//			} catch (InterruptedException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+		  
+		   (new WebDriverWait(driver, 4000)).until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+
+		  TestReporter.writeToReportTitle("Click on ["+item+"]");
+			WebElement element = driver.findElement(By.xpath(xpath));
+			JavascriptExecutor js = (JavascriptExecutor)driver;
+			js.executeScript("arguments[0].click();", element);
+	    }
+	  
+
+	  
 	  
 	  public  void checkElementText(String expectedText, String elementName, WebElement element) {
 		  TestReporter.writeToReportTitle("Checking text of element "+elementName);
