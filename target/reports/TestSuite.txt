@@ -1,46 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 35, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 457.185 sec <<< FAILURE!
-checkElementsViewCandidate(com.epam.testexternalpart.tests.SmokeTest)  Time elapsed: 21.628 sec  <<< FAILURE!
-org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (36, 757). Other element would receive the click: <label for="checkbox1">...</label>
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 122 milliseconds
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EPUAKHAW0501', ip: '10.23.14.67', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
-Session ID: 469a08973662473011832467f6a85fa4
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir4144_23087}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkTableAccordingToCandidadate(StreamPage.java:572)
-	at com.epam.testexternalpart.tests.SmokeTest.checkElementsViewCandidate(SmokeTest.java:124)
-
-checkMenu(com.epam.testexternalpart.tests.SmokeTest)  Time elapsed: 10.021 sec  <<< FAILURE!
-java.lang.AssertionError: logoNo element [logo] on the page  expected [true] but found [false]
+Tests run: 35, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 286.431 sec <<< FAILURE!
+streamSearch(com.epam.testexternalpart.tests.SearchTest)  Time elapsed: 19.513 sec  <<< FAILURE!
+java.lang.AssertionError: Wrong data in new cand expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.epam.testexternalpart.screen.Components.isElementExist(Components.java:23)
-	at com.epam.testexternalpart.screen.Menu.checkElementsPresent(Menu.java:57)
-	at com.epam.testexternalpart.tests.SmokeTest.checkMenu(SmokeTest.java:162)
-
-deleteAllCandidates(com.epam.testexternalpart.tests.AddCandidateTest)  Time elapsed: 7.719 sec  <<< FAILURE!
-java.lang.AssertionError: expected [No matching records found] but found [1 Harry Potter James +380505465345 02-12-2013 sdhgjshg1j@mail.ru 09-01-2015]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at org.testng.Assert.assertEquals(Assert.java:186)
-	at com.epam.testexternalpart.screen.Components.checkElementText(Components.java:107)
-	at com.epam.testexternalpart.screen.stream.StreamPage.deleteAllCand(StreamPage.java:650)
-	at com.epam.testexternalpart.tests.AddCandidateTest.deleteAllCandidates(AddCandidateTest.java:35)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandExisting(StreamPage.java:492)
+	at com.epam.testexternalpart.tests.SearchTest.streamSearch(SearchTest.java:27)
 

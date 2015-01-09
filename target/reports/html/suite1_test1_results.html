@@ -12,162 +12,11 @@
 <body>
 <h1>smokeMenuTest</h1>
 <p>
-  Test duration: 145,590s
+  Test duration: 81,303s
 </p>
 
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">com.epam.testexternalpart.tests.SmokeTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  checkElementsViewCandidate
-      </td>
-  <td class="duration">
-    21,622s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj@mail.ru;+380505465345;", "First name;Last name;Middle name;Birth date;Email;Primary phone number;Secondary phone number;University;Faculty;Degree;Education start date;Graduation date;Extra education;Relevant skills;Language;Referrer;Stream;Status;Attempt amount;Filling date;Comment"</span><br />
-    
-            <div class="testOutput">
-                        <br /><b><font size = 2 color = #000099>Check all elements are present on ViewCandidatePage</font></b><br/>
-                                <br /><font size = 2 color = #000000>Checking that click by selected stream reffering to Stream Page</font>
-                                <br /><font size = 2 color = #000000>Click on [First stream on first dep]</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>
-                                <br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>
-                                <br /><font size = 2 color = #000000>Creating new candidate with fields-Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj@mail.ru;+380505465345;</font>
-                                <br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font>
-                  </div>
-    
-
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (36, 757). Other element would receive the click: &lt;label for=&quot;checkbox1&quot;&gt;...&lt;/label&gt;<br/>
-&nbsp; (Session info: chrome=39.0.2171.95)<br/>
-&nbsp; (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 122 milliseconds<br/>
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;<br/>
-Session ID: 469a08973662473011832467f6a85fa4<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir4144_23087}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]</b></a><br />
-    <div class="stackTrace" id="exception-0">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
-              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
-              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)<br />
-              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)<br />
-              com.epam.testexternalpart.screen.stream.StreamPage.checkTableAccordingToCandidadate(StreamPage.java:572)<br />
-              com.epam.testexternalpart.tests.SmokeTest.checkElementsViewCandidate(SmokeTest.java:124)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
-              java.lang.reflect.Method.invoke(Unknown Source)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
-              org.testng.TestRunner.run(TestRunner.java:617)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:348)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:254)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
-              org.testng.TestNG.run(TestNG.java:1057)<br />
-              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)<br />
-              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:93)<br />
-              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
-              java.lang.reflect.Method.invoke(Unknown Source)<br />
-              org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)<br />
-              com.sun.proxy.$Proxy0.invoke(Unknown Source)<br />
-              org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:145)<br />
-              org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:87)<br />
-              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)<br />
-                </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  checkMenu
-      </td>
-  <td class="duration">
-    10,021s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        <br /><b><font size = 2 color = #000099>Check all elements are present on Menu</font></b><br/>
-                                <br /><font size = 2 color = #000000>Checking the presence of Menu's elements</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [logo]</font>
-                  </div>
-    
-
-        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: logoNo element [logo] on the page&nbsp; expected [true] but found [false]</b></a><br />
-    <div class="stackTrace" id="exception-1">
-              org.testng.Assert.fail(Assert.java:94)<br />
-              org.testng.Assert.failNotEquals(Assert.java:494)<br />
-              org.testng.Assert.assertTrue(Assert.java:42)<br />
-              com.epam.testexternalpart.screen.Components.isElementExist(Components.java:23)<br />
-              com.epam.testexternalpart.screen.Menu.checkElementsPresent(Menu.java:57)<br />
-              com.epam.testexternalpart.tests.SmokeTest.checkMenu(SmokeTest.java:162)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
-              java.lang.reflect.Method.invoke(Unknown Source)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
-              org.testng.TestRunner.run(TestRunner.java:617)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:348)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:254)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
-              org.testng.TestNG.run(TestNG.java:1057)<br />
-              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)<br />
-              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:93)<br />
-              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
-              java.lang.reflect.Method.invoke(Unknown Source)<br />
-              org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)<br />
-              com.sun.proxy.$Proxy0.invoke(Unknown Source)<br />
-              org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:145)<br />
-              org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:87)<br />
-              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)<br />
-                </div>
-      </td>
-</tr>
-      </table>
 
 
   <table class="resultsTable">
@@ -181,7 +30,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
                   checkElAllCandiadtesMenu
       </td>
   <td class="duration">
-    0,388s
+    0,620s
   </td>
   <td class="result">
         
@@ -196,6 +45,26 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
                                 <br /><font size = 2 color = #347C17>&nbsp;&nbsp;All All Candidates text are present</font>
                                 <br /><font size = 2 color = #000000>Checking the presence of All Candidates menu - default columns</font>
                                 <br /><font size = 2 color = #000000>Checking text of element ¹</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [¹] is correct</font>
+                                <br /><font size = 2 color = #000000>Checking text of element First Name</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [First Name] is correct</font>
+                                <br /><font size = 2 color = #000000>Checking text of element Last Name</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Last Name] is correct</font>
+                                <br /><font size = 2 color = #000000>Checking text of element Middle Name</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Middle Name] is correct</font>
+                                <br /><font size = 2 color = #000000>Checking text of element Phone</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Phone] is correct</font>
+                                <br /><font size = 2 color = #000000>Checking text of element BirthDate</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [BirthDate] is correct</font>
+                                <br /><font size = 2 color = #000000>Checking text of element Email</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Email] is correct</font>
+                                <br /><font size = 2 color = #000000>Checking text of element Fill Date</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Fill Date] is correct</font>
+                                <br /><font size = 2 color = #000000>Checking text of element Stream</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Stream] is correct</font>
+                                <br /><font size = 2 color = #000000>Checking text of element Department</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department] is correct</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Candidates menu -  default columns are present</font>
                   </div>
     
 
@@ -206,7 +75,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
                   checkElStreamPage
       </td>
   <td class="duration">
-    13,819s
+    13,762s
   </td>
   <td class="result">
         
@@ -471,7 +340,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
                   checkElementsAddCandidate
       </td>
   <td class="duration">
-    22,297s
+    22,311s
   </td>
   <td class="result">
         
@@ -605,7 +474,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
                   checkElementsEditCandidate
       </td>
   <td class="duration">
-    44,428s
+    0,001s
   </td>
   <td class="result">
         
@@ -613,137 +482,65 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
     
             <div class="testOutput">
                         <br /><b><font size = 2 color = #000099>Check all elements are present on EditCandidatePage</font></b><br/>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  checkElementsViewCandidate
+      </td>
+  <td class="duration">
+    10,353s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj@mail.ru;+380505465345;", "First name;Last name;Middle name;Birth date;Email;Primary phone number;Secondary phone number;University;Faculty;Degree;Education start date;Graduation date;Extra education;Relevant skills;Language;Referrer;Stream;Status;Attempt amount;Filling date;Comment"</span><br />
+    
+            <div class="testOutput">
+                        <br /><b><font size = 2 color = #000099>Check all elements are present on ViewCandidatePage</font></b><br/>
                                 <br /><font size = 2 color = #000000>Checking that click by selected stream reffering to Stream Page</font>
                                 <br /><font size = 2 color = #000000>Click on [First stream on first dep]</font>
                                 <br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>
                                 <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>
-                                <br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>
-                                <br /><font size = 2 color = #000000>Creating new candidate with fields-Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj@mail.ru;+380505465345;</font>
-                                <br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font>
-                                <br /><font size = 2 color = #000000>Checking that click on selected candidate reffering to Candidate View Page</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [tableRowView]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[tableRowView]is Not Present</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;click on selected candidate reffering to Candidate View Page</font>
-                                <br><b><font size = 2 color = #000000>Click Edit Profile</font></b><br>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Tittle]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Tittle]is Not Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of all elements on Edit Profile Page</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [firstNameInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[firstNameInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [lastNameInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[lastNameInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [middleNameInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[middleNameInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [birthDateInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[birthDateInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [emailInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[emailInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [phoneInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[phoneInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [phoneSecondaryInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[phoneSecondaryInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [universityNameInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[universityNameInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [facultyNameInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[facultyNameInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [degreeInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[degreeInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [educationStartinput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[educationStartinput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [graduationYearInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[graduationYearInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [additionalEducationInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[additionalEducationInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [relevantSkilsInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[relevantSkilsInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [languageInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[languageInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [refererInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[refererInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [attemptInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[attemptInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [streamNameInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[streamNameInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [statusInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[statusInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [filldateInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[filldateInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [commentInput]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[commentInput]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [mandatory_fields]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[mandatory_fields]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [mandatory_fields]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[mandatory_fields]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [mandatory_fields]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[mandatory_fields]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [mandatory_fields]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[mandatory_fields]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [mandatory_fields]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[mandatory_fields]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [mandatory_fields]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[mandatory_fields]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Edit Profile Save Button]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Edit Profile Save Button]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Edit Profile Cancel Button]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Edit Profile Cancel Button]is Present</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;All elements are present on Edit Profile Page</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of titles text on Edit Profile Page</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Edit Profile select element]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Edit Profile select element]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Edit Profile Cancel Button]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Edit Profile Cancel Button]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Edit Profile Save Button]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Edit Profile Save Button]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Edit Profile Title]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Edit Profile Title]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking text of element First name</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [First name] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element Last name</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Last name] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element Middle name</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Middle name] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element Birth date</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Birth date] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element Email</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Email] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element Phone</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Phone] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element Secondary phone</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Secondary phone] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element University name</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [University name] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element Faculty name</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Faculty name] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element Academic degree</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Academic degree] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element Education start year</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Education start year] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element Graduation year</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Graduation year] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element Additional education</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Additional education] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element Relevant skills</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Relevant skills] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element Languages</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Languages] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element Referrer</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Referrer] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element Attempt count</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Attempt count] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element Stream</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Stream] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element Status</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Status] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element Fill date</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Fill date] is correct</font>
-                                <br /><font size = 2 color = #000000>Checking text of element Comment</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Comment] is correct</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Title Text is present on Edit Profile Page</font>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  checkMenu
+      </td>
+  <td class="duration">
+    0,247s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        <br /><b><font size = 2 color = #000099>Check all elements are present on Menu</font></b><br/>
+                                <br /><font size = 2 color = #000000>Checking the presence of Menu's elements</font>
+                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [logo]</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[logo]is Present</font>
+                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [homeButton]</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[homeButton]is Present</font>
+                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [profileButton]</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[profileButton]is Present</font>
+                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Department Button]</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Department Button]is Present</font>
+                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [all Candidates Button]</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[all Candidates Button]is Present</font>
+                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [placeForTestingButton]</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[placeForTestingButton]is Present</font>
+                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [subgroupsButton]</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[subgroupsButton]is Present</font>
+                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [searchInput]</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[searchInput]is Present</font>
+                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [suserButton]</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[suserButton]is Present</font>
+                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Menu's elements are present</font>
                   </div>
     
 
@@ -754,7 +551,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
                   testCheckElementsPresentAddDepartmentPage
       </td>
   <td class="duration">
-    10,376s
+    10,434s
   </td>
   <td class="result">
         
@@ -792,7 +589,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
                   testCheckElementsPresentAddStreamPage
       </td>
   <td class="duration">
-    10,987s
+    11,014s
   </td>
   <td class="result">
         
@@ -846,7 +643,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
                   testCheckElementsPresentDepartmentPage
       </td>
   <td class="duration">
-    0,246s
+    0,259s
   </td>
   <td class="result">
         
@@ -887,7 +684,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
                   testcheckAddStreamPageInDepartmentAutoTest
       </td>
   <td class="duration">
-    0,443s
+    0,463s
   </td>
   <td class="result">
         
@@ -908,7 +705,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
                   testcheckAddStreamPageInDepartmentFrontEnd
       </td>
   <td class="duration">
-    0,448s
+    0,478s
   </td>
   <td class="result">
         
@@ -929,7 +726,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
                   testcheckAddStreamPageInDepartmentJava
       </td>
   <td class="duration">
-    0,370s
+    0,379s
   </td>
   <td class="result">
         
@@ -950,7 +747,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
                   testcheckAddStreamPageInDepartmentNet
       </td>
   <td class="duration">
-    0,368s
+    0,381s
   </td>
   <td class="result">
         
@@ -971,7 +768,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
                   testcheckAddStreamPageInDepartmentSofttest
       </td>
   <td class="duration">
-    0,357s
+    0,359s
   </td>
   <td class="result">
         

@@ -48,7 +48,7 @@ public class AddCandidateTest extends BaseTest {
 		TestReporter.writeToReportStep("2-Check candidat's displaying on \"Not tested\" tab");
 		pageStream.clickElement(pageStream.notTestedCandidate,"notTestedCandidate");		
 		pageStream.checkCandExisting(candData,true);
-		TestReporter.writeToReportStep("4-Check candidat's displaying on \"confirmed\" tab");
+		/*TestReporter.writeToReportStep("4-Check candidat's displaying on \"confirmed\" tab");
 		pageStream.clickViewCand();
 		pageViewProfile.clickEditButton();
 		pageEditProfile.changeStatus(status1);
@@ -73,7 +73,7 @@ public class AddCandidateTest extends BaseTest {
 		pageStream.clickElement(pageStream.bannedTab,"BannedTab");
 		pageStream.checkCandExisting(candData,true);
 		pageStream.deleteAddedCand();
-
+*/
 		   
 }
   
