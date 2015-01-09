@@ -7,8 +7,8 @@
         <methods>
           <include name="tearDown"/>
           <include name="init"/>
+          <include name="changeStatus" invocation-numbers="0"/>
           <include name="startPage"/>
-          <include name="bannWithButton" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.epam.testexternalpart.tests.AddCandidateTest -->
     </classes>

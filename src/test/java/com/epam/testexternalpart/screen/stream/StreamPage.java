@@ -470,7 +470,13 @@ public class StreamPage extends Components {
 	}
 
 	public void checkCandExisting(String st,boolean refer) {
-		  (new WebDriverWait(driver, 4000)).until(ExpectedConditions.visibilityOf(title));
+		  (new WebDriverWait(driver, 9000)).until(ExpectedConditions.visibilityOf(title));
+		  try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		  //clickElement(fillDateColumn,"fillDateColumn");
 		  TestReporter.writeToReportTitle("Check if new candidate was added");
 		  String []textOFLastEl = st.split(";");

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 08 18:13:59 EET 2015</td>
+<td>Started on:</td><td>Fri Jan 09 11:32:35 EET 2015</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18528 ms)</td>
+<tr><td>Total time:</td><td>92 seconds (92894 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,38 +75,85 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.epam.testexternalpart.tests.SearchTest.streamSearch()'><b>streamSearch</b><br>Test class: com.epam.testexternalpart.tests.SearchTest<br>Parameters: Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;, Ololo1;Ololoev1;Olololoevich1;02.12.2013;sdhgjshgj1@mail.ru;+380505465346;, Ololo2;Ololoev2;Olololoevich2;02.12.2013;sdhgjshgj2@mail.ru;+380505465347;, Ololo1, Ololoev<br/>
-<a href="#Output-1608986047" onClick='toggleBox("Output-1608986047", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.epam.testexternalpart.tests.AddCandidateTest.changeStatus()'><b>changeStatus</b><br>Test class: com.epam.testexternalpart.tests.AddCandidateTest<br>Parameters: Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;, confirmed, test completed, not actual, banned, 1;Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;<br/>
+<a href="#Output-114232316" onClick='toggleBox("Output-114232316", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1608986047" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1608986047">
-<br /><b><font size = 2 color = #000099>Check search in Stream</font></b><br/><br/>
+<a href="#Output-114232316" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-114232316">
+<br /><b><font size = 2 color = #000099>Change  Candidat's status manually</font></b><br/><br/>
+<br><b><font size = 2 color = #000000>1-Create candidate</font></b><br><br/>
 <br /><font size = 2 color = #000000>Click on [First stream on first dep]</font><br/>
-<br><b><font size = 2 color = #000000>Create candidates for test</font></b><br><br/>
 <br /><font size = 2 color = #000000>Click on [addCandidateBut]</font><br/>
 <br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;</font><br/>
 <br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font><br/>
 <br /><font size = 2 color = #000000>Check if new candidate was added</font><br/>
 <br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font><br/>
-<br /><font size = 2 color = #000000>Click on [addCandidateBut]</font><br/>
-<br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo1;Ololoev1;Olololoevich1;02.12.2013;sdhgjshgj1@mail.ru;+380505465346;</font><br/>
-<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font><br/>
+<br><b><font size = 2 color = #000000>2-Check candidat's displaying on "Not tested" tab</font></b><br><br/>
+<br /><font size = 2 color = #000000>Click on [notTestedCandidate]</font><br/>
 <br /><font size = 2 color = #000000>Check if new candidate was added</font><br/>
 <br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font><br/>
-<br /><font size = 2 color = #000000>Click on [addCandidateBut]</font><br/>
-<br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo2;Ololoev2;Olololoevich2;02.12.2013;sdhgjshgj2@mail.ru;+380505465347;</font><br/>
-<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font><br/>
+<br><b><font size = 2 color = #000000>4-Check candidat's displaying on "confirmed" tab</font></b><br><br/>
+<br /><font size = 2 color = #000000>Checking that click on selected candidate reffering to Candidate View Page</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [tableRowView]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[tableRowView]is Not Present</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;click on selected candidate reffering to Candidate View Page</font><br/>
+<br><b><font size = 2 color = #000000>Click Edit Profile</font></b><br><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Tittle]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Tittle]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Click on [Save button]</font><br/>
+<br /><font size = 2 color = #000000>Click on [crumbs button]</font><br/>
+<br /><font size = 2 color = #000000>Click on [notTestedCandidate]</font><br/>
 <br /><font size = 2 color = #000000>Check if new candidate was added</font><br/>
 <br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font><br/>
-<br><b><font size = 2 color = #000000>Perform search for Ololo1</font></b><br><br/>
-<br /><font size = 2 color = #000000>Search for [Ololo1]</font><br/>
-<br><b><font size = 2 color = #000000>Perform search for Ololoev</font></b><br><br/>
-<br /><font size = 2 color = #000000>Search for [Ololoev]</font><br/>
+<br><b><font size = 2 color = #000000>4-Check candidat's displaying on "test completed" tab</font></b><br><br/>
+<br /><font size = 2 color = #000000>Checking that click on selected candidate reffering to Candidate View Page</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [tableRowView]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[tableRowView]is Not Present</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;click on selected candidate reffering to Candidate View Page</font><br/>
+<br><b><font size = 2 color = #000000>Click Edit Profile</font></b><br><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Tittle]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Tittle]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Click on [Save button]</font><br/>
+<br /><font size = 2 color = #000000>Click on [crumbs button]</font><br/>
+<br /><font size = 2 color = #000000>Click on [notTestedCandidate]</font><br/>
+<br /><font size = 2 color = #000000>Check if new candidate was added</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font><br/>
+<br><b><font size = 2 color = #000000>5-Check candidat's displaying on "not actual" tab</font></b><br><br/>
+<br /><font size = 2 color = #000000>Checking that click on selected candidate reffering to Candidate View Page</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [tableRowView]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[tableRowView]is Not Present</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;click on selected candidate reffering to Candidate View Page</font><br/>
+<br><b><font size = 2 color = #000000>Click Edit Profile</font></b><br><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Tittle]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Tittle]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Click on [Save button]</font><br/>
+<br /><font size = 2 color = #000000>Click on [crumbs button]</font><br/>
+<br /><font size = 2 color = #000000>Click on [notTestedCandidate]</font><br/>
+<br /><font size = 2 color = #000000>Check if new candidate was added</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font><br/>
+<br><b><font size = 2 color = #000000>6-Check candidat's displaying on "Banned" tab</font></b><br><br/>
+<br /><font size = 2 color = #000000>Checking that click on selected candidate reffering to Candidate View Page</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [tableRowView]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[tableRowView]is Not Present</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;click on selected candidate reffering to Candidate View Page</font><br/>
+<br><b><font size = 2 color = #000000>Click Edit Profile</font></b><br><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Tittle]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Tittle]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Click on [Save button]</font><br/>
+<br /><font size = 2 color = #000000>Click on [crumbs button]</font><br/>
+<br /><font size = 2 color = #000000>Click on [BannedTab]</font><br/>
+<br /><font size = 2 color = #000000>Check if new candidate was added</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font><br/>
+<br /><font size = 2 color = #000000>Click on [check-box of last cand]</font><br/>
+<br /><font size = 2 color = #000000>Click on [deleteButton]</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [delCandPopAp]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[delCandPopAp]is Present</font><br/>
+<br /><font size = 2 color = #000000>Click on [deleteCandPopApButton]</font><br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
-<td>com.epam.testexternalpart.tests.SearchTest@2011bdde</td></tr>
+<td>83</td>
+<td>com.epam.testexternalpart.tests.AddCandidateTest@1666453a</td></tr>
 </table><p>
 </body>
 </html>
