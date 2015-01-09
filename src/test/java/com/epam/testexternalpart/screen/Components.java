@@ -69,18 +69,20 @@ public class Components {
 
 	  public  void clickElement(WebElement webElement, String item) {
 		  TestReporter.writeToReportTitle("Click on ["+item+"]");
-          (new WebDriverWait(driver, 6000)).until(ExpectedConditions.elementToBeClickable(webElement)).click();
+          (new WebDriverWait(driver, 10000)).until(ExpectedConditions.elementToBeClickable(webElement)).click();
 	    }
 	  
+	  
+	  
 	  public  void clickElementJS(String  xpath, String item) {
-//		  try {
-//				Thread.sleep(1000);
-//			} catch (InterruptedException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
+		  try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		  
-		   (new WebDriverWait(driver, 4000)).until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+		//   (new WebDriverWait(driver, 4000)).until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
 
 		  TestReporter.writeToReportTitle("Click on ["+item+"]");
 			WebElement element = driver.findElement(By.xpath(xpath));
