@@ -5,9 +5,9 @@
     <classes>
       <class name="com.epam.testexternalpart.tests.SmokeTest">
         <methods>
+          <include name="checkElementsViewCandidate" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="init"/>
-          <include name="checkElStreamPage" invocation-numbers="0"/>
           <include name="startPage"/>
         </methods>
       </class> <!-- com.epam.testexternalpart.tests.SmokeTest -->
