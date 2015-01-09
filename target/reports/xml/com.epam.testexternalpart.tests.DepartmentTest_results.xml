@@ -1,36 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="smokeMenuTest"
-           tests="8"
+<testsuite name="DepartmentTest"
+           tests="3"
            failures="0"
            errors="0"
-           skipped="8"
-           time="0.001">
+           skipped="0"
+           time="35.254">
   <properties />
   
-            <testcase name="init" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
-          <skipped />
-    </testcase>
-            <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
-          <skipped />
-    </testcase>
-            <testcase name="tearDown" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
-          <skipped />
-    </testcase>
-            <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
-          <skipped />
-    </testcase>
-            <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
-          <skipped />
-    </testcase>
-            <testcase name="testAddDepartmentWithValidName" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
-          <skipped />
-    </testcase>
-            <testcase name="testAddDepartment" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
-          <skipped />
-    </testcase>
-            <testcase name="testEditDepartmentName" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
-          <skipped />
-    </testcase>
   
-  
+            <testcase name="testAddDepartment" time="5.526" classname="com.epam.testexternalpart.tests.DepartmentTest" />
+                <testcase name="testAddDepartmentWithValidName" time="11.839" classname="com.epam.testexternalpart.tests.DepartmentTest" />
+                <testcase name="testEditDepartmentName" time="17.889" classname="com.epam.testexternalpart.tests.DepartmentTest" />
+      
 </testsuite>
