@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PlaceForTestingTest"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="5,332">
+  <properties />
+  
+  
+            <testcase name="deleteNewPlaceForTesting" time="1,063" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" />
+                <testcase name="editNewPlaceForTesting" time="2,117" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" />
+                <testcase name="addNewPlaceForTesting" time="2,152" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" />
+      
+</testsuite>

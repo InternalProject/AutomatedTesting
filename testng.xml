@@ -36,5 +36,11 @@
         <classes>
             <class name="com.epam.testexternalpart.tests.SearchTest"></class>
         </classes>
-    </test>
+         </test>
+         
+        <test name="PlaceForTestingTest" verbose="10" parallel="false">
+        <classes>
+            <class name="com.epam.testexternalpart.tests.PlaceForTestingTest"></class>
+        </classes>
+    </test>    
 </suite>

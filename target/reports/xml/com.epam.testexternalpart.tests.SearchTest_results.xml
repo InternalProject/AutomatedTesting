@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="5.495">
+           time="5,079">
   <properties />
   
   
-            <testcase name="streamSearch" time="5.495" classname="com.epam.testexternalpart.tests.SearchTest" />
+            <testcase name="streamSearch" time="5,079" classname="com.epam.testexternalpart.tests.SearchTest" />
       
 </testsuite>
