@@ -553,15 +553,9 @@ public class StreamPage extends Components {
 
 	public void clickViewCand() {
 		TestReporter.writeToReportTitle("Checking that click on selected candidate reffering to Candidate View Page");
-//		
-//		Actions action = new Actions(driver);
-//		action.doubleClick(tableRowView);
-//		action.perform();
-//		 isElementExist("tableRowView", tableRowView, false);
-//		 TestReporter.writeToReportPositiveResult("click on selected candidate reffering to Candidate View Page");
-		tableRowView.click();
-		tableRowView.click();
-
+		Actions action = new Actions(driver);
+		action.moveToElement(driver.findElement(By.xpath(STREAM_TABLE_ROW_VIEW))).doubleClick().build().perform();
+		TestReporter.writeToReportPositiveResult("click on selected candidate reffering to Candidate View Page");
 	}
 
 	public void checkTableAccordingToCandidadate(String field) {

@@ -110,7 +110,7 @@ public abstract class BaseTest {
 		String b = testMethod.getDeclaringClass().getSimpleName();
 		int numberOfParameters = testMethod.getParameterTypes().length;
 
-		String path = "D:/AutomatedTesting/data/" + b + ".xlsx";
+		String path = "D:/extPr/TestExternalPart/AutomatedTesting/data/" + b + ".xlsx";
 
 		try {
 			FileInputStream file = new FileInputStream(path);

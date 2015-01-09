@@ -2,855 +2,426 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
     <line>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on ViewCandidatePage</font></b><br/>]]>
-=======
-      <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on StreamPage</font></b><br/>]]>
->>>>>>> bb47fa0ea532b354e51d57c06c751ec5cca653f5
-=======
-      <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on ViewCandidatePage</font></b><br/>]]>
->>>>>>> 694c149e279c91d7b61590c9bc6ca37b976d1334
+      <![CDATA[<br /><b><font size = 2 color = #000099>Change  Candidat's status manually</font></b><br/>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking that click by selected stream reffering to Stream Page</font>]]>
+      <![CDATA[<br><b><font size = 2 color = #000000>1-Create candidate</font></b><br>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [addCandidateBut]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
-    </line>
-    <line>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Creating new candidate with fields-Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj@mail.ru;+380505465345;</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br><b><font size = 2 color = #000000>2-Check candidat's displaying on "Not tested" tab</font></b><br>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [notTestedCandidate]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br><b><font size = 2 color = #000000>4-Check candidat's displaying on "confirmed" tab</font></b><br>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Checking that click on selected candidate reffering to Candidate View Page</font>]]>
-    </line>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="44069" started-at="2015-01-09T12:28:56Z" finished-at="2015-01-09T12:29:40Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="44069" started-at="2015-01-09T12:28:56Z" finished-at="2015-01-09T12:29:40Z">
-      <class name="com.epam.testexternalpart.tests.SmokeTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@2d298123]" name="init" is-config="true" duration-ms="3871" started-at="2015-01-09T14:28:56Z" finished-at="2015-01-09T14:29:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@2d298123]" name="startPage" is-config="true" duration-ms="187" started-at="2015-01-09T14:29:01Z" finished-at="2015-01-09T14:29:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="checkElementsViewCandidate(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@2d298123]" name="checkElementsViewCandidate" duration-ms="34980" started-at="2015-01-09T14:29:01Z" data-provider="testData" finished-at="2015-01-09T14:29:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj@mail.ru;+380505465345;]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[First name;Last name;Middle name;Birth date;Email;Primary phone number;Secondary phone number;University;Faculty;Degree;Education start date;Graduation date;Extra education;Relevant skills;Language;Referrer;Stream;Status;Attempt amount;Filling date;Comment]]>
-=======
-      <![CDATA[<br><b><font size = 2 color = #000000>Check all elements are present With Export</font></b><br>]]>
-=======
-      <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
->>>>>>> 694c149e279c91d7b61590c9bc6ca37b976d1334
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Creating new candidate with fields-Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj@mail.ru;+380505465345;</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking that click on selected candidate reffering to Candidate View Page</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [tableRowView]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[tableRowView]is Not Present</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;click on selected candidate reffering to Candidate View Page</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of all elements on View Profile Page</font>]]>
+      <![CDATA[<br><b><font size = 2 color = #000000>Click Edit Profile</font></b><br>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Tittle]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font>]]>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Tittle]is Not Present</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Delete Button]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Save button]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Delete Button]is Present</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [crumbs button]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Edit Button]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [notTestedCandidate]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Edit Button]is Present</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All elements are present on View Profile Page</font>]]>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of all text on View Profile Page</font>]]>
+      <![CDATA[<br><b><font size = 2 color = #000000>4-Check candidat's displaying on "test completed" tab</font></b><br>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Profile Tittle</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking that click on selected candidate reffering to Candidate View Page</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Profile Tittle] is correct</font>]]>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;click on selected candidate reffering to Candidate View Page</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element First name</font>]]>
+      <![CDATA[<br><b><font size = 2 color = #000000>Click Edit Profile</font></b><br>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [First name] is correct</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Tittle]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Tittle]is Not Present</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Last name</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Save button]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Last name] is correct</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [crumbs button]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [notTestedCandidate]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Middle name</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Middle name] is correct</font>]]>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+      <![CDATA[<br><b><font size = 2 color = #000000>5-Check candidat's displaying on "not actual" tab</font></b><br>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Birth date</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking that click on selected candidate reffering to Candidate View Page</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Birth date] is correct</font>]]>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;click on selected candidate reffering to Candidate View Page</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+      <![CDATA[<br><b><font size = 2 color = #000000>Click Edit Profile</font></b><br>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Email</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Tittle]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Email] is correct</font>]]>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Tittle]is Not Present</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Save button]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Primary phone number</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [crumbs button]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Primary phone number] is correct</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [notTestedCandidate]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Secondary phone number</font>]]>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Secondary phone number] is correct</font>]]>
+      <![CDATA[<br><b><font size = 2 color = #000000>6-Check candidat's displaying on "Banned" tab</font></b><br>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking that click on selected candidate reffering to Candidate View Page</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element University</font>]]>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;click on selected candidate reffering to Candidate View Page</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [University] is correct</font>]]>
+      <![CDATA[<br><b><font size = 2 color = #000000>Click Edit Profile</font></b><br>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Tittle]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Faculty</font>]]>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Tittle]is Not Present</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Faculty] is correct</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Save button]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [crumbs button]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Degree</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [BannedTab]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Degree] is correct</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Education start date</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [check-box of last cand]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Education start date] is correct</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [deleteButton]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [delCandPopAp]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Graduation date</font>]]>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[delCandPopAp]is Present</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Graduation date] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Extra education</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Extra education] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Relevant skills</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Relevant skills] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Language</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Language] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Referrer</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Referrer] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Stream</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Stream] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Status</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Status] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Attempt amount</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Attempt amount] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Filling date</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Filling date] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Comment</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Comment] is correct</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [deleteCandPopApButton]</font>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42887" started-at="2015-01-09T12:39:08Z" finished-at="2015-01-09T12:39:51Z">
+  <suite name="Default suite" duration-ms="92235" started-at="2015-01-09T13:35:40Z" finished-at="2015-01-09T13:37:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42887" started-at="2015-01-09T12:39:08Z" finished-at="2015-01-09T12:39:51Z">
-      <class name="com.epam.testexternalpart.tests.SmokeTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@28d47c65]" name="init" is-config="true" duration-ms="3553" started-at="2015-01-09T14:39:08Z" finished-at="2015-01-09T14:39:12Z">
+    <test name="Default test" duration-ms="92235" started-at="2015-01-09T13:35:40Z" finished-at="2015-01-09T13:37:12Z">
+      <class name="com.epam.testexternalpart.tests.AddCandidateTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@967e8c]" name="init" is-config="true" duration-ms="4271" started-at="2015-01-09T15:35:40Z" finished-at="2015-01-09T15:35:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@28d47c65]" name="startPage" is-config="true" duration-ms="173" started-at="2015-01-09T14:39:13Z" finished-at="2015-01-09T14:39:13Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@967e8c]" name="startPage" is-config="true" duration-ms="196" started-at="2015-01-09T15:35:45Z" finished-at="2015-01-09T15:35:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="checkElementsViewCandidate(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@28d47c65]" name="checkElementsViewCandidate" duration-ms="34412" started-at="2015-01-09T14:39:13Z" data-provider="testData" finished-at="2015-01-09T14:39:47Z">
+        <test-method status="PASS" signature="changeStatus(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@967e8c]" name="changeStatus" duration-ms="82945" started-at="2015-01-09T15:35:45Z" data-provider="testData" finished-at="2015-01-09T15:37:08Z">
           <params>
             <param index="0">
               <value>
-<<<<<<< HEAD
-                <![CDATA[;¹;First Name;Last Name;Middle Name;Phone;BirthDate;Email;Fill Date]]>
->>>>>>> bb47fa0ea532b354e51d57c06c751ec5cca653f5
-=======
-                <![CDATA[Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj@mail.ru;+380505465345;]]>
+                <![CDATA[Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[First name;Last name;Middle name;Birth date;Email;Primary phone number;Secondary phone number;University;Faculty;Degree;Education start date;Graduation date;Extra education;Relevant skills;Language;Referrer;Stream;Status;Attempt amount;Filling date;Comment]]>
->>>>>>> 694c149e279c91d7b61590c9bc6ca37b976d1334
+                <![CDATA[confirmed]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test completed]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[not actual]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[banned]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1;Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-<<<<<<< HEAD
-<<<<<<< HEAD
-              <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on ViewCandidatePage</font></b><br/>]]>
+              <![CDATA[<br /><b><font size = 2 color = #000099>Change  Candidat's status manually</font></b><br/>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking that click by selected stream reffering to Stream Page</font>]]>
+              <![CDATA[<br><b><font size = 2 color = #000000>1-Create candidate</font></b><br>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [addCandidateBut]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Creating new candidate with fields-Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj@mail.ru;+380505465345;</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;</font>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br><b><font size = 2 color = #000000>2-Check candidat's displaying on "Not tested" tab</font></b><br>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [notTestedCandidate]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br><b><font size = 2 color = #000000>4-Check candidat's displaying on "confirmed" tab</font></b><br>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Checking that click on selected candidate reffering to Candidate View Page</font>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- checkElementsViewCandidate -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@2d298123]" name="tearDown" is-config="true" duration-ms="4501" started-at="2015-01-09T14:29:36Z" finished-at="2015-01-09T14:29:40Z">
-=======
-              <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on StreamPage</font></b><br/>]]>
-=======
-              <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on ViewCandidatePage</font></b><br/>]]>
->>>>>>> 694c149e279c91d7b61590c9bc6ca37b976d1334
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking that click by selected stream reffering to Stream Page</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Creating new candidate with fields-Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj@mail.ru;+380505465345;</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking that click on selected candidate reffering to Candidate View Page</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [tableRowView]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[tableRowView]is Not Present</font>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;click on selected candidate reffering to Candidate View Page</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of all elements on View Profile Page</font>]]>
+              <![CDATA[<br><b><font size = 2 color = #000000>Click Edit Profile</font></b><br>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Tittle]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font>]]>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Tittle]is Not Present</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Delete Button]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Save button]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Delete Button]is Present</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [crumbs button]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Edit Button]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [notTestedCandidate]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Edit Button]is Present</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All elements are present on View Profile Page</font>]]>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of all text on View Profile Page</font>]]>
+              <![CDATA[<br><b><font size = 2 color = #000000>4-Check candidat's displaying on "test completed" tab</font></b><br>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Profile Tittle</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking that click on selected candidate reffering to Candidate View Page</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Profile Tittle] is correct</font>]]>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;click on selected candidate reffering to Candidate View Page</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element First name</font>]]>
+              <![CDATA[<br><b><font size = 2 color = #000000>Click Edit Profile</font></b><br>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [First name] is correct</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Tittle]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Tittle]is Not Present</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Last name</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Save button]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Last name] is correct</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [crumbs button]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [notTestedCandidate]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Middle name</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Middle name] is correct</font>]]>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+              <![CDATA[<br><b><font size = 2 color = #000000>5-Check candidat's displaying on "not actual" tab</font></b><br>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Birth date</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking that click on selected candidate reffering to Candidate View Page</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Birth date] is correct</font>]]>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;click on selected candidate reffering to Candidate View Page</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+              <![CDATA[<br><b><font size = 2 color = #000000>Click Edit Profile</font></b><br>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Email</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Tittle]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Email] is correct</font>]]>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Tittle]is Not Present</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Save button]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Primary phone number</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [crumbs button]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Primary phone number] is correct</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [notTestedCandidate]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Secondary phone number</font>]]>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Secondary phone number] is correct</font>]]>
+              <![CDATA[<br><b><font size = 2 color = #000000>6-Check candidat's displaying on "Banned" tab</font></b><br>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking that click on selected candidate reffering to Candidate View Page</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element University</font>]]>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;click on selected candidate reffering to Candidate View Page</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [University] is correct</font>]]>
+              <![CDATA[<br><b><font size = 2 color = #000000>Click Edit Profile</font></b><br>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Tittle]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Faculty</font>]]>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Tittle]is Not Present</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Faculty] is correct</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Save button]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [crumbs button]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Degree</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [BannedTab]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Degree] is correct</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Check if new candidate was added</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Education start date</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [check-box of last cand]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Education start date] is correct</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [deleteButton]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [delCandPopAp]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Graduation date</font>]]>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[delCandPopAp]is Present</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Graduation date] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Extra education</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Extra education] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Relevant skills</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Relevant skills] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Language</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Language] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Referrer</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Referrer] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Stream</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Stream] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Status</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Status] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Attempt amount</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Attempt amount] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Filling date</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Filling date] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Comment</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Comment] is correct</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [deleteCandPopApButton]</font>]]>
             </line>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- checkElStreamPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@340e92fe]" name="tearDown" is-config="true" duration-ms="4213" started-at="2015-01-09T14:27:20Z" finished-at="2015-01-09T14:27:24Z">
->>>>>>> bb47fa0ea532b354e51d57c06c751ec5cca653f5
-=======
-        </test-method> <!-- checkElementsViewCandidate -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@28d47c65]" name="tearDown" is-config="true" duration-ms="4222" started-at="2015-01-09T14:39:47Z" finished-at="2015-01-09T14:39:51Z">
->>>>>>> 694c149e279c91d7b61590c9bc6ca37b976d1334
+        </test-method> <!-- changeStatus -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@967e8c]" name="tearDown" is-config="true" duration-ms="4283" started-at="2015-01-09T15:37:08Z" finished-at="2015-01-09T15:37:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.epam.testexternalpart.tests.SmokeTest -->
+      </class> <!-- com.epam.testexternalpart.tests.AddCandidateTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

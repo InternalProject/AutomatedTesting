@@ -1,0 +1,6 @@
+#surefire_0
+#Fri Jan 09 15:38:29 EET 2015
+org.uncommons.reportng.escape-output=false
+basedir=D\:\\extPr\\TestExternalPart\\AutomatedTesting
+user.dir=D\:\\extPr\\TestExternalPart\\AutomatedTesting\\target\\test-classes
+localRepository=C\:\\Users\\Olha_Myroliubova\\.m2\\repository

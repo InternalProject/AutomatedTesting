@@ -2,8 +2,10 @@ package com.epam.testexternalpart.screen.profile;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -91,7 +93,9 @@ public class ViewProfilePage extends Components{
 	public void clickEditButton() {
 		TestReporter.writeToReportStep("Click Edit Profile");
 		buttonEdit.click();
+
 		isElementExist("Profile Tittle", profileTittle, false);		
+	
 	}
 
 
