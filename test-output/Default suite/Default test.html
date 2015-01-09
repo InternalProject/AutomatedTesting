@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/11/12</td>
+<td>Tests passed/Failed/Skipped:</td><td>12/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 08 16:13:32 EET 2015</td>
+<td>Started on:</td><td>Thu Jan 08 18:07:48 EET 2015</td>
 </tr>
-<tr><td>Total time:</td><td>212 seconds (212290 ms)</td>
+<tr><td>Total time:</td><td>135 seconds (135471 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,176 +68,6 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.startPage()'><b>startPage</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 6 milliseconds
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0083&apos;, ip: &apos;192.168.153.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c3f73c43abf6957bd71a69adb3275f70
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.epam.testexternalpart.core.BaseTest.startPage(BaseTest.java:70)
-	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace547923534", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace547923534'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 6 milliseconds
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0083&apos;, ip: &apos;192.168.153.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c3f73c43abf6957bd71a69adb3275f70
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.epam.testexternalpart.core.BaseTest.startPage(BaseTest.java:70)
-	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.startPage()'><b>startPage</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest</td>
-<td></td>
-<td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.startPage()'><b>startPage</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest</td>
-<td></td>
-<td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.startPage()'><b>startPage</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest</td>
-<td></td>
-<td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.startPage()'><b>startPage</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest</td>
-<td></td>
-<td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.startPage()'><b>startPage</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest</td>
-<td></td>
-<td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.startPage()'><b>startPage</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest</td>
-<td></td>
-<td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.startPage()'><b>startPage</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest</td>
-<td></td>
-<td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.startPage()'><b>startPage</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest</td>
-<td></td>
-<td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.startPage()'><b>startPage</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest</td>
-<td></td>
-<td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.startPage()'><b>startPage</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest</td>
-<td></td>
-<td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.startPage()'><b>startPage</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest</td>
-<td></td>
-<td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.tearDown()'><b>tearDown</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest</td>
-<td></td>
-<td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -245,348 +75,134 @@ Session ID: c3f73c43abf6957bd71a69adb3275f70
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.assignTest()'><b>assignTest</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015<br/>
-<a href="#Output-414225167" onClick='toggleBox("Output-414225167", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.epam.testexternalpart.tests.SmokeTest.checkElAllCandiadtesMenu()'><b>checkElAllCandiadtesMenu</b><br>Test class: com.epam.testexternalpart.tests.SmokeTest<br>Parameters: №;First Name;Last Name;Middle Name;Phone;BirthDate;Email;Fill Date;Stream;Department<br/>
+<a href="#Output-1321203216" onClick='toggleBox("Output-1321203216", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-414225167" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-414225167">
-<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
-<br /><font size = 2 color = #000000>Click on [Select cabdidates to assigning to test]</font><br/>
-<br /><font size = 2 color = #000000>Click on [Click assignTestButton]</font><br/>
-<br /><font size = 2 color = #000000>Send invitation to candidates</font><br/>
-<br /><font size = 2 color = #000000>Click on [click sendInvitationButton]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Invitation were sent</font><br/>
-<br /><font size = 2 color = #000000>Check results of sending invitation</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [Results pop up]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Results pop up]is Present</font><br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: Sending invitation is success! expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.epam.testexternalpart.screen.stream.assigningTest.AssignToTestPage.checkResults(AssignToTestPage.java:104)
-	at com.epam.testexternalpart.tests.AssigningToTest.assignTest(AssigningToTest.java:54)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace414225167", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace414225167'><pre>java.lang.AssertionError: Sending invitation is success! expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.epam.testexternalpart.screen.stream.assigningTest.AssignToTestPage.checkResults(AssignToTestPage.java:104)
-	at com.epam.testexternalpart.tests.AssigningToTest.assignTest(AssigningToTest.java:54)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>28</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand()'><b>checkAssignedToTestCand</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Кирилл;Хмельной;Артурович;15.06.1992;student19843@ukr.net;+045894156114, 1.0<br/>
-<a href="#Output-1172535934" onClick='toggleBox("Output-1172535934", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1172535934" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1172535934">
-<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
-<br /><font size = 2 color = #000000>Click on [click assignedToTestTab]</font><br/>
-<br /><font size = 2 color = #000000>Checking not testing Candidates</font><br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:616)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand(AssigningToTest.java:62)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1172535934", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1172535934'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:616)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand(AssigningToTest.java:62)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>5</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand()'><b>checkAssignedToTestCand</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Лев;Топорин;Борисович;15.06.1992;student18844@gmail.com;+045894156114, 2.0<br/>
-<a href="#Output-1543518287" onClick='toggleBox("Output-1543518287", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1543518287" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1543518287">
-<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
-<br /><font size = 2 color = #000000>Click on [click assignedToTestTab]</font><br/>
-<br /><font size = 2 color = #000000>Checking not testing Candidates</font><br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:616)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand(AssigningToTest.java:62)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1543518287", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1543518287'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:616)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand(AssigningToTest.java:62)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>10</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand()'><b>checkAssignedToTestCand</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Илья;Сметанкин;Олегович;13.05.1992;student19843@mail.ru;+045894156114, 3.0<br/>
-<a href="#Output-1860886124" onClick='toggleBox("Output-1860886124", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1860886124" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1860886124">
-<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
-<br /><font size = 2 color = #000000>Click on [click assignedToTestTab]</font><br/>
-<br /><font size = 2 color = #000000>Checking not testing Candidates</font><br/>
-</div>
-</td>
-<td><div><pre>java.lang.NullPointerException
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:386)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:453)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:340)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:608)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand(AssigningToTest.java:62)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1860886124", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1860886124'><pre>java.lang.NullPointerException
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:386)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:453)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:340)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:608)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand(AssigningToTest.java:62)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>9</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand()'><b>checkNotTestedCand</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Кирилл;Хмельной;Артурович;15.06.1992;student19843@ukr.net;+045894156114, 1.0<br/>
-<a href="#Output-1406206626" onClick='toggleBox("Output-1406206626", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1406206626" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1406206626">
-<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
-<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font><br/>
-<br /><font size = 2 color = #000000>Checking not testing Candidates</font><br/>
+<a href="#Output-1321203216" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1321203216">
+<br /><b><font size = 2 color = #000099>Check all elements are present on CandiadtesMenu</font></b><br/><br/>
+<br /><font size = 2 color = #000000>Click on [allCandidatesButton]</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of All Candidates text</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element All candidates title</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [All candidates title] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All All Candidates text are present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of All Candidates menu - default columns</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element №</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [№] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element First Name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [First Name] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Last Name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Last Name] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Middle Name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Middle Name] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Phone</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Phone] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element BirthDate</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [BirthDate] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Email</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Email] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Fill Date</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Fill Date] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Stream</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Stream] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Department</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Candidates menu -  default columns are present</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Second phone by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Second phone]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Second phone by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Second phone]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column University by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click University]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column University by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click University]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Faculty by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Faculty]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Faculty by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Faculty]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Degree by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Degree]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Degree by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Degree]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Education Start by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Education Start]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Education Start by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Education Start]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Graduation Year by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Graduation Year]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Graduation Year by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Graduation Year]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Additional Education by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Additional Education]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Additional Education by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Additional Education]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Relevant Skills by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Relevant Skills]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Relevant Skills by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Relevant Skills]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column How do you know about courses by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click How do you know about courses]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column How do you know about courses by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click How do you know about courses]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Second phone by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Second phone]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Second phone by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Second phone]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Attempt Count by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Attempt Count]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Attempt Count by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Attempt Count]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Status by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Status]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Status by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Status]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Comment by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Comment]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Comment by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Comment]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Comment by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Comment]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Comment by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Comment]</font><br/>
 </div>
 </td>
 <td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=39.0.2171.95)
   (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 76 milliseconds
+Command duration or timeout: 28 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
 System info: host: &apos;EPUAKHAW0083&apos;, ip: &apos;192.168.153.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c3f73c43abf6957bd71a69adb3275f70
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir6688_1218}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4daedeff29e91b3cbb9774a80caa1dc5
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -596,8 +212,10 @@ Session ID: c3f73c43abf6957bd71a69adb3275f70
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
 	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
+	at com.epam.testexternalpart.screen.AllCandidatesPage.checkDisableColumnByCheckBox(AllCandidatesPage.java:340)
+	at com.epam.testexternalpart.screen.AllCandidatesPage.checkEnableColumnByCheckBox(AllCandidatesPage.java:325)
+	at com.epam.testexternalpart.screen.AllCandidatesPage.checkColumnsAccordingToCheckBox(AllCandidatesPage.java:299)
+	at com.epam.testexternalpart.tests.SmokeTest.checkElAllCandiadtesMenu(SmokeTest.java:149)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -622,17 +240,17 @@ Session ID: c3f73c43abf6957bd71a69adb3275f70
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1406206626", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1406206626'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+</pre></div><a href='#' onClick='toggleBox("stack-trace1321203216", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1321203216'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=39.0.2171.95)
   (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 76 milliseconds
+Command duration or timeout: 28 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
 System info: host: &apos;EPUAKHAW0083&apos;, ip: &apos;192.168.153.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c3f73c43abf6957bd71a69adb3275f70
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir6688_1218}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4daedeff29e91b3cbb9774a80caa1dc5
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -642,8 +260,10 @@ Session ID: c3f73c43abf6957bd71a69adb3275f70
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
 	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
+	at com.epam.testexternalpart.screen.AllCandidatesPage.checkDisableColumnByCheckBox(AllCandidatesPage.java:340)
+	at com.epam.testexternalpart.screen.AllCandidatesPage.checkEnableColumnByCheckBox(AllCandidatesPage.java:325)
+	at com.epam.testexternalpart.screen.AllCandidatesPage.checkColumnsAccordingToCheckBox(AllCandidatesPage.java:299)
+	at com.epam.testexternalpart.tests.SmokeTest.checkElAllCandiadtesMenu(SmokeTest.java:149)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -669,31 +289,180 @@ Session ID: c3f73c43abf6957bd71a69adb3275f70
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
-<td>5</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
+<td>13</td>
+<td>com.epam.testexternalpart.tests.SmokeTest@75bd9247</td></tr>
 <tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand()'><b>checkNotTestedCand</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Леонид;Незнающий;Клементьевич;15.06.1992;student@com;+045894156114, 2.0<br/>
-<a href="#Output-30699728" onClick='toggleBox("Output-30699728", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.epam.testexternalpart.tests.SmokeTest.checkElStreamPage()'><b>checkElStreamPage</b><br>Test class: com.epam.testexternalpart.tests.SmokeTest<br>Parameters: ;№;First Name;Last Name;Middle Name;Phone;BirthDate;Email;Fill Date<br/>
+<a href="#Output-1257299717" onClick='toggleBox("Output-1257299717", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-30699728" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-30699728">
-<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font><br/>
+<a href="#Output-1257299717" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1257299717">
+<br /><b><font size = 2 color = #000099>Check all elements are present on StreamPage</font></b><br/><br/>
+<br /><font size = 2 color = #000000>Checking that click by selected stream reffering to Stream Page</font><br/>
+<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font><br/>
 <br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
 <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
-<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font><br/>
-<br /><font size = 2 color = #000000>Checking not testing Candidates</font><br/>
+<br><b><font size = 2 color = #000000>Check all elements are present With Export</font></b><br><br/>
+<br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream secondPhoneCheckBox]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream secondPhoneCheckBox]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream UniversityCheckBox]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream UniversityCheckBox]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned facultyCheckBox]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned facultyCheckBox]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream degreeCheckBox]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream degreeCheckBox]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream educationStartCheckBox]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream educationStartCheckBox]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream graduationYearCheckBox]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream graduationYearCheckBox]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream additionalEducationCheckBox]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream additionalEducationCheckBox]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream relevantSkillsCheckBox]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream relevantSkillsCheckBox]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream howKnowCheckBox]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream howKnowCheckBox]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream secondPhoneCheckBox]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream secondPhoneCheckBox]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream attemptCountCheckBox]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream attemptCountCheckBox]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream statusCheckBox]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream statusCheckBox]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream commentCheckBox]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream commentCheckBox]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream estimationCheckBox]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream estimationCheckBox]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream exportCandidateButton]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream exportCandidateButton]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream choose Candidate Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream choose Candidate Button]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream import Candidate Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream import Candidate Button]is Present</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of Stream's text</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Department title</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font><br/>
+<br><b><font size = 2 color = #000000>Check all Defaul tColumns are present</font></b><br><br/>
+<br /><font size = 2 color = #000000>Checking the presence of Stream's default columns</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element </font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element №</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [№] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element First Name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [First Name] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Last Name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Last Name] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Middle Name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Middle Name] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Phone</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Phone] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element BirthDate</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [BirthDate] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Email</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Email] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Fill Date</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Fill Date] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Create Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Create Button]is Present</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams default columns are present</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Second phone by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Second phone]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Second phone by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Second phone]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column University by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click University]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column University by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click University]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Faculty by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Faculty]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Faculty by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Faculty]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Degree by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Degree]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Degree by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Degree]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Education Start by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Education Start]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Education Start by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Education Start]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Graduation Year by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Graduation Year]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Graduation Year by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Graduation Year]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Additional Education by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Additional Education]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Additional Education by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Additional Education]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Relevant Skills by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Relevant Skills]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Relevant Skills by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Relevant Skills]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column How do you know about courses by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click How do you know about courses]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column How do you know about courses by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click How do you know about courses]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is disabled</font><br/>
+<br /><font size = 2 color = #000000>Checking enable column Second phone by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Second phone]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Column is enabled</font><br/>
+<br /><font size = 2 color = #000000>Checking disable column Second phone by selecting check Box</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Second phone]</font><br/>
 </div>
 </td>
 <td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=39.0.2171.95)
   (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 79 milliseconds
+Command duration or timeout: 19 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
 System info: host: &apos;EPUAKHAW0083&apos;, ip: &apos;192.168.153.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c3f73c43abf6957bd71a69adb3275f70
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir6688_1218}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4daedeff29e91b3cbb9774a80caa1dc5
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -703,8 +472,10 @@ Session ID: c3f73c43abf6957bd71a69adb3275f70
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
 	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkDisableColumnByCheckBox(StreamPage.java:471)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkEnableColumnByCheckBox(StreamPage.java:457)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkColumnsAccordingToCheckBox(StreamPage.java:427)
+	at com.epam.testexternalpart.tests.SmokeTest.checkElStreamPage(SmokeTest.java:74)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -729,17 +500,17 @@ Session ID: c3f73c43abf6957bd71a69adb3275f70
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace30699728", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace30699728'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+</pre></div><a href='#' onClick='toggleBox("stack-trace1257299717", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1257299717'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=39.0.2171.95)
   (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 79 milliseconds
+Command duration or timeout: 19 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
 System info: host: &apos;EPUAKHAW0083&apos;, ip: &apos;192.168.153.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c3f73c43abf6957bd71a69adb3275f70
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir6688_1218}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4daedeff29e91b3cbb9774a80caa1dc5
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -749,8 +520,10 @@ Session ID: c3f73c43abf6957bd71a69adb3275f70
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
 	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkDisableColumnByCheckBox(StreamPage.java:471)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkEnableColumnByCheckBox(StreamPage.java:457)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkColumnsAccordingToCheckBox(StreamPage.java:427)
+	at com.epam.testexternalpart.tests.SmokeTest.checkElStreamPage(SmokeTest.java:74)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -776,543 +549,8 @@ Session ID: c3f73c43abf6957bd71a69adb3275f70
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
-<td>5</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand()'><b>checkNotTestedCand</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Лев;Топорин;Борисович;15.06.1992;student18844@gmail.com;+045894156114, 3.0<br/>
-<a href="#Output-603658030" onClick='toggleBox("Output-603658030", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-603658030" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-603658030">
-<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
-<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font><br/>
-<br /><font size = 2 color = #000000>Checking not testing Candidates</font><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 64 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0083&apos;, ip: &apos;192.168.153.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c3f73c43abf6957bd71a69adb3275f70
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace603658030", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace603658030'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 64 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0083&apos;, ip: &apos;192.168.153.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c3f73c43abf6957bd71a69adb3275f70
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>5</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand()'><b>checkNotTestedCand</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Илья;Сметанкин;Олегович;13.05.1992;student19843@mail.ru;+045894156114, 4.0<br/>
-<a href="#Output-1233595751" onClick='toggleBox("Output-1233595751", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1233595751" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1233595751">
-<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
-<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font><br/>
-<br /><font size = 2 color = #000000>Checking not testing Candidates</font><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 67 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0083&apos;, ip: &apos;192.168.153.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c3f73c43abf6957bd71a69adb3275f70
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1233595751", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1233595751'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 67 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0083&apos;, ip: &apos;192.168.153.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c3f73c43abf6957bd71a69adb3275f70
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>5</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand()'><b>checkNotTestedCand</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Семен;Пяточкин;Сергеевич;04.02.1990;vasya.pupkin379@yandex.ru;+087894156114, 5.0<br/>
-<a href="#Output-589363823" onClick='toggleBox("Output-589363823", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-589363823" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-589363823">
-<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
-<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font><br/>
-<br /><font size = 2 color = #000000>Checking not testing Candidates</font><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 66 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0083&apos;, ip: &apos;192.168.153.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c3f73c43abf6957bd71a69adb3275f70
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace589363823", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace589363823'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 66 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0083&apos;, ip: &apos;192.168.153.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c3f73c43abf6957bd71a69adb3275f70
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>5</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand()'><b>checkNotTestedCand</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Денис;Петрушкин;Геннадьевич;16.04.1991;pupkin379@i.ua;+087894156114, 6.0<br/>
-<a href="#Output-50503805" onClick='toggleBox("Output-50503805", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-50503805" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-50503805">
-<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
-<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font><br/>
-<br /><font size = 2 color = #000000>Checking not testing Candidates</font><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 68 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0083&apos;, ip: &apos;192.168.153.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c3f73c43abf6957bd71a69adb3275f70
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace50503805", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace50503805'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 68 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0083&apos;, ip: &apos;192.168.153.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c3f73c43abf6957bd71a69adb3275f70
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>5</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand()'><b>checkNotTestedCand</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Олег;Ромашкин;Федорович;21.09.1990;pupkin379@rambler.ru;+397894164112, 7.0<br/>
-<a href="#Output-2082351661" onClick='toggleBox("Output-2082351661", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2082351661" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2082351661">
-<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
-<br /><font size = 2 color = #000000>Click on [click notTestedCandidate]</font><br/>
-<br /><font size = 2 color = #000000>Checking not testing Candidates</font><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 71 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0083&apos;, ip: &apos;192.168.153.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c3f73c43abf6957bd71a69adb3275f70
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2082351661", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2082351661'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 71 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0083&apos;, ip: &apos;192.168.153.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir5036_31859}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.95, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c3f73c43abf6957bd71a69adb3275f70
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:612)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>5</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
+<td>16</td>
+<td>com.epam.testexternalpart.tests.SmokeTest@75bd9247</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -1322,246 +560,606 @@ Session ID: c3f73c43abf6957bd71a69adb3275f70
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.addCandidates()'><b>addCandidates</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Олег;Ромашкин;Федорович;21.09.1990;pupkin379@rambler.ru;+397894164112;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем<br/>
-<a href="#Output-1971519316" onClick='toggleBox("Output-1971519316", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.epam.testexternalpart.tests.SmokeTest.checkElementsAddCandidate()'><b>checkElementsAddCandidate</b><br>Test class: com.epam.testexternalpart.tests.SmokeTest<br>Parameters: First name;Last name;Middle name;Birth date;Email;Phone;Secondary phone;University name;Faculty name;Academic degree;Education start year;Graduation year;Additional education;Relevant skills;Languages;Referrer;Attempt count;Stream;Status;Fill date;Comment<br/>
+<a href="#Output-1394010463" onClick='toggleBox("Output-1394010463", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1971519316" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1971519316">
-<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font><br/>
+<a href="#Output-1394010463" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1394010463">
+<br /><b><font size = 2 color = #000099>Check all elements are present on AddCandidatePage</font></b><br/><br/>
+<br /><font size = 2 color = #000000>Checking that click by selected stream reffering to Stream Page</font><br/>
+<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font><br/>
 <br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
 <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
 <br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font><br/>
 <br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font><br/>
 <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font><br/>
 <br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font><br/>
-<br /><font size = 2 color = #000000>Creating new candidates for test</font><br/>
-<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font><br/>
-<br /><font size = 2 color = #000000>Check if new candidate was added</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font><br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.addCandidates()'><b>addCandidates</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Денис;Петрушкин;Геннадьевич;16.04.1991;pupkin379@i.ua;+087894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем<br/>
-<a href="#Output-1072506992" onClick='toggleBox("Output-1072506992", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1072506992" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1072506992">
-<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
-<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font><br/>
-<br /><font size = 2 color = #000000>Creating new candidates for test</font><br/>
-<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font><br/>
-<br /><font size = 2 color = #000000>Check if new candidate was added</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font><br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.addCandidates()'><b>addCandidates</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Семен;Пяточкин;Сергеевич;04.02.1990;vasya.pupkin379@yandex.ru;+087894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем<br/>
-<a href="#Output-187457031" onClick='toggleBox("Output-187457031", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-187457031" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-187457031">
-<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
-<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font><br/>
-<br /><font size = 2 color = #000000>Creating new candidates for test</font><br/>
-<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font><br/>
-<br /><font size = 2 color = #000000>Check if new candidate was added</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font><br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.addCandidates()'><b>addCandidates</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Илья;Сметанкин;Олегович;13.05.1992;student19843@mail.ru;+045894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем<br/>
-<a href="#Output-1850042097" onClick='toggleBox("Output-1850042097", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1850042097" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1850042097">
-<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
-<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font><br/>
-<br /><font size = 2 color = #000000>Creating new candidates for test</font><br/>
-<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font><br/>
-<br /><font size = 2 color = #000000>Check if new candidate was added</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font><br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.addCandidates()'><b>addCandidates</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Лев;Топорин;Борисович;15.06.1992;student18844@gmail.com;+045894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем<br/>
-<a href="#Output-1189084611" onClick='toggleBox("Output-1189084611", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1189084611" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1189084611">
-<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
-<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font><br/>
-<br /><font size = 2 color = #000000>Creating new candidates for test</font><br/>
-<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font><br/>
-<br /><font size = 2 color = #000000>Check if new candidate was added</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font><br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.addCandidates()'><b>addCandidates</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Леонид;Незнающий;Клементьевич;15.06.1992;student@com;+045894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем<br/>
-<a href="#Output-709133385" onClick='toggleBox("Output-709133385", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-709133385" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-709133385">
-<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
-<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font><br/>
-<br /><font size = 2 color = #000000>Creating new candidates for test</font><br/>
-<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font><br/>
-<br /><font size = 2 color = #000000>Check if new candidate was added</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font><br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.addCandidates()'><b>addCandidates</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Кирилл;Хмельной;Артурович;15.06.1992;student19843@ukr.net;+045894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем<br/>
-<a href="#Output-249177573" onClick='toggleBox("Output-249177573", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-249177573" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-249177573">
-<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
-<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font><br/>
-<br /><font size = 2 color = #000000>Creating new candidates for test</font><br/>
-<br /><font size = 2 color = #000000>Click on [Create Candidate Button]</font><br/>
-<br /><font size = 2 color = #000000>Check if new candidate was added</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font><br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.addStream()'><b>addStream</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015<br/>
-<a href="#Output-1943634922" onClick='toggleBox("Output-1943634922", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1943634922" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1943634922">
-<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [java Tab]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[java Tab]is Not Present</font><br/>
-<br /><font size = 2 color = #000000>Create new Stream with name Autumn 2015</font><br/>
-<br /><font size = 2 color = #000000>Click on [AddStreamButton]</font><br/>
-<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font><br/>
-<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
-<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of all elements on Add Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [profileForm]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[profileForm]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [firstNameInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[firstNameInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [lastNameInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[lastNameInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [middleNameInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[middleNameInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [birthDateInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[birthDateInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [emailInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[emailInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [phoneInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[phoneInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [phoneSecondaryInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[phoneSecondaryInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [universityNameInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[universityNameInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [facultyNameInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[facultyNameInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [degreeInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[degreeInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [educationStartinput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[educationStartinput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [graduationYearInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[graduationYearInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [additionalEducationInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[additionalEducationInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [relevantSkilsInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[relevantSkilsInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [languageInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[languageInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [refererInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[refererInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [attemptInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[attemptInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [streamNameInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[streamNameInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [statusInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[statusInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [filldateInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[filldateInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [commentInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[commentInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [mandatory_fields]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[mandatory_fields]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [mandatory_fields]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[mandatory_fields]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [mandatory_fields]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[mandatory_fields]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [mandatory_fields]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[mandatory_fields]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [mandatory_fields]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[mandatory_fields]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [mandatory_fields]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[mandatory_fields]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Create Profile Create Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Create Profile Create Button]is Present</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All elements are present on Add Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of titles text on Add Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Profile Page Title</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Profile Page Title] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element First name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [First name] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Last name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Last name] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Middle name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Middle name] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Birth date</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Birth date] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Email</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Email] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Phone</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Phone] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Secondary phone</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Secondary phone] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element University name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [University name] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Faculty name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Faculty name] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Academic degree</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Academic degree] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Education start year</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Education start year] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Graduation year</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Graduation year] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Additional education</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Additional education] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Relevant skills</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Relevant skills] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Languages</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Languages] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Referrer</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Referrer] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Attempt count</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Attempt count] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Stream</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Stream] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Status</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Status] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Fill date</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Fill date] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Comment</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Comment] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Title Text is present on Add Profile Page</font><br/>
 </div>
 </td>
 <td></td>
 <td>12</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>com.epam.testexternalpart.tests.SmokeTest@75bd9247</td></tr>
 <tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand()'><b>checkAssignedToTestCand</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Семен;Пяточкин;Сергеевич;04.02.1990;vasya.pupkin379@yandex.ru;+087894156114, 4.0</td>
+<td title='com.epam.testexternalpart.tests.SmokeTest.checkElementsEditCandidate()'><b>checkElementsEditCandidate</b><br>Test class: com.epam.testexternalpart.tests.SmokeTest<br>Parameters: Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj@mail.ru;+380505465345;, First name;Last name;Middle name;Birth date;Email;Phone;Secondary phone;University name;Faculty name;Academic degree;Education start year;Graduation year;Additional education;Relevant skills;Languages;Referrer;Attempt count;Stream;Status;Fill date;Comment<br/>
+<a href="#Output-1118430673" onClick='toggleBox("Output-1118430673", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1118430673" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1118430673">
+<br /><b><font size = 2 color = #000099>Check all elements are present on EditCandidatePage</font></b><br/><br/>
+<br /><font size = 2 color = #000000>Checking that click by selected stream reffering to Stream Page</font><br/>
+<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font><br/>
+<br /><font size = 2 color = #000000>Creating new candidate with fields-Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj@mail.ru;+380505465345;</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font><br/>
+<br /><font size = 2 color = #000000>Checking that click on selected candidate reffering to Candidate View Page</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [tableRowView]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[tableRowView]is Not Present</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;click on selected candidate reffering to Candidate View Page</font><br/>
+<br><b><font size = 2 color = #000000>Click Edit Profile</font></b><br><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Tittle]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Tittle]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of all elements on Edit Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [firstNameInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[firstNameInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [lastNameInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[lastNameInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [middleNameInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[middleNameInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [birthDateInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[birthDateInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [emailInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[emailInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [phoneInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[phoneInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [phoneSecondaryInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[phoneSecondaryInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [universityNameInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[universityNameInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [facultyNameInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[facultyNameInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [degreeInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[degreeInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [educationStartinput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[educationStartinput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [graduationYearInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[graduationYearInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [additionalEducationInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[additionalEducationInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [relevantSkilsInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[relevantSkilsInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [languageInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[languageInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [refererInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[refererInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [attemptInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[attemptInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [streamNameInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[streamNameInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [statusInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[statusInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [filldateInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[filldateInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [commentInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[commentInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [mandatory_fields]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[mandatory_fields]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [mandatory_fields]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[mandatory_fields]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [mandatory_fields]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[mandatory_fields]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [mandatory_fields]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[mandatory_fields]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [mandatory_fields]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[mandatory_fields]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [mandatory_fields]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[mandatory_fields]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Edit Profile Save Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Edit Profile Save Button]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Edit Profile Cancel Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Edit Profile Cancel Button]is Present</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All elements are present on Edit Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of titles text on Edit Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Edit Profile select element]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Edit Profile select element]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Edit Profile Cancel Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Edit Profile Cancel Button]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Edit Profile Save Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Edit Profile Save Button]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Edit Profile Title]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Edit Profile Title]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element First name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [First name] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Last name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Last name] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Middle name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Middle name] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Birth date</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Birth date] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Email</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Email] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Phone</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Phone] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Secondary phone</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Secondary phone] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element University name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [University name] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Faculty name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Faculty name] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Academic degree</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Academic degree] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Education start year</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Education start year] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Graduation year</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Graduation year] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Additional education</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Additional education] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Relevant skills</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Relevant skills] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Languages</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Languages] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Referrer</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Referrer] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Attempt count</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Attempt count] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Stream</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Stream] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Status</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Status] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Fill date</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Fill date] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Comment</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Comment] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Title Text is present on Edit Profile Page</font><br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>com.epam.testexternalpart.tests.SmokeTest@75bd9247</td></tr>
+<tr>
+<td title='com.epam.testexternalpart.tests.SmokeTest.checkElementsViewCandidate()'><b>checkElementsViewCandidate</b><br>Test class: com.epam.testexternalpart.tests.SmokeTest<br>Parameters: Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj@mail.ru;+380505465345;, First name;Last name;Middle name;Birth date;Email;Primary phone number;Secondary phone number;University;Faculty;Degree;Education start date;Graduation date;Extra education;Relevant skills;Language;Referrer;Stream;Status;Attempt amount;Filling date;Comment<br/>
+<a href="#Output-1521568953" onClick='toggleBox("Output-1521568953", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1521568953" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1521568953">
+<br /><b><font size = 2 color = #000099>Check all elements are present on ViewCandidatePage</font></b><br/><br/>
+<br /><font size = 2 color = #000000>Checking that click by selected stream reffering to Stream Page</font><br/>
+<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream Create button reffering to Add Stream Page</font><br/>
+<br /><font size = 2 color = #000000>Creating new candidate with fields-Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj@mail.ru;+380505465345;</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font><br/>
+<br /><font size = 2 color = #000000>Checking that click on selected candidate reffering to Candidate View Page</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [tableRowView]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[tableRowView]is Not Present</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;click on selected candidate reffering to Candidate View Page</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of all elements on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Delete Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Delete Button]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Edit Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Edit Button]is Present</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All elements are present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of all text on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Profile Tittle</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Profile Tittle] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element First name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [First name] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Last name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Last name] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Middle name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Middle name] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Birth date</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Birth date] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Email</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Email] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Primary phone number</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Primary phone number] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Secondary phone number</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Secondary phone number] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element University</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [University] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Faculty</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Faculty] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Degree</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Degree] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Education start date</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Education start date] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Graduation date</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Graduation date] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Extra education</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Extra education] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Relevant skills</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Relevant skills] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Language</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Language] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Referrer</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Referrer] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Stream</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Stream] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Status</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Status] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Attempt amount</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Attempt amount] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Filling date</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Filling date] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Comment</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Comment] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font><br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>com.epam.testexternalpart.tests.SmokeTest@75bd9247</td></tr>
+<tr>
+<td title='com.epam.testexternalpart.tests.SmokeTest.checkMenu()'><b>checkMenu</b><br>Test class: com.epam.testexternalpart.tests.SmokeTest<br/>
+<a href="#Output-1699443392" onClick='toggleBox("Output-1699443392", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1699443392" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1699443392">
+<br /><b><font size = 2 color = #000099>Check all elements are present on Menu</font></b><br/><br/>
+<br /><font size = 2 color = #000000>Checking the presence of Menu's elements</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [logo]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[logo]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [homeButton]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[homeButton]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [profileButton]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[profileButton]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Department Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Department Button]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [all Candidates Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[all Candidates Button]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [placeForTestingButton]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[placeForTestingButton]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [subgroupsButton]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[subgroupsButton]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [searchInput]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[searchInput]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [suserButton]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[suserButton]is Present</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Menu's elements are present</font><br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
+<td>com.epam.testexternalpart.tests.SmokeTest@75bd9247</td></tr>
 <tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand()'><b>checkAssignedToTestCand</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Денис;Петрушкин;Геннадьевич;16.04.1991;pupkin379@i.ua;+087894156114, 5.0</td>
+<td title='com.epam.testexternalpart.tests.SmokeTest.testCheckElementsPresentAddDepartmentPage()'><b>testCheckElementsPresentAddDepartmentPage</b><br>Test class: com.epam.testexternalpart.tests.SmokeTest<br/>
+<a href="#Output-50345623" onClick='toggleBox("Output-50345623", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-50345623" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-50345623">
+<br /><b><font size = 2 color = #000099>Check all elements are present on AddDepartmentPage</font></b><br/><br/>
+<br /><font size = 2 color = #000000>Checking that Department Create Button reffering to Create Department Page</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of AddDepartmentPage text</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Add Department title</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Add Department title] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element New Department Name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [New Department Name] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element New Department excel Name</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [New Department excel Name] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text are present on AddDepartmentPage</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of AddDepartment's elements</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [AddDepartmentPage name_input]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[AddDepartmentPage name_input]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [AddDepartmentPage excel_name_input]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[AddDepartmentPage excel_name_input]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [AddDepartmentPage submit]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[AddDepartmentPage submit]is Present</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All AddDepartments elements is present</font><br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.epam.testexternalpart.tests.SmokeTest@75bd9247</td></tr>
+<tr>
+<td title='com.epam.testexternalpart.tests.SmokeTest.testCheckElementsPresentAddStreamPage()'><b>testCheckElementsPresentAddStreamPage</b><br>Test class: com.epam.testexternalpart.tests.SmokeTest<br/>
+<a href="#Output-1442077586" onClick='toggleBox("Output-1442077586", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1442077586" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1442077586">
+<br /><b><font size = 2 color = #000099>Check all elements are present on AddStreamPage</font></b><br/><br/>
+<br /><font size = 2 color = #000000>Checking that Stream Create Button reffering to Add Stream Page</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [java Tab]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[java Tab]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of text on Edit Stream Page</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element AddEditStream title</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [AddEditStream title] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element AddStream name Stream</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [AddStream name Stream] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element AddStream department title</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [AddStream department title] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element AddStream start date title</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [AddStream start date title] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element AddStream end date title</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [AddStream end date title] is correct</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element AddStream status title</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [AddStream status title] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text on Stream Page is present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [AddStream name field]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[AddStream name field]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [AddStream start date field]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[AddStream start date field]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [AddStream end date field]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[AddStream end date field]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [AddStream status field]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[AddStream status field]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [AddStream status option Not Started]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[AddStream status option Not Started]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [AddStream status option Started]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[AddStream status option Started]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [AddStream status option Finished]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[AddStream status option Finished]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [AddStream submit button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[AddStream submit button]is Present</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font><br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.epam.testexternalpart.tests.SmokeTest@75bd9247</td></tr>
+<tr>
+<td title='com.epam.testexternalpart.tests.SmokeTest.testCheckElementsPresentDepartmentPage()'><b>testCheckElementsPresentDepartmentPage</b><br>Test class: com.epam.testexternalpart.tests.SmokeTest<br/>
+<a href="#Output-962700314" onClick='toggleBox("Output-962700314", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-962700314" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-962700314">
+<br /><b><font size = 2 color = #000099>Check all elements are present on DepartmentPage</font></b><br/><br/>
+<br /><font size = 2 color = #000000>Checking the presence of Department's text</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element Department title</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of Department's elements</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Java Tab]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Java Tab]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [.Net Tab]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[.Net Tab]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Front End Tab]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Front End Tab]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Automated Testing Tab]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Automated Testing Tab]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Software Testing Tab]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Software Testing Tab]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Department Create Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Department Create Button]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Department Edit Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Department Edit Button]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Department Delete Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Department Delete Button]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Department Create Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Department Create Button]is Present</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments elements is present</font><br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
+<td>com.epam.testexternalpart.tests.SmokeTest@75bd9247</td></tr>
 <tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand()'><b>checkAssignedToTestCand</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Олег;Ромашкин;Федорович;21.09.1990;pupkin379@rambler.ru;+397894164112, 6.0</td>
+<td title='com.epam.testexternalpart.tests.SmokeTest.testcheckAddStreamPageInDepartmentAutoTest()'><b>testcheckAddStreamPageInDepartmentAutoTest</b><br>Test class: com.epam.testexternalpart.tests.SmokeTest<br/>
+<a href="#Output-355649049" onClick='toggleBox("Output-355649049", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-355649049" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-355649049">
+<br /><b><font size = 2 color = #000099>Check all elements are present on AddStreamPage in Department AutoTest</font></b><br/><br/>
+<br /><font size = 2 color = #000000>Checking adding Stream according to Department 'Automation Testing'</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element AddStream department name tab 'Automation Testing'</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [AddStream department name tab 'Automation Testing'] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream ia viewed acoording to Department</font><br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
+<td>com.epam.testexternalpart.tests.SmokeTest@75bd9247</td></tr>
 <tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.checkBannedCandidate()'><b>checkBannedCandidate</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Олег;Ромашкин;Федорович;21.09.1990;pupkin379@rambler.ru;+397894164112, 1.0</td>
+<td title='com.epam.testexternalpart.tests.SmokeTest.testcheckAddStreamPageInDepartmentFrontEnd()'><b>testcheckAddStreamPageInDepartmentFrontEnd</b><br>Test class: com.epam.testexternalpart.tests.SmokeTest<br/>
+<a href="#Output-810262298" onClick='toggleBox("Output-810262298", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-810262298" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-810262298">
+<br /><b><font size = 2 color = #000099>Check all elements are present on AddStreamPage in Department FrontEnd</font></b><br/><br/>
+<br /><font size = 2 color = #000000>Checking adding Stream according to Department 'Front-End'</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element AddStream department name tab 'Front-End'</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [AddStream department name tab 'Front-End'] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream ia viewed acoording to Department</font><br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
+<td>com.epam.testexternalpart.tests.SmokeTest@75bd9247</td></tr>
 <tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.checkConfirmedCand()'><b>checkConfirmedCand</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Денис;Петрушкин;Геннадьевич;16.04.1991;pupkin379@i.ua;+087894156114, 1.0</td>
+<td title='com.epam.testexternalpart.tests.SmokeTest.testcheckAddStreamPageInDepartmentJava()'><b>testcheckAddStreamPageInDepartmentJava</b><br>Test class: com.epam.testexternalpart.tests.SmokeTest<br/>
+<a href="#Output-450438867" onClick='toggleBox("Output-450438867", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-450438867" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-450438867">
+<br /><b><font size = 2 color = #000099>Check all elements are present on AddStreamPage in Department Java</font></b><br/><br/>
+<br /><font size = 2 color = #000000>Checking adding Stream according to Department 'Java'</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element AddStream department name tab 'Java'</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [AddStream department name tab 'Java'] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream ia viewed acoording to Department</font><br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
+<td>com.epam.testexternalpart.tests.SmokeTest@75bd9247</td></tr>
 <tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.checkDublicateAnswer()'><b>checkDublicateAnswer</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest</td>
+<td title='com.epam.testexternalpart.tests.SmokeTest.testcheckAddStreamPageInDepartmentNet()'><b>testcheckAddStreamPageInDepartmentNet</b><br>Test class: com.epam.testexternalpart.tests.SmokeTest<br/>
+<a href="#Output-223975178" onClick='toggleBox("Output-223975178", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-223975178" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-223975178">
+<br /><b><font size = 2 color = #000099>Check all elements are present on AddStreamPage in Department Net</font></b><br/><br/>
+<br /><font size = 2 color = #000000>Checking adding Stream according to Department '.Net'</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element AddStream department name tab '.Net'</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [AddStream department name tab '.Net'] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream ia viewed acoording to Department</font><br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
+<td>com.epam.testexternalpart.tests.SmokeTest@75bd9247</td></tr>
 <tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.checkNewTimeCand()'><b>checkNewTimeCand</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Леонид;Незнающий;Клементьевич;15.06.1992;student@com;+045894156114, 1.0</td>
+<td title='com.epam.testexternalpart.tests.SmokeTest.testcheckAddStreamPageInDepartmentSofttest()'><b>testcheckAddStreamPageInDepartmentSofttest</b><br>Test class: com.epam.testexternalpart.tests.SmokeTest<br/>
+<a href="#Output-136312946" onClick='toggleBox("Output-136312946", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-136312946" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-136312946">
+<br /><b><font size = 2 color = #000099>Check all elements are present on AddStreamPage in Department Softtest</font></b><br/><br/>
+<br /><font size = 2 color = #000000>Checking adding Stream according to Department 'Software Testing'</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element AddStream department name tab 'Software Testing'</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [AddStream department name tab 'Software Testing'] is correct</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream ia viewed acoording to Department</font><br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.checkNewTimeCand()'><b>checkNewTimeCand</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Олег;Ромашкин;Федорович;21.09.1990;pupkin379@rambler.ru;+397894164112, 2.0</td>
-<td></td>
-<td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.checkNotActualCand()'><b>checkNotActualCand</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015, Семен;Пяточкин;Сергеевич;04.02.1990;vasya.pupkin379@yandex.ru;+087894156114, 1.0</td>
-<td></td>
-<td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.invitateSecondTime()'><b>invitateSecondTime</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015</td>
-<td></td>
-<td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.invitateThirdTime()'><b>invitateThirdTime</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest<br>Parameters: Autumn 2015</td>
-<td></td>
-<td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
-<tr>
-<td title='com.epam.testexternalpart.tests.AssigningToTest.responseFromCandidates()'><b>responseFromCandidates</b><br>Test class: com.epam.testexternalpart.tests.AssigningToTest</td>
-<td></td>
-<td>0</td>
-<td>com.epam.testexternalpart.tests.AssigningToTest@75bd9247</td></tr>
+<td>com.epam.testexternalpart.tests.SmokeTest@75bd9247</td></tr>
 </table><p>
 </body>
 </html>
