@@ -6,6 +6,7 @@
       <class name="com.epam.testexternalpart.tests.SmokeTest">
         <methods>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <include name="checkElementsViewCandidate" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="init"/>
@@ -14,6 +15,11 @@
           <include name="init"/>
           <include name="checkElStreamPage" invocation-numbers="0"/>
 >>>>>>> bb47fa0ea532b354e51d57c06c751ec5cca653f5
+=======
+          <include name="checkElementsViewCandidate" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="init"/>
+>>>>>>> 694c149e279c91d7b61590c9bc6ca37b976d1334
           <include name="startPage"/>
         </methods>
       </class> <!-- com.epam.testexternalpart.tests.SmokeTest -->
