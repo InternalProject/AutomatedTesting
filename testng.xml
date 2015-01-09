@@ -43,4 +43,5 @@
             <class name="com.epam.testexternalpart.tests.PlaceForTestingTest"></class>
         </classes>
     </test>    
+
 </suite>

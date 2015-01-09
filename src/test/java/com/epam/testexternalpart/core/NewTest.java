@@ -1,8 +1,8 @@
 package com.epam.testexternalpart.core;
 
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.Test;
-import org.testng.asserts.Assertion;
-import static org.testng.Assert.*;
 import org.testng.asserts.SoftAssert;
 
 

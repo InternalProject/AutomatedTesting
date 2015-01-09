@@ -1,9 +1,9 @@
 package com.epam.testexternalpart.tests;
 
+import org.testng.annotations.Test;
+
 import com.epam.testexternalpart.core.BaseTest;
 import com.epam.testexternalpart.core.TestReporter;
-
-import org.testng.annotations.Test;
 
 public class SmokeTest extends BaseTest{
 	
