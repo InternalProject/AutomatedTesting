@@ -29,7 +29,7 @@ public class StreamPage extends Components {
 	private static final String STREAM_ASSIGN_TEST_BUTTON = "//a[@id='assign_test']";
 	private static final String STREAM_BUN_BUTTON = "//a[@id='banCandidateButton']";
 	private static final String STREAM_DELETE_BUTTON = "//a[@id='deleteCandidateButton']";
-	private static final String STREAM_ALL_CHECKBOXES = "//div[@class='col-md-2']/input";
+	private static final String STREAM_ALL_CHECKBOXES = "//div [@class='col-md-2']//label";
 	private static final String STREAM_TABLE_ROW="//tbody/tr";
 	private static final String STREAM_TABLE_ROW_VIEW="//table[@id='table']/tbody/tr[1]";
 	
@@ -553,12 +553,14 @@ public class StreamPage extends Components {
 
 	public void clickViewCand() {
 		TestReporter.writeToReportTitle("Checking that click on selected candidate reffering to Candidate View Page");
-		
-		Actions action = new Actions(driver);
-		action.doubleClick(tableRowView);
-		action.perform();
-		 isElementExist("tableRowView", tableRowView, false);
-		 TestReporter.writeToReportPositiveResult("click on selected candidate reffering to Candidate View Page");
+//		
+//		Actions action = new Actions(driver);
+//		action.doubleClick(tableRowView);
+//		action.perform();
+//		 isElementExist("tableRowView", tableRowView, false);
+//		 TestReporter.writeToReportPositiveResult("click on selected candidate reffering to Candidate View Page");
+		tableRowView.click();
+		tableRowView.click();
 
 	}
 
@@ -569,7 +571,7 @@ public class StreamPage extends Components {
 		Boolean flag = false;
 		
 		for (WebElement ckeckBox : allCheckBoxes){
-			ckeckBox.click();
+			clickElement(ckeckBox,"ckeckBox");
 			
 			row = driver.findElements(By.xpath(STREAM_TABLE_ROW + "[1]/td"));
 					
@@ -583,8 +585,9 @@ public class StreamPage extends Components {
 				flag = false;					
 			}			
 					
-			ckeckBox.click();			
-		}	
+			clickElement(ckeckBox,"ckeckBox");			
+		}
+		System.out.println("1");
 	}
 
 	public void selectCandidatesForTest() {		
