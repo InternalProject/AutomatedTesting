@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DepartmentTest"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="64,881">
+  <properties />
+  
+  
+            <testcase name="testAddDepartmentWithValidName" time="21,758" classname="com.epam.testexternalpart.tests.DepartmentTest" />
+                <testcase name="testAddDepartment" time="10,398" classname="com.epam.testexternalpart.tests.DepartmentTest" />
+                <testcase name="testEditDepartmentName" time="32,725" classname="com.epam.testexternalpart.tests.DepartmentTest" />
+      
+</testsuite>

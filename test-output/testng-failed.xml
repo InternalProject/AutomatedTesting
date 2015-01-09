@@ -5,9 +5,15 @@
     <classes>
       <class name="com.epam.testexternalpart.tests.SmokeTest">
         <methods>
+<<<<<<< HEAD
           <include name="checkElementsViewCandidate" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="init"/>
+=======
+          <include name="tearDown"/>
+          <include name="init"/>
+          <include name="checkElStreamPage" invocation-numbers="0"/>
+>>>>>>> bb47fa0ea532b354e51d57c06c751ec5cca653f5
           <include name="startPage"/>
         </methods>
       </class> <!-- com.epam.testexternalpart.tests.SmokeTest -->
