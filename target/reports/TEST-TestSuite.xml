@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="27" time="764.09" errors="0" skipped="17" tests="75" name="TestSuite">
+<testsuite failures="4" time="454.392" errors="0" skipped="0" tests="35" name="TestSuite">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre7\bin"/>
@@ -21,7 +21,7 @@
     <property name="basedir" value="D:\AutomatedTesting"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre7\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="surefire.real.class.path" value="D:\AutomatedTesting\target\surefire\surefirebooter5072108570005096252.jar"/>
+    <property name="surefire.real.class.path" value="D:\AutomatedTesting\target\surefire\surefirebooter2710660984375299322.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\Olha_Borodkina\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jre7"/>
-    <property name="sun.java.command" value="D:\AutomatedTesting\target\surefire\surefirebooter5072108570005096252.jar D:\AutomatedTesting\target\surefire\surefire4311303875827877334tmp D:\AutomatedTesting\target\surefire\surefire2818319971478237678tmp"/>
+    <property name="sun.java.command" value="D:\AutomatedTesting\target\surefire\surefirebooter2710660984375299322.jar D:\AutomatedTesting\target\surefire\surefire2957593088738223760tmp D:\AutomatedTesting\target\surefire\surefire5315849936961440586tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="user.language.format" value="uk"/>
@@ -65,24 +65,26 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="0.616" classname="com.epam.testexternalpart.tests.SmokeTest" name="checkElAllCandiadtesMenu">
-    <failure message="unknown error: Element is not clickable at point (36, 711). Other element would receive the click: &lt;label for=&quot;checkbox1&quot;&gt;...&lt;/label&gt;
+  <testcase time="0.487" classname="com.epam.testexternalpart.tests.SmokeTest" name="checkElAllCandiadtesMenu">
+    <failure message="stale element reference: element is not attached to the page document
   (Session info: chrome=39.0.2171.95)
   (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 31 milliseconds
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
 System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: e3bcf006177a15d720214773913d81fc
+Session ID: 1e34f76a86c097237fc2667433e7456f
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir3760_15795}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (36, 711). Other element would receive the click: &lt;label for=&quot;checkbox1&quot;&gt;...&lt;/label&gt;
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir3912_9363}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=39.0.2171.95)
   (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 31 milliseconds
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
 System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: e3bcf006177a15d720214773913d81fc
+Session ID: 1e34f76a86c097237fc2667433e7456f
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir3760_15795}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir3912_9363}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -91,16 +93,10 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:50)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.epam.testexternalpart.screen.AllCandidatesPage.checkEnableColumnByCheckBox(AllCandidatesPage.java:298)
-	at com.epam.testexternalpart.screen.AllCandidatesPage.checkColumnsAccordingToCheckBox(AllCandidatesPage.java:278)
-	at com.epam.testexternalpart.tests.SmokeTest.checkElAllCandiadtesMenu(SmokeTest.java:149)
+	at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:117)
+	at com.epam.testexternalpart.screen.Components.checkElementText(Components.java:98)
+	at com.epam.testexternalpart.screen.AllCandidatesPage.checkDefaultColumns(AllCandidatesPage.java:270)
+	at com.epam.testexternalpart.tests.SmokeTest.checkElAllCandiadtesMenu(SmokeTest.java:148)
 </failure>
     <system-out>@HL
 @HL-------------------------------------------------------
@@ -108,7 +104,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 @HL-------------------------------------------------------
 @SLRunning TestSuite
 [TestRunner] Running the tests in &apos;smokeMenuTest&apos; with parallel mode:false
-[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@5d1ae567 priority: 10
+[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@275ea85 priority: 10
 [TestClass] Creating TestClass for [ClassImpl class=com.epam.testexternalpart.tests.SmokeTest]
 [TestClass] Adding method SmokeTest.testCheckElementsPresentAddStreamPage()[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SmokeTest
 [TestClass] Adding method SmokeTest.checkElementsEditCandidate(java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SmokeTest
@@ -142,7 +138,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 [XmlMethodSelector] Including method com.epam.testexternalpart.tests.testcheckAddStreamPageInDepartmentSofttest()
 [XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkElementsAddCandidate()
 [TestRunner] Running the tests in &apos;DepartmentTest&apos; with parallel mode:false
-[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@7cf02bee priority: 10
+[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@8ba0dd4 priority: 10
 [TestClass] Creating TestClass for [ClassImpl class=com.epam.testexternalpart.tests.DepartmentTest]
 [TestClass] Adding method DepartmentTest.testAddDepartmentWithValidName(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.DepartmentTest
 [TestClass] Adding method DepartmentTest.testEditDepartmentName(java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.DepartmentTest
@@ -154,7 +150,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 [XmlMethodSelector] Including method com.epam.testexternalpart.tests.testEditDepartmentName()
 [XmlMethodSelector] Including method com.epam.testexternalpart.tests.testAddDepartment()
 [TestRunner] Running the tests in &apos;StreamTest&apos; with parallel mode:false
-[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@1fb67f24 priority: 10
+[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@603caedf priority: 10
 [TestClass] Creating TestClass for [ClassImpl class=com.epam.testexternalpart.tests.StreamTest]
 [TestClass] Adding method StreamTest.testEditStream(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.StreamTest
 [TestClass] Adding method StreamTest.testAddNewValidStream(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.StreamTest
@@ -166,7 +162,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 [XmlMethodSelector] Including method com.epam.testexternalpart.tests.testAddNewValidStream()
 [XmlMethodSelector] Including method com.epam.testexternalpart.tests.testAddNewInValidStream()
 [TestRunner] Running the tests in &apos;CandidateTest&apos; with parallel mode:false
-[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@2d1e165f priority: 10
+[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@1cf6e5e9 priority: 10
 [TestClass] Creating TestClass for [ClassImpl class=com.epam.testexternalpart.tests.AddCandidateTest]
 [TestClass] Adding method AddCandidateTest.changeStatus(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AddCandidateTest
 [TestClass] Adding method AddCandidateTest.deleteAllCandidates(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AddCandidateTest
@@ -181,42 +177,8 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 [XmlMethodSelector] Including method com.epam.testexternalpart.tests.bannWithButton()
 [XmlMethodSelector] Including method com.epam.testexternalpart.tests.addCandidateManually()
 [XmlMethodSelector] Including method com.epam.testexternalpart.tests.addCandidate()
-[TestRunner] Running the tests in &apos;AssigningToTestTest&apos; with parallel mode:false
-[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@3bd8928e priority: 10
-[TestClass] Creating TestClass for [ClassImpl class=com.epam.testexternalpart.tests.AssigningToTest]
-[TestClass] Adding method AssigningToTest.checkNotTestedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.checkNewTimeCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.checkDublicateAnswer()[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.addStream(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.invitateSecondTime(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.checkAssignedToTestCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.assignTest(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.responseFromCandidates()[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.addCandidates(java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.checkBannedCandidate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.checkConfirmedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.checkNotActualCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.invitateThirdTime(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.init()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.initEmails()
-[MethodInheritance] AssigningToTest.initEmails()[pri:0, instance:null] DEPENDS ON BaseTest.init()[pri:0, instance:null]
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.tearDown()
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.startPage()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkNotTestedCand()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkNewTimeCand()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkDublicateAnswer()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.addStream()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.invitateSecondTime()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkAssignedToTestCand()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.assignTest()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.responseFromCandidates()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.addCandidates()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkBannedCandidate()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkConfirmedCand()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkNotActualCand()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.invitateThirdTime()
 [TestRunner] Running the tests in &apos;SeveralStreamTest&apos; with parallel mode:false
-[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@326dff70 priority: 10
+[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@384e7c49 priority: 10
 [TestClass] Creating TestClass for [ClassImpl class=com.epam.testexternalpart.tests.SeveralStreamTest]
 [TestClass] Adding method SeveralStreamTest.addCandidateToSeveralDepartment(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SeveralStreamTest
 [XmlMethodSelector] Including method com.epam.testexternalpart.core.init()
@@ -224,7 +186,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 [XmlMethodSelector] Including method com.epam.testexternalpart.core.startPage()
 [XmlMethodSelector] Including method com.epam.testexternalpart.tests.addCandidateToSeveralDepartment()
 [TestRunner] Running the tests in &apos;SearchStreamTest&apos; with parallel mode:false
-[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@7f565474 priority: 10
+[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@6e2404a0 priority: 10
 [TestClass] Creating TestClass for [ClassImpl class=com.epam.testexternalpart.tests.SearchTest]
 [TestClass] Adding method SearchTest.streamSearch(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SearchTest
 [XmlMethodSelector] Including method com.epam.testexternalpart.core.init()
@@ -232,7 +194,7 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 [XmlMethodSelector] Including method com.epam.testexternalpart.core.startPage()
 [XmlMethodSelector] Including method com.epam.testexternalpart.tests.streamSearch()
 [TestRunner] Running the tests in &apos;PlaceForTestingTest&apos; with parallel mode:false
-[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@288a857a priority: 10
+[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@79c45dbe priority: 10
 [TestClass] Creating TestClass for [ClassImpl class=com.epam.testexternalpart.tests.PlaceForTestingTest]
 [TestClass] Adding method PlaceForTestingTest.deleteNewPlaceForTesting(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.PlaceForTestingTest
 [TestClass] Adding method PlaceForTestingTest.editNewPlaceForTesting(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.PlaceForTestingTest
@@ -243,34 +205,34 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 [XmlMethodSelector] Including method com.epam.testexternalpart.tests.deleteNewPlaceForTesting()
 [XmlMethodSelector] Including method com.epam.testexternalpart.tests.editNewPlaceForTesting()
 [XmlMethodSelector] Including method com.epam.testexternalpart.tests.addNewPlaceForTesting()
-[SuiteRunner] Created 8 TestRunners
+[SuiteRunner] Created 7 TestRunners
 [TestRunner] Running test smokeMenuTest on 1  classes,  included groups:[] excluded groups:[]
 ===== Test class
 com.epam.testexternalpart.tests.SmokeTest
-  @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-  @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-    @Test SmokeTest.testCheckElementsPresentAddStreamPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-    @Test SmokeTest.checkElementsEditCandidate(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-    @Test SmokeTest.testCheckElementsPresentAddDepartmentPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-    @Test SmokeTest.testCheckElementsPresentDepartmentPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-    @Test SmokeTest.checkElStreamPage(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-    @Test SmokeTest.testcheckAddStreamPageInDepartmentNet()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-    @Test SmokeTest.checkElAllCandiadtesMenu(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-    @Test SmokeTest.testcheckAddStreamPageInDepartmentJava()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-    @Test SmokeTest.testcheckAddStreamPageInDepartmentAutoTest()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-    @Test SmokeTest.testcheckAddStreamPageInDepartmentFrontEnd()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-    @Test SmokeTest.checkMenu()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-    @Test SmokeTest.checkElementsViewCandidate(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-    @Test SmokeTest.testcheckAddStreamPageInDepartmentSofttest()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-    @Test SmokeTest.checkElementsAddCandidate(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-  @AfterClass BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
+  @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+  @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+    @Test SmokeTest.testCheckElementsPresentAddStreamPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+    @Test SmokeTest.checkElementsEditCandidate(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+    @Test SmokeTest.testCheckElementsPresentAddDepartmentPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+    @Test SmokeTest.testCheckElementsPresentDepartmentPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+    @Test SmokeTest.checkElStreamPage(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+    @Test SmokeTest.testcheckAddStreamPageInDepartmentNet()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+    @Test SmokeTest.checkElAllCandiadtesMenu(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+    @Test SmokeTest.testcheckAddStreamPageInDepartmentJava()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+    @Test SmokeTest.testcheckAddStreamPageInDepartmentAutoTest()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+    @Test SmokeTest.testcheckAddStreamPageInDepartmentFrontEnd()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+    @Test SmokeTest.checkMenu()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+    @Test SmokeTest.checkElementsViewCandidate(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+    @Test SmokeTest.testcheckAddStreamPageInDepartmentSofttest()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+    @Test SmokeTest.checkElementsAddCandidate(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+  @AfterClass BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
 ======
-[Invoker 1241702395] Keeping method BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1241702395] Invoking @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.SmokeTest.checkElAllCandiadtesMenu
+[Invoker 689312127] Keeping method BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
+[Invoker 689312127] Invoking @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+[Invoker 689312127] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
+[Invoker 689312127] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
+[Invoker 689312127] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+[Invoker 689312127] Invoking com.epam.testexternalpart.tests.SmokeTest.checkElAllCandiadtesMenu
 Check all elements are present on CandiadtesMenu
 Click on [allCandidatesButton]
 Checking the presence of All Candidates text
@@ -281,45 +243,26 @@ Checking the presence of All Candidates menu - default columns
 Checking text of element №
 Text of [№] is correct
 Checking text of element First Name
-Text of [First Name] is correct
-Checking text of element Last Name
-Text of [Last Name] is correct
-Checking text of element Middle Name
-Text of [Middle Name] is correct
-Checking text of element Phone
-Text of [Phone] is correct
-Checking text of element BirthDate
-Text of [BirthDate] is correct
-Checking text of element Email
-Text of [Email] is correct
-Checking text of element Fill Date
-Text of [Fill Date] is correct
-Checking text of element Stream
-Text of [Stream] is correct
-Checking text of element Department
-Text of [Department] is correct
-All Candidates menu -  default columns are present
-Checking enable column Second phone by selecting check Box
 </system-out>
   </testcase>
-  <testcase time="11.882" classname="com.epam.testexternalpart.tests.SmokeTest" name="checkElStreamPage">
+  <testcase time="11.869" classname="com.epam.testexternalpart.tests.SmokeTest" name="checkElStreamPage">
     <failure message="unknown error: Element is not clickable at point (36, 737). Other element would receive the click: &lt;label for=&quot;checkbox1&quot;&gt;...&lt;/label&gt;
   (Session info: chrome=39.0.2171.95)
   (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 32 milliseconds
+Command duration or timeout: 30 milliseconds
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
 System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: e3bcf006177a15d720214773913d81fc
+Session ID: 1e34f76a86c097237fc2667433e7456f
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir3760_15795}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (36, 737). Other element would receive the click: &lt;label for=&quot;checkbox1&quot;&gt;...&lt;/label&gt;
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir3912_9363}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (36, 737). Other element would receive the click: &lt;label for=&quot;checkbox1&quot;&gt;...&lt;/label&gt;
   (Session info: chrome=39.0.2171.95)
   (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 32 milliseconds
+Command duration or timeout: 30 milliseconds
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
 System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: e3bcf006177a15d720214773913d81fc
+Session ID: 1e34f76a86c097237fc2667433e7456f
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir3760_15795}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir3912_9363}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -335,14 +278,14 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:50)
 	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkEnableColumnByCheckBox(StreamPage.java:414)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkColumnsAccordingToCheckBox(StreamPage.java:394)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkEnableColumnByCheckBox(StreamPage.java:413)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkColumnsAccordingToCheckBox(StreamPage.java:393)
 	at com.epam.testexternalpart.tests.SmokeTest.checkElStreamPage(SmokeTest.java:74)
 </failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.SmokeTest.checkElStreamPage
+    <system-out>[Invoker 689312127] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
+[Invoker 689312127] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
+[Invoker 689312127] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+[Invoker 689312127] Invoking com.epam.testexternalpart.tests.SmokeTest.checkElStreamPage
 Check all elements are present on StreamPage
 Checking that click by selected stream reffering to Stream Page
 Java - Java Spring 2015
@@ -414,26 +357,26 @@ All Streams default columns are present
 Checking enable column Second phone by selecting check Box
 </system-out>
   </testcase>
-  <testcase time="22.231" classname="com.epam.testexternalpart.tests.SmokeTest" name="checkElementsAddCandidate"/>
-  <testcase time="44.558" classname="com.epam.testexternalpart.tests.SmokeTest" name="checkElementsEditCandidate"/>
-  <testcase time="21.549" classname="com.epam.testexternalpart.tests.SmokeTest" name="checkElementsViewCandidate">
+  <testcase time="22.358" classname="com.epam.testexternalpart.tests.SmokeTest" name="checkElementsAddCandidate"/>
+  <testcase time="44.563" classname="com.epam.testexternalpart.tests.SmokeTest" name="checkElementsEditCandidate"/>
+  <testcase time="21.593" classname="com.epam.testexternalpart.tests.SmokeTest" name="checkElementsViewCandidate">
     <failure message="unknown error: Element is not clickable at point (36, 737). Other element would receive the click: &lt;label for=&quot;checkbox1&quot;&gt;...&lt;/label&gt;
   (Session info: chrome=39.0.2171.95)
   (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 100 milliseconds
+Command duration or timeout: 129 milliseconds
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
 System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: e3bcf006177a15d720214773913d81fc
+Session ID: 1e34f76a86c097237fc2667433e7456f
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir3760_15795}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (36, 737). Other element would receive the click: &lt;label for=&quot;checkbox1&quot;&gt;...&lt;/label&gt;
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir3912_9363}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (36, 737). Other element would receive the click: &lt;label for=&quot;checkbox1&quot;&gt;...&lt;/label&gt;
   (Session info: chrome=39.0.2171.95)
   (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 100 milliseconds
+Command duration or timeout: 129 milliseconds
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
 System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: e3bcf006177a15d720214773913d81fc
+Session ID: 1e34f76a86c097237fc2667433e7456f
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir3760_15795}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir3912_9363}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -443,13 +386,13 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkTableAccordingToCandidadate(StreamPage.java:567)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkTableAccordingToCandidadate(StreamPage.java:572)
 	at com.epam.testexternalpart.tests.SmokeTest.checkElementsViewCandidate(SmokeTest.java:123)
 </failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.SmokeTest.checkElementsViewCandidate
+    <system-out>[Invoker 689312127] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
+[Invoker 689312127] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
+[Invoker 689312127] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+[Invoker 689312127] Invoking com.epam.testexternalpart.tests.SmokeTest.checkElementsViewCandidate
 Check all elements are present on ViewCandidatePage
 Checking that click by selected stream reffering to Stream Page
 Java - Java Spring 2015
@@ -464,1003 +407,51 @@ Creating new candidate with fields-Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj
 Click on [Click Create Candidate Button]
 </system-out>
   </testcase>
-  <testcase time="10.043" classname="com.epam.testexternalpart.tests.SmokeTest" name="checkMenu">
+  <testcase time="10.061" classname="com.epam.testexternalpart.tests.SmokeTest" name="checkMenu">
     <failure message="logoNo element [logo] on the page  expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: logoNo element [logo] on the page  expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.epam.testexternalpart.screen.Components.isElementExist(Components.java:25)
+	at com.epam.testexternalpart.screen.Components.isElementExist(Components.java:23)
 	at com.epam.testexternalpart.screen.Menu.checkElementsPresent(Menu.java:57)
 	at com.epam.testexternalpart.tests.SmokeTest.checkMenu(SmokeTest.java:156)
 </failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7f42ea9b]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.SmokeTest.checkMenu
+    <system-out>[Invoker 689312127] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
+[Invoker 689312127] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
+[Invoker 689312127] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@441626bf]
+[Invoker 689312127] Invoking com.epam.testexternalpart.tests.SmokeTest.checkMenu
 Check all elements are present on Menu
 Checking the presence of Menu&apos;s elements
 Checking the presence of the elemen [logo]
 </system-out>
   </testcase>
-  <testcase time="10.407" classname="com.epam.testexternalpart.tests.SmokeTest" name="testCheckElementsPresentAddDepartmentPage"/>
-  <testcase time="11.028" classname="com.epam.testexternalpart.tests.SmokeTest" name="testCheckElementsPresentAddStreamPage"/>
-  <testcase time="0.239" classname="com.epam.testexternalpart.tests.SmokeTest" name="testCheckElementsPresentDepartmentPage"/>
-  <testcase time="0.471" classname="com.epam.testexternalpart.tests.SmokeTest" name="testcheckAddStreamPageInDepartmentAutoTest"/>
-  <testcase time="0.456" classname="com.epam.testexternalpart.tests.SmokeTest" name="testcheckAddStreamPageInDepartmentFrontEnd"/>
-  <testcase time="0.377" classname="com.epam.testexternalpart.tests.SmokeTest" name="testcheckAddStreamPageInDepartmentJava"/>
-  <testcase time="0.381" classname="com.epam.testexternalpart.tests.SmokeTest" name="testcheckAddStreamPageInDepartmentNet"/>
-  <testcase time="0.362" classname="com.epam.testexternalpart.tests.SmokeTest" name="testcheckAddStreamPageInDepartmentSofttest"/>
-  <testcase time="10.408" classname="com.epam.testexternalpart.tests.DepartmentTest" name="testAddDepartment"/>
-  <testcase time="21.591" classname="com.epam.testexternalpart.tests.DepartmentTest" name="testAddDepartmentWithValidName"/>
-  <testcase time="32.591" classname="com.epam.testexternalpart.tests.DepartmentTest" name="testEditDepartmentName"/>
-  <testcase time="0.716" classname="com.epam.testexternalpart.tests.StreamTest" name="testAddNewInValidStream"/>
-  <testcase time="0.446" classname="com.epam.testexternalpart.tests.StreamTest" name="testAddNewInValidStream"/>
-  <testcase time="0.445" classname="com.epam.testexternalpart.tests.StreamTest" name="testAddNewInValidStream"/>
-  <testcase time="0.462" classname="com.epam.testexternalpart.tests.StreamTest" name="testAddNewInValidStream"/>
-  <testcase time="1.363" classname="com.epam.testexternalpart.tests.StreamTest" name="testAddNewValidStream"/>
-  <testcase time="1.449" classname="com.epam.testexternalpart.tests.StreamTest" name="testAddNewValidStream"/>
-  <testcase time="0.394" classname="com.epam.testexternalpart.tests.StreamTest" name="testEditStream"/>
-  <testcase time="0.382" classname="com.epam.testexternalpart.tests.StreamTest" name="testEditStream"/>
-  <testcase time="2.409" classname="com.epam.testexternalpart.tests.AddCandidateTest" name="addCandidate"/>
-  <testcase time="2.43" classname="com.epam.testexternalpart.tests.AddCandidateTest" name="addCandidateManually"/>
-  <testcase time="2.463" classname="com.epam.testexternalpart.tests.AddCandidateTest" name="bannWithButton">
-    <skipped/>
-  </testcase>
-  <testcase time="5.927" classname="com.epam.testexternalpart.tests.AddCandidateTest" name="changeStatus">
-    <failure message="stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 50 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: 3a1cda32ceb79c555fb77ed29361970d
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir6236_14086}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 50 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: 3a1cda32ceb79c555fb77ed29361970d
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir6236_14086}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandExisting(StreamPage.java:477)
-	at com.epam.testexternalpart.tests.AddCandidateTest.changeStatus(AddCandidateTest.java:53)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@73bddb4e] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@73bddb4e] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@73bddb4e]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AddCandidateTest.changeStatus
-Change  Candidat&apos;s status manually
-1-Create candidate
-Click on [First stream on first dep]
-Click on [addCandidateBut]
-Creating new candidate with fields-Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;
-Click on [Click Create Candidate Button]
-Check if new candidate was added
-candidate was added
-2-Check candidat&apos;s displaying on &quot;Not tested&quot; tab
-Click on [notTestedCandidate]
-Check if new candidate was added
-</system-out>
-  </testcase>
-  <testcase time="7.798" classname="com.epam.testexternalpart.tests.AddCandidateTest" name="deleteAllCandidates"/>
-  <testcase time="20.838" classname="com.epam.testexternalpart.tests.AssigningToTest" name="addStream">
-    <failure message="no such element
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.01 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.01 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.GeneratedConstructorAccessor35.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.epam.testexternalpart.screen.departments.Departments.clickSelectedStream(Departments.java:191)
-	at com.epam.testexternalpart.tests.AssigningToTest.addStream(AssigningToTest.java:28)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@73bddb4e] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-[Invoker 1241702395] Invoking @AfterClass BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@73bddb4e]
-===== Invoked methods
-  BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@73bddb4e] 1941822286
-    AddCandidateTest.addCandidate(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@73bddb4e]; ; ; ; ; ;  1941822286
-    AddCandidateTest.addCandidateManually(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@73bddb4e]Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;  1941822286
-    AddCandidateTest.changeStatus(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@73bddb4e]Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345; confirmed test completed not actual banned 1;Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;  1941822286
-    AddCandidateTest.deleteAllCandidates(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@73bddb4e]No matching records found  1941822286
-  BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@73bddb4e] 1941822286
-=====
-[TestRunner] Running test AssigningToTestTest on 1  classes,  included groups:[] excluded groups:[]
-===== Test class
-com.epam.testexternalpart.tests.AssigningToTest
-  @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-  @BeforeClass AssigningToTest.initEmails()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-  @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-    @Test AssigningToTest.checkNotTestedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-    @Test AssigningToTest.checkNewTimeCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-    @Test AssigningToTest.checkDublicateAnswer()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-    @Test AssigningToTest.addStream(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-    @Test AssigningToTest.invitateSecondTime(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-    @Test AssigningToTest.checkAssignedToTestCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-    @Test AssigningToTest.assignTest(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-    @Test AssigningToTest.responseFromCandidates()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-    @Test AssigningToTest.addCandidates(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-    @Test AssigningToTest.checkBannedCandidate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-    @Test AssigningToTest.checkConfirmedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-    @Test AssigningToTest.checkNotActualCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-    @Test AssigningToTest.invitateThirdTime(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-  @AfterClass BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-======
-[Invoker 1241702395] Keeping method BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Keeping method AssigningToTest.initEmails()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking @BeforeClass AssigningToTest.initEmails()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.addStream
-Checking that Stream Create Button reffering to Add Stream Page
-Checking the presence of the elemen [java Tab]
-[java Tab]is Not Present
-Create new Stream with name Autumn 2015
-Click on [AddStreamButton]
-</system-out>
-  </testcase>
-  <testcase time="22.881" classname="com.epam.testexternalpart.tests.AssigningToTest" name="addCandidates">
-    <failure message="Wrong data in new cand expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Wrong data in new cand expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandExisting(StreamPage.java:487)
-	at com.epam.testexternalpart.tests.AssigningToTest.addCandidates(AssigningToTest.java:37)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.addCandidates
-Click on [Select stream on Department Page]
-Checking the presence of the elemen [javaTab]
-[javaTab]is Not Present
-Checking that Stream Create Button reffering to Add Stream Page
-Checking the presence of the elemen [add Candidate Button]
-[add Candidate Button]is Not Present
-Stream Create button reffering to Add Stream Page
-Creating new candidates for test
-Click on [Create Candidate Button]
-Check if new candidate was added
-</system-out>
-  </testcase>
-  <testcase time="22.283" classname="com.epam.testexternalpart.tests.AssigningToTest" name="addCandidates">
-    <failure message="stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 89 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 89 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandExisting(StreamPage.java:477)
-	at com.epam.testexternalpart.tests.AssigningToTest.addCandidates(AssigningToTest.java:37)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.addCandidates
-Click on [Select stream on Department Page]
-Checking the presence of the elemen [javaTab]
-[javaTab]is Not Present
-Checking that Stream Create Button reffering to Add Stream Page
-Checking the presence of the elemen [add Candidate Button]
-[add Candidate Button]is Not Present
-Stream Create button reffering to Add Stream Page
-Creating new candidates for test
-Click on [Create Candidate Button]
-Check if new candidate was added
-</system-out>
-  </testcase>
-  <testcase time="22.245" classname="com.epam.testexternalpart.tests.AssigningToTest" name="addCandidates">
-    <failure message="Wrong data in new cand expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Wrong data in new cand expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandExisting(StreamPage.java:487)
-	at com.epam.testexternalpart.tests.AssigningToTest.addCandidates(AssigningToTest.java:37)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.addCandidates
-Click on [Select stream on Department Page]
-Checking the presence of the elemen [javaTab]
-[javaTab]is Not Present
-Checking that Stream Create Button reffering to Add Stream Page
-Checking the presence of the elemen [add Candidate Button]
-[add Candidate Button]is Not Present
-Stream Create button reffering to Add Stream Page
-Creating new candidates for test
-Click on [Create Candidate Button]
-Check if new candidate was added
-</system-out>
-  </testcase>
-  <testcase time="22.266" classname="com.epam.testexternalpart.tests.AssigningToTest" name="addCandidates">
-    <failure message="Wrong data in new cand expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Wrong data in new cand expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandExisting(StreamPage.java:487)
-	at com.epam.testexternalpart.tests.AssigningToTest.addCandidates(AssigningToTest.java:37)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.addCandidates
-Click on [Select stream on Department Page]
-Checking the presence of the elemen [javaTab]
-[javaTab]is Not Present
-Checking that Stream Create Button reffering to Add Stream Page
-Checking the presence of the elemen [add Candidate Button]
-[add Candidate Button]is Not Present
-Stream Create button reffering to Add Stream Page
-Creating new candidates for test
-Click on [Create Candidate Button]
-Check if new candidate was added
-</system-out>
-  </testcase>
-  <testcase time="22.191" classname="com.epam.testexternalpart.tests.AssigningToTest" name="addCandidates">
-    <failure message="Wrong data in new cand expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Wrong data in new cand expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandExisting(StreamPage.java:487)
-	at com.epam.testexternalpart.tests.AssigningToTest.addCandidates(AssigningToTest.java:37)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.addCandidates
-Click on [Select stream on Department Page]
-Checking the presence of the elemen [javaTab]
-[javaTab]is Not Present
-Checking that Stream Create Button reffering to Add Stream Page
-Checking the presence of the elemen [add Candidate Button]
-[add Candidate Button]is Not Present
-Stream Create button reffering to Add Stream Page
-Creating new candidates for test
-Click on [Create Candidate Button]
-Check if new candidate was added
-</system-out>
-  </testcase>
-  <testcase time="22.383" classname="com.epam.testexternalpart.tests.AssigningToTest" name="addCandidates"/>
-  <testcase time="22.517" classname="com.epam.testexternalpart.tests.AssigningToTest" name="addCandidates"/>
-  <testcase time="10.544" classname="com.epam.testexternalpart.tests.AssigningToTest" name="checkNotTestedCand">
-    <failure message="stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 60 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 60 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:611)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand
-Click on [Select stream on Department Page]
-Checking the presence of the elemen [javaTab]
-[javaTab]is Not Present
-Click on [click notTestedCandidate]
-Checking not testing Candidates
-</system-out>
-  </testcase>
-  <testcase time="10.554" classname="com.epam.testexternalpart.tests.AssigningToTest" name="checkNotTestedCand">
-    <failure message="stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 62 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 62 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:611)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand
-Click on [Select stream on Department Page]
-Checking the presence of the elemen [javaTab]
-[javaTab]is Not Present
-Click on [click notTestedCandidate]
-Checking not testing Candidates
-</system-out>
-  </testcase>
-  <testcase time="10.557" classname="com.epam.testexternalpart.tests.AssigningToTest" name="checkNotTestedCand">
-    <failure message="stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 61 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 61 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:611)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand
-Click on [Select stream on Department Page]
-Checking the presence of the elemen [javaTab]
-[javaTab]is Not Present
-Click on [click notTestedCandidate]
-Checking not testing Candidates
-</system-out>
-  </testcase>
-  <testcase time="10.578" classname="com.epam.testexternalpart.tests.AssigningToTest" name="checkNotTestedCand">
-    <failure message="stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 86 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 86 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:611)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand
-Click on [Select stream on Department Page]
-Checking the presence of the elemen [javaTab]
-[javaTab]is Not Present
-Click on [click notTestedCandidate]
-Checking not testing Candidates
-</system-out>
-  </testcase>
-  <testcase time="10.54" classname="com.epam.testexternalpart.tests.AssigningToTest" name="checkNotTestedCand">
-    <failure message="stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 63 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 63 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:611)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand
-Click on [Select stream on Department Page]
-Checking the presence of the elemen [javaTab]
-[javaTab]is Not Present
-Click on [click notTestedCandidate]
-Checking not testing Candidates
-</system-out>
-  </testcase>
-  <testcase time="10.544" classname="com.epam.testexternalpart.tests.AssigningToTest" name="checkNotTestedCand">
-    <failure message="stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 60 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 60 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:611)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand
-Click on [Select stream on Department Page]
-Checking the presence of the elemen [javaTab]
-[javaTab]is Not Present
-Click on [click notTestedCandidate]
-Checking not testing Candidates
-</system-out>
-  </testcase>
-  <testcase time="10.51" classname="com.epam.testexternalpart.tests.AssigningToTest" name="checkNotTestedCand">
-    <failure message="stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 59 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 59 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:611)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:45)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand
-Click on [Select stream on Department Page]
-Checking the presence of the elemen [javaTab]
-[javaTab]is Not Present
-Click on [click notTestedCandidate]
-Checking not testing Candidates
-</system-out>
-  </testcase>
-  <testcase time="11.284" classname="com.epam.testexternalpart.tests.AssigningToTest" name="assignTest">
-    <failure message="Cannot locate option with index: 1
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 1
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:183)
-	at com.epam.testexternalpart.screen.stream.assigningTest.AssignToTestPage.sendInvitation(AssignToTestPage.java:76)
-	at com.epam.testexternalpart.tests.AssigningToTest.assignTest(AssigningToTest.java:53)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.assignTest
-Click on [Select stream on Department Page]
-Checking the presence of the elemen [javaTab]
-[javaTab]is Not Present
-Click on [Select cabdidates to assigning to test]
-Click on [Click assignTestButton]
-Send invitation to candidates
-</system-out>
-  </testcase>
-  <testcase time="10.465" classname="com.epam.testexternalpart.tests.AssigningToTest" name="checkAssignedToTestCand">
-    <failure message="stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 31 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 31 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:611)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand(AssigningToTest.java:62)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand
-Click on [Select stream on Department Page]
-Checking the presence of the elemen [javaTab]
-[javaTab]is Not Present
-Click on [click assignedToTestTab]
-Checking not testing Candidates
-</system-out>
-  </testcase>
-  <testcase time="10.466" classname="com.epam.testexternalpart.tests.AssigningToTest" name="checkAssignedToTestCand">
-    <failure message="stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:611)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand(AssigningToTest.java:62)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand
-Click on [Select stream on Department Page]
-Checking the presence of the elemen [javaTab]
-[javaTab]is Not Present
-Click on [click assignedToTestTab]
-Checking not testing Candidates
-</system-out>
-  </testcase>
-  <testcase time="20.468" classname="com.epam.testexternalpart.tests.AssigningToTest" name="checkAssignedToTestCand">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:615)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand(AssigningToTest.java:62)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand
-Click on [Select stream on Department Page]
-Checking the presence of the elemen [javaTab]
-[javaTab]is Not Present
-Click on [click assignedToTestTab]
-Checking not testing Candidates
-</system-out>
-  </testcase>
-  <testcase time="20.741" classname="com.epam.testexternalpart.tests.AssigningToTest" name="checkAssignedToTestCand">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:615)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand(AssigningToTest.java:62)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand
-Click on [Select stream on Department Page]
-Checking the presence of the elemen [javaTab]
-[javaTab]is Not Present
-Click on [click assignedToTestTab]
-Checking not testing Candidates
-</system-out>
-  </testcase>
-  <testcase time="10.479" classname="com.epam.testexternalpart.tests.AssigningToTest" name="checkAssignedToTestCand">
-    <failure message="stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 25 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 25 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:611)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand(AssigningToTest.java:62)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand
-Click on [Select stream on Department Page]
-Checking the presence of the elemen [javaTab]
-[javaTab]is Not Present
-Click on [click assignedToTestTab]
-Checking not testing Candidates
-</system-out>
-  </testcase>
-  <testcase time="10.479" classname="com.epam.testexternalpart.tests.AssigningToTest" name="checkAssignedToTestCand">
-    <failure message="stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 23 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 23 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:611)
-	at com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand(AssigningToTest.java:62)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.checkAssignedToTestCand
-Click on [Select stream on Department Page]
-Checking the presence of the elemen [javaTab]
-[javaTab]is Not Present
-Click on [click assignedToTestTab]
-Checking not testing Candidates
-</system-out>
-  </testcase>
-  <testcase time="106.825" classname="com.epam.testexternalpart.tests.AssigningToTest" name="responseFromCandidates">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:50)
-	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:227)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:39)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:213)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:210)
-	at org.openqa.selenium.support.ui.ExpectedConditions$18.apply(ExpectedConditions.java:563)
-	at org.openqa.selenium.support.ui.ExpectedConditions$18.apply(ExpectedConditions.java:556)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at com.epam.testexternalpart.screen.Components.clickElement(Components.java:72)
-	at com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromIUa.enterIntoUnreadMessage(AnswerFromIUa.java:86)
-	at com.epam.testexternalpart.tests.AssigningToTest.responseFromCandidates(AssigningToTest.java:69)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-[Invoker 1241702395] Invoking com.epam.testexternalpart.tests.AssigningToTest.responseFromCandidates
-Click on [logginButton]
-Click on [inputBoxRow]
-</system-out>
-  </testcase>
-  <testcase time="106.89" classname="com.epam.testexternalpart.tests.AssigningToTest" name="startPage">
-    <failure message="no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5 milliseconds
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5 milliseconds
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.epam.testexternalpart.core.BaseTest.startPage(BaseTest.java:74)
-	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:93)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
-	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:145)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
-</failure>
-    <system-out>[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1241702395] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@52a95fa3]
-Failed to invoke configuration method com.epam.testexternalpart.core.BaseTest.startPage:no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5 milliseconds
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: df823815f0cad9c5d225d53a71391bdc
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7072_5563}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-</system-out>
-  </testcase>
-  <testcase time="0" classname="com.epam.testexternalpart.tests.AssigningToTest" name="checkConfirmedCand">
-    <skipped/>
-  </testcase>
-  <testcase time="0.032" classname="com.epam.testexternalpart.tests.AssigningToTest" name="startPage">
-    <skipped/>
-  </testcase>
-  <testcase time="0" classname="com.epam.testexternalpart.tests.AssigningToTest" name="checkNotActualCand">
-    <skipped/>
-  </testcase>
-  <testcase time="0.031" classname="com.epam.testexternalpart.tests.AssigningToTest" name="startPage">
-    <skipped/>
-  </testcase>
-  <testcase time="0" classname="com.epam.testexternalpart.tests.AssigningToTest" name="checkNewTimeCand">
-    <skipped/>
-  </testcase>
-  <testcase time="0" classname="com.epam.testexternalpart.tests.AssigningToTest" name="startPage">
-    <skipped/>
-  </testcase>
-  <testcase time="0" classname="com.epam.testexternalpart.tests.AssigningToTest" name="checkNewTimeCand">
-    <skipped/>
-  </testcase>
-  <testcase time="0" classname="com.epam.testexternalpart.tests.AssigningToTest" name="startPage">
-    <skipped/>
-  </testcase>
-  <testcase time="0" classname="com.epam.testexternalpart.tests.AssigningToTest" name="checkDublicateAnswer">
-    <skipped/>
-  </testcase>
-  <testcase time="0.031" classname="com.epam.testexternalpart.tests.AssigningToTest" name="startPage">
-    <skipped/>
-  </testcase>
-  <testcase time="0" classname="com.epam.testexternalpart.tests.AssigningToTest" name="invitateSecondTime">
-    <skipped/>
-  </testcase>
-  <testcase time="0.031" classname="com.epam.testexternalpart.tests.AssigningToTest" name="startPage">
-    <skipped/>
-  </testcase>
-  <testcase time="0" classname="com.epam.testexternalpart.tests.AssigningToTest" name="invitateThirdTime">
-    <skipped/>
-  </testcase>
-  <testcase time="0.031" classname="com.epam.testexternalpart.tests.AssigningToTest" name="startPage">
-    <skipped/>
-  </testcase>
-  <testcase time="0" classname="com.epam.testexternalpart.tests.AssigningToTest" name="checkBannedCandidate">
-    <skipped/>
-  </testcase>
-  <testcase time="0" classname="com.epam.testexternalpart.tests.AssigningToTest" name="tearDown">
-    <skipped/>
-  </testcase>
-  <testcase time="5.003" classname="com.epam.testexternalpart.tests.SeveralStreamTest" name="addCandidateToSeveralDepartment"/>
-  <testcase time="5.079" classname="com.epam.testexternalpart.tests.SearchTest" name="streamSearch"/>
-  <testcase time="2.152" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" name="addNewPlaceForTesting"/>
-  <testcase time="1.063" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" name="deleteNewPlaceForTesting"/>
-  <testcase time="2.117" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" name="editNewPlaceForTesting"/>
+  <testcase time="10.42" classname="com.epam.testexternalpart.tests.SmokeTest" name="testCheckElementsPresentAddDepartmentPage"/>
+  <testcase time="11.062" classname="com.epam.testexternalpart.tests.SmokeTest" name="testCheckElementsPresentAddStreamPage"/>
+  <testcase time="0.218" classname="com.epam.testexternalpart.tests.SmokeTest" name="testCheckElementsPresentDepartmentPage"/>
+  <testcase time="0.393" classname="com.epam.testexternalpart.tests.SmokeTest" name="testcheckAddStreamPageInDepartmentAutoTest"/>
+  <testcase time="0.388" classname="com.epam.testexternalpart.tests.SmokeTest" name="testcheckAddStreamPageInDepartmentFrontEnd"/>
+  <testcase time="0.362" classname="com.epam.testexternalpart.tests.SmokeTest" name="testcheckAddStreamPageInDepartmentJava"/>
+  <testcase time="0.369" classname="com.epam.testexternalpart.tests.SmokeTest" name="testcheckAddStreamPageInDepartmentNet"/>
+  <testcase time="0.366" classname="com.epam.testexternalpart.tests.SmokeTest" name="testcheckAddStreamPageInDepartmentSofttest"/>
+  <testcase time="10.398" classname="com.epam.testexternalpart.tests.DepartmentTest" name="testAddDepartment"/>
+  <testcase time="21.758" classname="com.epam.testexternalpart.tests.DepartmentTest" name="testAddDepartmentWithValidName"/>
+  <testcase time="32.725" classname="com.epam.testexternalpart.tests.DepartmentTest" name="testEditDepartmentName"/>
+  <testcase time="0.757" classname="com.epam.testexternalpart.tests.StreamTest" name="testAddNewInValidStream"/>
+  <testcase time="0.42" classname="com.epam.testexternalpart.tests.StreamTest" name="testAddNewInValidStream"/>
+  <testcase time="0.383" classname="com.epam.testexternalpart.tests.StreamTest" name="testAddNewInValidStream"/>
+  <testcase time="0.403" classname="com.epam.testexternalpart.tests.StreamTest" name="testAddNewInValidStream"/>
+  <testcase time="1.377" classname="com.epam.testexternalpart.tests.StreamTest" name="testAddNewValidStream"/>
+  <testcase time="1.639" classname="com.epam.testexternalpart.tests.StreamTest" name="testAddNewValidStream"/>
+  <testcase time="0.416" classname="com.epam.testexternalpart.tests.StreamTest" name="testEditStream"/>
+  <testcase time="0.377" classname="com.epam.testexternalpart.tests.StreamTest" name="testEditStream"/>
+  <testcase time="2.449" classname="com.epam.testexternalpart.tests.AddCandidateTest" name="addCandidate"/>
+  <testcase time="7.423" classname="com.epam.testexternalpart.tests.AddCandidateTest" name="addCandidateManually"/>
+  <testcase time="19.5" classname="com.epam.testexternalpart.tests.AddCandidateTest" name="bannWithButton"/>
+  <testcase time="122.047" classname="com.epam.testexternalpart.tests.AddCandidateTest" name="changeStatus"/>
+  <testcase time="7.767" classname="com.epam.testexternalpart.tests.AddCandidateTest" name="deleteAllCandidates"/>
+  <testcase time="4.756" classname="com.epam.testexternalpart.tests.SeveralStreamTest" name="addCandidateToSeveralDepartment"/>
+  <testcase time="20.166" classname="com.epam.testexternalpart.tests.SearchTest" name="streamSearch"/>
+  <testcase time="2.27" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" name="addNewPlaceForTesting"/>
+  <testcase time="1.215" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" name="deleteNewPlaceForTesting"/>
+  <testcase time="1.986" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" name="editNewPlaceForTesting"/>
 </testsuite>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\Olha_Borodkina\AppData\Local\Temp\testng-eclipse-122377332\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.epam.testexternalpart.tests.SmokeTest" hash-for-method="checkElStreamPage(;¹;First Name;Last Name;Middle Name;Phone;BirthDate;Email;Fill Date)">checkElStreamPage(;¹;First Name;Last Name;Middle Name;Phone;BirthDate;Email;Fill Date)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.epam.testexternalpart.tests.SmokeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkElStreamPage(;¹;First Name;Last Name;Middle Name;Phone;BirthDate;Email;Fill Date)">
+                  </a> <!-- checkElStreamPage(;¹;First Name;Last Name;Middle Name;Phone;BirthDate;Email;Fill Date) -->
+                  <span class="method-name">checkElStreamPage</span>
+                  <span class="parameters">(;¹;First Name;Last Name;Middle Name;Phone;BirthDate;Email;Fill Date)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Olha_Borodkina\AppData\Local\Temp\testng-eclipse-122377332\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.epam.testexternalpart.tests.SmokeTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;checkElStreamPage&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.epam.testexternalpart.tests.SmokeTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkElStreamPage')
+data.setCell(0, 2, 'com.epam.testexternalpart.tests.SmokeTest')
+data.setCell(0, 3, 14323);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">checkElStreamPage(;¹;First Name;Last Name;Middle Name;Phone;BirthDate;Email;Fill Date)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br /><b><font size = 2 color = #000099>Check all elements are present on StreamPage</font></b><br/></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking that click by selected stream reffering to Stream Page</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Click on [First stream on first dep]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font></span>
+                <span class="reporter-method-output"><br><b><font size = 2 color = #000000>Check all elements are present With Export</font></b><br></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream exportCandidateButton]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream exportCandidateButton]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream choose Candidate Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream choose Candidate Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream import Candidate Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream import Candidate Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of Stream's text</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking text of element Department title</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font></span>
+                <span class="reporter-method-output"><br><b><font size = 2 color = #000000>Check elements are present on notTestedCandidate tab</font></b><br></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Click on [notTestedCandidate]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of Stream's text</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking text of element Department title</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font></span>
+                <span class="reporter-method-output"><br><b><font size = 2 color = #000000>Check elements are present on assignedToTest tab</font></b><br></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Click on [assignedToTestTab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of Stream's text</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking text of element Department title</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font></span>
+                <span class="reporter-method-output"><br><b><font size = 2 color = #000000>Check elements are present on confirmed tab</font></b><br></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Click on [confirmedTab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of Stream's text</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking text of element Department title</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font></span>
+                <span class="reporter-method-output"><br><b><font size = 2 color = #000000>Check elements are present on testComplete tab</font></b><br></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Click on [testCompleteTab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of Stream's text</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking text of element Department title</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font></span>
+                <span class="reporter-method-output"><br><b><font size = 2 color = #000000>Check elements are present on notActual tab</font></b><br></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Click on [notActualTab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of Stream's text</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking text of element Department title</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font></span>
+                <span class="reporter-method-output"><br><b><font size = 2 color = #000000>Check elements are present on banned Tab</font></b><br></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Click on [bannedTab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of Stream's text</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking text of element Department title</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font></span>
+                <span class="reporter-method-output"><br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">13 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.epam.testexternalpart.tests.SmokeTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">checkElementsViewCandidate</span>
+                <br/>
+                <span class="ignored-method-name">testCheckElementsPresentAddStreamPage</span>
+                <br/>
+                <span class="ignored-method-name">checkMenu</span>
+                <br/>
+                <span class="ignored-method-name">checkElementsAddCandidate</span>
+                <br/>
+                <span class="ignored-method-name">testCheckElementsPresentAddDepartmentPage</span>
+                <br/>
+                <span class="ignored-method-name">checkElAllCandiadtesMenu</span>
+                <br/>
+                <span class="ignored-method-name">testcheckAddStreamPageInDepartmentJava</span>
+                <br/>
+                <span class="ignored-method-name">testcheckAddStreamPageInDepartmentAutoTest</span>
+                <br/>
+                <span class="ignored-method-name">testCheckElementsPresentDepartmentPage</span>
+                <br/>
+                <span class="ignored-method-name">testcheckAddStreamPageInDepartmentNet</span>
+                <br/>
+                <span class="ignored-method-name">testcheckAddStreamPageInDepartmentSofttest</span>
+                <br/>
+                <span class="ignored-method-name">checkElementsEditCandidate</span>
+                <br/>
+                <span class="ignored-method-name">testcheckAddStreamPageInDepartmentFrontEnd</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.testexternalpart.tests.SmokeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">startPage</span>
+                <span class="method-start">4002 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkElStreamPage(;¹;First Name;Last Name;Middle Name;Phone;BirthDate;Email;Fill Date)</span>
+                <span class="method-start">4182 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">18505 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

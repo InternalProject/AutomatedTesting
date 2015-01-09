@@ -1,0 +1,1524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on StreamPage</font></b><br/>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking that click by selected stream reffering to Stream Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br><b><font size = 2 color = #000000>Check all elements are present With Export</font></b><br>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream exportCandidateButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream exportCandidateButton]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream choose Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream choose Candidate Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream import Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream import Candidate Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's text</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Department title</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br><b><font size = 2 color = #000000>Check elements are present on notTestedCandidate tab</font></b><br>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [notTestedCandidate]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's text</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Department title</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br><b><font size = 2 color = #000000>Check elements are present on assignedToTest tab</font></b><br>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [assignedToTestTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's text</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Department title</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br><b><font size = 2 color = #000000>Check elements are present on confirmed tab</font></b><br>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [confirmedTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's text</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Department title</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br><b><font size = 2 color = #000000>Check elements are present on testComplete tab</font></b><br>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [testCompleteTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's text</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Department title</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br><b><font size = 2 color = #000000>Check elements are present on notActual tab</font></b><br>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [notActualTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's text</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Department title</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br><b><font size = 2 color = #000000>Check elements are present on banned Tab</font></b><br>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [bannedTab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's text</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Department title</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="22728" started-at="2015-01-09T12:27:01Z" finished-at="2015-01-09T12:27:24Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="22728" started-at="2015-01-09T12:27:01Z" finished-at="2015-01-09T12:27:24Z">
+      <class name="com.epam.testexternalpart.tests.SmokeTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@340e92fe]" name="init" is-config="true" duration-ms="3512" started-at="2015-01-09T14:27:01Z" finished-at="2015-01-09T14:27:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@340e92fe]" name="startPage" is-config="true" duration-ms="180" started-at="2015-01-09T14:27:05Z" finished-at="2015-01-09T14:27:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="PASS" signature="checkElStreamPage(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@340e92fe]" name="checkElStreamPage" duration-ms="14323" started-at="2015-01-09T14:27:05Z" data-provider="testData" finished-at="2015-01-09T14:27:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[;¹;First Name;Last Name;Middle Name;Phone;BirthDate;Email;Fill Date]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on StreamPage</font></b><br/>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking that click by selected stream reffering to Stream Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br><b><font size = 2 color = #000000>Check all elements are present With Export</font></b><br>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream exportCandidateButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream exportCandidateButton]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream choose Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream choose Candidate Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream import Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream import Candidate Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's text</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Department title</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br><b><font size = 2 color = #000000>Check elements are present on notTestedCandidate tab</font></b><br>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [notTestedCandidate]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's text</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Department title</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br><b><font size = 2 color = #000000>Check elements are present on assignedToTest tab</font></b><br>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [assignedToTestTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's text</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Department title</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br><b><font size = 2 color = #000000>Check elements are present on confirmed tab</font></b><br>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [confirmedTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's text</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Department title</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br><b><font size = 2 color = #000000>Check elements are present on testComplete tab</font></b><br>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [testCompleteTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's text</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Department title</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br><b><font size = 2 color = #000000>Check elements are present on notActual tab</font></b><br>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [notActualTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's text</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Department title</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br><b><font size = 2 color = #000000>Check elements are present on banned Tab</font></b><br>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [bannedTab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's text</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element Department title</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Department title] is correct</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Departments text are present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of Stream's elements</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Assign Test Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Assign Test Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Bun Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Bun Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream Delete Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream Delete Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream all Candidate Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream all Candidate Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream notTestedCandidate]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream notTestedCandidate]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned To Test Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned To Test Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream confirmed Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream confirmed Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream test Complete Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream test Complete Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream not Actual Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream not Actual Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream banned Tab]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream banned Tab]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream searchField]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream add Candidate Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Streams elements are present</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkElStreamPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@340e92fe]" name="tearDown" is-config="true" duration-ms="4213" started-at="2015-01-09T14:27:20Z" finished-at="2015-01-09T14:27:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.epam.testexternalpart.tests.SmokeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
