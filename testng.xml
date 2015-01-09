@@ -5,8 +5,36 @@
     <test name="smokeMenuTest" verbose="10" parallel="false">
         <classes>
             <class name="com.epam.testexternalpart.tests.SmokeTest"></class>
-       		<class name="com.epam.testexternalpart.tests.DepartmentTest"></class>
         </classes>
     </test>
-    
+       <test name="DepartmentTest" verbose="10" parallel="false">
+        <classes>
+            <class name="com.epam.testexternalpart.tests.DepartmentTest"></class>
+        </classes>
+    </test>
+       <test name="StreamTest" verbose="10" parallel="false">
+        <classes>
+            <class name="com.epam.testexternalpart.tests.StreamTest"></class>
+        </classes>
+    </test>
+       <test name="CandidateTest" verbose="10" parallel="false">
+        <classes>
+            <class name="com.epam.testexternalpart.tests.AddCandidateTest"></class>
+        </classes>
+    </test>
+        <test name="AssigningToTestTest" verbose="10" parallel="false">
+        <classes>
+            <class name="com.epam.testexternalpart.tests.AssigningToTest"></class>
+        </classes>
+    </test>
+        <test name="SeveralStreamTest" verbose="10" parallel="false">
+        <classes>
+            <class name="com.epam.testexternalpart.tests.SeveralStreamTest"></class>
+        </classes>
+    </test>
+        <test name="SearchStreamTest" verbose="10" parallel="false">
+        <classes>
+            <class name="com.epam.testexternalpart.tests.SearchTest"></class>
+        </classes>
+    </test>
 </suite>

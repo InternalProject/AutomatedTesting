@@ -494,8 +494,8 @@ public class StreamPage extends Components {
 	
 	public void deleteAddedCand() {
 		
-		clickElement(getCheckbox(tableRow.size()-1), "check-box of last cand");
-		 deleteButton.click();
+		clickElement(getCheckbox(0), "check-box of last cand");
+		clickElement(deleteButton,"deleteButton");
 		 isElementExist("delCandPopAp", delCandPopAp, true);
 		 clickElement( delDepPopAp, "deleteCandPopApButton");
 
@@ -623,20 +623,21 @@ public class StreamPage extends Components {
 	}
 
 	public void deleteAllCand(String mess) {
-//	try {
-//		Thread.sleep(1000);
-//	} catch (InterruptedException e) {
-//		// TODO Auto-generated catch block
-//		e.printStackTrace();
-//	}
-	   (new WebDriverWait(driver, 4000)).until(ExpectedConditions.elementToBeClickable(By.xpath(STREAM_CHECKBOX_FOR_ALL)));
+	try {
+		Thread.sleep(1000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	 //  (new WebDriverWait(driver, 4000)).until(ExpectedConditions.elementToBeClickable(By.xpath(STREAM_CHECKBOX_FOR_ALL)));
 
-
+        System.out.println(tableRow.size());
 		while(tableRow.size()>1){
 		clickElementJS(STREAM_CHECKBOX_FOR_ALL,"CheckboxForAll");
 		clickElementJS( STREAM_DELETE_BUTTON,"deleteButton");
-	   isElementExist("delCandPopAp", delCandPopAp, true);
-	   clickElementJS( DEL_DEP_POP_AP_BUTTON, "deleteCandPopApButton");
+	    isElementExist("delCandPopAp", delCandPopAp, true);
+	    clickElementJS( DEL_DEP_POP_AP_BUTTON, "deleteCandPopApButton");
+	    System.out.println("2 "+tableRow.size());
 		}
 		
 	   (new WebDriverWait(driver, 4000)).until(ExpectedConditions.visibilityOf(title));

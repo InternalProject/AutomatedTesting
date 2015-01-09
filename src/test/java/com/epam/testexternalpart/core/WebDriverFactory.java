@@ -13,6 +13,7 @@ public class WebDriverFactory {
 	public static WebDriver initDriver(String browserName) {
 		if(browserName.contentEquals("chrome")) {
 
+
 			System.setProperty("webdriver.chrome.driver", "D:/AutomatedTesting/chromedriver.exe");
 
 			driver = new ChromeDriver();

@@ -3,6 +3,7 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.epam.testexternalpart.tests.PlaceForTestingTest">
         <methods>
 <<<<<<< HEAD
@@ -27,6 +28,16 @@
 >>>>>>> 04b90edf4428fe2b543d8fa1128336df8ff424d5
         </methods>
       </class> <!-- com.epam.testexternalpart.tests.PlaceForTestingTest -->
+=======
+      <class name="com.epam.testexternalpart.tests.AddCandidateTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="init"/>
+          <include name="startPage"/>
+          <include name="bannWithButton" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.epam.testexternalpart.tests.AddCandidateTest -->
+>>>>>>> 3c57fb8ebf8cb9dd1a04595312d0d60635a5cf27
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
