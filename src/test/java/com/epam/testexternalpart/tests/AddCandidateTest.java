@@ -41,7 +41,6 @@ public class AddCandidateTest extends BaseTest {
 	public void deleteAllCandidates(String mess){
 		TestReporter.writeToReportHeader("Delete all Candidates");
 		pageDepartment.clickElement(pageDepartment.getTableEl(1,1), "First stream on first dep");
-		pageStream.clickElement(pageStream.checkboxForAll,"CheckboxForAll");
 		pageStream.deleteAllCand(mess);
 		   
 }
@@ -126,7 +125,7 @@ public class AddCandidateTest extends BaseTest {
 		pageStream.clickViewCand();
 		pageViewProfile.clickEditButton();
 		pageEditProfile.changeStatus(status4);
-		pageStream.clickElement(pageStream.bannedTab,"notTestedCandidate");
+		pageStream.clickElement(pageStream.bannedTab,"BannedTab");
 		//bug
 	   	Thread.sleep(4000);
 	   	 element = driver.findElement(By.xpath("//table[@id='table']/thead/tr/th/div[text()='Fill Date']"));
@@ -140,4 +139,40 @@ public class AddCandidateTest extends BaseTest {
 		   
 }
   
+   	@Test(dataProvider="testData")
+	public void bannWithButton(String candData) throws InterruptedException{
+		TestReporter.writeToReportHeader("Chech Ban button work");
+		pageDepartment.clickElement(pageDepartment.getTableEl(1,1), "First stream on first dep");
+		TestReporter.writeToReportStep("1-Create candidate");
+		pageDepartment.clickElement( pageStream.addCandidateButton, "addCandidateBut");
+		pageCreateProfile.createNewCandidate(candData);
+		//bug
+	   	Thread.sleep(4000);
+	   	WebElement element = driver.findElement(By.xpath("//table[@id='table']/thead/tr/th/div[text()='Fill Date']"));
+	   	JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", element);
+		Thread.sleep(4000);
+		//bug
+
+		 pageStream.checkCandExisting(candData,true);
+		 TestReporter.writeToReportStep("2-Ban Candidate");
+		 pageStream.clickElement(pageStream.Checkbox—ol.get(0),"CheckboxForFirst");
+		 pageStream.clickElement(pageStream.bunButton,"BanButton");
+		 pageStream.clickElement(pageStream.banButtPopap,"banButtPopap");
+
+		 TestReporter.writeToReportStep("3-Check candidat's displaying on \"Banned\" tab");
+		 pageStream.clickElement(pageStream.bannedTab,"notTestedCandidate");
+			//bug
+		   	Thread.sleep(4000);
+		   	 element = driver.findElement(By.xpath("//table[@id='table']/thead/tr/th/div[text()='Fill Date']"));
+			 js = (JavascriptExecutor)driver;
+			js.executeScript("arguments[0].click();", element);
+			Thread.sleep(4000);
+			//bug
+			pageStream.checkCandExisting(candData,true);
+			pageStream.deleteAddedCand();
+
+
+}
+   	
 }

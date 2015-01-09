@@ -106,7 +106,12 @@ public class StreamPage extends Components {
 	private static final String ALL_CANDIDATES_IN_STREAM ="//tbody/tr";
 	private static final String ALL_CANDIDATES_PHONE_IN_STREAM = "/td[6]";
 	private static final String ALL_CANDIDATES_MAIL_IN_STREAM = "/td[8]";
+	
+	private static final String BAN_BUTTON_POPAP = "//button[@id='ban_candidate']";
 
+	@FindBy(xpath = BAN_BUTTON_POPAP)
+	public WebElement banButtPopap;
+	
 	@FindBy(xpath = ALL_CANDIDATES_PHONE_IN_STREAM)
 	public WebElement all_candidates_phone_in_stream;
 	
@@ -141,7 +146,7 @@ public class StreamPage extends Components {
 	public WebElement checkboxForAll;
 	
 	@FindBy(xpath = STREAM_CHECKBOXES_COL)
-	private List<WebElement> Checkbox—ol;
+	public List<WebElement> Checkbox—ol;
 	
 	@FindBy(xpath = STREAM_TABLE_ELEMENT)
 	private List<WebElement> tableElement;
@@ -153,7 +158,7 @@ public class StreamPage extends Components {
 	private WebElement assignTestButton;
 	
 	@FindBy(xpath = STREAM_BUN_BUTTON)
-	private WebElement bunButton;
+	public WebElement bunButton;
 	
 	@FindBy(xpath = STREAM_DELETE_BUTTON)
 	private WebElement deleteButton;
@@ -579,7 +584,10 @@ public class StreamPage extends Components {
 
 	public void selectCandidatesForTest() {		
 		 
-		clickElement(checkboxForAll, "Select cabdidates to assigning to test");		
+        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(checkboxForAll));
+		clickElement(checkboxForAll, "Select cabdidates to assigning to test");	
+		
+        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(assignTestButton));
 		clickElement(assignTestButton, "Click assignTestButton");	
 	}
 
@@ -591,14 +599,13 @@ public class StreamPage extends Components {
 	public void checkCandidates(String field, String i) {
 		
 		TestReporter.writeToReportTitle("Checking not testing Candidates");
-		
+				
 		String []fields = field.split(";");		
 		List<WebElement> row;
 		Boolean flag = false;
-							
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		
 		row = driver.findElements(By.xpath(STREAM_TABLE_ROW + "[" + i + "]/td"));
-								
+				
 		for (String currentField : fields){	
 			for (WebElement el : row){		
 				if (el.getText().replaceAll("-", ".").equals(currentField))
@@ -616,10 +623,22 @@ public class StreamPage extends Components {
 	}
 
 	public void deleteAllCand(String mess) {
-		
-	  clickElement( deleteButton,"deleteButton");
+//	try {
+//		Thread.sleep(1000);
+//	} catch (InterruptedException e) {
+//		// TODO Auto-generated catch block
+//		e.printStackTrace();
+//	}
+	   (new WebDriverWait(driver, 4000)).until(ExpectedConditions.elementToBeClickable(By.xpath(STREAM_CHECKBOX_FOR_ALL)));
+
+
+		while(tableRow.size()>1){
+		clickElementJS(STREAM_CHECKBOX_FOR_ALL,"CheckboxForAll");
+		clickElementJS( STREAM_DELETE_BUTTON,"deleteButton");
 	   isElementExist("delCandPopAp", delCandPopAp, true);
-	   clickElement( delDepPopAp, "deleteCandPopApButton");
+	   clickElementJS( DEL_DEP_POP_AP_BUTTON, "deleteCandPopApButton");
+		}
+		
 	   (new WebDriverWait(driver, 4000)).until(ExpectedConditions.visibilityOf(title));
 	   Assert.assertEquals(tableRow.size(), 1,"Not all candidates was deleted");
 	   checkElementText(mess,"Table Row",tableRow.get(0));

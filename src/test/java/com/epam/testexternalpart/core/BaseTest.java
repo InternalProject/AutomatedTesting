@@ -86,13 +86,22 @@ public abstract class BaseTest {
 		pagePlaceForTesting = new PlaceForTestingPage(driver);
 	}
 	
-//	@AfterClass
-//	public void tearDown() {
-//		driver.manage().deleteAllCookies();
-//		
-//		driver.close();
-//		driver.quit();	
-//	}
+
+	@AfterClass
+	public void tearDown() {
+		driver.manage().deleteAllCookies();
+		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		driver.close();
+		driver.quit();
+	
+	}
 
 	@DataProvider(name = "testData")
 	public Object[][] getTestData(Method testMethod) {
@@ -100,6 +109,7 @@ public abstract class BaseTest {
 		String a = testMethod.getName();
 		String b = testMethod.getDeclaringClass().getSimpleName();
 		int numberOfParameters = testMethod.getParameterTypes().length;
+
 		String path = "D:/AutomatedTesting/data/" + b + ".xlsx";
 
 		try {

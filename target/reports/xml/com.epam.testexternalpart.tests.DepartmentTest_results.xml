@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="smokeMenuTest"
-           tests="1"
+           tests="8"
            failures="0"
            errors="0"
-           skipped="0"
-           time="11.426">
+           skipped="8"
+           time="0.001">
   <properties />
   
+            <testcase name="init" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
+          <skipped />
+    </testcase>
+            <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
+          <skipped />
+    </testcase>
+            <testcase name="tearDown" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
+          <skipped />
+    </testcase>
+            <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
+          <skipped />
+    </testcase>
+            <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
+          <skipped />
+    </testcase>
+            <testcase name="testAddDepartmentWithValidName" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
+          <skipped />
+    </testcase>
+            <testcase name="testAddDepartment" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
+          <skipped />
+    </testcase>
+            <testcase name="testEditDepartmentName" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
+          <skipped />
+    </testcase>
   
-            <testcase name="testAddDepartment" time="11.426" classname="com.epam.testexternalpart.tests.DepartmentTest" />
-      
+  
 </testsuite>

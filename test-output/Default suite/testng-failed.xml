@@ -5,9 +5,26 @@
     <classes>
       <class name="com.epam.testexternalpart.tests.PlaceForTestingTest">
         <methods>
+<<<<<<< HEAD
           <include name="editNewPlaceForTesting" invocation-numbers="0"/>
           <include name="init"/>
           <include name="startPage"/>
+=======
+          <include name="checkBannedCandidate"/>
+          <include name="checkConfirmedCand"/>
+          <include name="invitateSecondTime"/>
+          <include name="invitateThirdTime"/>
+          <include name="startPage"/>
+          <include name="checkNotActualCand"/>
+          <include name="checkDublicateAnswer"/>
+          <include name="assignTest" invocation-numbers="0"/>
+          <include name="initEmails"/>
+          <include name="init"/>
+          <include name="responseFromCandidates"/>
+          <include name="checkNewTimeCand"/>
+          <include name="checkNotTestedCand" invocation-numbers="0 1 2 3 4 5 6"/>
+          <include name="checkAssignedToTestCand" invocation-numbers="0 1 2"/>
+>>>>>>> 04b90edf4428fe2b543d8fa1128336df8ff424d5
         </methods>
       </class> <!-- com.epam.testexternalpart.tests.PlaceForTestingTest -->
     </classes>
