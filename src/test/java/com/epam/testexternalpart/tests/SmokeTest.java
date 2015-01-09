@@ -1,9 +1,9 @@
 package com.epam.testexternalpart.tests;
 
+import org.testng.annotations.Test;
+
 import com.epam.testexternalpart.core.BaseTest;
 import com.epam.testexternalpart.core.TestReporter;
-
-import org.testng.annotations.Test;
 
 public class SmokeTest extends BaseTest{
 	
@@ -142,12 +142,12 @@ public class SmokeTest extends BaseTest{
 	
 	@Test(dataProvider="testData")
 	public void checkElAllCandiadtesMenu(String nameColumn){
+		
 		TestReporter.writeToReportHeader("Check all elements are present on CandiadtesMenu");
 		menuComp.clickElement(menuComp.allCandidatesButton,"allCandidatesButton");
 		pageAllCandidate.checkAllTextPresent();
 		pageAllCandidate.checkDefaultColumns(nameColumn);
-		pageAllCandidate.checkColumnsAccordingToCheckBox();		
-		
+		pageAllCandidate.checkColumnsAccordingToCheckBox();			
 	}
 	
 	@Test

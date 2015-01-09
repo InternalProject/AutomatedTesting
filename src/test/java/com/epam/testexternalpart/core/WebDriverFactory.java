@@ -12,9 +12,12 @@ public class WebDriverFactory {
 	
 	public static WebDriver initDriver(String browserName) {
 		if(browserName.contentEquals("chrome")) {
+
+
 			System.setProperty("webdriver.chrome.driver", "D:/Internal_project/Project/AutomatedTesting/chromedriver.exe");
+
 			driver = new ChromeDriver();
-		   	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		   	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.manage().deleteAllCookies();
 			return driver;
 		
@@ -23,7 +26,7 @@ public class WebDriverFactory {
 			 System.setProperty("webdriver.ie.driver", "D:/workspace/TestExternalPart/IEDriverServer.exe");
 			 
 			driver = new InternetExplorerDriver();
-			driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			 return driver;
 		}
 		else {

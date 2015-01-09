@@ -1,8 +1,5 @@
 package com.epam.testexternalpart.tests;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import com.epam.testexternalpart.core.BaseTest;
@@ -16,21 +13,15 @@ public class AddCandidateTest extends BaseTest {
 	   pageDepartment.clickElement(pageDepartment.getTableEl(1,1), "First stream on first dep");
 	   pageDepartment.clickElement( pageStream.addCandidateButton, "addCandidateBut");
 	   pageCreateProfile.createNewCandidate(candData);
-				//bug
-				WebElement element = driver.findElement(By.xpath("//table[@id='table']/thead/tr/th/div[text()='Fill Date']"));
-				JavascriptExecutor js = (JavascriptExecutor)driver;
-				js.executeScript("arguments[0].click();", element);
-				//bug
-	   pageStream.checkCandExisting(candData,true);
+       pageStream.checkCandExisting(candData,true);
 	   pageStream.deleteAddedCand();
 
-	   //pageStream.checkCandExisting(candData,false);
    }
    
    
    @Test(dataProvider="testData")
    public void addCandidate(String candData){
-	TestReporter.writeToReportHeader("Check the possibility of adding Òandidate manually");
+	TestReporter.writeToReportHeader("Check the possibility of adding Òandidate manually whith wrong data");
 	   pageDepartment.clickElement(pageDepartment.getTableEl(1,1), "First stream on first dep");
 	   pageDepartment.clickElement( pageStream.addCandidateButton, "addCandidateBut");
 	   pageCreateProfile.createNewCandidateWithout(candData);
@@ -53,88 +44,35 @@ public class AddCandidateTest extends BaseTest {
 		Thread.sleep(4000);
 		pageDepartment.clickElement( pageStream.addCandidateButton, "addCandidateBut");
 		pageCreateProfile.createNewCandidate(candData);
-		//bug
-	   	Thread.sleep(4000);
-	   	WebElement element = driver.findElement(By.xpath("//table[@id='table']/thead/tr/th/div[text()='Fill Date']"));
-	   	JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click();", element);
-		Thread.sleep(4000);
-		//bug
-
-		 pageStream.checkCandExisting(candData,true);
-
-		
-		TestReporter.writeToReportStep("2-Check candidat's displaying on \"Not tested\" tab");
-		pageStream.clickElement(pageStream.notTestedCandidate,"notTestedCandidate");
-		//bug
-	   	Thread.sleep(4000);
-	   	 element = driver.findElement(By.xpath("//table[@id='table']/thead/tr/th/div[text()='Fill Date']"));
-		 js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click();", element);
-		Thread.sleep(4000);
-		 element = driver.findElement(By.xpath("//table[@id='table']/thead/tr/th/div[text()='Fill Date']"));
-		 js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click();", element);
-		Thread.sleep(4000);
-		//bug
-				
 		pageStream.checkCandExisting(candData,true);
-
+		TestReporter.writeToReportStep("2-Check candidat's displaying on \"Not tested\" tab");
+		pageStream.clickElement(pageStream.notTestedCandidate,"notTestedCandidate");		
+		pageStream.checkCandExisting(candData,true);
 		TestReporter.writeToReportStep("4-Check candidat's displaying on \"confirmed\" tab");
 		pageStream.clickViewCand();
 		pageViewProfile.clickEditButton();
 		pageEditProfile.changeStatus(status1);
 		pageStream.clickElement(pageStream.confirmedTab,"notTestedCandidate");
-		//bug
-	   	Thread.sleep(4000);
-	   	 element = driver.findElement(By.xpath("//table[@id='table']/thead/tr/th/div[text()='Fill Date']"));
-		 js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click();", element);
-		Thread.sleep(4000);
-		//bug
-				 pageStream.checkCandExisting(candData,true);
-		
-		
+		pageStream.checkCandExisting(candData,true);
 		TestReporter.writeToReportStep("4-Check candidat's displaying on \"test†completed\" tab");
 		pageStream.clickViewCand();
 		pageViewProfile.clickEditButton();
 		pageEditProfile.changeStatus(status2);
 		pageStream.clickElement(pageStream.testCompleteTab,"notTestedCandidate");
-		//bug
-	   	Thread.sleep(4000);
-	   	 element = driver.findElement(By.xpath("//table[@id='table']/thead/tr/th/div[text()='Fill Date']"));
-		 js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click();", element);
-		Thread.sleep(4000);
-		//bug
-				 pageStream.checkCandExisting(candData,true);
+		pageStream.checkCandExisting(candData,true);
 		TestReporter.writeToReportStep("5-Check candidat's displaying on \"not actual\" tab");
 		pageStream.clickViewCand();
 		pageViewProfile.clickEditButton();
 		pageEditProfile.changeStatus(status3);
 		pageStream.clickElement(pageStream.notActualTab,"notTestedCandidate");
-		//bug
-	   	Thread.sleep(4000);
-	   	 element = driver.findElement(By.xpath("//table[@id='table']/thead/tr/th/div[text()='Fill Date']"));
-		 js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click();", element);
-		Thread.sleep(4000);
-		//bug
-				 pageStream.checkCandExisting(candData,true);
+		pageStream.checkCandExisting(candData,true);
 		TestReporter.writeToReportStep("6-Check candidat's displaying on \"Banned\" tab");
 		pageStream.clickViewCand();
 		pageViewProfile.clickEditButton();
 		pageEditProfile.changeStatus(status4);
 		pageStream.clickElement(pageStream.bannedTab,"BannedTab");
-		//bug
-	   	Thread.sleep(4000);
-	   	 element = driver.findElement(By.xpath("//table[@id='table']/thead/tr/th/div[text()='Fill Date']"));
-		 js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click();", element);
-		Thread.sleep(4000);
-		//bug
-				pageStream.checkCandExisting(candData,true);
-				pageStream.deleteAddedCand();
+		pageStream.checkCandExisting(candData,true);
+		pageStream.deleteAddedCand();
 
 		   
 }
@@ -146,29 +84,17 @@ public class AddCandidateTest extends BaseTest {
 		TestReporter.writeToReportStep("1-Create candidate");
 		pageDepartment.clickElement( pageStream.addCandidateButton, "addCandidateBut");
 		pageCreateProfile.createNewCandidate(candData);
-		//bug
-	   	Thread.sleep(4000);
-	   	WebElement element = driver.findElement(By.xpath("//table[@id='table']/thead/tr/th/div[text()='Fill Date']"));
-	   	JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click();", element);
-		Thread.sleep(4000);
-		//bug
-
-		 pageStream.checkCandExisting(candData,true);
+		pageStream.checkCandExisting(candData,true);
 		 TestReporter.writeToReportStep("2-Ban Candidate");
 		 pageStream.clickElement(pageStream.Checkbox—ol.get(0),"CheckboxForFirst");
 		 pageStream.clickElement(pageStream.bunButton,"BanButton");
 		 pageStream.clickElement(pageStream.banButtPopap,"banButtPopap");
 
+		 
+		 Thread.sleep(6000);
 		 TestReporter.writeToReportStep("3-Check candidat's displaying on \"Banned\" tab");
 		 pageStream.clickElement(pageStream.bannedTab,"notTestedCandidate");
-			//bug
-		   	Thread.sleep(4000);
-		   	 element = driver.findElement(By.xpath("//table[@id='table']/thead/tr/th/div[text()='Fill Date']"));
-			 js = (JavascriptExecutor)driver;
-			js.executeScript("arguments[0].click();", element);
-			Thread.sleep(4000);
-			//bug
+
 			pageStream.checkCandExisting(candData,true);
 			pageStream.deleteAddedCand();
 

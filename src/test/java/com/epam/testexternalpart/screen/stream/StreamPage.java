@@ -1,7 +1,6 @@
 package com.epam.testexternalpart.screen.stream;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -17,7 +16,6 @@ import org.testng.Assert;
 import com.epam.testexternalpart.core.TestReporter;
 import com.epam.testexternalpart.screen.Components;
 import com.epam.testexternalpart.screen.departments.Departments;
-import com.sun.javafx.print.Units;
 
 public class StreamPage extends Components {
 	
@@ -31,7 +29,7 @@ public class StreamPage extends Components {
 	private static final String STREAM_ASSIGN_TEST_BUTTON = "//a[@id='assign_test']";
 	private static final String STREAM_BUN_BUTTON = "//a[@id='banCandidateButton']";
 	private static final String STREAM_DELETE_BUTTON = "//a[@id='deleteCandidateButton']";
-	private static final String STREAM_ALL_CHECKBOXES = "//div[@class='col-md-2']/label";
+	private static final String STREAM_ALL_CHECKBOXES = "//div [@class='col-md-2']//label";
 	private static final String STREAM_TABLE_ROW="//tbody/tr";
 	private static final String STREAM_TABLE_ROW_VIEW="//table[@id='table']/tbody/tr[1]";
 	
@@ -497,7 +495,13 @@ public class StreamPage extends Components {
 	}
 
 	public void checkCandExisting(String st,boolean refer) {
-		  (new WebDriverWait(driver, 4000)).until(ExpectedConditions.visibilityOf(title));
+		  (new WebDriverWait(driver, 9000)).until(ExpectedConditions.visibilityOf(title));
+		  try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		  //clickElement(fillDateColumn,"fillDateColumn");
 		  TestReporter.writeToReportTitle("Check if new candidate was added");
 		  String []textOFLastEl = st.split(";");
@@ -521,8 +525,8 @@ public class StreamPage extends Components {
 	
 	public void deleteAddedCand() {
 		
-		clickElement(getCheckbox(tableRow.size()-1), "check-box of last cand");
-		 deleteButton.click();
+		clickElement(getCheckbox(0), "check-box of last cand");
+		clickElement(deleteButton,"deleteButton");
 		 isElementExist("delCandPopAp", delCandPopAp, true);
 		 clickElement( delDepPopAp, "deleteCandPopApButton");
 
@@ -606,14 +610,15 @@ public class StreamPage extends Components {
 	}
 
 	public void clickViewCand() {
+		
 		TestReporter.writeToReportTitle("Checking that click on selected candidate reffering to Candidate View Page");
 		
 		Actions action = new Actions(driver);
-		action.doubleClick(tableRowView);
-		action.perform();
-		 isElementExist("tableRowView", tableRowView, false);
-		 TestReporter.writeToReportPositiveResult("click on selected candidate reffering to Candidate View Page");
-
+		
+        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(checkboxForAll));
+		action.moveToElement(driver.findElement(By.xpath(STREAM_TABLE_ROW_VIEW))).doubleClick().build().perform();
+		
+		TestReporter.writeToReportPositiveResult("click on selected candidate reffering to Candidate View Page");
 	}
 
 	public void checkTableAccordingToCandidadate(String field) {
@@ -623,7 +628,7 @@ public class StreamPage extends Components {
 		Boolean flag = false;
 		
 		for (WebElement ckeckBox : allCheckBoxes){
-			ckeckBox.click();
+			clickElement(ckeckBox,"ckeckBox");
 			
 			row = driver.findElements(By.xpath(STREAM_TABLE_ROW + "[1]/td"));
 					
@@ -637,8 +642,9 @@ public class StreamPage extends Components {
 				flag = false;					
 			}			
 					
-			ckeckBox.click();			
-		}	
+			clickElement(ckeckBox,"ckeckBox");			
+		}
+		System.out.println("1");
 	}
 
 	public void selectCandidatesForTest() {		
@@ -682,20 +688,21 @@ public class StreamPage extends Components {
 	}
 
 	public void deleteAllCand(String mess) {
-//	try {
-//		Thread.sleep(1000);
-//	} catch (InterruptedException e) {
-//		// TODO Auto-generated catch block
-//		e.printStackTrace();
-//	}
-	   (new WebDriverWait(driver, 4000)).until(ExpectedConditions.elementToBeClickable(By.xpath(STREAM_CHECKBOX_FOR_ALL)));
+	try {
+		Thread.sleep(1000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	 //  (new WebDriverWait(driver, 4000)).until(ExpectedConditions.elementToBeClickable(By.xpath(STREAM_CHECKBOX_FOR_ALL)));
 
-
+        System.out.println(tableRow.size());
 		while(tableRow.size()>1){
 		clickElementJS(STREAM_CHECKBOX_FOR_ALL,"CheckboxForAll");
 		clickElementJS( STREAM_DELETE_BUTTON,"deleteButton");
-	   isElementExist("delCandPopAp", delCandPopAp, true);
-	   clickElementJS( DEL_DEP_POP_AP_BUTTON, "deleteCandPopApButton");
+	    isElementExist("delCandPopAp", delCandPopAp, true);
+	    clickElementJS( DEL_DEP_POP_AP_BUTTON, "deleteCandPopApButton");
+	    System.out.println("2 "+tableRow.size());
 		}
 		
 	   (new WebDriverWait(driver, 4000)).until(ExpectedConditions.visibilityOf(title));
