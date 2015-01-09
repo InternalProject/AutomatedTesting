@@ -20,7 +20,7 @@ import org.testng.annotations.DataProvider;
 import com.epam.testexternalpart.screen.AllCandidatesPage;
 import com.epam.testexternalpart.screen.LoginPage;
 import com.epam.testexternalpart.screen.Menu;
-import com.epam.testexternalpart.screen.PlaceForTestingPage;
+//import com.epam.testexternalpart.screen.PlaceForTestingPage;
 import com.epam.testexternalpart.screen.departments.AddDepartmentPage;
 import com.epam.testexternalpart.screen.departments.Departments;
 import com.epam.testexternalpart.screen.profile.CreateProfilePage;
@@ -58,7 +58,7 @@ public abstract class BaseTest {
 	protected AnswerFromRambler pageRambler;
 	protected AnswerFromGMail pageGmail;
 	protected AssignToTestPage pageAssignTest;
-	protected PlaceForTestingPage pagePlaceForTesting;
+	//protected PlaceForTestingPage pagePlaceForTesting;
 	
 	@BeforeClass
 	public void init() {
@@ -83,7 +83,7 @@ public abstract class BaseTest {
 		pageAllCandidate = new AllCandidatesPage(driver);
 		pageEditProfile = new EditProfilePage(driver);
 		pageAssignTest = new AssignToTestPage(driver);
-		pagePlaceForTesting = new PlaceForTestingPage(driver);
+		//pagePlaceForTesting = new PlaceForTestingPage(driver);
 	}
 	
 
