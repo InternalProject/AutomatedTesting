@@ -1,6 +1,5 @@
 package com.epam.testexternalpart.tests;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.epam.testexternalpart.core.BaseTest;
