@@ -5,7 +5,6 @@
     <classes>
       <class name="com.epam.testexternalpart.tests.SmokeTest">
         <methods>
-          <include name="checkElStreamPage" invocation-numbers="0"/>
           <include name="checkElAllCandiadtesMenu" invocation-numbers="0"/>
           <include name="init"/>
           <include name="tearDown"/>

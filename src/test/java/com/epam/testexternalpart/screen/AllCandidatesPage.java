@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.epam.testexternalpart.core.TestReporter;
@@ -296,7 +298,6 @@ public class AllCandidatesPage extends Components {
 		checkEnableColumnByCheckBox(attemptCountCheckBoxTitle);
 		checkEnableColumnByCheckBox(statusCheckBoxTitle);
 		checkEnableColumnByCheckBox(commentCheckBoxTitle);
-		checkEnableColumnByCheckBox(commentCheckBoxTitle);
 		checkEnableColumnByCheckBox(estimationCheckBoxTitle);
 	}
 	
@@ -334,8 +335,10 @@ public class AllCandidatesPage extends Components {
 		
 		boolean b = false;
 		clickElement(title, "Click " + title.getText());		
-		
+
 		List<WebElement> tableHead = driver.findElements(By.xpath(STREAM_TABLE_HEAD));
+        (new WebDriverWait(driver, 3000)).until(ExpectedConditions.visibilityOfAllElements(tableHead));
+		
 		for(WebElement el : tableHead){
 			if (el.getText().toLowerCase().equals(name.toLowerCase())){
 				b = true;
