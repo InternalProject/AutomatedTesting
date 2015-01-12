@@ -70,9 +70,9 @@ public class SmokeTest extends BaseTest{
 		pageStream.checkAllElementArePresentWithExport();
 		pageStream.allTextArePresent();	
 		
-//		TestReporter.writeToReportStep("Check all Defaul tColumns are present");
-//		pageStream.checkDefaultColumns(nameColumn);	
-//		pageStream.checkColumnsAccordingToCheckBox();
+		TestReporter.writeToReportStep("Check all Defaul tColumns are present");
+		pageStream.checkDefaultColumns(nameColumn);	
+		pageStream.checkColumnsAccordingToCheckBox();
 		
 		TestReporter.writeToReportStep("Check elements are present on notTestedCandidate tab");
 		pageStream.clickElement(pageStream.notTestedCandidate,"notTestedCandidate");
@@ -121,11 +121,11 @@ public class SmokeTest extends BaseTest{
 		pageDepartment.clickSelectedStream();		
 		pageStream.clickAddCandidateButton();		
 		pageCreateProfile.createNewCandidate(candData);
-		//pageStream.checkTableAccordingToCandidadate(candData);
+		pageStream.checkTableAccordingToCandidadate(candData);
 		pageStream.clickViewCand();
-		//pageViewProfile.checkElementsPresent();
-		//pageViewProfile.checkAllTextPresent(fields);		
-		//pageViewProfile.checkTextAccordingToFields(candData);		
+		pageViewProfile.checkElementsPresent();
+		pageViewProfile.checkAllTextPresent(fields);		
+		pageViewProfile.checkTextAccordingToFields(candData);		
 	}
 	
 	@Test(dataProvider="testData")

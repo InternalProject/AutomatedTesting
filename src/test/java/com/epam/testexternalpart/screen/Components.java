@@ -14,6 +14,18 @@ import com.epam.testexternalpart.core.TestReporter;
 
 public class Components {
 	  protected WebDriver driver;
+	  protected final int SHORT_TIME=1000;
+	  protected final int MIDDLE_TIME=5000;
+	  protected final int LONG_TIME=9000;
+	  
+	  public void wating(int time){
+		  try {
+			Thread.sleep(time);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		  
+	  }
 	  
 	  public  void isElementExist( String item, WebElement welement, boolean refer) {
 		
@@ -60,10 +72,6 @@ public class Components {
 	        }
 	       }
 	  
-//	  public WebElement find(By by){
-//		return  getWaiter().until(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
-//	  }
-
 
 	  public  void clickElement(WebElement webElement, String item) {
 		  TestReporter.writeToReportTitle("Click on ["+item+"]");
@@ -73,19 +81,12 @@ public class Components {
 	  
 	  
 	  public  void clickElementJS(String  xpath, String item) {
-		  try {
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		  
-		//   (new WebDriverWait(driver, 4000)).until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-
+		
+		  wating(SHORT_TIME);
 		  TestReporter.writeToReportTitle("Click on ["+item+"]");
-			WebElement element = driver.findElement(By.xpath(xpath));
-			JavascriptExecutor js = (JavascriptExecutor)driver;
-			js.executeScript("arguments[0].click();", element);
+		  WebElement element = driver.findElement(By.xpath(xpath));
+		  JavascriptExecutor js = (JavascriptExecutor)driver;
+		   js.executeScript("arguments[0].click();", element);
 	    }
 	  
 
