@@ -31,7 +31,7 @@ public class StreamPage extends Components {
 	private static final String STREAM_DELETE_BUTTON = "//a[@id='deleteCandidateButton']";
 	private static final String STREAM_ALL_CHECKBOXES = "//div [@class='col-md-2']//label";
 	private static final String STREAM_TABLE_ROW="//tbody/tr";
-	private static final String STREAM_TABLE_ROW_VIEW="//table[@id='table']/tbody/tr[1]";
+	private static final String STREAM_TABLE_ROW_VIEW="//table[@id='table']/tbody/tr[1]/td[3]";
 	
 	private static final String STREAM_ALL_CANDIDATE_TAB = "//ul[@id='candTab']/li/a[text()='All Candidates']";
 	private static final String STREAM_NOT_TESTED_TAB = "//ul[@id='candTab']/li/a[text()='Not tested']";
@@ -615,7 +615,7 @@ public class StreamPage extends Components {
 		
 		Actions action = new Actions(driver);
 		
-        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(checkboxForAll));
+        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(STREAM_TABLE_ROW_VIEW)));
 		action.moveToElement(driver.findElement(By.xpath(STREAM_TABLE_ROW_VIEW))).doubleClick().build().perform();
 		
 		TestReporter.writeToReportPositiveResult("click on selected candidate reffering to Candidate View Page");
@@ -659,6 +659,7 @@ public class StreamPage extends Components {
 	public void clickNotTestedTab() {
 		
 		clickElement(notTestedCandidate, "click notTestedCandidate");
+		pause(1000);
 	}
 
 	public void checkCandidates(String field, String i) {
@@ -668,9 +669,8 @@ public class StreamPage extends Components {
 		String []fields = field.split(";");		
 		List<WebElement> row;
 		Boolean flag = false;
-		
+		   
 		row = driver.findElements(By.xpath(STREAM_TABLE_ROW + "[" + i + "]/td"));
-				
 		for (String currentField : fields){	
 			for (WebElement el : row){		
 				if (el.getText().replaceAll("-", ".").equals(currentField))
@@ -688,14 +688,9 @@ public class StreamPage extends Components {
 	}
 
 	public void deleteAllCand(String mess) {
-	try {
-		Thread.sleep(1000);
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-	 //  (new WebDriverWait(driver, 4000)).until(ExpectedConditions.elementToBeClickable(By.xpath(STREAM_CHECKBOX_FOR_ALL)));
-
+	
+		pause(2000);
+		
         System.out.println(tableRow.size());
 		while(tableRow.size()>1){
 		clickElementJS(STREAM_CHECKBOX_FOR_ALL,"CheckboxForAll");
@@ -705,7 +700,7 @@ public class StreamPage extends Components {
 	    System.out.println("2 "+tableRow.size());
 		}
 		
-	   (new WebDriverWait(driver, 4000)).until(ExpectedConditions.visibilityOf(title));
+	   (new WebDriverWait(driver, 4000)).until(ExpectedConditions.visibilityOfAllElements(tableRow));
 	   Assert.assertEquals(tableRow.size(), 1,"Not all candidates was deleted");
 	   checkElementText(mess,"Table Row",tableRow.get(0));
 	
@@ -820,6 +815,16 @@ TestReporter.writeToReportTitle("Checking the presence of Stream's elements");
 		TestReporter.writeToReportPositiveResult("All Streams elements are present");
 		
 		
+	}
+	
+	public void pause(int milis){
+		
+		try {
+			Thread.sleep(milis);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 		
 }

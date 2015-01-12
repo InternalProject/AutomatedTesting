@@ -3494,20 +3494,20 @@
       <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream ia viewed acoording to Department</font>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="184987" started-at="2015-01-09T16:31:27Z" finished-at="2015-01-09T16:34:32Z">
+  <suite name="Default suite" duration-ms="181956" started-at="2015-01-12T15:53:17Z" finished-at="2015-01-12T15:56:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="184987" started-at="2015-01-09T16:31:27Z" finished-at="2015-01-09T16:34:32Z">
+    <test name="Default test" duration-ms="181956" started-at="2015-01-12T15:53:17Z" finished-at="2015-01-12T15:56:19Z">
       <class name="com.epam.testexternalpart.tests.SmokeTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="init" is-config="true" duration-ms="7052" started-at="2015-01-09T18:31:27Z" finished-at="2015-01-09T18:31:34Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="init" is-config="true" duration-ms="7747" started-at="2015-01-12T17:53:17Z" finished-at="2015-01-12T17:53:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="254" started-at="2015-01-09T18:31:35Z" finished-at="2015-01-09T18:31:35Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="248" started-at="2015-01-12T17:53:25Z" finished-at="2015-01-12T17:53:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="checkElAllCandiadtesMenu(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElAllCandiadtesMenu" duration-ms="15591" started-at="2015-01-09T18:31:35Z" data-provider="testData" finished-at="2015-01-09T18:31:50Z">
+        <test-method status="PASS" signature="checkElAllCandiadtesMenu(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElAllCandiadtesMenu" duration-ms="15023" started-at="2015-01-12T17:53:26Z" data-provider="testData" finished-at="2015-01-12T17:53:41Z">
           <params>
             <param index="0">
               <value>
@@ -3854,11 +3854,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- checkElAllCandiadtesMenu -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="228" started-at="2015-01-09T18:31:51Z" finished-at="2015-01-09T18:31:51Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="255" started-at="2015-01-12T17:53:41Z" finished-at="2015-01-12T17:53:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="checkElStreamPage(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElStreamPage" duration-ms="30497" started-at="2015-01-09T18:31:51Z" data-provider="testData" finished-at="2015-01-09T18:32:21Z">
+        <test-method status="PASS" signature="checkElStreamPage(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElStreamPage" duration-ms="29652" started-at="2015-01-12T17:53:41Z" data-provider="testData" finished-at="2015-01-12T17:54:11Z">
           <params>
             <param index="0">
               <value>
@@ -5546,11 +5546,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- checkElStreamPage -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="219" started-at="2015-01-09T18:32:21Z" finished-at="2015-01-09T18:32:22Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="291" started-at="2015-01-12T17:54:11Z" finished-at="2015-01-12T17:54:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="checkElementsAddCandidate(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElementsAddCandidate" duration-ms="22523" started-at="2015-01-09T18:32:22Z" data-provider="testData" finished-at="2015-01-09T18:32:44Z">
+        <test-method status="PASS" signature="checkElementsAddCandidate(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElementsAddCandidate" duration-ms="22620" started-at="2015-01-12T17:54:11Z" data-provider="testData" finished-at="2015-01-12T17:54:34Z">
           <params>
             <param index="0">
               <value>
@@ -5912,11 +5912,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- checkElementsAddCandidate -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="225" started-at="2015-01-09T18:32:44Z" finished-at="2015-01-09T18:32:44Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="195" started-at="2015-01-12T17:54:34Z" finished-at="2015-01-12T17:54:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="checkElementsEditCandidate(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElementsEditCandidate" duration-ms="35986" started-at="2015-01-09T18:32:44Z" data-provider="testData" finished-at="2015-01-09T18:33:20Z">
+        <test-method status="PASS" signature="checkElementsEditCandidate(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElementsEditCandidate" duration-ms="36301" started-at="2015-01-12T17:54:34Z" data-provider="testData" finished-at="2015-01-12T17:55:10Z">
           <params>
             <param index="0">
               <value>
@@ -6322,11 +6322,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- checkElementsEditCandidate -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="204" started-at="2015-01-09T18:33:20Z" finished-at="2015-01-09T18:33:21Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="291" started-at="2015-01-12T17:55:10Z" finished-at="2015-01-12T17:55:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="checkElementsViewCandidate(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElementsViewCandidate" duration-ms="38525" started-at="2015-01-09T18:33:21Z" data-provider="testData" finished-at="2015-01-09T18:33:59Z">
+        <test-method status="PASS" signature="checkElementsViewCandidate(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElementsViewCandidate" duration-ms="37137" started-at="2015-01-12T17:55:10Z" data-provider="testData" finished-at="2015-01-12T17:55:48Z">
           <params>
             <param index="0">
               <value>
@@ -6687,11 +6687,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- checkElementsViewCandidate -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="148" started-at="2015-01-09T18:33:59Z" finished-at="2015-01-09T18:33:59Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="147" started-at="2015-01-12T17:55:48Z" finished-at="2015-01-12T17:55:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="checkMenu()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkMenu" duration-ms="291" started-at="2015-01-09T18:33:59Z" finished-at="2015-01-09T18:34:00Z">
+        <test-method status="PASS" signature="checkMenu()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkMenu" duration-ms="269" started-at="2015-01-12T17:55:48Z" finished-at="2015-01-12T17:55:48Z">
           <reporter-output>
             <line>
               <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on Menu</font></b><br/>]]>
@@ -6758,11 +6758,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- checkMenu -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="111" started-at="2015-01-09T18:34:00Z" finished-at="2015-01-09T18:34:00Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="110" started-at="2015-01-12T17:55:48Z" finished-at="2015-01-12T17:55:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="testCheckElementsPresentAddDepartmentPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testCheckElementsPresentAddDepartmentPage" duration-ms="10527" started-at="2015-01-09T18:34:00Z" finished-at="2015-01-09T18:34:10Z">
+        <test-method status="PASS" signature="testCheckElementsPresentAddDepartmentPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testCheckElementsPresentAddDepartmentPage" duration-ms="10552" started-at="2015-01-12T17:55:48Z" finished-at="2015-01-12T17:55:59Z">
           <reporter-output>
             <line>
               <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on AddDepartmentPage</font></b><br/>]]>
@@ -6832,11 +6832,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- testCheckElementsPresentAddDepartmentPage -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="167" started-at="2015-01-09T18:34:10Z" finished-at="2015-01-09T18:34:10Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="160" started-at="2015-01-12T17:55:59Z" finished-at="2015-01-12T17:55:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="testCheckElementsPresentAddStreamPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testCheckElementsPresentAddStreamPage" duration-ms="11119" started-at="2015-01-09T18:34:10Z" finished-at="2015-01-09T18:34:21Z">
+        <test-method status="PASS" signature="testCheckElementsPresentAddStreamPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testCheckElementsPresentAddStreamPage" duration-ms="11046" started-at="2015-01-12T17:55:59Z" finished-at="2015-01-12T17:56:10Z">
           <reporter-output>
             <line>
               <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on AddStreamPage</font></b><br/>]]>
@@ -6954,11 +6954,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- testCheckElementsPresentAddStreamPage -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="227" started-at="2015-01-09T18:34:21Z" finished-at="2015-01-09T18:34:22Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="222" started-at="2015-01-12T17:56:10Z" finished-at="2015-01-12T17:56:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="testCheckElementsPresentDepartmentPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testCheckElementsPresentDepartmentPage" duration-ms="591" started-at="2015-01-09T18:34:22Z" finished-at="2015-01-09T18:34:22Z">
+        <test-method status="PASS" signature="testCheckElementsPresentDepartmentPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testCheckElementsPresentDepartmentPage" duration-ms="274" started-at="2015-01-12T17:56:10Z" finished-at="2015-01-12T17:56:10Z">
           <reporter-output>
             <line>
               <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on DepartmentPage</font></b><br/>]]>
@@ -7037,11 +7037,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- testCheckElementsPresentDepartmentPage -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="228" started-at="2015-01-09T18:34:22Z" finished-at="2015-01-09T18:34:23Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="105" started-at="2015-01-12T17:56:10Z" finished-at="2015-01-12T17:56:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentAutoTest()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentAutoTest" duration-ms="838" started-at="2015-01-09T18:34:23Z" finished-at="2015-01-09T18:34:23Z">
+        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentAutoTest()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentAutoTest" duration-ms="543" started-at="2015-01-12T17:56:11Z" finished-at="2015-01-12T17:56:11Z">
           <reporter-output>
             <line>
               <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on AddStreamPage in Department AutoTest</font></b><br/>]]>
@@ -7060,11 +7060,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- testcheckAddStreamPageInDepartmentAutoTest -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="101" started-at="2015-01-09T18:34:23Z" finished-at="2015-01-09T18:34:23Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="145" started-at="2015-01-12T17:56:11Z" finished-at="2015-01-12T17:56:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentFrontEnd()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentFrontEnd" duration-ms="846" started-at="2015-01-09T18:34:23Z" finished-at="2015-01-09T18:34:24Z">
+        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentFrontEnd()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentFrontEnd" duration-ms="750" started-at="2015-01-12T17:56:11Z" finished-at="2015-01-12T17:56:12Z">
           <reporter-output>
             <line>
               <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on AddStreamPage in Department FrontEnd</font></b><br/>]]>
@@ -7083,11 +7083,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- testcheckAddStreamPageInDepartmentFrontEnd -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="139" started-at="2015-01-09T18:34:24Z" finished-at="2015-01-09T18:34:24Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="104" started-at="2015-01-12T17:56:12Z" finished-at="2015-01-12T17:56:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentJava()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentJava" duration-ms="612" started-at="2015-01-09T18:34:24Z" finished-at="2015-01-09T18:34:25Z">
+        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentJava()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentJava" duration-ms="683" started-at="2015-01-12T17:56:12Z" finished-at="2015-01-12T17:56:13Z">
           <reporter-output>
             <line>
               <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on AddStreamPage in Department Java</font></b><br/>]]>
@@ -7106,11 +7106,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- testcheckAddStreamPageInDepartmentJava -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="238" started-at="2015-01-09T18:34:25Z" finished-at="2015-01-09T18:34:25Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="143" started-at="2015-01-12T17:56:13Z" finished-at="2015-01-12T17:56:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentNet()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentNet" duration-ms="725" started-at="2015-01-09T18:34:25Z" finished-at="2015-01-09T18:34:26Z">
+        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentNet()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentNet" duration-ms="674" started-at="2015-01-12T17:56:13Z" finished-at="2015-01-12T17:56:14Z">
           <reporter-output>
             <line>
               <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on AddStreamPage in Department Net</font></b><br/>]]>
@@ -7129,11 +7129,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- testcheckAddStreamPageInDepartmentNet -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="127" started-at="2015-01-09T18:34:26Z" finished-at="2015-01-09T18:34:26Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="108" started-at="2015-01-12T17:56:14Z" finished-at="2015-01-12T17:56:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentSofttest()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentSofttest" duration-ms="789" started-at="2015-01-09T18:34:26Z" finished-at="2015-01-09T18:34:27Z">
+        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentSofttest()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentSofttest" duration-ms="553" started-at="2015-01-12T17:56:14Z" finished-at="2015-01-12T17:56:14Z">
           <reporter-output>
             <line>
               <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on AddStreamPage in Department Softtest</font></b><br/>]]>
@@ -7152,7 +7152,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testcheckAddStreamPageInDepartmentSofttest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="tearDown" is-config="true" duration-ms="4934" started-at="2015-01-09T18:34:27Z" finished-at="2015-01-09T18:34:32Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="tearDown" is-config="true" duration-ms="4662" started-at="2015-01-12T17:56:14Z" finished-at="2015-01-12T17:56:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

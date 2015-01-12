@@ -273,6 +273,7 @@ public class AllCandidatesPage extends Components {
 		TestReporter.writeToReportTitle("Checking the presence of All Candidates menu - default columns");
 		String []textForEachElement=nameColumn.split(";");		
 			
+        (new WebDriverWait(driver, 2000)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(STREAM_TABLE_HEAD)));
 		List<WebElement> tableHead = driver.findElements(By.xpath(STREAM_TABLE_HEAD));
 		
 		for(int i=0;i<textForEachElement.length;i++){		

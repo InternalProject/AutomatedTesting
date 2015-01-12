@@ -67,11 +67,7 @@ public class AssigningToTest extends BaseTest{
 				
 		pageIUa.logOn();
 		pageIUa.enterIntoUnreadMessage();		
-		pageIUa.responseConfirmedAnswer();	
-		
-		pageIUa.logOn();
-		pageIUa.enterIntoReadMessage();
-		pageIUa.responseConfirmedAnswer();
+		pageIUa.responseConfirmedAnswer();		
 		
 		pageYandex.logOn();
 		pageYandex.enterIntoUnreadMessage();
@@ -79,7 +75,11 @@ public class AssigningToTest extends BaseTest{
 		
 		pageRambler.logOn();
 		pageRambler.enterIntoUnreadMessage();
-		pageRambler.responseNewTimeAnswer();		
+		pageRambler.responseNewTimeAnswer();	
+		
+		pageIUa.logOn();
+		pageIUa.enterIntoReadMessage();
+		pageIUa.responseConfirmedAnswer();
 	}
 	
 	@Test(dataProvider = "testData",priority = 7)
