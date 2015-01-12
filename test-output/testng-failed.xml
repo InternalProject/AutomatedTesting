@@ -5,14 +5,8 @@
     <classes>
       <class name="com.epam.testexternalpart.tests.AddCandidateTest">
         <methods>
-          <include name="tearDown"/>
           <include name="init"/>
-<<<<<<< HEAD
-          <include name="checkElStreamPage" invocation-numbers="0"/>
-=======
-          <include name="changeStatus" invocation-numbers="0"/>
->>>>>>> 277745f64ab2f466f647bbd1f10027fd565d396a
-          <include name="startPage"/>
+          <include name="changeStatus"/>
         </methods>
       </class> <!-- com.epam.testexternalpart.tests.AddCandidateTest -->
     </classes>
