@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.epam.testexternalpart.core.TestReporter;
@@ -58,7 +60,8 @@ public class AllCandidatesPage extends Components {
 	private static final String STREAM_ATTEMPT_COUNT_CHECKBOX = "//input[@id='checkbox11'] | //label[text()='Attempt Count']";
 	private static final String STREAM_STATUS_CHECKBOX = "//input[@id='checkbox12']";
 	private static final String STREAM_COMMENT_CHECKBOX = "//input[@id='checkbox13']";
-	
+	private static final String STREAM_ESTIMATION_CHECKBOX = "//input[@id='checkbox15']";
+
 	//---CHECK BOXES TITTLES---
 	private static final String STREAM_SECOND_PHONE_CHECKBOX_LABEL = "//label[text()='Second phone']";
 	private static final String STREAM_UNIVERSITY_CHECKBOX_LABEL = "//label[text()='University']";
@@ -73,6 +76,7 @@ public class AllCandidatesPage extends Components {
 	private static final String STREAM_ATTEMPT_COUNT_CHECKBOX_LABEL = "//label[text()='Attempt Count']";
 	private static final String STREAM_STATUS_CHECKBOX_LABEL = "//label[text()='Status']";
 	private static final String STREAM_COMMENT_CHECKBOX_LABEL = "//label[text()='Comment']";
+	private static final String STREAM_ESTIMATION_CHECKBOX_LABEL = "//label[text()='Estimation']";
 	
 	@FindBy(xpath = TITLE)
 	private WebElement title;
@@ -188,6 +192,9 @@ public class AllCandidatesPage extends Components {
 	@FindBy(xpath = STREAM_COMMENT_CHECKBOX)
 	private WebElement commentCheckBox;
 	
+	@FindBy(xpath = STREAM_ESTIMATION_CHECKBOX)
+	private WebElement estimationCheckBox;
+	
 	//---CHECK BOXES-TITLES--
 	
 	@FindBy(xpath = STREAM_SECOND_PHONE_CHECKBOX_LABEL )
@@ -228,6 +235,9 @@ public class AllCandidatesPage extends Components {
 	
 	@FindBy(xpath = STREAM_COMMENT_CHECKBOX_LABEL)
 	private WebElement commentCheckBoxTitle;
+	
+	@FindBy(xpath = STREAM_ESTIMATION_CHECKBOX_LABEL)
+	private WebElement estimationCheckBoxTitle;
 	
 	public AllCandidatesPage(WebDriver driver){
 		this.driver=driver;
@@ -275,35 +285,34 @@ public class AllCandidatesPage extends Components {
 	
 	public void checkColumnsAccordingToCheckBox(){
 		
-		checkEnableColumnByCheckBox(secondPhoneCheckBox, secondPhoneCheckBoxTitle);
-		checkEnableColumnByCheckBox(UniversityCheckBox, UniversityCheckBoxTitle);
-		checkEnableColumnByCheckBox(facultyCheckBox, facultyCheckBoxTitle);
-		checkEnableColumnByCheckBox(degreeCheckBox, degreeCheckBoxTitle);
-		checkEnableColumnByCheckBox(educationStartCheckBox, educationStartCheckBoxTitle);
-		checkEnableColumnByCheckBox(graduationYearCheckBox, graduationYearCheckBoxTitle);
-		checkEnableColumnByCheckBox(additionalEducationCheckBox, additionalEducationCheckBoxTitle);
-		checkEnableColumnByCheckBox(relevantSkillsCheckBox, relevantSkillsCheckBoxTitle);
-		checkEnableColumnByCheckBox(howKnowCheckBox, howKnowCheckBoxTitle);
-		checkEnableColumnByCheckBox(secondPhoneCheckBox, secondPhoneCheckBoxTitle);
-		checkEnableColumnByCheckBox(attemptCountCheckBox, attemptCountCheckBoxTitle);
-		checkEnableColumnByCheckBox(statusCheckBox, statusCheckBoxTitle);
-		checkEnableColumnByCheckBox(commentCheckBox, commentCheckBoxTitle);
+		checkEnableColumnByCheckBox(secondPhoneCheckBoxTitle);
+		checkEnableColumnByCheckBox(UniversityCheckBoxTitle);
+		checkEnableColumnByCheckBox(facultyCheckBoxTitle);
+		checkEnableColumnByCheckBox(degreeCheckBoxTitle);
+		checkEnableColumnByCheckBox(educationStartCheckBoxTitle);
+		checkEnableColumnByCheckBox(graduationYearCheckBoxTitle);
+		checkEnableColumnByCheckBox(additionalEducationCheckBoxTitle);
+		checkEnableColumnByCheckBox(relevantSkillsCheckBoxTitle);
+		checkEnableColumnByCheckBox(howKnowCheckBoxTitle);
+		checkEnableColumnByCheckBox(secondPhoneCheckBoxTitle);
+		checkEnableColumnByCheckBox(attemptCountCheckBoxTitle);
+		checkEnableColumnByCheckBox(statusCheckBoxTitle);
+		checkEnableColumnByCheckBox(commentCheckBoxTitle);
+		checkEnableColumnByCheckBox(estimationCheckBoxTitle);
 	}
 	
-	public void checkEnableColumnByCheckBox(WebElement element, WebElement title){
+	public void checkEnableColumnByCheckBox(WebElement title){
 		
 		TestReporter.writeToReportTitle("Checking enable column " + title.getText() +
 				" by selecting check Box");
 		
-		element.click();		
+		clickElement(title, "Click " + title.getText());		
 		String name = title.getText();		
 		
 		List<WebElement> tableHead = driver.findElements(By.xpath(STREAM_TABLE_HEAD));
 		boolean b = false;
 		
 		for(WebElement el : tableHead){		
-			
-			System.out.println(el.getText());
 			if (el.getText().toLowerCase().equals(name.toLowerCase())){
 				b = true;
 				break;
@@ -314,10 +323,10 @@ public class AllCandidatesPage extends Components {
 		
 		TestReporter.writeToReportPositiveResult("Column is enabled");
 		
-		checkDisableColumnByCheckBox(element, title);
+		checkDisableColumnByCheckBox(title);
 	}	
 	
-	public void checkDisableColumnByCheckBox(WebElement checkedElement, WebElement title){
+	public void checkDisableColumnByCheckBox(WebElement title){
 		
 		TestReporter.writeToReportTitle("Checking disable column " + title.getText() +
 				" by selecting check Box");		
@@ -325,12 +334,12 @@ public class AllCandidatesPage extends Components {
 		String name = title.getText();	
 		
 		boolean b = false;
-		checkedElement.click();
-		
+		clickElement(title, "Click " + title.getText());		
+
 		List<WebElement> tableHead = driver.findElements(By.xpath(STREAM_TABLE_HEAD));
+        (new WebDriverWait(driver, 3000)).until(ExpectedConditions.visibilityOfAllElements(tableHead));
+		
 		for(WebElement el : tableHead){
-			JavascriptExecutor js = (JavascriptExecutor)driver;
-			js.executeScript("window.scrollTo(0,Math.max(document.documentElement.scrollHeight," + "document.body.scrollHeight,document.documentElement.clientHeight));");
 			if (el.getText().toLowerCase().equals(name.toLowerCase())){
 				b = true;
 				break;
