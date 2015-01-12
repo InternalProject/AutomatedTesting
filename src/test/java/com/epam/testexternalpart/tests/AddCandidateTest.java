@@ -41,7 +41,6 @@ public class AddCandidateTest extends BaseTest {
 		TestReporter.writeToReportHeader("Change  Candidat's status manually");
 		TestReporter.writeToReportStep("1-Create candidate");
 		pageDepartment.clickElement(pageDepartment.getTableEl(1,1), "First stream on first dep");
-		Thread.sleep(4000);
 		pageDepartment.clickElement( pageStream.addCandidateButton, "addCandidateBut");
 		pageCreateProfile.createNewCandidate(candData);
 		pageStream.checkCandExisting(candData,true);
@@ -78,7 +77,7 @@ public class AddCandidateTest extends BaseTest {
 }
   
    	@Test(dataProvider="testData")
-	public void bannWithButton(String candData) throws InterruptedException{
+	public void bannWithButton(String candData) {
 		TestReporter.writeToReportHeader("Chech Ban button work");
 		pageDepartment.clickElement(pageDepartment.getTableEl(1,1), "First stream on first dep");
 		TestReporter.writeToReportStep("1-Create candidate");
@@ -89,14 +88,10 @@ public class AddCandidateTest extends BaseTest {
 		 pageStream.clickElement(pageStream.Checkbox—ol.get(0),"CheckboxForFirst");
 		 pageStream.clickElement(pageStream.bunButton,"BanButton");
 		 pageStream.clickElement(pageStream.banButtPopap,"banButtPopap");
-
-		 
-		 Thread.sleep(6000);
 		 TestReporter.writeToReportStep("3-Check candidat's displaying on \"Banned\" tab");
 		 pageStream.clickElement(pageStream.bannedTab,"notTestedCandidate");
-
-			pageStream.checkCandExisting(candData,true);
-			pageStream.deleteAddedCand();
+		 pageStream.checkCandExisting(candData,true);
+		 pageStream.deleteAddedCand();
 
 
 }

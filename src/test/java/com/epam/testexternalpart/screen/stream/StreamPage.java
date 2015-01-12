@@ -502,7 +502,6 @@ public class StreamPage extends Components {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		  //clickElement(fillDateColumn,"fillDateColumn");
 		  TestReporter.writeToReportTitle("Check if new candidate was added");
 		  String []textOFLastEl = st.split(";");
 		  String []textForEachElement = tableRow.get(0).getText().split(" ");
@@ -691,8 +690,7 @@ public class StreamPage extends Components {
 	
 		pause(2000);
 		
-        System.out.println(tableRow.size());
-		while(tableRow.size()>1){
+        while(tableRow.size()>1){
 		clickElementJS(STREAM_CHECKBOX_FOR_ALL,"CheckboxForAll");
 		clickElementJS( STREAM_DELETE_BUTTON,"deleteButton");
 	    isElementExist("delCandPopAp", delCandPopAp, true);
