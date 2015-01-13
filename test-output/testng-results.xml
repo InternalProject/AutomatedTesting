@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="14" passed="14">
+<testng-results skipped="0" failed="0" total="15" passed="15">
   <reporter-output>
     <line>
-<<<<<<< HEAD
-      <![CDATA[<br /><b><font size = 2 color = #000099>Chech Ban button work</font></b><br/>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font>]]>
-=======
       <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on CandiadtesMenu</font></b><br/>]]>
     </line>
     <line>
@@ -348,10 +342,9 @@
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Checking that click by selected stream reffering to Stream Page</font>]]>
->>>>>>> 22eb4fd4e48bd2c32732f5d9bbe3dd711ac10d05
     </line>
     <line>
-      <![CDATA[<br><b><font size = 2 color = #000000>1-Create candidate</font></b><br>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
@@ -369,21 +362,6 @@
       <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font>]]>
     </line>
     <line>
-<<<<<<< HEAD
-      <![CDATA[<br><b><font size = 2 color = #000000>2-Ban Candidate</font></b><br>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [CheckboxForFirst]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [BanButton]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [banButtPopap]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br><b><font size = 2 color = #000000>3-Check candidat's displaying on "Banned" tab</font></b><br>]]>
-=======
       <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font>]]>
     </line>
     <line>
@@ -451,7 +429,6 @@
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream secondPhoneCheckBox]is Present</font>]]>
->>>>>>> 22eb4fd4e48bd2c32732f5d9bbe3dd711ac10d05
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream UniversityCheckBox]</font>]]>
@@ -463,9 +440,6 @@
       <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream assigned facultyCheckBox]</font>]]>
     </line>
     <line>
-<<<<<<< HEAD
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [check-box of last cand]</font>]]>
-=======
       <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream assigned facultyCheckBox]is Present</font>]]>
     </line>
     <line>
@@ -533,7 +507,6 @@
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream estimationCheckBox]is Present</font>]]>
->>>>>>> 22eb4fd4e48bd2c32732f5d9bbe3dd711ac10d05
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream exportCandidateButton]</font>]]>
@@ -547,39 +520,6 @@
     <line>
       <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Stream searchField]is Present</font>]]>
     </line>
-<<<<<<< HEAD
-  </reporter-output>
-  <suite name="Default suite" duration-ms="23316" started-at="2015-01-09T16:31:54Z" finished-at="2015-01-09T16:32:17Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="23316" started-at="2015-01-09T16:31:54Z" finished-at="2015-01-09T16:32:17Z">
-      <class name="com.epam.testexternalpart.tests.AddCandidateTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@967e8c]" name="init" is-config="true" duration-ms="3720" started-at="2015-01-09T18:31:54Z" finished-at="2015-01-09T18:31:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@967e8c]" name="startPage" is-config="true" duration-ms="196" started-at="2015-01-09T18:31:58Z" finished-at="2015-01-09T18:31:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="bannWithButton(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@967e8c]" name="bannWithButton" duration-ms="14547" started-at="2015-01-09T18:31:58Z" data-provider="testData" finished-at="2015-01-09T18:32:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<br /><b><font size = 2 color = #000099>Chech Ban button work</font></b><br/>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br><b><font size = 2 color = #000000>1-Create candidate</font></b><br>]]>
-=======
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Stream add Candidate Button]</font>]]>
     </line>
@@ -2852,85 +2792,85 @@
       <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Checking that click on selected candidate reffering to Candidate View Page</font>]]>
@@ -3161,6 +3101,270 @@
       <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text is present on View Profile Page</font>]]>
     </line>
     <line>
+      <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on Email Templates Page</font></b><br/>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking transfering to Email Template Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on settingsButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on emailTemplates]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence text on Email Template Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking partial text of element Crumbs</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Crumbs] is correct</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element invitation Tittle</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [invitation Tittle] is correct</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element successfull Test Tittle</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [successfull Test Tittle] is correct</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element faild Test Tittle</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [faild Test Tittle] is correct</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element answerDuplicationTittle</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [answerDuplicationTittle] is correct</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text are present on Email Template Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [invitationTittle]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of all elements on Email Invitation Template Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element invitation Available placeholders Tittle</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [invitation Available placeholders Tittle] is correct</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderAuthorEmail]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderAuthorEmail]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderAuthorname]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderAuthorname]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderBuilding]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderBuilding]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderBuildingMap]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderBuildingMap]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderDate]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderDate]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderDeadLine]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderDeadLine]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderDepartment]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderDepartment]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderDuration]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderDuration]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderInputBox]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderInputBox]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderSaveButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderSaveButton]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderResetButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderResetButton]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderRoom]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderRoom]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderTime]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderTime]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderUniversity]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderUniversity]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All elements are present on Email Invitation Template Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [successfullTestTittle]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of all elements on Email Successfull Test Template Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element successfull Test Available placeholders Tittle</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [successfull Test Available placeholders Tittle] is correct</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [successfullTestPlaceholderAuthorEmail]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[successfullTestPlaceholderAuthorEmail]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [successfullTestPlaceholderAuthorName]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[successfullTestPlaceholderAuthorName]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [successfullTestPlaceholderInputBox]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[successfullTestPlaceholderInputBox]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [successfullTestPlaceholderResetButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[successfullTestPlaceholderResetButton]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [successfullTestPlaceholderSaveButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[successfullTestPlaceholderSaveButton]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All elements are present on Email Successfull Test Template Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [faildTestTittle]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of all elements on Email Faild Test Template Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [faildTestPlaceholderAuthorEmail]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[faildTestPlaceholderAuthorEmail]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [faildTestPlaceholderAuthorName]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[faildTestPlaceholderAuthorName]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [faildTestPlaceholderInputBox]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[faildTestPlaceholderInputBox]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [faildTestPlaceholderResetButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[faildTestPlaceholderResetButton]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [faildTestPlaceholderSaveButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[faildTestPlaceholderSaveButton]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All elements are present on Email Faild Test Template Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [answerDuplicationTittle]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of all elements on Email Answer Duplication Template Page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking text of element faild Test Available placeholders Tittle</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [faild Test Available placeholders Tittle] is correct</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [answerDuplicationInputBox]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[answerDuplicationInputBox]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [answerDuplicationResetButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[answerDuplicationResetButton]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [answerDuplicationSaveButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[answerDuplicationSaveButton]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All elements are present on Email Answer Duplication Template Page</font>]]>
+    </line>
+    <line>
       <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on Menu</font></b><br/>]]>
     </line>
     <line>
@@ -3179,12 +3383,6 @@
       <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[homeButton]is Present</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [profileButton]</font>]]>
-    </line>
-    <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[profileButton]is Present</font>]]>
-    </line>
-    <line>
       <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Department Button]</font>]]>
     </line>
     <line>
@@ -3195,6 +3393,12 @@
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[all Candidates Button]is Present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [settingsButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[settingsButton]is Present</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [placeForTestingButton]</font>]]>
@@ -3209,16 +3413,22 @@
       <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[subgroupsButton]is Present</font>]]>
     </line>
     <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [templatesButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[templatesButton]is Present</font>]]>
+    </line>
+    <line>
       <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [searchInput]</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[searchInput]is Present</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [suserButton]</font>]]>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [profileButton]</font>]]>
     </line>
     <line>
-      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[suserButton]is Present</font>]]>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[profileButton]is Present</font>]]>
     </line>
     <line>
       <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Menu's elements are present</font>]]>
@@ -3554,20 +3764,20 @@
       <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream ia viewed acoording to Department</font>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="181956" started-at="2015-01-12T15:53:17Z" finished-at="2015-01-12T15:56:19Z">
+  <suite name="Default suite" duration-ms="193268" started-at="2015-01-13T12:39:56Z" finished-at="2015-01-13T12:43:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="181956" started-at="2015-01-12T15:53:17Z" finished-at="2015-01-12T15:56:19Z">
+    <test name="Default test" duration-ms="193268" started-at="2015-01-13T12:39:56Z" finished-at="2015-01-13T12:43:09Z">
       <class name="com.epam.testexternalpart.tests.SmokeTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="init" is-config="true" duration-ms="7747" started-at="2015-01-12T17:53:17Z" finished-at="2015-01-12T17:53:25Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="init" is-config="true" duration-ms="6254" started-at="2015-01-13T14:39:56Z" finished-at="2015-01-13T14:40:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="248" started-at="2015-01-12T17:53:25Z" finished-at="2015-01-12T17:53:26Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="254" started-at="2015-01-13T14:40:03Z" finished-at="2015-01-13T14:40:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="checkElAllCandiadtesMenu(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElAllCandiadtesMenu" duration-ms="15023" started-at="2015-01-12T17:53:26Z" data-provider="testData" finished-at="2015-01-12T17:53:41Z">
+        <test-method status="PASS" signature="checkElAllCandiadtesMenu(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElAllCandiadtesMenu" duration-ms="19775" started-at="2015-01-13T14:40:03Z" data-provider="testData" finished-at="2015-01-13T14:40:23Z">
           <params>
             <param index="0">
               <value>
@@ -3914,11 +4124,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- checkElAllCandiadtesMenu -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="255" started-at="2015-01-12T17:53:41Z" finished-at="2015-01-12T17:53:41Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="255" started-at="2015-01-13T14:40:23Z" finished-at="2015-01-13T14:40:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="checkElStreamPage(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElStreamPage" duration-ms="29652" started-at="2015-01-12T17:53:41Z" data-provider="testData" finished-at="2015-01-12T17:54:11Z">
+        <test-method status="PASS" signature="checkElStreamPage(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElStreamPage" duration-ms="32506" started-at="2015-01-13T14:40:23Z" data-provider="testData" finished-at="2015-01-13T14:40:56Z">
           <params>
             <param index="0">
               <value>
@@ -5606,11 +5816,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- checkElStreamPage -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="291" started-at="2015-01-12T17:54:11Z" finished-at="2015-01-12T17:54:11Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="355" started-at="2015-01-13T14:40:56Z" finished-at="2015-01-13T14:40:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="checkElementsAddCandidate(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElementsAddCandidate" duration-ms="22620" started-at="2015-01-12T17:54:11Z" data-provider="testData" finished-at="2015-01-12T17:54:34Z">
+        <test-method status="PASS" signature="checkElementsAddCandidate(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElementsAddCandidate" duration-ms="22693" started-at="2015-01-13T14:40:56Z" data-provider="testData" finished-at="2015-01-13T14:41:19Z">
           <params>
             <param index="0">
               <value>
@@ -5972,11 +6182,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- checkElementsAddCandidate -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="195" started-at="2015-01-12T17:54:34Z" finished-at="2015-01-12T17:54:34Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="218" started-at="2015-01-13T14:41:19Z" finished-at="2015-01-13T14:41:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="checkElementsEditCandidate(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElementsEditCandidate" duration-ms="36301" started-at="2015-01-12T17:54:34Z" data-provider="testData" finished-at="2015-01-12T17:55:10Z">
+        <test-method status="PASS" signature="checkElementsEditCandidate(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElementsEditCandidate" duration-ms="35701" started-at="2015-01-13T14:41:19Z" data-provider="testData" finished-at="2015-01-13T14:41:55Z">
           <params>
             <param index="0">
               <value>
@@ -6382,11 +6592,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- checkElementsEditCandidate -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="291" started-at="2015-01-12T17:55:10Z" finished-at="2015-01-12T17:55:10Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="226" started-at="2015-01-13T14:41:55Z" finished-at="2015-01-13T14:41:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="checkElementsViewCandidate(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElementsViewCandidate" duration-ms="37137" started-at="2015-01-12T17:55:10Z" data-provider="testData" finished-at="2015-01-12T17:55:48Z">
+        <test-method status="PASS" signature="checkElementsViewCandidate(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkElementsViewCandidate" duration-ms="39795" started-at="2015-01-13T14:41:55Z" data-provider="testData" finished-at="2015-01-13T14:42:35Z">
           <params>
             <param index="0">
               <value>
@@ -6437,85 +6647,85 @@
               <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [ckeckBox]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [click on [[ChromeDriver: chrome on WIN8_1 (771da87a5abf6815b1a0f139ddaef246)] -> xpath: //div [@class='col-md-2']//label]]</font>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Checking that click on selected candidate reffering to Candidate View Page</font>]]>
@@ -6747,11 +6957,283 @@
             </line>
           </reporter-output>
         </test-method> <!-- checkElementsViewCandidate -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="147" started-at="2015-01-12T17:55:48Z" finished-at="2015-01-12T17:55:48Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="149" started-at="2015-01-13T14:42:35Z" finished-at="2015-01-13T14:42:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="checkMenu()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkMenu" duration-ms="269" started-at="2015-01-12T17:55:48Z" finished-at="2015-01-12T17:55:48Z">
+        <test-method status="PASS" signature="checkEmailTemplates()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkEmailTemplates" duration-ms="2732" started-at="2015-01-13T14:42:35Z" finished-at="2015-01-13T14:42:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on Email Templates Page</font></b><br/>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking transfering to Email Template Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on settingsButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on emailTemplates]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence text on Email Template Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking partial text of element Crumbs</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [Crumbs] is correct</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element invitation Tittle</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [invitation Tittle] is correct</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element successfull Test Tittle</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [successfull Test Tittle] is correct</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element faild Test Tittle</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [faild Test Tittle] is correct</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element answerDuplicationTittle</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [answerDuplicationTittle] is correct</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All text are present on Email Template Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [invitationTittle]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of all elements on Email Invitation Template Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element invitation Available placeholders Tittle</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [invitation Available placeholders Tittle] is correct</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderAuthorEmail]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderAuthorEmail]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderAuthorname]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderAuthorname]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderBuilding]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderBuilding]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderBuildingMap]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderBuildingMap]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderDate]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderDate]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderDeadLine]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderDeadLine]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderDepartment]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderDepartment]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderDuration]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderDuration]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderInputBox]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderInputBox]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderSaveButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderSaveButton]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderResetButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderResetButton]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderRoom]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderRoom]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderTime]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderTime]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [invitationPlaceholderUniversity]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[invitationPlaceholderUniversity]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All elements are present on Email Invitation Template Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [successfullTestTittle]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of all elements on Email Successfull Test Template Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element successfull Test Available placeholders Tittle</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [successfull Test Available placeholders Tittle] is correct</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [successfullTestPlaceholderAuthorEmail]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[successfullTestPlaceholderAuthorEmail]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [successfullTestPlaceholderAuthorName]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[successfullTestPlaceholderAuthorName]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [successfullTestPlaceholderInputBox]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[successfullTestPlaceholderInputBox]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [successfullTestPlaceholderResetButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[successfullTestPlaceholderResetButton]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [successfullTestPlaceholderSaveButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[successfullTestPlaceholderSaveButton]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All elements are present on Email Successfull Test Template Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [faildTestTittle]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of all elements on Email Faild Test Template Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [faildTestPlaceholderAuthorEmail]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[faildTestPlaceholderAuthorEmail]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [faildTestPlaceholderAuthorName]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[faildTestPlaceholderAuthorName]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [faildTestPlaceholderInputBox]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[faildTestPlaceholderInputBox]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [faildTestPlaceholderResetButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[faildTestPlaceholderResetButton]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [faildTestPlaceholderSaveButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[faildTestPlaceholderSaveButton]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All elements are present on Email Faild Test Template Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [answerDuplicationTittle]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of all elements on Email Answer Duplication Template Page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking text of element faild Test Available placeholders Tittle</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [faild Test Available placeholders Tittle] is correct</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [answerDuplicationInputBox]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[answerDuplicationInputBox]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [answerDuplicationResetButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[answerDuplicationResetButton]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [answerDuplicationSaveButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[answerDuplicationSaveButton]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All elements are present on Email Answer Duplication Template Page</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkEmailTemplates -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="233" started-at="2015-01-13T14:42:38Z" finished-at="2015-01-13T14:42:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="PASS" signature="checkMenu()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="checkMenu" duration-ms="342" started-at="2015-01-13T14:42:38Z" finished-at="2015-01-13T14:42:39Z">
           <reporter-output>
             <line>
               <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on Menu</font></b><br/>]]>
@@ -6772,12 +7254,6 @@
               <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[homeButton]is Present</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [profileButton]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[profileButton]is Present</font>]]>
-            </line>
-            <line>
               <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Department Button]</font>]]>
             </line>
             <line>
@@ -6788,6 +7264,12 @@
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[all Candidates Button]is Present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [settingsButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[settingsButton]is Present</font>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [placeForTestingButton]</font>]]>
@@ -6802,27 +7284,33 @@
               <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[subgroupsButton]is Present</font>]]>
             </line>
             <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [templatesButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[templatesButton]is Present</font>]]>
+            </line>
+            <line>
               <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [searchInput]</font>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[searchInput]is Present</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [suserButton]</font>]]>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [profileButton]</font>]]>
             </line>
             <line>
-              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[suserButton]is Present</font>]]>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[profileButton]is Present</font>]]>
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Menu's elements are present</font>]]>
             </line>
           </reporter-output>
         </test-method> <!-- checkMenu -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="110" started-at="2015-01-12T17:55:48Z" finished-at="2015-01-12T17:55:48Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="145" started-at="2015-01-13T14:42:39Z" finished-at="2015-01-13T14:42:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="testCheckElementsPresentAddDepartmentPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testCheckElementsPresentAddDepartmentPage" duration-ms="10552" started-at="2015-01-12T17:55:48Z" finished-at="2015-01-12T17:55:59Z">
+        <test-method status="PASS" signature="testCheckElementsPresentAddDepartmentPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testCheckElementsPresentAddDepartmentPage" duration-ms="10620" started-at="2015-01-13T14:42:39Z" finished-at="2015-01-13T14:42:49Z">
           <reporter-output>
             <line>
               <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on AddDepartmentPage</font></b><br/>]]>
@@ -6832,7 +7320,6 @@
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [javaTab]</font>]]>
->>>>>>> 22eb4fd4e48bd2c32732f5d9bbe3dd711ac10d05
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[javaTab]is Not Present</font>]]>
@@ -6850,21 +7337,6 @@
               <![CDATA[<br /><font size = 2 color = #000000>Checking text of element New Department Name</font>]]>
             </line>
             <line>
-<<<<<<< HEAD
-              <![CDATA[<br><b><font size = 2 color = #000000>2-Ban Candidate</font></b><br>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [CheckboxForFirst]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [BanButton]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [banButtPopap]</font>]]>
-            </line>
-            <line>
-              <![CDATA[<br><b><font size = 2 color = #000000>3-Check candidat's displaying on "Banned" tab</font></b><br>]]>
-=======
               <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [New Department Name] is correct</font>]]>
             </line>
             <line>
@@ -6908,11 +7380,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- testCheckElementsPresentAddDepartmentPage -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="160" started-at="2015-01-12T17:55:59Z" finished-at="2015-01-12T17:55:59Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="164" started-at="2015-01-13T14:42:49Z" finished-at="2015-01-13T14:42:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="testCheckElementsPresentAddStreamPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testCheckElementsPresentAddStreamPage" duration-ms="11046" started-at="2015-01-12T17:55:59Z" finished-at="2015-01-12T17:56:10Z">
+        <test-method status="PASS" signature="testCheckElementsPresentAddStreamPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testCheckElementsPresentAddStreamPage" duration-ms="11164" started-at="2015-01-13T14:42:49Z" finished-at="2015-01-13T14:43:01Z">
           <reporter-output>
             <line>
               <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on AddStreamPage</font></b><br/>]]>
@@ -6973,7 +7445,6 @@
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [Crumbs]</font>]]>
->>>>>>> 22eb4fd4e48bd2c32732f5d9bbe3dd711ac10d05
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Crumbs]is Present</font>]]>
@@ -6985,9 +7456,6 @@
               <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[AddStream name field]is Present</font>]]>
             </line>
             <line>
-<<<<<<< HEAD
-              <![CDATA[<br /><font size = 2 color = #000000>Click on [check-box of last cand]</font>]]>
-=======
               <![CDATA[<br /><font size = 2 color = #000000>Checking the presence of the elemen [AddStream start date field]</font>]]>
             </line>
             <line>
@@ -7034,11 +7502,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- testCheckElementsPresentAddStreamPage -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="222" started-at="2015-01-12T17:56:10Z" finished-at="2015-01-12T17:56:10Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="226" started-at="2015-01-13T14:43:01Z" finished-at="2015-01-13T14:43:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="testCheckElementsPresentDepartmentPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testCheckElementsPresentDepartmentPage" duration-ms="274" started-at="2015-01-12T17:56:10Z" finished-at="2015-01-12T17:56:10Z">
+        <test-method status="PASS" signature="testCheckElementsPresentDepartmentPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testCheckElementsPresentDepartmentPage" duration-ms="310" started-at="2015-01-13T14:43:01Z" finished-at="2015-01-13T14:43:01Z">
           <reporter-output>
             <line>
               <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on DepartmentPage</font></b><br/>]]>
@@ -7117,11 +7585,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- testCheckElementsPresentDepartmentPage -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="105" started-at="2015-01-12T17:56:10Z" finished-at="2015-01-12T17:56:11Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="144" started-at="2015-01-13T14:43:01Z" finished-at="2015-01-13T14:43:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentAutoTest()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentAutoTest" duration-ms="543" started-at="2015-01-12T17:56:11Z" finished-at="2015-01-12T17:56:11Z">
+        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentAutoTest()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentAutoTest" duration-ms="703" started-at="2015-01-13T14:43:01Z" finished-at="2015-01-13T14:43:02Z">
           <reporter-output>
             <line>
               <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on AddStreamPage in Department AutoTest</font></b><br/>]]>
@@ -7140,11 +7608,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- testcheckAddStreamPageInDepartmentAutoTest -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="145" started-at="2015-01-12T17:56:11Z" finished-at="2015-01-12T17:56:11Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="167" started-at="2015-01-13T14:43:02Z" finished-at="2015-01-13T14:43:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentFrontEnd()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentFrontEnd" duration-ms="750" started-at="2015-01-12T17:56:11Z" finished-at="2015-01-12T17:56:12Z">
+        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentFrontEnd()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentFrontEnd" duration-ms="509" started-at="2015-01-13T14:43:02Z" finished-at="2015-01-13T14:43:03Z">
           <reporter-output>
             <line>
               <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on AddStreamPage in Department FrontEnd</font></b><br/>]]>
@@ -7163,11 +7631,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- testcheckAddStreamPageInDepartmentFrontEnd -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="104" started-at="2015-01-12T17:56:12Z" finished-at="2015-01-12T17:56:12Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="116" started-at="2015-01-13T14:43:03Z" finished-at="2015-01-13T14:43:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentJava()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentJava" duration-ms="683" started-at="2015-01-12T17:56:12Z" finished-at="2015-01-12T17:56:13Z">
+        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentJava()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentJava" duration-ms="619" started-at="2015-01-13T14:43:03Z" finished-at="2015-01-13T14:43:03Z">
           <reporter-output>
             <line>
               <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on AddStreamPage in Department Java</font></b><br/>]]>
@@ -7186,11 +7654,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- testcheckAddStreamPageInDepartmentJava -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="143" started-at="2015-01-12T17:56:13Z" finished-at="2015-01-12T17:56:13Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="115" started-at="2015-01-13T14:43:03Z" finished-at="2015-01-13T14:43:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentNet()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentNet" duration-ms="674" started-at="2015-01-12T17:56:13Z" finished-at="2015-01-12T17:56:14Z">
+        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentNet()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentNet" duration-ms="525" started-at="2015-01-13T14:43:04Z" finished-at="2015-01-13T14:43:04Z">
           <reporter-output>
             <line>
               <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on AddStreamPage in Department Net</font></b><br/>]]>
@@ -7209,15 +7677,14 @@
             </line>
           </reporter-output>
         </test-method> <!-- testcheckAddStreamPageInDepartmentNet -->
-        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="108" started-at="2015-01-12T17:56:14Z" finished-at="2015-01-12T17:56:14Z">
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="startPage" is-config="true" duration-ms="138" started-at="2015-01-13T14:43:04Z" finished-at="2015-01-13T14:43:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startPage -->
-        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentSofttest()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentSofttest" duration-ms="553" started-at="2015-01-12T17:56:14Z" finished-at="2015-01-12T17:56:14Z">
+        <test-method status="PASS" signature="testcheckAddStreamPageInDepartmentSofttest()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="testcheckAddStreamPageInDepartmentSofttest" duration-ms="481" started-at="2015-01-13T14:43:04Z" finished-at="2015-01-13T14:43:05Z">
           <reporter-output>
             <line>
               <![CDATA[<br /><b><font size = 2 color = #000099>Check all elements are present on AddStreamPage in Department Softtest</font></b><br/>]]>
->>>>>>> 22eb4fd4e48bd2c32732f5d9bbe3dd711ac10d05
             </line>
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Checking adding Stream according to Department 'Software Testing'</font>]]>
@@ -7232,17 +7699,8 @@
               <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Stream ia viewed acoording to Department</font>]]>
             </line>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- bannWithButton -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@967e8c]" name="tearDown" is-config="true" duration-ms="4303" started-at="2015-01-09T18:32:13Z" finished-at="2015-01-09T18:32:17Z">
-=======
         </test-method> <!-- testcheckAddStreamPageInDepartmentSofttest -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="tearDown" is-config="true" duration-ms="4662" started-at="2015-01-12T17:56:14Z" finished-at="2015-01-12T17:56:19Z">
-=======
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="tearDown" is-config="true" duration-ms="4934" started-at="2015-01-09T18:34:27Z" finished-at="2015-01-09T18:34:32Z">
->>>>>>> 22eb4fd4e48bd2c32732f5d9bbe3dd711ac10d05
->>>>>>> dbb5e243a5d8bc919fd1d8fccccaeb4e573f8dd4
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="tearDown" is-config="true" duration-ms="4716" started-at="2015-01-13T14:43:05Z" finished-at="2015-01-13T14:43:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

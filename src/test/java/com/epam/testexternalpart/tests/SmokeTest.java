@@ -155,4 +155,24 @@ public class SmokeTest extends BaseTest{
 		TestReporter.writeToReportHeader("Check all elements are present on Menu");
 		menuComp.checkElementsPresent();		
 	}
+	
+	@Test
+	public void checkEmailTemplates(){
+		TestReporter.writeToReportHeader("Check all elements are present on Email Templates Page");
+		menuComp.enterToEmailTemplate();
+		pageTemplates.checkAllTextPresent();
+		
+		pageTemplates.clickElement(pageTemplates.invitationTittle, "invitationTittle");
+		pageTemplates.checkElementsPresentInvitation();
+		
+		pageTemplates.clickElement(pageTemplates.successfullTestTittle, "successfullTestTittle");
+		pageTemplates.checkElementsPresentSuccessfullTest();
+		
+		pageTemplates.clickElement(pageTemplates.faildTestTittle, "faildTestTittle");
+		pageTemplates.checkElementsPresentFaildTest();
+		
+		pageTemplates.clickElement(pageTemplates.answerDuplicationTittle, "answerDuplicationTittle");
+		pageTemplates.checkElementsPresentAnswerDuplication();
+	}
+	
 }

@@ -439,8 +439,8 @@ public class StreamPage extends Components {
 		String name = title.getText();		
 		
 		boolean b = false;
-		System.out.println("1");
 		
+        (new WebDriverWait(driver, 3000)).until(ExpectedConditions.visibilityOfAllElements(tableHead));
 		for(WebElement el : tableHead){
 			if (el.getText().toLowerCase().equals(name.toLowerCase())){
 				b = true;
@@ -496,12 +496,9 @@ public class StreamPage extends Components {
 
 	public void checkCandExisting(String st,boolean refer) {
 		  (new WebDriverWait(driver, 9000)).until(ExpectedConditions.visibilityOf(title));
-		  try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
+		  wating(5000);
+		  
 		  TestReporter.writeToReportTitle("Check if new candidate was added");
 		  String []textOFLastEl = st.split(";");
 		  String []textForEachElement = tableRow.get(0).getText().split(" ");
@@ -629,6 +626,7 @@ public class StreamPage extends Components {
 		for (WebElement ckeckBox : allCheckBoxes){
 			clickElement(ckeckBox,"ckeckBox");
 			
+	        (new WebDriverWait(driver, 1000)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(STREAM_TABLE_ROW)));
 			row = driver.findElements(By.xpath(STREAM_TABLE_ROW + "[1]/td"));
 					
 			for (String currentField : fields){
@@ -641,9 +639,8 @@ public class StreamPage extends Components {
 				flag = false;					
 			}			
 					
-			clickElement(ckeckBox,"ckeckBox");			
+			clickElement(ckeckBox,"click on " + ckeckBox);			
 		}
-		System.out.println("1");
 	}
 
 	public void selectCandidatesForTest() {		
@@ -658,7 +655,7 @@ public class StreamPage extends Components {
 	public void clickNotTestedTab() {
 		
 		clickElement(notTestedCandidate, "click notTestedCandidate");
-		pause(1000);
+		wating(1000);
 	}
 
 	public void checkCandidates(String field, String i) {
@@ -688,7 +685,7 @@ public class StreamPage extends Components {
 
 	public void deleteAllCand(String mess) {
 	
-		pause(2000);
+		wating(2000);
 		
         while(tableRow.size()>1){
 		clickElementJS(STREAM_CHECKBOX_FOR_ALL,"CheckboxForAll");
@@ -719,12 +716,7 @@ public class StreamPage extends Components {
 		
 		clickElement(bannedTab, "click bannedTab");	
 	}
-
-	public void checkBannedCandidate() {
-		// TODO Auto-generated method stub
-		
-	}
-
+	
 	public void checkMarker(String mailName, String phoneNumber, String streamDepartmentName) {
 
 		for(WebElement e:all_candidates_in_stream){
@@ -763,7 +755,6 @@ public class StreamPage extends Components {
 			
 				for (WebElement el2 : el){			
 					if (el2.getText().contains(word))
-						System.out.println(el2.getText());
 						flag = true;
 				break;
 				}
@@ -773,7 +764,8 @@ public class StreamPage extends Components {
 	}
 
 	public void checkAllElementArePresentTestCompletedTab() {
-TestReporter.writeToReportTitle("Checking the presence of Stream's elements");
+
+		TestReporter.writeToReportTitle("Checking the presence of Stream's elements");
 		
 		isElementExist( "Crumbs", crumbs, true);
 		isElementExist( "Stream Assign Test Button", assignTestButton, true);
@@ -814,15 +806,4 @@ TestReporter.writeToReportTitle("Checking the presence of Stream's elements");
 		
 		
 	}
-	
-	public void pause(int milis){
-		
-		try {
-			Thread.sleep(milis);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
-		
 }

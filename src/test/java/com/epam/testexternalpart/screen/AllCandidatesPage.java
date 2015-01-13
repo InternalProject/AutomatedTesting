@@ -271,13 +271,12 @@ public class AllCandidatesPage extends Components {
 	public void checkDefaultColumns(String nameColumn){
 		
 		TestReporter.writeToReportTitle("Checking the presence of All Candidates menu - default columns");
-		String []textForEachElement=nameColumn.split(";");		
-			
-        (new WebDriverWait(driver, 2000)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(STREAM_TABLE_HEAD)));
+		String []textForEachElement=nameColumn.split(";");				
+		
+		wating(2000);
 		List<WebElement> tableHead = driver.findElements(By.xpath(STREAM_TABLE_HEAD));
 		
 		for(int i=0;i<textForEachElement.length;i++){		
-			
 			checkElementText(textForEachElement[i], textForEachElement[i], tableHead.get(i));
 		}
 		
@@ -310,6 +309,7 @@ public class AllCandidatesPage extends Components {
 		clickElement(title, "Click " + title.getText());		
 		String name = title.getText();		
 		
+        (new WebDriverWait(driver, 3000)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(STREAM_TABLE_HEAD)));
 		List<WebElement> tableHead = driver.findElements(By.xpath(STREAM_TABLE_HEAD));
 		boolean b = false;
 		
@@ -337,8 +337,8 @@ public class AllCandidatesPage extends Components {
 		boolean b = false;
 		clickElement(title, "Click " + title.getText());		
 
+        (new WebDriverWait(driver, 3000)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(STREAM_TABLE_HEAD)));
 		List<WebElement> tableHead = driver.findElements(By.xpath(STREAM_TABLE_HEAD));
-        (new WebDriverWait(driver, 3000)).until(ExpectedConditions.visibilityOfAllElements(tableHead));
 		
 		for(WebElement el : tableHead){
 			if (el.getText().toLowerCase().equals(name.toLowerCase())){
