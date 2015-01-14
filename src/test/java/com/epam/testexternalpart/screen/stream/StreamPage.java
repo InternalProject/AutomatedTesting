@@ -754,10 +754,15 @@ public class StreamPage extends Components {
 		
 	}
 	
-	public void performSearch(String word){
+	public void performSearch(String word,WebElement field){
 		 TestReporter.writeToReportTitle("Search for ["+word+"]");
+		 if(field.equals(null)){
 		 searchField.clear();
 		 searchField.sendKeys(word);
+		 }else{
+			 field.clear();
+			 field.sendKeys(word); 
+		 }
 		
 	}
 

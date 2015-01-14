@@ -41,7 +41,7 @@ public class Menu extends Components{
 	private WebElement subgroupsButton;
 	
 	@FindBy(xpath = SEARCH_INPUT)
-	private WebElement searchInput;
+	public WebElement searchInput;
 	
 	@FindBy(xpath = USER)
 	private WebElement userButton;
