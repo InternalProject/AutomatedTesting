@@ -33,7 +33,7 @@ public class AddStreamPage extends Components implements CheckerData{
 	private static final String STREAM_STATUS_OPTION_FINISHED="//option[text()='finished']";
 	
 	private static final String STREAM_SUBMIT_BUTTON="//button[@class='btn btn-primary']";
-	public static final String CRUMBS = "//div[@id='crumds']/a[text()='Departments page>']";
+	public static final String CRUMBS = "//div[@id='crumds']";
 	public static final String ADD_STREM_BUTTON = "//button[@class='btn btn-primary']";
 	public static final String INPUT_NAME_STREAM="//input[@id='streamName']";
 	public static final String WRONG_MESS = ".//span[@id='e_name']";
@@ -111,6 +111,7 @@ public class AddStreamPage extends Components implements CheckerData{
 		
 		TestReporter.writeToReportStep("Checking the presence of text on Add Stream Page");
 		
+		checkElementPartialText("Add new stream", "Crumbs", crumbs);
 		checkElementText("Enter stream information", "AddEditStream title", title);
 		checkElementText("Stream name", "AddStream name Stream", nameTitle);
 		checkElementText("Department", "AddStream department title", departmentTitle);			
@@ -125,7 +126,6 @@ public class AddStreamPage extends Components implements CheckerData{
 		
 		TestReporter.writeToReportTitle("Checking the presence of all elements on Add Stream Page");
 		
-		isElementExist( "Crumbs", crumbs, true);
 		isElementExist( "AddStream name field", nameField, true);
 		isElementExist( "AddStream start date field", startDateTitle, true);
 		isElementExist( "AddStream end date field", endDateTitle, true);

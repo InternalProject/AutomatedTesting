@@ -12,8 +12,13 @@
           <include name="allCandidatesSearch" invocation-numbers="0"/>
 =======
           <include name="init"/>
+          <include name="tearDown"/>
           <include name="checkAddStreamAccordingToDepartment"/>
+<<<<<<< HEAD
 >>>>>>> a6a6f5699db36c2e6e080e6baa46352bcf4210dc
+=======
+          <include name="startPage"/>
+>>>>>>> 5add05477f8b2d5bd1cb3acc4afe8aaaad18fefe
         </methods>
       </class> <!-- com.epam.testexternalpart.tests.SearchTest -->
     </classes>

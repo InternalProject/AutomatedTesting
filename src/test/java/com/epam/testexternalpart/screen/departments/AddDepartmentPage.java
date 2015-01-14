@@ -23,7 +23,7 @@ public class AddDepartmentPage extends Components implements CheckerData{
 	public static final String LABEL_NAME = "//form//div[1]//label[@class='col-lg-2 control-label']";
 	public static final String LABEL_EXCEL_NAME = "//form//div[2]//label[@class='col-lg-2 control-label']";	
 	public static final String LABEL_ADD_DEPARTMENT = "//form[@class='form-horizontal']/legend";
-	public static final String CRUMBS = "//div[@id='crumds']/a[text()='Departments page>']";
+	public static final String CRUMBS = "//div[@id='crumds']";
 	public static final String WRONG_NAME_MESS="//span[@id='e_name']";
 	
 	@FindBy(xpath = WRONG_NAME_MESS)
@@ -55,6 +55,7 @@ public class AddDepartmentPage extends Components implements CheckerData{
 		
 		TestReporter.writeToReportStep("Checking the presence of all text on Add Department Page");
 			
+		checkElementPartialText("Department page", "Crumbs", crumbs);
 		checkElementText("Enter department information", "Add Department title",
 				labelAddDepartment);		
 		checkElementText("Department name", "New Department Name",
@@ -71,7 +72,6 @@ public class AddDepartmentPage extends Components implements CheckerData{
 		TestReporter
 		.writeToReportStep("Checking the presence of all elements on Add Department Page");
 		
-		isElementExist( "Crumbs", crumbs, true);
 		isElementExist( "AddDepartmentPage name_input", name_input, true);
 		isElementExist( "AddDepartmentPage excel_name_input", excel_name_input, true);
 		isElementExist( "AddDepartmentPage submit", submit, true);

@@ -14,7 +14,7 @@ import com.epam.testexternalpart.screen.Components;
 
 public class ViewProfilePage extends Components implements CheckerData{
 	
-	public static final String CRUMBS = "//div[@id='crumds']/a[text()='Candidates pagination>']";
+	public static final String CRUMBS = "//div[@id='crumds']";
 	private static final String PROFILE_TITTLE = "//h3";
 	private static final String PROFILE_FORM = "//ul[@class='list-group']";
 	private static final String PROFILE_FORM_BUTTON_EDIT = "//form//button[@class='btn btn-primary'][text()='Edit']";
@@ -60,7 +60,6 @@ public class ViewProfilePage extends Components implements CheckerData{
 		
 		TestReporter.writeToReportStep("Check the presence of all elements on View Profile Page");
 			
-		isElementExist( "Crumbs", crumbs, true);
 		isElementExist( "Profile Delete Button", buttonDelete, true);
 		isElementExist( "Profile Edit Button", buttonEdit, true);
 		
@@ -70,14 +69,16 @@ public class ViewProfilePage extends Components implements CheckerData{
 	public void checkTextPresent(){
 		
 		TestReporter.writeToReportStep("Check the presence of all text on View Profile Page");
+	
+		checkElementText("Candidate profile", "Profile Tittle", profileTittle);
+		checkElementPartialText("Candidate profile", "Crumbs", crumbs);
+	
 	}
 
 	public void checkTextPresent(String text){
 		
 		TestReporter.writeToReportTitle("Check the presence of all text on View Profile Page");
-		
-		checkElementText("Candidate profile", "Profile Tittle", profileTittle);
-		
+				
 		String []textForEachElement = text.split(";");
 		
 		for(int i=0;i<textForEachElement.length;i++){

@@ -37,7 +37,7 @@ public class CreateProfilePage extends Components implements CheckerData{
 	private static final String PROFILE_FORM_FILLDATE_INPUT = "//fieldset//input[@id='fillDate'][@disabled='']";
 	private static final String PROFILE_FORM_COMMENT_INPUT = "//textarea[@id='comment']";
 	private static final String PROFILE_FORM_BUTTON_CREATE= "//fieldset//button[@class='btn btn-primary']";
-	public static final String CRUMBS = "//div[@id='crumds']/a[text()='Candidates pagination>']";
+	public static final String CRUMBS = "//div[@id='crumds']]";
 
 	public static final String MANDATORY_FIELDS = "//fieldset/div[position()<7]//input";	
 	private static final String PROFILE_FORM_ALL_TITTLES = "//fieldset//label[@class='col-lg-2 control-label']";	
@@ -143,14 +143,15 @@ public class CreateProfilePage extends Components implements CheckerData{
 	public void checkTextPresent(){
 		
 		TestReporter.writeToReportStep("Checking the presence of all text on Add Profile Page");
+	
+		checkElementText("Create a new candidate", "Profile Page Title", title);
+		checkElementPartialText("Add candidate profile", "Crumbs", crumbs);
 	}
 
 	public void checkTextPresent(String text){
 		
 		TestReporter.writeToReportTitle("Checking the presence of titles text on Add Profile Page");
-		
-		checkElementText("Create a new candidate", "Profile Page Title", title);
-		
+				
 		String []textForEachElement=text.split(";");
 		
 		for(int i=0;i<textForEachElement.length;i++){
@@ -164,7 +165,6 @@ public class CreateProfilePage extends Components implements CheckerData{
 		
 		TestReporter.writeToReportStep("Checking the presence of all elements on Add Profile Page");
 		
-		isElementExist( "Crumbs", crumbs, true);
 		isElementExist( "profileForm", profileForm, true);
 		isElementExist( "firstNameInput", firstNameInput, true);
 		isElementExist( "lastNameInput", lastNameInput, true);
@@ -189,7 +189,7 @@ public class CreateProfilePage extends Components implements CheckerData{
 		isElementExist( "commentInput", commentInput, true);
 		
 		for(WebElement el : mandatory_fields)
-			isElementExist( "mandatory_fields", el, true);		
+			isElementExist(el.getText(), el, true);		
 		
 		isElementExist( "Create Profile Create Button", create_button, true);
 		

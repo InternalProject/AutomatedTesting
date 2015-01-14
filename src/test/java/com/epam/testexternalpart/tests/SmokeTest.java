@@ -23,7 +23,7 @@ public class SmokeTest extends BaseTest{
 		
 		pageDepartment.clickCreateDepartmentButton();
 		pageAddDepartment.checkTextPresent();
-		pageAddDepartment.checkElementsPresent();;	
+		pageAddDepartment.checkElementsPresent();
 	}
 	
 	@Test
@@ -44,51 +44,21 @@ public class SmokeTest extends BaseTest{
 		pageDepartment.selectAndCheckDepartment();
 	}
 	
-//	@Test(dataProvider="testData")
-//	public void checkElStreamPage(String nameColumn) {
-//		
-//		TestReporter.writeToReportHeader("Check all elements are present on StreamPage");
-//		pageDepartment.clickSelectedStream();	
-//		
-//		TestReporter.writeToReportStep("Check all elements are present With Export");
-//		pageStream.checkAllElementArePresentWithExport();
-//		pageStream.allTextArePresent();	
-//		
-//		TestReporter.writeToReportStep("Check all Defaul tColumns are present");
-//		pageStream.checkDefaultColumns(nameColumn);	
-//		pageStream.checkColumnsAccordingToCheckBox();
-//		
-//		TestReporter.writeToReportStep("Check elements are present on notTestedCandidate tab");
-//		pageStream.clickElement(pageStream.notTestedCandidate,"notTestedCandidate");
-//		pageStream.allTextArePresent();	
-//		pageStream.checkAllElementArePresentWithoutImport();
-//		
-//		TestReporter.writeToReportStep("Check elements are present on assignedToTest tab");
-//		pageStream.clickElement(pageStream.assignedToTestTab,"assignedToTestTab");
-//		pageStream.allTextArePresent();	
-//		pageStream.checkAllElementArePresentWithoutImport();
-//		
-//		TestReporter.writeToReportStep("Check elements are present on confirmed tab");
-//		pageStream.clickElement(pageStream.confirmedTab,"confirmedTab");
-//		pageStream.allTextArePresent();	
-//		pageStream.checkAllElementArePresentWithoutImport();
-//		
-//		TestReporter.writeToReportStep("Check elements are present on testComplete tab");
-//		pageStream.clickElement(pageStream.testCompleteTab,"testCompleteTab");
-//		pageStream.allTextArePresent();	
-//		pageStream.checkAllElementArePresentTestCompletedTab();
-//		
-//		TestReporter.writeToReportStep("Check elements are present on notActual tab");
-//		pageStream.clickElement(pageStream.notActualTab,"notActualTab");
-//		pageStream.allTextArePresent();	
-//		pageStream.checkAllElementArePresentWithoutImport();
-//		
-//		TestReporter.writeToReportStep("Check elements are present on banned Tab");
-//		pageStream.clickElement(pageStream.bannedTab,"bannedTab");
-//		pageStream.allTextArePresent();	
-//		pageStream.checkAllElementArePresentWithoutImport();
-//		
-//	}
+	@Test(dataProvider="testData")
+	public void checkElStreamPage(String nameColumn) {
+		
+		TestReporter.writeToReportHeader("Check all elements are present on StreamPage");
+		pageDepartment.clickSelectedStream();	
+		pageStream.checkElementsPresent();
+		pageStream.checkTextPresent();		
+		pageStream.checkElementsPresentAllCandidatesTab();			
+		
+		pageStream.clickElement(pageStream.testCompletedTab, "Test Completed Tab");
+		pageStream.checkElementsPresentTestCompletedTab();	
+		
+		pageStream.checkDefaultColumns(nameColumn);	
+		pageStream.checkColumnsAccordingToCheckBox();	
+	}
 	
 	@Test(dataProvider="testData")
 	public void checkElementsAddCandidate(String titles){
@@ -173,6 +143,13 @@ public class SmokeTest extends BaseTest{
 		
 		pageTemplates.clickElement(pageTemplates.answerDuplicationTittle, "answerDuplicationTittle");
 		pageTemplates.checkElementsPresentAnswerDuplication();
+	}
+	
+	@Test
+	public void checkMailSettingsMenu(){
+		
+		TestReporter.writeToReportHeader("Check all elements are present on Mail Settings Page");
+			
 	}
 	
 }

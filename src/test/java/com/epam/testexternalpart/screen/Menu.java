@@ -18,6 +18,7 @@ public class Menu extends Components{
 	private static final String PLACES_FOR_TESTING_BUTTON =  "//a[@href='/KhExternalPreProdPortal/places']";
 	private static final String SUBGROUP_BUTTON = "//a[@href='/KhExternalPreProdPortal/allSubgroups']";
 	private static final String EMAIL_TEMPLATES = "//a[@href='/KhExternalPreProdPortal/emailTemplate']";
+	private static final String MAIL_SETTINGS_BUTTON = "//a[@href='/KhExternalPreProdPortal/mailSettings']";
 	private static final String SEARCH_INPUT = "//input[@id='globalSearch']";
 	
 	@FindBy(xpath = LOGO)
@@ -45,26 +46,26 @@ public class Menu extends Components{
 	private WebElement subgroupsButton;
 	
 	@FindBy(xpath = EMAIL_TEMPLATES)
-	private WebElement emailTemplates;
+	private WebElement emailTemplatesButtton;
+	
+	@FindBy(xpath = MAIL_SETTINGS_BUTTON)
+	private WebElement mailSettingsButton;
 	
 	@FindBy(xpath = SEARCH_INPUT)
-<<<<<<< HEAD
+
 	public WebElement searchInput;
 	
-	@FindBy(xpath = USER)
-	private WebElement userButton;
 	
-=======
-	private WebElement searchInput;
-		
->>>>>>> a6a6f5699db36c2e6e080e6baa46352bcf4210dc
+	
+
 	public Menu(WebDriver driver){
 	this.driver=driver;
 	PageFactory.initElements(driver, this);
 	}
 
 	public void checkElementsPresent() {
-		TestReporter.writeToReportTitle("Checking the presence of Menu's elements");
+		
+		TestReporter.writeToReportStep("Check the presence of all elements on Menu");
 
 		isElementExist( "logo", logo, true);
 		isElementExist( "homeButton", homeButton, true);
@@ -73,18 +74,20 @@ public class Menu extends Components{
 		isElementExist( "settingsButton", settingsButton, true);		
 		isElementExist( "placeForTestingButton", placeForTestingButton, true);
 		isElementExist( "subgroupsButton", subgroupsButton, true);
-		isElementExist( "templatesButton", emailTemplates, true);
+		isElementExist( "emailTemplatesButtton", emailTemplatesButtton, true);
 		isElementExist( "searchInput", searchInput, true);
 		isElementExist( "profileButton", profileButton, true);
+		isElementExist( "mailSettingsButton", mailSettingsButton, true);
 		
 		TestReporter.writeToReportPositiveResult("All Menu's elements are present");		
 	}
 	
 	public void enterToEmailTemplate() {
+		
 		TestReporter.writeToReportTitle("Checking transfering to Email Template Page");
 
 		clickElement(settingsButton, "Click on settingsButton");
-		clickElement(emailTemplates, "Click on emailTemplates");	
+		clickElement(emailTemplatesButtton, "Click on emailTemplates");	
 	}
 
 	
