@@ -8,135 +8,99 @@ import com.epam.testexternalpart.core.TestReporter;
 public class SmokeTest extends BaseTest{
 	
 	@Test
-	public void testCheckElementsPresentDepartmentPage(){
+	public void checkElementsPresentDepartmentPage(){
+		
 		TestReporter.writeToReportHeader("Check all elements are present on DepartmentPage");
-		pageDepartment.allTextArePresent();
-		pageDepartment.allElementsArePresent();		
+		
+		pageDepartment.checkTextPresent();
+		pageDepartment.checkElementsPresent();		
 	}
 	
 	@Test
-	public void testCheckElementsPresentAddDepartmentPage(){
-		TestReporter.writeToReportHeader("Check all elements are present on AddDepartmentPage");
+	public void checkElementsPresentAddDepartmentPage(){
+		
+		TestReporter.writeToReportHeader("Check all elements are present on Add Department Page");
+		
 		pageDepartment.clickCreateDepartmentButton();
-		pageAddDepartment.allTextArePresent();
-		pageAddDepartment.allElementsArePresent();	
+		pageAddDepartment.checkTextPresent();
+		pageAddDepartment.checkElementsPresent();
 	}
 	
 	@Test
-	public void testCheckElementsPresentAddStreamPage(){
-		TestReporter.writeToReportHeader("Check all elements are present on AddStreamPage");
+	public void checkElementsPresentAddStreamPage(){
+		
+		TestReporter.writeToReportHeader("Check all elements are present on Add Stream Page");
+		
 		pageDepartment.clickCreateStreamButton();
-		pageAddStream.allTextArePresent();
-		pageAddStream.allElementsArePeresent();
+		pageAddStream.checkTextPresent();
+		pageAddStream.checkElementsPresent();
 	}	
 	
 	@Test
-	public void testcheckAddStreamPageInDepartmentJava(){
-		TestReporter.writeToReportHeader("Check all elements are present on AddStreamPage in Department Java");
-		pageDepartment.checkAddStreamPageInDepartmentJava();
+	public void checkAddStreamAccordingToDepartment(){
+		
+		TestReporter.writeToReportHeader("Check adding Stream according to department Java");
+		
+		pageDepartment.selectAndCheckDepartment();
 	}
-	
-	@Test
-	public void testcheckAddStreamPageInDepartmentNet(){
-		TestReporter.writeToReportHeader("Check all elements are present on AddStreamPage in Department Net");
-		pageDepartment.checkAddStreamPageInDepartmentNet();
-	}
-	
-	@Test
-	public void testcheckAddStreamPageInDepartmentFrontEnd(){
-		TestReporter.writeToReportHeader("Check all elements are present on AddStreamPage in Department FrontEnd");
-		pageDepartment.checkAddStreamPageInDepartmentFrontEnd();
-	}
-	
-	@Test
-	public void testcheckAddStreamPageInDepartmentAutoTest(){
-		TestReporter.writeToReportHeader("Check all elements are present on AddStreamPage in Department AutoTest");
-		pageDepartment.checkAddStreamPageInDepartmentAutoTest();
-	}
-	
-	@Test
-	public void testcheckAddStreamPageInDepartmentSofttest(){
-		TestReporter.writeToReportHeader("Check all elements are present on AddStreamPage in Department Softtest");
-		pageDepartment.checkAddStreamPageInDepartmentSofttest();
-	}	
 	
 	@Test(dataProvider="testData")
 	public void checkElStreamPage(String nameColumn) {
+		
 		TestReporter.writeToReportHeader("Check all elements are present on StreamPage");
 		pageDepartment.clickSelectedStream();	
+		pageStream.checkElementsPresent();
+		pageStream.checkTextPresent();		
+		pageStream.checkElementsPresentAllCandidatesTab();			
 		
-		TestReporter.writeToReportStep("Check all elements are present With Export");
-		pageStream.checkAllElementArePresentWithExport();
-		pageStream.allTextArePresent();	
+		pageStream.clickElement(pageStream.testCompletedTab, "Test Completed Tab");
+		pageStream.checkElementsPresentTestCompletedTab();	
 		
-		TestReporter.writeToReportStep("Check all Defaul tColumns are present");
 		pageStream.checkDefaultColumns(nameColumn);	
-		pageStream.checkColumnsAccordingToCheckBox();
-		
-		TestReporter.writeToReportStep("Check elements are present on notTestedCandidate tab");
-		pageStream.clickElement(pageStream.notTestedCandidate,"notTestedCandidate");
-		pageStream.allTextArePresent();	
-		pageStream.checkAllElementArePresentWithoutImport();
-		
-		TestReporter.writeToReportStep("Check elements are present on assignedToTest tab");
-		pageStream.clickElement(pageStream.assignedToTestTab,"assignedToTestTab");
-		pageStream.allTextArePresent();	
-		pageStream.checkAllElementArePresentWithoutImport();
-		
-		TestReporter.writeToReportStep("Check elements are present on confirmed tab");
-		pageStream.clickElement(pageStream.confirmedTab,"confirmedTab");
-		pageStream.allTextArePresent();	
-		pageStream.checkAllElementArePresentWithoutImport();
-		
-		TestReporter.writeToReportStep("Check elements are present on testComplete tab");
-		pageStream.clickElement(pageStream.testCompleteTab,"testCompleteTab");
-		pageStream.allTextArePresent();	
-		pageStream.checkAllElementArePresentTestCompletedTab();
-		
-		TestReporter.writeToReportStep("Check elements are present on notActual tab");
-		pageStream.clickElement(pageStream.notActualTab,"notActualTab");
-		pageStream.allTextArePresent();	
-		pageStream.checkAllElementArePresentWithoutImport();
-		
-		TestReporter.writeToReportStep("Check elements are present on banned Tab");
-		pageStream.clickElement(pageStream.bannedTab,"bannedTab");
-		pageStream.allTextArePresent();	
-		pageStream.checkAllElementArePresentWithoutImport();
-		
+		pageStream.checkColumnsAccordingToCheckBox();	
 	}
 	
 	@Test(dataProvider="testData")
 	public void checkElementsAddCandidate(String titles){
-		TestReporter.writeToReportHeader("Check all elements are present on AddCandidatePage");
+		
+		TestReporter.writeToReportHeader("Check all elements are present on Add Candidate Page");
+		
 		pageDepartment.clickSelectedStream();		
 		pageStream.clickAddCandidateButton();
 		pageCreateProfile.checkElementsPresent();
+		pageCreateProfile.checkTextPresent();	
 		pageCreateProfile.checkTextPresent(titles);		
 	}
 
 	@Test(dataProvider="testData")
 	public void checkElementsViewCandidate(String candData,String fields){
+		
 		TestReporter.writeToReportHeader("Check all elements are present on ViewCandidatePage");
+		
 		pageDepartment.clickSelectedStream();		
 		pageStream.clickAddCandidateButton();		
 		pageCreateProfile.createNewCandidate(candData);
 		pageStream.checkTableAccordingToCandidadate(candData);
 		pageStream.clickViewCand();
 		pageViewProfile.checkElementsPresent();
-		pageViewProfile.checkAllTextPresent(fields);		
+		pageViewProfile.checkTextPresent();
+		pageViewProfile.checkTextPresent(fields);		
 		pageViewProfile.checkTextAccordingToFields(candData);		
 	}
 
 	@Test(dataProvider="testData")
 	public void checkElementsEditCandidate(String candData,String fields){
+		
 		TestReporter.writeToReportHeader("Check all elements are present on EditCandidatePage");
+		
 		pageDepartment.clickSelectedStream();		
 		pageStream.clickAddCandidateButton();		
 		pageCreateProfile.createNewCandidate(candData);
 		pageStream.clickViewCand();
 		pageViewProfile.clickEditButton();
 		pageEditProfile.checkElementsPresent();
-		pageEditProfile.checkAllTextPresent(fields);		
+		pageEditProfile.checkTextPresent();	
+		pageEditProfile.checkTextPresent(fields);		
 		pageEditProfile.checkTextAccordingToFields(candData);	
 	}
 	
@@ -144,15 +108,50 @@ public class SmokeTest extends BaseTest{
 	public void checkElAllCandiadtesMenu(String nameColumn){
 		
 		TestReporter.writeToReportHeader("Check all elements are present on CandiadtesMenu");
+		
 		menuComp.clickElement(menuComp.allCandidatesButton,"allCandidatesButton");
-		pageAllCandidate.checkAllTextPresent();
-		pageAllCandidate.checkDefaultColumns(nameColumn);
-		pageAllCandidate.checkColumnsAccordingToCheckBox();		
+
+		pageAllCandidate.checkTextPresent();
+		pageAllCandidate.checkElementsPresent();
+		pageAllCandidate.checkElementsPresent(nameColumn);
+		pageAllCandidate.checkColumnsAccordingToCheckBox();			
+
 	}
 	
 	@Test
 	public void checkMenu(){
+		
 		TestReporter.writeToReportHeader("Check all elements are present on Menu");
+		
 		menuComp.checkElementsPresent();		
 	}
+	
+	@Test
+	public void checkEmailTemplatesPage(){
+		
+		TestReporter.writeToReportHeader("Check all elements are present on Email Templates Page");
+		
+		menuComp.enterToEmailTemplate();
+		pageTemplates.checkTextPresent();
+		
+		pageTemplates.clickElement(pageTemplates.invitationTittle, "invitationTittle");
+		pageTemplates.checkElementsPresentInvitation();
+		
+		pageTemplates.clickElement(pageTemplates.successfullTestTittle, "successfullTestTittle");
+		pageTemplates.checkElementsPresentSuccessfullTest();
+		
+		pageTemplates.clickElement(pageTemplates.faildTestTittle, "faildTestTittle");
+		pageTemplates.checkElementsPresentFaildTest();
+		
+		pageTemplates.clickElement(pageTemplates.answerDuplicationTittle, "answerDuplicationTittle");
+		pageTemplates.checkElementsPresentAnswerDuplication();
+	}
+	
+	@Test
+	public void checkMailSettingsMenu(){
+		
+		TestReporter.writeToReportHeader("Check all elements are present on Mail Settings Page");
+			
+	}
+	
 }

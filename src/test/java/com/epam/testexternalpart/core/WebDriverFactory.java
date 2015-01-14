@@ -14,6 +14,7 @@ public class WebDriverFactory {
 		if(browserName.contentEquals("chrome")) {
 
 
+
 			System.setProperty("webdriver.chrome.driver", "D:/AutomatedTesting/chromedriver.exe");
 
 			driver = new ChromeDriver();
@@ -23,7 +24,7 @@ public class WebDriverFactory {
 		
 		}
 		 else if(browserName.contentEquals("explorer")){
-			 System.setProperty("webdriver.ie.driver", "D:/workspace/TestExternalPart/IEDriverServer.exe");
+			 System.setProperty("webdriver.ie.driver", "IEDriverServer.exe");
 			 
 			driver = new InternetExplorerDriver();
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

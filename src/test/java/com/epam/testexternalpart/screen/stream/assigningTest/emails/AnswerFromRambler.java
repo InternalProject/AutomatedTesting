@@ -24,9 +24,9 @@ public class AnswerFromRambler extends Components{
 	//private static final String INPUT_BOX_ROW = "//div[@class='tableRow messageUnread']/a[text() ='auto_epm-farm_kppp@epam.com']";
 	private static final String INPUT_BOX = "//div[@class='ScrollBarWrap']/a[1]";
 	
-	private static final String CONFIRMED_ANSWER = "//div[@class='messageBody isPlainText']/a[2]";
-	private static final String NOT_ACTUAL_ANSWER = "//div[@class='messageBody isPlainText']/a[3]";
-	private static final String NEW_TIME_ANSWER = "//div[@class='messageBody isPlainText']/a[4]";
+	private static final String CONFIRMED_ANSWER = "//div[@class='messageBody isPlainText']/a[3]";
+	private static final String NOT_ACTUAL_ANSWER = "//div[@class='messageBody isPlainText']/a[4]";
+	private static final String NEW_TIME_ANSWER = "//div[@class='messageBody isPlainText']/a[5]";
 	
 	@FindBy(xpath=BUTTON_INPUT)
 	private WebElement buttonInput;
@@ -50,7 +50,8 @@ public class AnswerFromRambler extends Components{
 	private WebElement buttonSubmit;
 			
 	public AnswerFromRambler(WebDriver driver){
-		super(driver);			
+		this.driver=driver;
+		PageFactory.initElements(driver, this);		
 	}
 	
 	public void logOn(){

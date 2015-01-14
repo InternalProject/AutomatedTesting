@@ -71,7 +71,8 @@ public class EditStreamPage extends Components{
 	WebDriver driver;
 	
 	public EditStreamPage(WebDriver driver) {
-		super(driver);
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
 	}
 	
 	public void addNewStream(){

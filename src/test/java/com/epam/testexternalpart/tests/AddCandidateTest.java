@@ -57,7 +57,7 @@ public class AddCandidateTest extends BaseTest {
 		pageStream.clickViewCand();
 		pageViewProfile.clickEditButton();
 		pageEditProfile.changeStatus(status2);
-		pageStream.clickElement(pageStream.testCompleteTab,"notTestedCandidate");
+		pageStream.clickElement(pageStream.testCompletedTab,"notTestedCandidate");
 		pageStream.checkCandExisting(candData,true);
 		TestReporter.writeToReportStep("5-Check candidat's displaying on \"not actual\" tab");
 		pageStream.clickViewCand();

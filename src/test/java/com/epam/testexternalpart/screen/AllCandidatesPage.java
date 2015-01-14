@@ -3,7 +3,6 @@ package com.epam.testexternalpart.screen;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,13 +11,16 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.epam.testexternalpart.core.CheckerData;
 import com.epam.testexternalpart.core.TestReporter;
 
-public class AllCandidatesPage extends Components {
+public class AllCandidatesPage extends Components implements CheckerData{
+	
 	private static final String TITLE="//h1";
 	private static final String CHECKBOXES_COL="//td[@class='bs-checkbox']//input";
 	private static final String CHECKBOX_FOR_ALL="//input[@name='btSelectAll']";
 	private static final String TABLE_EL="//tbody//tr[%s]//td[%s]";
+	public static final String CRUMBS = "//div[@id='crumds']";
 
 	//---DEDAULT COLUMNS---
 	private static final String STREAM_NUMBER_COLUMN = "//table[@id='table']/thead/tr/th/div[text()='¹']";
@@ -31,6 +33,7 @@ public class AllCandidatesPage extends Components {
 	private static final String STREAM_TABLE_FILL_DATE_COLUMN = "//table[@id='table']/thead/tr/th/div[text()='Fill Date']";
 	//private static final String STREAM_TABLE_HEAD="//div[@class='fixed-table-header']//table[@class='table-striped header-fixed table table-hover']/thead/tr/th/div[@class='th-inner sortable']";
 	private static final String STREAM_TABLE_HEAD="//div[@class='fixed-table-container']/div[@class='fixed-table-header']//table[@class='table-striped header-fixed table table-hover']/thead/tr/th/div[@class='th-inner sortable']";
+	private static final String STREAM_ALL_CHECKBOXES = "//div [@class='col-md-2']//label";
 
 	//---ADITIONAL COLUMNS---
 	private static final String STREAM_TABLE_SECOND_PHONE_COLUMN = "//table[@id='table']/thead/tr/th/div[text()='Second Phone']";
@@ -89,6 +92,9 @@ public class AllCandidatesPage extends Components {
 	
 	@FindBy(xpath = TABLE_EL)
 	private List<WebElement> tableElement;
+	
+	@FindBy(xpath = CRUMBS)
+	public WebElement crumbs;
 		
 	//---DEDAULT COLUMNS---
 
@@ -115,6 +121,9 @@ public class AllCandidatesPage extends Components {
 	
 	@FindBy(xpath = STREAM_TABLE_FILL_DATE_COLUMN)
 	private WebElement fillDateColumn;
+	
+	@FindBy(xpath = STREAM_TABLE_HEAD)
+	private List<WebElement> tableHead;
 	
 	//---ADITIONAL COLUMNS---
 	
@@ -195,6 +204,9 @@ public class AllCandidatesPage extends Components {
 	@FindBy(xpath = STREAM_ESTIMATION_CHECKBOX)
 	private WebElement estimationCheckBox;
 	
+	@FindBy(xpath = STREAM_ALL_CHECKBOXES)
+	public List<WebElement> allCheckBoxes;
+	
 	//---CHECK BOXES-TITLES--
 	
 	@FindBy(xpath = STREAM_SECOND_PHONE_CHECKBOX_LABEL )
@@ -240,7 +252,8 @@ public class AllCandidatesPage extends Components {
 	private WebElement estimationCheckBoxTitle;
 	
 	public AllCandidatesPage(WebDriver driver){
-		super(driver);
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
 		}	
 	
 	public WebElement getTableEl(int numOfRow,int numOfCol){
@@ -267,96 +280,72 @@ public class AllCandidatesPage extends Components {
 		
 	}
 	
-	public void checkDefaultColumns(String nameColumn){
+	public void checkElementsPresent(){
 		
-		TestReporter.writeToReportTitle("Checking the presence of All Candidates menu - default columns");
-		String []textForEachElement=nameColumn.split(";");		
-			
-		List<WebElement> tableHead = driver.findElements(By.xpath(STREAM_TABLE_HEAD));
+		TestReporter.writeToReportStep("Checking the presence of all elements on All Candidates Page");
+	}
+	
+	public void checkElementsPresent(String nameColumn){
+		
+		TestReporter.writeToReportTitle("Checking the presence of default columns on All Candidates menu - ");
+		
+		String []textForEachElement=nameColumn.split(";");			
 		
 		for(int i=0;i<textForEachElement.length;i++){		
-			
 			checkElementText(textForEachElement[i], textForEachElement[i], tableHead.get(i));
 		}
 		
-		TestReporter.writeToReportPositiveResult("All Candidates menu -  default columns are present");
+		TestReporter.writeToReportPositiveResult("Default columns are present on All Candidates menu Page");
 	}
 	
 	public void checkColumnsAccordingToCheckBox(){
 		
-		checkEnableColumnByCheckBox(secondPhoneCheckBoxTitle);
-		checkEnableColumnByCheckBox(UniversityCheckBoxTitle);
-		checkEnableColumnByCheckBox(facultyCheckBoxTitle);
-		checkEnableColumnByCheckBox(degreeCheckBoxTitle);
-		checkEnableColumnByCheckBox(educationStartCheckBoxTitle);
-		checkEnableColumnByCheckBox(graduationYearCheckBoxTitle);
-		checkEnableColumnByCheckBox(additionalEducationCheckBoxTitle);
-		checkEnableColumnByCheckBox(relevantSkillsCheckBoxTitle);
-		checkEnableColumnByCheckBox(howKnowCheckBoxTitle);
-		checkEnableColumnByCheckBox(secondPhoneCheckBoxTitle);
-		checkEnableColumnByCheckBox(attemptCountCheckBoxTitle);
-		checkEnableColumnByCheckBox(statusCheckBoxTitle);
-		checkEnableColumnByCheckBox(commentCheckBoxTitle);
-		checkEnableColumnByCheckBox(estimationCheckBoxTitle);
+		for (WebElement currentCheckBox : allCheckBoxes){
+			EnableColumnByCheckBox(currentCheckBox);
+			DisableColumnByCheckBox(currentCheckBox);
+		}
 	}
 	
-	public void checkEnableColumnByCheckBox(WebElement title){
+	private boolean clickAndCheñkColumn(WebElement currentCheckBox){
 		
-		TestReporter.writeToReportTitle("Checking enable column " + title.getText() +
-				" by selecting check Box");
-		
-		clickElement(title, "Click " + title.getText());		
-		String name = title.getText();		
-		
-		List<WebElement> tableHead = driver.findElements(By.xpath(STREAM_TABLE_HEAD));
+		clickElement(currentCheckBox, currentCheckBox.getText());		
 		boolean b = false;
 		
-		for(WebElement el : tableHead){		
-			if (el.getText().toLowerCase().equals(name.toLowerCase())){
-				b = true;
-				break;
-			}
-		}		
-		
-		Assert.assertTrue(b);
-		
-		TestReporter.writeToReportPositiveResult("Column is enabled");
-		
-		checkDisableColumnByCheckBox(title);
-	}	
-	
-	public void checkDisableColumnByCheckBox(WebElement title){
-		
-		TestReporter.writeToReportTitle("Checking disable column " + title.getText() +
-				" by selecting check Box");		
-		
-		String name = title.getText();	
-		
-		boolean b = false;
-		clickElement(title, "Click " + title.getText());		
-
-		List<WebElement> tableHead = driver.findElements(By.xpath(STREAM_TABLE_HEAD));
         (new WebDriverWait(driver, 3000)).until(ExpectedConditions.visibilityOfAllElements(tableHead));
-		
 		for(WebElement el : tableHead){
-			if (el.getText().toLowerCase().equals(name.toLowerCase())){
+			if (el.getText().toLowerCase().equals(currentCheckBox.getText().toLowerCase())){
 				b = true;
 				break;
 			}
 		}
-		 
-		Assert.assertFalse(b);
 		
-		TestReporter.writeToReportPositiveResult("Column is disabled");
+		return b;
+	}
+	
+	private void EnableColumnByCheckBox(WebElement currentcheckBox){
+		
+		TestReporter.writeToReportTitle("Checking enable column " + currentcheckBox.getText() +
+				" by selected check Box");		
+		
+		Assert.assertTrue(clickAndCheñkColumn(currentcheckBox));	
 	}	
 	
-	public void checkAllTextPresent(){
+	private void DisableColumnByCheckBox(WebElement currentCheckBox){
 		
-		TestReporter.writeToReportTitle("Checking the presence of All Candidates text");
+		TestReporter.writeToReportTitle("Checking disable column " + currentCheckBox.getText() +
+				" by selected check Box");			
+		 
+		Assert.assertFalse(clickAndCheñkColumn(currentCheckBox));	
+	}	
+	
+	public void checkTextPresent(){
+		
+		TestReporter.writeToReportStep("Check the presence of all text on All Candidates menu Page");
 
 		checkElementText("All Candidates", "All candidates title", title);
+		checkElementPartialText("Candidates pagination", "Crumbs", crumbs);
 		
 		TestReporter
-		.writeToReportPositiveResult("All All Candidates text are present");		
+		.writeToReportPositiveResult("All text on All Candidates menu Page is present");		
 	}
 }

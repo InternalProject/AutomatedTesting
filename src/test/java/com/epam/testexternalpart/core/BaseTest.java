@@ -21,6 +21,7 @@ import com.epam.testexternalpart.screen.AllCandidatesPage;
 import com.epam.testexternalpart.screen.LoginPage;
 import com.epam.testexternalpart.screen.Menu;
 import com.epam.testexternalpart.screen.PlaceForTestingPage;
+import com.epam.testexternalpart.screen.TemplatePage;
 import com.epam.testexternalpart.screen.departments.AddDepartmentPage;
 import com.epam.testexternalpart.screen.departments.Departments;
 import com.epam.testexternalpart.screen.profile.CreateProfilePage;
@@ -59,6 +60,8 @@ public abstract class BaseTest {
 	protected AnswerFromGMail pageGmail;
 	protected AssignToTestPage pageAssignTest;
 	protected PlaceForTestingPage pagePlaceForTesting;
+	protected TemplatePage pageTemplates;
+
 	
 	@BeforeClass
 	public void init() {
@@ -84,20 +87,13 @@ public abstract class BaseTest {
 		pageEditProfile = new EditProfilePage(driver);
 		pageAssignTest = new AssignToTestPage(driver);
 		pagePlaceForTesting = new PlaceForTestingPage(driver);
+		pageTemplates = new TemplatePage(driver);
 	}
 	
 
 	@AfterClass
 	public void tearDown() {
 		driver.manage().deleteAllCookies();
-		
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
 		driver.close();
 		driver.quit();
 	
@@ -110,7 +106,9 @@ public abstract class BaseTest {
 		String b = testMethod.getDeclaringClass().getSimpleName();
 		int numberOfParameters = testMethod.getParameterTypes().length;
 
+
 		String path = "D:/AutomatedTesting/data/" + b + ".xlsx";
+
 
 		try {
 			FileInputStream file = new FileInputStream(path);
@@ -118,10 +116,8 @@ public abstract class BaseTest {
 			XSSFSheet sheet = workbook.getSheet(a);
 			testData = fillData(sheet, 1, numberOfParameters);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

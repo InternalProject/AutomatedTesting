@@ -17,7 +17,7 @@ public class Components {
 	  protected WebDriver driver;
 	  protected final int SHORT_TIME=1000;
 	  protected final int MIDDLE_TIME=5000;
-	  protected final int LONG_TIME=9000;
+	  protected final int LONG_TIME=10000;
 	  
 	  public void waiting(int time){
 		  try {
@@ -26,11 +26,6 @@ public class Components {
 			e.printStackTrace();
 		}
 		  
-	  }
-	  
-	public  Components(WebDriver driver){
-		  this.driver=driver;
-		PageFactory.initElements(driver, this);
 	  }
 	  
 	  public  void isElementExist( String item, WebElement welement, boolean refer) {
@@ -64,8 +59,7 @@ public class Components {
 				if(welement.get(i).getText().equals(text)){
 					value=true;
 				break;}
-				}
-		 
+				}	 
 		 
 		 TestReporter.writeToReportTitle("Checking the presence of the elemen ["+text+"]");
 	        if (refer) {
@@ -81,7 +75,8 @@ public class Components {
 
 	  public  void clickElement(WebElement webElement, String item) {
 		  TestReporter.writeToReportTitle("Click on ["+item+"]");
-          (new WebDriverWait(driver, 10000)).until(ExpectedConditions.elementToBeClickable(webElement)).click();
+		  waiting(SHORT_TIME);
+          (new WebDriverWait(driver, LONG_TIME)).until(ExpectedConditions.elementToBeClickable(webElement)).click();
 	    }
 	  
 	  
@@ -99,38 +94,41 @@ public class Components {
 	  
 	  
 	  public  void checkElementText(String expectedText, String elementName, WebElement element) {
-		  TestReporter.writeToReportTitle("Checking text of element "+elementName);
-		 WebDriverWait driverTextWait = new WebDriverWait(driver, 10);
-		  String elementText;
 		 
-		if(driverTextWait.until(ExpectedConditions.visibilityOf(element)).getTagName().equals("input")){
-			elementText = element.getAttribute("value");
-		}
-		  //elementText= driverTextWait.until(ExpectedConditions.visibilityOf(element)).getText();
+		  TestReporter.writeToReportTitle("Checking text of element "+elementName);
+        
+		  String elementText;
+		  if (element.getTagName().equals("input")) {
+			  elementText = element.getAttribute("value");
+		  }
+		  else {
+			  elementText = element.getText();
+		  }
 		
-		else {
-			elementText = driverTextWait.until(ExpectedConditions.visibilityOf(element)).getText();
-			}
-			
-			expectedText = expectedText.trim();
-			elementText = elementText.trim();
-			
-			Assert.assertEquals(elementText, expectedText);
-			TestReporter.writeToReportPositiveResult("Text of ["+elementName+"] is correct");
+		  expectedText = expectedText.trim();
+		  elementText = elementText.trim();
+		
+		  Assert.assertEquals(elementText, expectedText);
+		  TestReporter.writeToReportPositiveResult("Text of ["+elementName+"] is correct");
+		
+	  }
+	  
+	  public  void checkElementPartialText(String expectedText, String elementName, WebElement element) {
+			 
+		  TestReporter.writeToReportTitle("Checking partial text of element "+elementName);
+        
+		  String elementText;
+		  if (element.getTagName().equals("input")) {
+			  elementText = element.getAttribute("value");
+		  }
+		  else {
+			  elementText = element.getText();
+		  }
+				
+		  elementText = elementText.trim();
 		  
-		  /*
-          	String elementText;
-          	if (element.getTagName().equals("input")) {
-			elementText = element.getAttribute("value");
-			}else {
-			elementText = element.getText();
-			}
-			
-			expectedText = expectedText.trim();
-			elementText = elementText.trim();
-			
-			Assert.assertEquals(elementText, expectedText);
-			TestReporter.writeToReportPositiveResult("Text of ["+elementName+"] is correct");
-*/
+		  Assert.assertTrue(elementText.contains(expectedText));
+		  TestReporter.writeToReportPositiveResult("Text of ["+elementName+"] is correct");
+		
 	  }
 }

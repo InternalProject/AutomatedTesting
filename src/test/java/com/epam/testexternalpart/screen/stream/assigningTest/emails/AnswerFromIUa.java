@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.epam.testexternalpart.screen.Components;
@@ -31,9 +33,9 @@ public class AnswerFromIUa extends Components{
 	private static final String READ_MESSAGES = "//a/span[text()='Rostyslav_Biletskyi@epam.com']";
 	
 	
-	private static final String CONFIRMED_ANSWER = "//div[@class='message_body']/pre/a[2]";
-	private static final String NOT_ACTUAL_ANSWER = "//div[@class='message_body']/pre/a[3]";
-	private static final String NEW_TIME_ANSWER = "//div[@class='message_body']/pre/a[4]";
+	private static final String CONFIRMED_ANSWER = "//div[@class='message_body']/pre/a[3]";
+	private static final String NOT_ACTUAL_ANSWER = "//div[@class='message_body']/pre/a[4]";
+	private static final String NEW_TIME_ANSWER = "//div[@class='message_body']/pre/a[5]";
 	
 	@FindBy(xpath=INPUT_BOX)
 	private WebElement inputBox;
@@ -63,13 +65,14 @@ public class AnswerFromIUa extends Components{
 	private WebElement logginButton;
 	
 	public AnswerFromIUa(WebDriver driver){
-		super(driver);		
+		this.driver=driver;
+		PageFactory.initElements(driver, this);	
 	}
 	
 	public void logOn(){
 		
 		driver.navigate().to(iUa);
-		
+        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(loginField));
 		loginField.sendKeys(login);
 		passwordField.sendKeys(password);
 		clickElement(logginButton,"logginButton");

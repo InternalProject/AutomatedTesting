@@ -62,7 +62,8 @@ public class AssignToTestPage extends Components{
 	private WebElement popUpResults;
 	
 	public AssignToTestPage(WebDriver driver) {
-		super(driver);
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
 	}
 	
 	public void sendInvitation(){

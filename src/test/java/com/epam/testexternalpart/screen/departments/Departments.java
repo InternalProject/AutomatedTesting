@@ -1,5 +1,6 @@
 package com.epam.testexternalpart.screen.departments;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -8,11 +9,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.epam.testexternalpart.core.CheckerData;
 import com.epam.testexternalpart.core.TestReporter;
 import com.epam.testexternalpart.screen.Components;
 import com.epam.testexternalpart.screen.stream.AddStreamPage;
 
-public class Departments extends Components {
+public class Departments extends Components implements CheckerData{
+
+	public static final String CRUMBS = "//div[@id='crumds']";
 
 	public static String streamName;
 	private static final String DEPARTMENT_CREATE_BUTTON = "//div[@class='btn-toolbar']/a[1]";
@@ -33,12 +37,8 @@ public class Departments extends Components {
 	private static final String DEPARTMENT_TABLE_ALL_DELETE_BUTTON = "//table[@id='manualTable']//tr//td[7]//a[2]";
 
 	private static final String DEPARTMENT_ACTIVE_TAB = "//li[@class='active']/a";
-	private static final String DEPARTMENT_ALL_DEP = "//ul[@id='depTab']/li/a";
-	private static final String DEPARTMENT_JAVA_TAB = "//ul[@id='depTab']/li[1]/a";
-	private static final String DEPARTMENT_NET_TAB = "//ul[@id='depTab']/li[2]/a";
-	private static final String DEPARTMENT_FRONT_AND_TAB = "//ul[@id='depTab']/li[3]/a";
-	private static final String DEPARTMENT_AUTOTEST_TAB = "//ul[@id='depTab']/li[4]/a";
-	private static final String DEPARTMENT_SOFTTEST_TAB = "//ul[@id='depTab']/li[5]/a";
+	private static final String DEPARTMENT_ALL_TABS = "//ul[@id='depTab']/li/a";	
+
 	private static final String DEPARTMENT_TITTLE_TEXT = "//h1[text()='Candidate Automation System']";
 	public int depNumb;
 	private static final String POP_AP_DEL="//div [@class='modal-dialog']";
@@ -55,6 +55,9 @@ public class Departments extends Components {
 	public static final String SECOND_STREAM = "//tbody/tr[2]";
 	public static final String FIRST_STREAM = "//tbody/tr[1]";
 	public static final String FIRST_STREAM_NAME = "//tbody/tr[1]/td[2]";
+	
+	@FindBy(xpath = CRUMBS)
+	public WebElement crumbs;
 	
 	@FindBy(xpath = FIRST_STREAM_NAME)
 	public WebElement first_stream_name;
@@ -76,7 +79,8 @@ public class Departments extends Components {
 
 	
 	public Departments(WebDriver driver) {
-		super(driver);
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
 	}
 
 	@FindBy(xpath = DEPARTMENT_TABLE_ROW)
@@ -88,23 +92,8 @@ public class Departments extends Components {
 	@FindBy(xpath = DEPARTMENT_CRUMBS)
 	public WebElement departmentCrumbs;
 
-	@FindBy(xpath = DEPARTMENT_ALL_DEP)
-	public List<WebElement> allDep;
-
-	@FindBy(xpath = DEPARTMENT_JAVA_TAB)
-	public WebElement javaTab;
-
-	@FindBy(xpath = DEPARTMENT_NET_TAB)
-	public WebElement netTab;
-
-	@FindBy(xpath = DEPARTMENT_FRONT_AND_TAB)
-	public WebElement frontandTab;
-
-	@FindBy(xpath = DEPARTMENT_AUTOTEST_TAB)
-	public WebElement autotestTab;
-
-	@FindBy(xpath = DEPARTMENT_SOFTTEST_TAB)
-	public WebElement softtestTab;
+	@FindBy(xpath = DEPARTMENT_ALL_TABS)
+	public List<WebElement> allDepartmentTabs;
 
 	@FindBy(xpath = DEPARTMENT_CREATE_BUTTON)
 	public WebElement createDepartmentButton;
@@ -153,35 +142,36 @@ public class Departments extends Components {
 
 		TestReporter
 				.writeToReportTitle("Checking that Department Create Button reffering to Create Department Page");
+		
 		createDepartmentButton.click();
-		isElementExist("javaTab", javaTab, false);
+		isElementExist("javaTab", allDepartmentTabs, false);
 
 	}
 
 	public WebElement getlastDep() {
-		depNumb = allDep.size();
-		return allDep.get(allDep.size() - 1);
+		
+		depNumb = allDepartmentTabs.size();
+		return allDepartmentTabs.get(allDepartmentTabs.size() - 1);
 	}
 
 	public void clickCreateStreamButton() {
-		TestReporter
-				.writeToReportTitle("Checking that Stream Create Button reffering to Add Stream Page");
-		addStreamButton.click();
 		
-		isElementExist("java Tab", javaTab, false);
+		TestReporter.writeToReportTitle("Checking that Stream Create Button reffering to Add Stream Page");
+		addStreamButton.click();		
+		isElementExist("java Tab", allDepartmentTabs, false);
 	}
 
 	public void clickSelectedStream() {
+		
 		TestReporter
 				.writeToReportTitle("Checking that click by selected stream reffering to Stream Page");
 		
 		streamName = driver.findElement(By.xpath(DEPARTMENT_ACTIVE_TAB)).getText() + 
 				" - " + driver.findElement(By.xpath("//table[@id='manualTable']/tbody/tr/td[2]")).getText();
-		System.out.println(streamName);
 				
 		clickElement(getTableEl(1,1), "First stream on first dep");
 		
-		isElementExist("javaTab", javaTab, false);
+		isElementExist("javaTab", allDepartmentTabs, false);
 	}
 	
 	public void clickSelectedStream(String streamName){
@@ -189,7 +179,7 @@ public class Departments extends Components {
 		String fullStreamName = SELECT_ADDED_STREAM_FIRST_PART+streamName+"']]"; 
 		WebElement selectedStrem = driver.findElement(By.xpath(fullStreamName));
 		clickElement(selectedStrem, "Select stream on Department Page");
-		isElementExist("javaTab", javaTab, false);				
+		isElementExist("javaTab", allDepartmentTabs, false);				
 	}
 	
 	public void checkDepartment(WebElement curentTab){
@@ -206,52 +196,43 @@ public class Departments extends Components {
 		
 	}
 	
-	public void checkAddStreamPageInDepartmentJava() {
+	public void selectAndCheckDepartment() {
 		
-		checkDepartment(javaTab);
+		TestReporter.writeToReportTitle("Checking adding Stream according to Department");
+		String currentTabName;
+		
+		WebElement currentTab;
+				
+		for (int i= 0; i < allDepartmentTabs.size(); i++){
+			
+			currentTab = driver.findElements(By.xpath(DEPARTMENT_ALL_TABS)).get(i);
+			
+			currentTabName = "'" + currentTab.getText() + "'";
+			clickElement(currentTab, currentTabName + " Tab");
+			clickElement(addStreamButton, "add Stream Button");
+			
+			new AddStreamPage(driver).checkDepartment(currentTabName);	
+		}				
 	}
 	
-	public void checkAddStreamPageInDepartmentNet() {
+	public void checkTextPresent() {
 		
-		checkDepartment(netTab);
-	}
-	
-	public void checkAddStreamPageInDepartmentFrontEnd() {
-		
-		checkDepartment(frontandTab);
-	}
-	
-	public void checkAddStreamPageInDepartmentAutoTest() {
-		
-		checkDepartment(autotestTab);
-	}
-	
-	public void checkAddStreamPageInDepartmentSofttest() {
-		
-		checkDepartment(softtestTab);
-	}
-	
-	public void allTextArePresent() {
 		TestReporter
-				.writeToReportTitle("Checking the presence of Department's text");
+				.writeToReportStep("Checking the presence of all text on Department Page");
 
 		checkElementText("Candidate Automation System", "Department title",
 				departmentTitle);
+		checkElementPartialText("Departments page", "Crumbs", crumbs);
 
 		TestReporter
-				.writeToReportPositiveResult("All Departments text are present");
+				.writeToReportPositiveResult("All text is present on Department Page");
 
 	}
 
-	public void allElementsArePresent() {
+	public void checkElementsPresent() {
+		
 		TestReporter
-				.writeToReportTitle("Checking the presence of Department's elements");
-
-		isElementExist("Java Tab", javaTab, true);
-		isElementExist(".Net Tab", javaTab, true);
-		isElementExist("Front End Tab", javaTab, true);
-		isElementExist("Automated Testing Tab", javaTab, true);
-		isElementExist("Software Testing Tab", javaTab, true);
+				.writeToReportStep("Checking the presence of all elements on Department Page");
 
 		isElementExist("Department Create Button", createDepartmentButton, true);
 		isElementExist("Department Edit Button", editDepartmentButton, true);
@@ -259,8 +240,7 @@ public class Departments extends Components {
 		isElementExist("Department Create Button", addStreamButton, true);
 
 		TestReporter
-				.writeToReportPositiveResult("All Departments elements is present");
-
+				.writeToReportPositiveResult("All elements are present on Department Page");
 	}
 
 	public WebElement getTableEl(int numOfRow,int numOfCol) {
@@ -269,6 +249,7 @@ public class Departments extends Components {
 	}
 
 	public void deleteAddedStream(String name) {
+		
 		String deleteAdded = DELETE_ADDED_STREAM_FIRST_PART+name+DELETE_ADDED_STREAM_SECOND_PART; 
 		WebElement del_button = driver.findElement(By.xpath(deleteAdded));
 		clickElement(del_button, "Delete strem button in Department Page");
@@ -278,5 +259,4 @@ public class Departments extends Components {
 		clickElement(confirmPopUpButton, "Delete confirmation");		
 		
 	}
-
 }

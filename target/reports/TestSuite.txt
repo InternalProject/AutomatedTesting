@@ -2,6 +2,7 @@
 Test set: TestSuite
 -------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tests run: 35, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 286.431 sec <<< FAILURE!
 streamSearch(com.epam.testexternalpart.tests.SearchTest)  Time elapsed: 19.513 sec  <<< FAILURE!
 java.lang.AssertionError: Wrong data in new cand expected [true] but found [false]
@@ -14,73 +15,20 @@ java.lang.AssertionError: Wrong data in new cand expected [true] but found [fals
 Tests run: 35, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 403.9 sec <<< FAILURE!
 checkElAllCandiadtesMenu(com.epam.testexternalpart.tests.SmokeTest)  Time elapsed: 0.734 sec  <<< FAILURE!
 org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (36, 736). Other element would receive the click: <label for="checkbox1">...</label>
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30 milliseconds
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: 5ea17729a3b50a1c8c24d28c7515e6a9
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir18508_30381}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:50)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.epam.testexternalpart.screen.AllCandidatesPage.checkEnableColumnByCheckBox(AllCandidatesPage.java:298)
-	at com.epam.testexternalpart.screen.AllCandidatesPage.checkColumnsAccordingToCheckBox(AllCandidatesPage.java:278)
-	at com.epam.testexternalpart.tests.SmokeTest.checkElAllCandiadtesMenu(SmokeTest.java:151)
-
-checkElStreamPage(com.epam.testexternalpart.tests.SmokeTest)  Time elapsed: 11.931 sec  <<< FAILURE!
-org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (36, 737). Other element would receive the click: <label for="checkbox1">...</label>
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30 milliseconds
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: 5ea17729a3b50a1c8c24d28c7515e6a9
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir18508_30381}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:50)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkEnableColumnByCheckBox(StreamPage.java:413)
-	at com.epam.testexternalpart.screen.stream.StreamPage.checkColumnsAccordingToCheckBox(StreamPage.java:393)
-	at com.epam.testexternalpart.tests.SmokeTest.checkElStreamPage(SmokeTest.java:75)
-
-checkElementsEditCandidate(com.epam.testexternalpart.tests.SmokeTest)  Time elapsed: 21.647 sec  <<< FAILURE!
+=======
+Tests run: 37, Failures: 8, Errors: 0, Skipped: 4, Time elapsed: 1,451.534 sec <<< FAILURE!
+checkAddStreamAccordingToDepartment(com.epam.testexternalpart.tests.SmokeTest)  Time elapsed: 5.152 sec  <<< FAILURE!
 org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+>>>>>>> 20639403100fd40db4e4bd30e6be243a406c12c9
   (Session info: chrome=39.0.2171.95)
   (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 68 milliseconds
+Command duration or timeout: 12 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
 System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: 5ea17729a3b50a1c8c24d28c7515e6a9
+Session ID: d85699eae7dedef154120fbea9cb2541
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir18508_30381}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir17032_26497}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -88,23 +36,23 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteExecuteMethod.execute(RemoteExecuteMethod.java:34)
-	at org.openqa.selenium.remote.RemoteMouse.mouseMove(RemoteMouse.java:88)
-	at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)
-	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)
-	at com.epam.testexternalpart.screen.stream.StreamPage.clickViewCand(StreamPage.java:557)
-	at com.epam.testexternalpart.tests.SmokeTest.checkElementsEditCandidate(SmokeTest.java:137)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:152)
+	at com.epam.testexternalpart.screen.departments.Departments.selectAndCheckDepartment(Departments.java:212)
+	at com.epam.testexternalpart.tests.SmokeTest.checkAddStreamAccordingToDepartment(SmokeTest.java:44)
 
-editNewPlaceForTesting(com.epam.testexternalpart.tests.PlaceForTestingTest)  Time elapsed: 2.033 sec  <<< FAILURE!
-org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (26, 306). Other element would receive the click: <div class="modal-backdrop fade in" style="height: 943px;"></div>
+checkElementsAddCandidate(com.epam.testexternalpart.tests.SmokeTest)  Time elapsed: 21.729 sec  <<< FAILURE!
+org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //div[@id='crumds']] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@id='crumds']]' is not a valid XPath expression.
   (Session info: chrome=39.0.2171.95)
   (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 34 milliseconds
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
 System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: 91dfa469ef70546d74ffb4fde078642d
+Session ID: d85699eae7dedef154120fbea9cb2541
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir16376_12244}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir17032_26497}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -112,10 +60,145 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy9.getTagName(Unknown Source)
+	at com.epam.testexternalpart.screen.Components.checkElementPartialText(Components.java:120)
+	at com.epam.testexternalpart.screen.profile.CreateProfilePage.checkTextPresent(CreateProfilePage.java:148)
+	at com.epam.testexternalpart.tests.SmokeTest.checkElementsAddCandidate(SmokeTest.java:71)
+
+checkElementsPresentDepartmentPage(com.epam.testexternalpart.tests.SmokeTest)  Time elapsed: 0.251 sec  <<< FAILURE!
+java.lang.AssertionError: No element [allDepartmentTabs] on the page  expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.epam.testexternalpart.screen.Components.isElementExist(Components.java:66)
+	at com.epam.testexternalpart.screen.departments.Departments.checkElementsPresent(Departments.java:240)
+	at com.epam.testexternalpart.tests.SmokeTest.checkElementsPresentDepartmentPage(SmokeTest.java:16)
+
+addCandidateToSeveralDepartment(com.epam.testexternalpart.tests.SeveralStreamTest)  Time elapsed: 22.21 sec  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 2, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:38)
+	at com.sun.proxy.$Proxy10.get(Unknown Source)
+	at com.epam.testexternalpart.tests.SeveralStreamTest.addCandidateToSeveralDepartment(SeveralStreamTest.java:16)
+
+allCandidatesSearch(com.epam.testexternalpart.tests.SearchTest)  Time elapsed: 50.194 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.epam.testexternalpart.screen.stream.StreamPage.searchResultCheck(StreamPage.java:722)
+	at com.epam.testexternalpart.tests.SearchTest.allCandidatesSearch(SearchTest.java:60)
+
+streamSearch(com.epam.testexternalpart.tests.SearchTest)  Time elapsed: 49.135 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.epam.testexternalpart.screen.stream.StreamPage.performSearch(StreamPage.java:702)
+	at com.epam.testexternalpart.tests.SearchTest.streamSearch(SearchTest.java:29)
+
+addNewPlaceForTesting(com.epam.testexternalpart.tests.PlaceForTestingTest)  Time elapsed: 816.547 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.11 seconds
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: 63d44f2fff7d2496345edf577badbd7c
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir7820_21404}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:227)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:39)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:213)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:210)
+	at org.openqa.selenium.support.ui.ExpectedConditions$18.apply(ExpectedConditions.java:563)
+	at org.openqa.selenium.support.ui.ExpectedConditions$18.apply(ExpectedConditions.java:556)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.epam.testexternalpart.screen.Components.clickElement(Components.java:78)
+	at com.epam.testexternalpart.tests.PlaceForTestingTest.addNewPlaceForTesting(PlaceForTestingTest.java:11)
+
+startPage(com.epam.testexternalpart.tests.PlaceForTestingTest)  Time elapsed: 818.58 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.01 seconds
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: 63d44f2fff7d2496345edf577badbd7c
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir7820_21404}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<<<<<<< HEAD
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
 	at com.epam.testexternalpart.screen.Components.clickElement(Components.java:70)
 	at com.epam.testexternalpart.screen.PlaceForTestingPage.editNewPlace(PlaceForTestingPage.java:180)
 	at com.epam.testexternalpart.tests.PlaceForTestingTest.editNewPlaceForTesting(PlaceForTestingTest.java:22)
 >>>>>>> dbb5e243a5d8bc919fd1d8fccccaeb4e573f8dd4
+=======
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at com.epam.testexternalpart.core.BaseTest.startPage(BaseTest.java:77)
+	at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+>>>>>>> 20639403100fd40db4e4bd30e6be243a406c12c9
 

@@ -5,14 +5,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.epam.testexternalpart.core.CheckerData;
 import com.epam.testexternalpart.core.TestReporter;
 import com.epam.testexternalpart.screen.Components;
 
-public class AddDepartmentPage extends Components{
+public class AddDepartmentPage extends Components implements CheckerData{
 	
 	WebDriver driver;
 	public AddDepartmentPage(WebDriver driver) {
-		super(driver);
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
 	}
 	
 	public static final String NAME_INPUT = "//input[@id='departmentName']";
@@ -21,7 +23,7 @@ public class AddDepartmentPage extends Components{
 	public static final String LABEL_NAME = "//form//div[1]//label[@class='col-lg-2 control-label']";
 	public static final String LABEL_EXCEL_NAME = "//form//div[2]//label[@class='col-lg-2 control-label']";	
 	public static final String LABEL_ADD_DEPARTMENT = "//form[@class='form-horizontal']/legend";
-	public static final String CRUMBS = "//div[@id='crumds']/a[text()='Departments page>']";
+	public static final String CRUMBS = "//div[@id='crumds']";
 	public static final String WRONG_NAME_MESS="//span[@id='e_name']";
 	
 	@FindBy(xpath = WRONG_NAME_MESS)
@@ -49,10 +51,11 @@ public class AddDepartmentPage extends Components{
 	@FindBy(xpath = LABEL_EXCEL_NAME)
 	public WebElement label_excel_name;
 	
-	public void allTextArePresent(){
+	public void checkTextPresent(){
 		
-		TestReporter.writeToReportTitle("Checking the presence of AddDepartmentPage text");
+		TestReporter.writeToReportStep("Checking the presence of all text on Add Department Page");
 			
+		checkElementPartialText("Department page", "Crumbs", crumbs);
 		checkElementText("Enter department information", "Add Department title",
 				labelAddDepartment);		
 		checkElementText("Department name", "New Department Name",
@@ -61,21 +64,20 @@ public class AddDepartmentPage extends Components{
 				label_excel_name);
 		
 		TestReporter
-		.writeToReportPositiveResult("All text are present on AddDepartmentPage");
+		.writeToReportPositiveResult("All text are present on Add Department Page");
 	}
 	
-	public void allElementsArePresent(){
+	public void checkElementsPresent(){
 		
 		TestReporter
-		.writeToReportTitle("Checking the presence of AddDepartment's elements");
+		.writeToReportStep("Checking the presence of all elements on Add Department Page");
 		
-		isElementExist( "Crumbs", crumbs, true);
 		isElementExist( "AddDepartmentPage name_input", name_input, true);
 		isElementExist( "AddDepartmentPage excel_name_input", excel_name_input, true);
 		isElementExist( "AddDepartmentPage submit", submit, true);
 		
 		TestReporter
-		.writeToReportPositiveResult("All AddDepartments elements is present");
+		.writeToReportPositiveResult("All elements are present on Add Department Page");
 	}
 	
 	public void addNewDepartment(String depName){
@@ -108,6 +110,4 @@ public class AddDepartmentPage extends Components{
 
 		
 	}
-	
-	
 }

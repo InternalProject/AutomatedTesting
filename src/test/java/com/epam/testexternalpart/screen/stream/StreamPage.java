@@ -13,11 +13,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.epam.testexternalpart.core.CheckerData;
 import com.epam.testexternalpart.core.TestReporter;
 import com.epam.testexternalpart.screen.Components;
 import com.epam.testexternalpart.screen.departments.Departments;
 
-public class StreamPage extends Components {
+public class StreamPage extends Components implements CheckerData {
 	
 	private static final String STREAM_TITLE = "//div[@class='container-fluid']/h1";
 	public static final String CRUMBS = "//div[@id='crumds']";
@@ -31,7 +32,7 @@ public class StreamPage extends Components {
 	private static final String STREAM_DELETE_BUTTON = "//a[@id='deleteCandidateButton']";
 	private static final String STREAM_ALL_CHECKBOXES = "//div [@class='col-md-2']//label";
 	private static final String STREAM_TABLE_ROW="//tbody/tr";
-	private static final String STREAM_TABLE_ROW_VIEW="//table[@id='table']/tbody/tr[1]";
+	private static final String STREAM_TABLE_ROW_VIEW="//table[@id='table']/tbody/tr[1]/td[3]";
 	
 	private static final String STREAM_ALL_CANDIDATE_TAB = "//ul[@id='candTab']/li/a[text()='All Candidates']";
 	private static final String STREAM_NOT_TESTED_TAB = "//ul[@id='candTab']/li/a[text()='Not tested']";
@@ -103,7 +104,6 @@ public class StreamPage extends Components {
 	private static final String STREAM_STATUS_CHECKBOX_LABEL = "//label[text()='Status']";
 	private static final String STREAM_COMMENT_CHECKBOX_LABEL = "//label[text()='Comment']";
 	private static final String STREAM_ESTIMATION_CHECKBOX_LABEL = "//label[text()='Estimation']";
-
 	
 	private static final String	DEL_DEP_POP_AP_BUTTON="//button[@id='delete_candidate']";
 	private static final String POP_AP_DEL="//div [@class='modal-dialog']";
@@ -181,7 +181,7 @@ public class StreamPage extends Components {
 	public WebElement confirmedTab;
 	
 	@FindBy(xpath = STREAM_TEST_COMPLETE_TAB)
-	public WebElement testCompleteTab;
+	public WebElement testCompletedTab;
 	
 	@FindBy(xpath = STREAM_BANNED_TAB)
 	public WebElement bannedTab;
@@ -371,7 +371,8 @@ public class StreamPage extends Components {
 	public String phoneNumberActual;
 	
 	public StreamPage(WebDriver driver) {
-		super(driver);
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
 	}
 	
 	public WebElement getTableEl(int numOfRow,int numOfCol){
@@ -412,95 +413,67 @@ public class StreamPage extends Components {
 	
 	public void checkColumnsAccordingToCheckBox(){
 				
-		checkEnableColumnByCheckBox(secondPhoneCheckBoxTitle);
-		checkEnableColumnByCheckBox(UniversityCheckBoxTitle);
-		checkEnableColumnByCheckBox(facultyCheckBoxTitle);
-		checkEnableColumnByCheckBox(degreeCheckBoxTitle);
-		checkEnableColumnByCheckBox(educationStartCheckBoxTitle);
-		checkEnableColumnByCheckBox(graduationYearCheckBoxTitle);
-		checkEnableColumnByCheckBox(additionalEducationCheckBoxTitle);
-		checkEnableColumnByCheckBox(relevantSkillsCheckBoxTitle);
-		checkEnableColumnByCheckBox(howKnowCheckBoxTitle);
-		checkEnableColumnByCheckBox(secondPhoneCheckBoxTitle);
-		checkEnableColumnByCheckBox(attemptCountCheckBoxTitle);
-		checkEnableColumnByCheckBox(statusCheckBoxTitle);
-		checkEnableColumnByCheckBox(commentCheckBoxTitle);
-		checkEnableColumnByCheckBox(estimationCheckBoxTitle);
-
+		for (WebElement currentCheckBox : allCheckBoxes){
+			EnableColumnByCheckBox(currentCheckBox);
+			DisableColumnByCheckBox(currentCheckBox);
+		}
 	}
 	
-	public void checkEnableColumnByCheckBox(WebElement title){
+	private boolean clickAndCheñkColumn(WebElement currentCheckBox){
 		
-		TestReporter.writeToReportTitle("Checking enable column " + title.getText() +
-				" by selecting check Box");
-		
-		clickElement(title, "Click " + title.getText());
-		String name = title.getText();		
-		
+		clickElement(currentCheckBox, currentCheckBox.getText());		
 		boolean b = false;
-		System.out.println("1");
 		
+        (new WebDriverWait(driver, 3000)).until(ExpectedConditions.visibilityOfAllElements(tableHead));
 		for(WebElement el : tableHead){
-			if (el.getText().toLowerCase().equals(name.toLowerCase())){
+			if (el.getText().toLowerCase().equals(currentCheckBox.getText().toLowerCase())){
 				b = true;
 				break;
 			}
 		}
 		
-		Assert.assertTrue(b);
+		return b;
+	}
+	
+	private void EnableColumnByCheckBox(WebElement currentcheckBox){
 		
-		TestReporter.writeToReportPositiveResult("Column is enabled");
+		TestReporter.writeToReportTitle("Checking enable column " + currentcheckBox.getText() +
+				" by selected check Box");		
 		
-		checkDisableColumnByCheckBox(title);
+		Assert.assertTrue(clickAndCheñkColumn(currentcheckBox));	
 	}	
 	
-	public void checkDisableColumnByCheckBox(WebElement title){
+	private void DisableColumnByCheckBox(WebElement currentCheckBox){
 		
-		TestReporter.writeToReportTitle("Checking disable column " + title.getText() +
-				" by selecting check Box");		
-		
-		String name = title.getText();	
-		
-		boolean b = false;
-		clickElement(title, "Click " + title.getText());
-		
-		for(WebElement el : tableHead){
-			if (el.getText().toLowerCase().equals(name.toLowerCase())){
-				b = true;
-				break;
-			}
-		}
+		TestReporter.writeToReportTitle("Checking disable column " + currentCheckBox.getText() +
+				" by selected check Box");			
 		 
-		Assert.assertFalse(b);
-		
-		TestReporter.writeToReportPositiveResult("Column is disabled");
+		Assert.assertFalse(clickAndCheñkColumn(currentCheckBox));
 	}	
 	
-	public void allTextArePresent(){
+	public void checkTextPresent(){
 		
-		TestReporter.writeToReportTitle("Checking the presence of Stream's text");
+		TestReporter.writeToReportStep("Checking the presence of all text on Stream Page");
 
 		checkElementText(Departments.streamName, "Department title", title);
+		checkElementPartialText("Candidates pagination", "Crumbs", crumbs);
 
 		TestReporter
-		.writeToReportPositiveResult("All Departments text are present");		
+		.writeToReportPositiveResult("All text is present on Stream Page");		
 	}
 	
 	public void clickAddCandidateButton(){
+		
 		TestReporter.writeToReportTitle("Checking that Stream Create Button reffering to Add Stream Page");
 		addCandidateButton.click();
-		 isElementExist("add Candidate Button",addCandidateButton,false);
-		 TestReporter.writeToReportPositiveResult("Stream Create button reffering to Add Stream Page");
+		isElementExist("add Candidate Button",addCandidateButton,false);
 	}
 
 	public void checkCandExisting(String st,boolean refer) {
 		  (new WebDriverWait(driver, 9000)).until(ExpectedConditions.visibilityOf(title));
-		  try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
+		  waiting(5000);
+		  
 		  TestReporter.writeToReportTitle("Check if new candidate was added");
 		  String []textOFLastEl = st.split(";");
 		  String []textForEachElement = tableRow.get(0).getText().split(" ");
@@ -530,19 +503,20 @@ public class StreamPage extends Components {
 
 	}
 	
-	public void checkAllElementArePresentWithoutImport(){
-		TestReporter.writeToReportTitle("Checking the presence of Stream's elements");
-	
-		isElementExist( "Crumbs", crumbs, true);
+	public void checkElementsPresent(){
+		
+		TestReporter.writeToReportStep("Checking the presence of all elements on Stream Page");
+		
 		isElementExist( "Stream Assign Test Button", assignTestButton, true);
 		isElementExist( "Stream Bun Button", bunButton, true);
 		isElementExist( "Stream Delete Button", deleteButton, true);
+		isElementExist( "Stream exportCandidateButton", exportCandidateButton, true);
 		
 		isElementExist( "Stream all Candidate Tab", allCandidateTab, true);
 		isElementExist( "Stream notTestedCandidate", notTestedCandidate, true);
 		isElementExist( "Stream assigned To Test Tab", assignedToTestTab, true);
 		isElementExist( "Stream confirmed Tab", confirmedTab, true);
-		isElementExist( "Stream test Complete Tab", testCompleteTab, true);
+		isElementExist( "Stream test Complete Tab", testCompletedTab, true);
 		isElementExist( "Stream not Actual Tab", notActualTab, true);
 		isElementExist( "Stream banned Tab", bannedTab, true);
 				
@@ -563,64 +537,44 @@ public class StreamPage extends Components {
 		
 		isElementExist( "Stream searchField", searchField, true);
 		isElementExist( "Stream add Candidate Button", addCandidateButton, true);
+		
 		TestReporter.writeToReportPositiveResult("All Streams elements are present");
 	}
 	
-	public void checkAllElementArePresentWithExport(){
+	public void checkElementsPresentAllCandidatesTab(){
 		
-		TestReporter.writeToReportTitle("Checking the presence of Stream's elements");
-	
-		isElementExist( "Crumbs", crumbs, true);
-		isElementExist( "Stream Assign Test Button", assignTestButton, true);
-		isElementExist( "Stream Bun Button", bunButton, true);
-		isElementExist( "Stream Delete Button", deleteButton, true);
+		TestReporter.writeToReportTitle("Checking the presence of elements on Stream Page on All Candidates Tab");
 		
-		isElementExist( "Stream all Candidate Tab", allCandidateTab, true);
-		isElementExist( "Stream notTestedCandidate", notTestedCandidate, true);
-		isElementExist( "Stream assigned To Test Tab", assignedToTestTab, true);
-		isElementExist( "Stream confirmed Tab", confirmedTab, true);
-		isElementExist( "Stream test Complete Tab", testCompleteTab, true);
-		isElementExist( "Stream not Actual Tab", notActualTab, true);
-		isElementExist( "Stream banned Tab", bannedTab, true);
-		
-		isElementExist( "Stream secondPhoneCheckBox", secondPhoneCheckBox, true);
-		isElementExist( "Stream UniversityCheckBox", UniversityCheckBox, true);
-		isElementExist( "Stream assigned facultyCheckBox", facultyCheckBox, true);
-		isElementExist( "Stream degreeCheckBox", degreeCheckBox, true);
-		isElementExist( "Stream educationStartCheckBox", educationStartCheckBox, true);
-		isElementExist( "Stream graduationYearCheckBox", graduationYearCheckBox, true);
-		isElementExist( "Stream additionalEducationCheckBox", additionalEducationCheckBox, true);
-		isElementExist( "Stream relevantSkillsCheckBox", relevantSkillsCheckBox, true);
-		isElementExist( "Stream howKnowCheckBox", howKnowCheckBox, true);
-		isElementExist( "Stream secondPhoneCheckBox", secondPhoneCheckBox, true);
-		isElementExist( "Stream attemptCountCheckBox", attemptCountCheckBox, true);
-		isElementExist( "Stream statusCheckBox", statusCheckBox, true);
-		isElementExist( "Stream commentCheckBox", commentCheckBox, true);
-		isElementExist( "Stream estimationCheckBox", estimationCheckBox, true);
-		
-		isElementExist( "Stream exportCandidateButton", exportCandidateButton, true);
-		isElementExist( "Stream searchField", searchField, true);
-		isElementExist( "Stream add Candidate Button", addCandidateButton, true);
 		isElementExist( "Stream choose Candidate Button", chooseCandidateButton, true);
 		isElementExist( "Stream import Candidate Button", importCandidateButton, true);
+	}
+	
+	public void checkElementsPresentTestCompletedTab(){
 		
-		TestReporter.writeToReportPositiveResult("All Streams elements are present");
+		TestReporter.writeToReportTitle("Checking the presence of elements on Stream Page on Test Completed Tab");
+	
+		isElementExist( "Stream sendPossitiveResultsButton Button", sendPossitiveResultsButton, true);
+		isElementExist( "Stream sendNegativeResultsButton Button", sendNegativeResultsButton, true);
+		
+		isElementExist( "Stream estimationCheckBox", sendResultCheckBox, true);	
 	}
 
 	public void clickViewCand() {
 		
-		TestReporter.writeToReportTitle("Checking that click on selected candidate reffering to Candidate View Page");
+		TestReporter.writeToReportTitle("Checking that double click on selected candidate reffering to Candidate View Page");
 		
 		Actions action = new Actions(driver);
 		
-        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(checkboxForAll));
+        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(STREAM_TABLE_ROW_VIEW)));
 		action.moveToElement(driver.findElement(By.xpath(STREAM_TABLE_ROW_VIEW))).doubleClick().build().perform();
-		
-		TestReporter.writeToReportPositiveResult("click on selected candidate reffering to Candidate View Page");
+
+		isElementExist("add Candidate Button",addCandidateButton,false);
 	}
 
 	public void checkTableAccordingToCandidadate(String field) {
 		
+		TestReporter.writeToReportTitle("Check table fields according to fields of new candidate");
+
 		String []fields = field.split(";");		
 		List<WebElement> row;
 		Boolean flag = false;
@@ -628,6 +582,7 @@ public class StreamPage extends Components {
 		for (WebElement ckeckBox : allCheckBoxes){
 			clickElement(ckeckBox,"ckeckBox");
 			
+	        (new WebDriverWait(driver, 1000)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(STREAM_TABLE_ROW)));
 			row = driver.findElements(By.xpath(STREAM_TABLE_ROW + "[1]/td"));
 					
 			for (String currentField : fields){
@@ -640,9 +595,8 @@ public class StreamPage extends Components {
 				flag = false;					
 			}			
 					
-			clickElement(ckeckBox,"ckeckBox");			
+			clickElement(ckeckBox,"click on " + ckeckBox);			
 		}
-		System.out.println("1");
 	}
 
 	public void selectCandidatesForTest() {		
@@ -657,6 +611,7 @@ public class StreamPage extends Components {
 	public void clickNotTestedTab() {
 		
 		clickElement(notTestedCandidate, "click notTestedCandidate");
+		waiting(1000);
 	}
 
 	public void checkCandidates(String field, String i) {
@@ -666,9 +621,8 @@ public class StreamPage extends Components {
 		String []fields = field.split(";");		
 		List<WebElement> row;
 		Boolean flag = false;
-		
+		   
 		row = driver.findElements(By.xpath(STREAM_TABLE_ROW + "[" + i + "]/td"));
-				
 		for (String currentField : fields){	
 			for (WebElement el : row){		
 				if (el.getText().replaceAll("-", ".").equals(currentField))
@@ -686,15 +640,10 @@ public class StreamPage extends Components {
 	}
 
 	public void deleteAllCand(String mess) {
-	try {
-		Thread.sleep(1000);
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-	 //  (new WebDriverWait(driver, 4000)).until(ExpectedConditions.elementToBeClickable(By.xpath(STREAM_CHECKBOX_FOR_ALL)));
-
-		while(tableRow.size()>1){
+	
+		waiting(2000);
+		
+        while(tableRow.size()>1){
 		clickElementJS(STREAM_CHECKBOX_FOR_ALL,"CheckboxForAll");
 		clickElementJS( STREAM_DELETE_BUTTON,"deleteButton");
 	    isElementExist("delCandPopAp", delCandPopAp, true);
@@ -702,7 +651,7 @@ public class StreamPage extends Components {
 	    System.out.println("2 "+tableRow.size());
 		}
 		
-	   (new WebDriverWait(driver, 4000)).until(ExpectedConditions.visibilityOf(title));
+	   (new WebDriverWait(driver, 4000)).until(ExpectedConditions.visibilityOfAllElements(tableRow));
 	   Assert.assertEquals(tableRow.size(), 1,"Not all candidates was deleted");
 	   checkElementText(mess,"Table Row",tableRow.get(0));
 	
@@ -723,12 +672,7 @@ public class StreamPage extends Components {
 		
 		clickElement(bannedTab, "click bannedTab");	
 	}
-
-	public void checkBannedCandidate() {
-		// TODO Auto-generated method stub
-		
-	}
-
+	
 	public void checkMarker(String mailName, String phoneNumber, String streamDepartmentName) {
 
 		for(WebElement e:all_candidates_in_stream){
@@ -753,70 +697,33 @@ public class StreamPage extends Components {
 		
 	}
 	
-	public void performSearch(String word){
+	public void performSearch(String word,WebElement field){
 		 TestReporter.writeToReportTitle("Search for ["+word+"]");
+		 if(field==null){
 		 searchField.clear();
-		 searchField.sendKeys(word);
-		
+		 searchField.sendKeys(word+ org.openqa.selenium.Keys.ENTER);
+		 }else{
+			 field.clear();
+			 field.sendKeys(word+ org.openqa.selenium.Keys.ENTER); 
+		 }
+	
 	}
 
 	public void searchResultCheck(String word){
+		waiting(3000);
 		Boolean flag = false;
 			for (WebElement currentRow : tableRow){
 				List<WebElement> el = currentRow.findElements(By.xpath(".//td"));
-			
+				
 				for (WebElement el2 : el){			
-					if (el2.getText().contains(word))
-						System.out.println(el2.getText());
+					if (el2.getText().contains(word)){
 						flag = true;
-				break;
+				break;}
 				}
+				
+				
 				Assert.assertTrue(flag);
 				flag = false;	
+			}
 	}
-	}
-
-	public void checkAllElementArePresentTestCompletedTab() {
-TestReporter.writeToReportTitle("Checking the presence of Stream's elements");
-		
-		isElementExist( "Crumbs", crumbs, true);
-		isElementExist( "Stream Assign Test Button", assignTestButton, true);
-		isElementExist( "Stream Bun Button", bunButton, true);
-		isElementExist( "Stream Delete Button", deleteButton, true);
-		
-		isElementExist( "Stream all Candidate Tab", allCandidateTab, true);
-		isElementExist( "Stream notTestedCandidate", notTestedCandidate, true);
-		isElementExist( "Stream assigned To Test Tab", assignedToTestTab, true);
-		isElementExist( "Stream confirmed Tab", confirmedTab, true);
-		isElementExist( "Stream test Complete Tab", testCompleteTab, true);
-		isElementExist( "Stream not Actual Tab", notActualTab, true);
-		isElementExist( "Stream banned Tab", bannedTab, true);
-		
-		isElementExist( "Stream secondPhoneCheckBox", secondPhoneCheckBox, true);
-		isElementExist( "Stream UniversityCheckBox", UniversityCheckBox, true);
-		isElementExist( "Stream assigned facultyCheckBox", facultyCheckBox, true);
-		isElementExist( "Stream degreeCheckBox", degreeCheckBox, true);
-		isElementExist( "Stream educationStartCheckBox", educationStartCheckBox, true);
-		isElementExist( "Stream graduationYearCheckBox", graduationYearCheckBox, true);
-		isElementExist( "Stream additionalEducationCheckBox", additionalEducationCheckBox, true);
-		isElementExist( "Stream relevantSkillsCheckBox", relevantSkillsCheckBox, true);
-		isElementExist( "Stream howKnowCheckBox", howKnowCheckBox, true);
-		isElementExist( "Stream secondPhoneCheckBox", secondPhoneCheckBox, true);
-		isElementExist( "Stream attemptCountCheckBox", attemptCountCheckBox, true);
-		isElementExist( "Stream statusCheckBox", statusCheckBox, true);
-		isElementExist( "Stream commentCheckBox", commentCheckBox, true);
-		isElementExist( "Stream estimationCheckBox", estimationCheckBox, true);
-		isElementExist( "Stream estimationCheckBox", sendResultCheckBox, true);
-		
-		isElementExist( "Stream exportCandidateButton", exportCandidateButton, true);
-		isElementExist( "Stream searchField", searchField, true);
-		isElementExist( "Stream add Candidate Button", addCandidateButton, true);
-		isElementExist( "Stream sendPossitiveResultsButton Button", sendPossitiveResultsButton, true);
-		isElementExist( "Stream sendNegativeResultsButton Button", sendNegativeResultsButton, true);
-		
-		TestReporter.writeToReportPositiveResult("All Streams elements are present");
-		
-		
-	}
-		
 }
