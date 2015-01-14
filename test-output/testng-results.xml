@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
     <line>
@@ -137,6 +138,41 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
           </reporter-output>
         </test-method> <!-- allCandidatesSearch -->
         <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@a034c31]" name="tearDown" is-config="true" duration-ms="2273" started-at="2015-01-12T12:16:24Z" finished-at="2015-01-12T12:16:26Z">
+=======
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<br /><b><font size = 2 color = #000099>Check adding Stream according to department Java</font></b><br/>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Checking adding Stream according to Department</font>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21214" started-at="2015-01-14T08:15:34Z" finished-at="2015-01-14T08:15:55Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21214" started-at="2015-01-14T08:15:34Z" finished-at="2015-01-14T08:15:55Z">
+      <class name="com.epam.testexternalpart.tests.SmokeTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@2c8d66b2]" name="init" is-config="true" duration-ms="6301" started-at="2015-01-14T10:15:34Z" finished-at="2015-01-14T10:15:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@2c8d66b2]" name="startPage" is-config="true" duration-ms="278" started-at="2015-01-14T10:15:40Z" finished-at="2015-01-14T10:15:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="PASS" signature="checkAddStreamAccordingToDepartment()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@2c8d66b2]" name="checkAddStreamAccordingToDepartment" duration-ms="10058" started-at="2015-01-14T10:15:40Z" finished-at="2015-01-14T10:15:50Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><b><font size = 2 color = #000099>Check adding Stream according to department Java</font></b><br/>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Checking adding Stream according to Department</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkAddStreamAccordingToDepartment -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@2c8d66b2]" name="tearDown" is-config="true" duration-ms="4546" started-at="2015-01-14T10:15:50Z" finished-at="2015-01-14T10:15:55Z">
+>>>>>>> a6a6f5699db36c2e6e080e6baa46352bcf4210dc
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

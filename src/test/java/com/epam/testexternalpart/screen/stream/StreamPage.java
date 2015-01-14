@@ -31,7 +31,7 @@ public class StreamPage extends Components {
 	private static final String STREAM_DELETE_BUTTON = "//a[@id='deleteCandidateButton']";
 	private static final String STREAM_ALL_CHECKBOXES = "//div [@class='col-md-2']//label";
 	private static final String STREAM_TABLE_ROW="//tbody/tr";
-	private static final String STREAM_TABLE_ROW_VIEW="//table[@id='table']/tbody/tr[1]";
+	private static final String STREAM_TABLE_ROW_VIEW="//table[@id='table']/tbody/tr[1]/td[3]";
 	
 	private static final String STREAM_ALL_CANDIDATE_TAB = "//ul[@id='candTab']/li/a[text()='All Candidates']";
 	private static final String STREAM_NOT_TESTED_TAB = "//ul[@id='candTab']/li/a[text()='Not tested']";
@@ -439,8 +439,8 @@ public class StreamPage extends Components {
 		String name = title.getText();		
 		
 		boolean b = false;
-		System.out.println("1");
 		
+        (new WebDriverWait(driver, 3000)).until(ExpectedConditions.visibilityOfAllElements(tableHead));
 		for(WebElement el : tableHead){
 			if (el.getText().toLowerCase().equals(name.toLowerCase())){
 				b = true;
@@ -488,20 +488,17 @@ public class StreamPage extends Components {
 	}
 	
 	public void clickAddCandidateButton(){
+		
 		TestReporter.writeToReportTitle("Checking that Stream Create Button reffering to Add Stream Page");
 		addCandidateButton.click();
-		 isElementExist("add Candidate Button",addCandidateButton,false);
-		 TestReporter.writeToReportPositiveResult("Stream Create button reffering to Add Stream Page");
+		isElementExist("add Candidate Button",addCandidateButton,false);
 	}
 
 	public void checkCandExisting(String st,boolean refer) {
 		  (new WebDriverWait(driver, 9000)).until(ExpectedConditions.visibilityOf(title));
-		  try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
+		  wating(5000);
+		  
 		  TestReporter.writeToReportTitle("Check if new candidate was added");
 		  String []textOFLastEl = st.split(";");
 		  String []textForEachElement = tableRow.get(0).getText().split(" ");
@@ -610,18 +607,20 @@ public class StreamPage extends Components {
 
 	public void clickViewCand() {
 		
-		TestReporter.writeToReportTitle("Checking that click on selected candidate reffering to Candidate View Page");
+		TestReporter.writeToReportTitle("Checking that double click on selected candidate reffering to Candidate View Page");
 		
 		Actions action = new Actions(driver);
 		
-        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(checkboxForAll));
+        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(STREAM_TABLE_ROW_VIEW)));
 		action.moveToElement(driver.findElement(By.xpath(STREAM_TABLE_ROW_VIEW))).doubleClick().build().perform();
-		
-		TestReporter.writeToReportPositiveResult("click on selected candidate reffering to Candidate View Page");
+
+		isElementExist("add Candidate Button",addCandidateButton,false);
 	}
 
 	public void checkTableAccordingToCandidadate(String field) {
 		
+		TestReporter.writeToReportTitle("Check table fields according to fields of new candidate");
+
 		String []fields = field.split(";");		
 		List<WebElement> row;
 		Boolean flag = false;
@@ -629,6 +628,7 @@ public class StreamPage extends Components {
 		for (WebElement ckeckBox : allCheckBoxes){
 			clickElement(ckeckBox,"ckeckBox");
 			
+	        (new WebDriverWait(driver, 1000)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(STREAM_TABLE_ROW)));
 			row = driver.findElements(By.xpath(STREAM_TABLE_ROW + "[1]/td"));
 					
 			for (String currentField : fields){
@@ -641,9 +641,8 @@ public class StreamPage extends Components {
 				flag = false;					
 			}			
 					
-			clickElement(ckeckBox,"ckeckBox");			
+			clickElement(ckeckBox,"click on " + ckeckBox);			
 		}
-		System.out.println("1");
 	}
 
 	public void selectCandidatesForTest() {		
@@ -658,6 +657,7 @@ public class StreamPage extends Components {
 	public void clickNotTestedTab() {
 		
 		clickElement(notTestedCandidate, "click notTestedCandidate");
+		wating(1000);
 	}
 
 	public void checkCandidates(String field, String i) {
@@ -667,9 +667,8 @@ public class StreamPage extends Components {
 		String []fields = field.split(";");		
 		List<WebElement> row;
 		Boolean flag = false;
-		
+		   
 		row = driver.findElements(By.xpath(STREAM_TABLE_ROW + "[" + i + "]/td"));
-				
 		for (String currentField : fields){	
 			for (WebElement el : row){		
 				if (el.getText().replaceAll("-", ".").equals(currentField))
@@ -687,15 +686,10 @@ public class StreamPage extends Components {
 	}
 
 	public void deleteAllCand(String mess) {
-	try {
-		Thread.sleep(1000);
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-	 //  (new WebDriverWait(driver, 4000)).until(ExpectedConditions.elementToBeClickable(By.xpath(STREAM_CHECKBOX_FOR_ALL)));
-
-		while(tableRow.size()>1){
+	
+		wating(2000);
+		
+        while(tableRow.size()>1){
 		clickElementJS(STREAM_CHECKBOX_FOR_ALL,"CheckboxForAll");
 		clickElementJS( STREAM_DELETE_BUTTON,"deleteButton");
 	    isElementExist("delCandPopAp", delCandPopAp, true);
@@ -703,7 +697,7 @@ public class StreamPage extends Components {
 	    System.out.println("2 "+tableRow.size());
 		}
 		
-	   (new WebDriverWait(driver, 4000)).until(ExpectedConditions.visibilityOf(title));
+	   (new WebDriverWait(driver, 4000)).until(ExpectedConditions.visibilityOfAllElements(tableRow));
 	   Assert.assertEquals(tableRow.size(), 1,"Not all candidates was deleted");
 	   checkElementText(mess,"Table Row",tableRow.get(0));
 	
@@ -724,12 +718,7 @@ public class StreamPage extends Components {
 		
 		clickElement(bannedTab, "click bannedTab");	
 	}
-
-	public void checkBannedCandidate() {
-		// TODO Auto-generated method stub
-		
-	}
-
+	
 	public void checkMarker(String mailName, String phoneNumber, String streamDepartmentName) {
 
 		for(WebElement e:all_candidates_in_stream){
@@ -773,7 +762,6 @@ public class StreamPage extends Components {
 			
 				for (WebElement el2 : el){			
 					if (el2.getText().contains(word))
-						System.out.println(el2.getText());
 						flag = true;
 				break;
 				}
@@ -783,7 +771,8 @@ public class StreamPage extends Components {
 	}
 
 	public void checkAllElementArePresentTestCompletedTab() {
-TestReporter.writeToReportTitle("Checking the presence of Stream's elements");
+
+		TestReporter.writeToReportTitle("Checking the presence of Stream's elements");
 		
 		isElementExist( "Crumbs", crumbs, true);
 		isElementExist( "Stream Assign Test Button", assignTestButton, true);
@@ -824,5 +813,4 @@ TestReporter.writeToReportTitle("Checking the presence of Stream's elements");
 		
 		
 	}
-		
 }

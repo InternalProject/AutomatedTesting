@@ -8,10 +8,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import com.epam.testexternalpart.core.CheckerData;
 import com.epam.testexternalpart.core.TestReporter;
 import com.epam.testexternalpart.screen.Components;
 
-public class EditProfilePage extends Components{
+public class EditProfilePage extends Components implements CheckerData{
+	
 	public static final String PROFILE_TITLE = "//h1";
 	public static final String ALL_LABELS="//fieldset//label[@class='col-lg-2 control-label']";
 	public static final String SAVE_BUTTON = "//div[@class='col-lg-10 col-lg-offset-2']/button";
@@ -138,7 +140,8 @@ public class EditProfilePage extends Components{
 	}
 
 	public void checkElementsPresent() {
-		TestReporter.writeToReportTitle("Checking the presence of all elements on Edit Profile Page");
+		
+		TestReporter.writeToReportStep("Check the presence of all elements on Edit Profile Page");
 		
 		isElementExist( "Crumbs", crumbs, true);
 		isElementExist( "firstNameInput", firstNameInput, true);
@@ -169,12 +172,17 @@ public class EditProfilePage extends Components{
 		isElementExist( "Edit Profile Save Button", save_button, true);
 		isElementExist( "Edit Profile Cancel Button", cancel_button, true);
 		
-		TestReporter.writeToReportPositiveResult("All elements are present on Edit Profile Page");
-		
+		TestReporter.writeToReportPositiveResult("All elements are present on Edit Profile Page");		
 	}
-
-	public void checkAllTextPresent(String text) {
-		TestReporter.writeToReportTitle("Checking the presence of titles text on Edit Profile Page");
+	
+	public void checkTextPresent(){
+		
+		TestReporter.writeToReportStep("Check the presence of all text on Edit Profile Page");
+	}
+	
+	public void checkTextPresent(String text) {
+		
+		TestReporter.writeToReportTitle("Check the presence of titles text on Edit Profile Page");
 		
 		isElementExist( "Edit Profile select element", select_element, true);
 		isElementExist( "Edit Profile Cancel Button", cancel_button, true);
@@ -182,15 +190,17 @@ public class EditProfilePage extends Components{
 		isElementExist( "Edit Profile Title", profile_title, true);
 		
 		String []textForEachElement=text.split(";");
+		
 		for(int i=0;i<textForEachElement.length;i++){
 			checkElementText(textForEachElement[i], textForEachElement[i], all_tittles.get(i));
 		}
 		
-		TestReporter.writeToReportPositiveResult("All Title Text is present on Edit Profile Page");
-		
+		TestReporter.writeToReportPositiveResult("All Title Text is present on Edit Profile Page");	
 	}
 
 	public void checkTextAccordingToFields(String field) {
+		
+		TestReporter.writeToReportTitle("Check fields on  Edit Profile Page according to added fields of candiadte");
 		
 		String []fields = field.split(";");
 		Boolean flag = false;		
@@ -202,7 +212,7 @@ public class EditProfilePage extends Components{
 			}
 		
 		Assert.assertTrue(flag);
-		flag = false;					
+		flag = false;				
 			
 		}		
 	}

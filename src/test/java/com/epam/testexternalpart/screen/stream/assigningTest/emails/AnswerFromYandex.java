@@ -18,9 +18,9 @@ public class AnswerFromYandex extends Components{
 	//private static final String INPUT_BOX_ROW = "//span[@class='b-messages__from']/span/span[text() ='auto_epm-farm_kppp@epam.com']";
 	private static final String INPUT_BOX_ROW = "//span[@class='b-messages__from__participants']/span[text()='Rostyslav_Biletskyi@epam.com']";
 
-	private static final String CONFIRMED_ANSWER = "//div[@class='b-message-body__content']/p/a[2]";
-	private static final String NOT_ACTUAL_ANSWER = "//div[@class='b-message-body__content']/p/a[3]";
-	private static final String NEW_TIME_ANSWER = "//div[@class='b-message-body__content']/p/a[4]";
+	private static final String CONFIRMED_ANSWER = "//div[@class='b-message-body__content']/p/a[3]";
+	private static final String NOT_ACTUAL_ANSWER = "//div[@class='b-message-body__content']/p/a[4]";
+	private static final String NEW_TIME_ANSWER = "//div[@class='b-message-body__content']/p/a[5]";
 	
 	@FindBy(xpath=INPUT_BOX_ROW)
 	private WebElement inputBoxRow;

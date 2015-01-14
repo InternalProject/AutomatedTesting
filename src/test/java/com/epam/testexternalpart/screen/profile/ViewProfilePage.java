@@ -2,18 +2,17 @@ package com.epam.testexternalpart.screen.profile;
 
 import java.util.List;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import com.epam.testexternalpart.core.CheckerData;
 import com.epam.testexternalpart.core.TestReporter;
 import com.epam.testexternalpart.screen.Components;
 
-public class ViewProfilePage extends Components{
+public class ViewProfilePage extends Components implements CheckerData{
 	
 	public static final String CRUMBS = "//div[@id='crumds']/a[text()='Candidates pagination>']";
 	private static final String PROFILE_TITTLE = "//h3";
@@ -59,7 +58,7 @@ public class ViewProfilePage extends Components{
 	
 	public void checkElementsPresent(){
 		
-		TestReporter.writeToReportTitle("Checking the presence of all elements on View Profile Page");
+		TestReporter.writeToReportStep("Check the presence of all elements on View Profile Page");
 			
 		isElementExist( "Crumbs", crumbs, true);
 		isElementExist( "Profile Delete Button", buttonDelete, true);
@@ -67,10 +66,15 @@ public class ViewProfilePage extends Components{
 		
 		TestReporter.writeToReportPositiveResult("All elements are present on View Profile Page");
 	}
-
-	public void checkAllTextPresent(String text){
+	
+	public void checkTextPresent(){
 		
-		TestReporter.writeToReportTitle("Checking the presence of all text on View Profile Page");
+		TestReporter.writeToReportStep("Check the presence of all text on View Profile Page");
+	}
+
+	public void checkTextPresent(String text){
+		
+		TestReporter.writeToReportTitle("Check the presence of all text on View Profile Page");
 		
 		checkElementText("Candidate profile", "Profile Tittle", profileTittle);
 		
@@ -91,16 +95,17 @@ public class ViewProfilePage extends Components{
 	}
 
 	public void clickEditButton() {
-		TestReporter.writeToReportStep("Click Edit Profile");
+		
+		TestReporter.writeToReportTitle("Check Candidate View Page transfering to Edit Candidate");
 		buttonEdit.click();
 
-		isElementExist("Profile Tittle", profileTittle, false);		
-	
+		isElementExist("Profile Tittle", profileTittle, false);			
 	}
-
 
 	public void checkTextAccordingToFields(String field) {
 		
+		TestReporter.writeToReportTitle("Check fields on  View Profile Page according to added fields of candiadte");
+
 		String []fields = field.split(";");
 		Boolean flag = false;		
 		
@@ -112,12 +117,6 @@ public class ViewProfilePage extends Components{
 		
 		Assert.assertTrue(flag);
 		flag = false;					
-			
 		}			
-		
 	}
-	
-	
-	
-	
 }

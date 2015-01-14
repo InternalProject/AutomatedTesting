@@ -93,20 +93,41 @@ public class Components {
 	  
 	  
 	  public  void checkElementText(String expectedText, String elementName, WebElement element) {
+		 
 		  TestReporter.writeToReportTitle("Checking text of element "+elementName);
         
-          	String elementText;
-			if (element.getTagName().equals("input")) {
-			elementText = element.getAttribute("value");
-			}else {
-			elementText = element.getText();
-			}
-			
-			expectedText = expectedText.trim();
-			elementText = elementText.trim();
-			
-			Assert.assertEquals(elementText, expectedText);
-			TestReporter.writeToReportPositiveResult("Text of ["+elementName+"] is correct");
-
+		  String elementText;
+		  if (element.getTagName().equals("input")) {
+			  elementText = element.getAttribute("value");
+		  }
+		  else {
+			  elementText = element.getText();
+		  }
+		
+		  expectedText = expectedText.trim();
+		  elementText = elementText.trim();
+		
+		  Assert.assertEquals(elementText, expectedText);
+		  TestReporter.writeToReportPositiveResult("Text of ["+elementName+"] is correct");
+		
+	  }
+	  
+	  public  void checkElementPartialText(String expectedText, String elementName, WebElement element) {
+			 
+		  TestReporter.writeToReportTitle("Checking partial text of element "+elementName);
+        
+		  String elementText;
+		  if (element.getTagName().equals("input")) {
+			  elementText = element.getAttribute("value");
+		  }
+		  else {
+			  elementText = element.getText();
+		  }
+				
+		  elementText = elementText.trim();
+		  
+		  Assert.assertTrue(elementText.contains(expectedText));
+		  TestReporter.writeToReportPositiveResult("Text of ["+elementName+"] is correct");
+		
 	  }
 }
