@@ -12,9 +12,119 @@
 <body>
 <h1>PlaceForTestingTest</h1>
 <p>
-  Test duration: 16.017s
+  Test duration: 820.057s
 </p>
 
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">com.epam.testexternalpart.tests.PlaceForTestingTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: chrome not reachable<br/>
+&nbsp; (Session info: chrome=39.0.2171.95)<br/>
+&nbsp; (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 2.01 seconds<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;EPUAKHAW0329&apos;, ip: &apos;10.23.12.108&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;<br/>
+Session ID: 63d44f2fff7d2496345edf577badbd7c<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir7820_21404}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)<br />
+              com.epam.testexternalpart.core.BaseTest.startPage(BaseTest.java:77)<br />
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:653)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:348)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:254)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)<br />
+              org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)<br />
+              org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)<br />
+                </div>
+      </td>
+</tr>
+    
+          <tr><td colspan="3">&nbsp;</td></tr>
+      <tr><td colspan="3" class="header skippedConfig">Skipped Configuration</td></tr>
+                    <tr>
+          <td colspan="3" class="group">com.epam.testexternalpart.tests.PlaceForTestingTest</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  tearDown
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+            </table>
 
 
   <table class="resultsTable">
@@ -25,34 +135,30 @@
             
 <tr>
   <td class="method">
-                  editNewPlaceForTesting
+                  addNewPlaceForTesting
       </td>
   <td class="duration">
-    2.032s
+    816.544s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">"ХАА", "23Б", "Бекетова", "Boston", "EDIT", "EDIT building", "Edit Location", "Edit room"</span><br />
+          <i>Method arguments: </i><span class="arguments">"ХАА", "23Б", "Бекетова", "Boston"</span><br />
     
             <div class="testOutput">
                         <br /><font size = 2 color = #000000>Click on [Click on placeForTestingButton]</font>
-                                <br /><font size = 2 color = #000000>Click on [Click on checkbox]</font>
-                                <br /><font size = 2 color = #000000>Click on [Click on edit_testing_place button]</font>
-                                <br /><font size = 2 color = #000000>Click on [Click on delete button in pop up]</font>
-                                <br /><font size = 2 color = #000000>Click on [Click on checkbox]</font>
                   </div>
     
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (26, 306). Other element would receive the click: &lt;div class=&quot;modal-backdrop fade in&quot; style=&quot;height: 943px;&quot;&gt;&lt;/div&gt;<br/>
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: chrome not reachable<br/>
 &nbsp; (Session info: chrome=39.0.2171.95)<br/>
 &nbsp; (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 34 milliseconds<br/>
+Command duration or timeout: 2.11 seconds<br/>
 Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
 System info: host: &apos;EPUAKHAW0329&apos;, ip: &apos;10.23.12.108&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;<br/>
-Session ID: 91dfa469ef70546d74ffb4fde078642d<br/>
+Session ID: 63d44f2fff7d2496345edf577badbd7c<br/>
 Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir16376_12244}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]</b></a><br />
-    <div class="stackTrace" id="exception-0">
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir7820_21404}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]</b></a><br />
+    <div class="stackTrace" id="exception-2">
               sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
               sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
               sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
@@ -60,11 +166,22 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
               org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
               org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
               org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
-              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)<br />
-              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)<br />
-              com.epam.testexternalpart.screen.Components.clickElement(Components.java:70)<br />
-              com.epam.testexternalpart.screen.PlaceForTestingPage.editNewPlace(PlaceForTestingPage.java:180)<br />
-              com.epam.testexternalpart.tests.PlaceForTestingTest.editNewPlaceForTesting(PlaceForTestingTest.java:22)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:357)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)<br />
+              com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)<br />
+              org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:227)<br />
+              org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:39)<br />
+              org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:213)<br />
+              org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:210)<br />
+              org.openqa.selenium.support.ui.ExpectedConditions$18.apply(ExpectedConditions.java:563)<br />
+              org.openqa.selenium.support.ui.ExpectedConditions$18.apply(ExpectedConditions.java:556)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)<br />
+              com.epam.testexternalpart.screen.Components.clickElement(Components.java:78)<br />
+              com.epam.testexternalpart.tests.PlaceForTestingTest.addNewPlaceForTesting(PlaceForTestingTest.java:11)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
@@ -103,52 +220,44 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 </tr>
       </table>
 
-
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
           <tr>
         <td colspan="3" class="group">com.epam.testexternalpart.tests.PlaceForTestingTest</td>
       </tr>
             
 <tr>
   <td class="method">
-                  addNewPlaceForTesting
+                  deleteNewPlaceForTesting
       </td>
   <td class="duration">
-    3.084s
+    0.000s
   </td>
   <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"EDIT", "EDIT building", "Edit Location", "Edit room"</span><br />
+    
         
-          <i>Method arguments: </i><span class="arguments">"ХАА", "23Б", "Бекетова", "Boston"</span><br />
-    
-            <div class="testOutput">
-                        <br /><font size = 2 color = #000000>Click on [Click on placeForTestingButton]</font>
-                                <br /><font size = 2 color = #000000>Click on [Click add_testing_place]</font>
-                                <br /><font size = 2 color = #000000>Click on [Click add_testing_place_popup]</font>
-                  </div>
-    
 
       </td>
 </tr>
 <tr>
   <td class="method">
-                  deleteNewPlaceForTesting
+                  editNewPlaceForTesting
       </td>
   <td class="duration">
-    2.123s
+    0.000s
   </td>
   <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"ХАА", "23Б", "Бекетова", "Boston", "EDIT", "EDIT building", "Edit Location", "Edit room"</span><br />
+    
         
-          <i>Method arguments: </i><span class="arguments">"EDIT", "EDIT building", "Edit Location", "Edit room"</span><br />
-    
-            <div class="testOutput">
-                        <br /><font size = 2 color = #000000>Click on [Click on placeForTestingButton]</font>
-                  </div>
-    
 
       </td>
 </tr>
       </table>
+
   
 </body>
 </html>

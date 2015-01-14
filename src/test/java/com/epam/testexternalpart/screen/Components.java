@@ -75,6 +75,7 @@ public class Components {
 
 	  public  void clickElement(WebElement webElement, String item) {
 		  TestReporter.writeToReportTitle("Click on ["+item+"]");
+		  waiting(SHORT_TIME);
           (new WebDriverWait(driver, LONG_TIME)).until(ExpectedConditions.elementToBeClickable(webElement)).click();
 	    }
 	  

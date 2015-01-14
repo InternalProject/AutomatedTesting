@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="120.020">
+           time="180.409">
   <properties />
   
   
-            <testcase name="changeStatus" time="82.289" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
-                <testcase name="deleteAllCandidates" time="7.862" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
-                <testcase name="bannWithButton" time="19.744" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
-                <testcase name="addCandidateManually" time="7.659" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
-                <testcase name="addCandidate" time="2.466" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
+            <testcase name="bannWithButton" time="23.643" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
+                <testcase name="addCandidate" time="2.410" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
+                <testcase name="deleteAllCandidates" time="8.647" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
+                <testcase name="addCandidateManually" time="17.556" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
+                <testcase name="changeStatus" time="128.153" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
       
 </testsuite>
