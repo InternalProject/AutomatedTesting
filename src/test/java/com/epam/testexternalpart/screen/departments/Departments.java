@@ -8,16 +8,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.epam.testexternalpart.core.CheckerData;
 import com.epam.testexternalpart.core.TestReporter;
 import com.epam.testexternalpart.screen.Components;
 import com.epam.testexternalpart.screen.stream.AddStreamPage;
-import com.gargoylesoftware.htmlunit.WaitingRefreshHandler;
 
 public class Departments extends Components implements CheckerData{
+
+	public static final String CRUMBS = "//div[@id='crumds']";
 
 	public static String streamName;
 	private static final String DEPARTMENT_CREATE_BUTTON = "//div[@class='btn-toolbar']/a[1]";
@@ -56,6 +55,9 @@ public class Departments extends Components implements CheckerData{
 	public static final String SECOND_STREAM = "//tbody/tr[2]";
 	public static final String FIRST_STREAM = "//tbody/tr[1]";
 	public static final String FIRST_STREAM_NAME = "//tbody/tr[1]/td[2]";
+	
+	@FindBy(xpath = CRUMBS)
+	public WebElement crumbs;
 	
 	@FindBy(xpath = FIRST_STREAM_NAME)
 	public WebElement first_stream_name;
@@ -206,14 +208,13 @@ public class Departments extends Components implements CheckerData{
 		}			
 			
 		for (WebElement currentTab : allTabs){
-			wating(2000);
+			waiting(2000);
 			System.out.println(currentTab.getText());
 			currentTabName = "'" + currentTab.getText() + "'";
 			clickElement(currentTab, currentTabName + " Tab");
 			clickElement(addStreamButton, "add Stream Button");
 			
 			new AddStreamPage(driver).checkDepartment(currentTabName);	
-			allTabs = allDepartmentTabs;
 		}		
 	}
 	
@@ -224,6 +225,7 @@ public class Departments extends Components implements CheckerData{
 
 		checkElementText("Candidate Automation System", "Department title",
 				departmentTitle);
+		checkElementPartialText("Departments page", "Crumbs", crumbs);
 
 		TestReporter
 				.writeToReportPositiveResult("All text is present on Department Page");

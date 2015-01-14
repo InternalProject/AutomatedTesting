@@ -6,7 +6,9 @@
       <class name="com.epam.testexternalpart.tests.SmokeTest">
         <methods>
           <include name="init"/>
+          <include name="tearDown"/>
           <include name="checkAddStreamAccordingToDepartment"/>
+          <include name="startPage"/>
         </methods>
       </class> <!-- com.epam.testexternalpart.tests.SmokeTest -->
     </classes>

@@ -18,7 +18,7 @@ public class Components {
 	  protected final int MIDDLE_TIME=5000;
 	  protected final int LONG_TIME=9000;
 	  
-	  public void wating(int time){
+	  public void waiting(int time){
 		  try {
 			Thread.sleep(time);
 		} catch (InterruptedException e) {
@@ -82,7 +82,7 @@ public class Components {
 	  
 	  public  void clickElementJS(String  xpath, String item) {
 		
-		  wating(SHORT_TIME);
+		  waiting(SHORT_TIME);
 		  TestReporter.writeToReportTitle("Click on ["+item+"]");
 		  WebElement element = driver.findElement(By.xpath(xpath));
 		  JavascriptExecutor js = (JavascriptExecutor)driver;
