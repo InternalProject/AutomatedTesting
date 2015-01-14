@@ -9,13 +9,13 @@ import com.epam.testexternalpart.core.TestReporter;
 
 public class Menu extends Components{
 	
-	private static final String LOGO = "//img";
+	private static final String LOGO = "//div[@id = 'profile-card']";
 	private static final String HOME_BUTTON = "//ul[@class='nav navbar-nav']/li/a[@href='/KhExternalPreProdPortal/'][text()='Home']";
 	private static final String PROFILE_BUTTON = "//div[@id='profile-card']";
 	private static final String DEPARTMENT_BUTTON = "//a[@href='/KhExternalPreProdPortal/departments']";
 	private static final String ALL_CANDIDATES_BUTTON = "//a[@href='/KhExternalPreProdPortal/candidates']";
 	private static final String PLACES_FOR_TESTING_BUTTON =  "//a[@href='/KhExternalPreProdPortal/places']";
-	private static final String SUBGROUP_BUTTON = "//a[contains(@href,'allSubgroups')]";
+	private static final String SUBGROUP_BUTTON = "//a[@href='/KhExternalPreProdPortal/allSubgroups']";
 	private static final String SEARCH_INPUT = "//input[@id='globalSearch']";
 	private static final String USER = "//div[@id='profile-card']";
 	
@@ -47,8 +47,7 @@ public class Menu extends Components{
 	private WebElement userButton;
 	
 	public Menu(WebDriver driver){
-	this.driver=driver;
-	PageFactory.initElements(driver, this);
+		super(driver);
 	}
 
 	public void checkElementsPresent() {

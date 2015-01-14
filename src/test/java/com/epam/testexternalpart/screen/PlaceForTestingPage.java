@@ -83,8 +83,7 @@ public class PlaceForTestingPage extends Components{
 	
 	
 	public PlaceForTestingPage(WebDriver driver){
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+		super(driver);
 		}
 
 

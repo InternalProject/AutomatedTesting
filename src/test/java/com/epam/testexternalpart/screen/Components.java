@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -14,6 +15,23 @@ import com.epam.testexternalpart.core.TestReporter;
 
 public class Components {
 	  protected WebDriver driver;
+	  protected final int SHORT_TIME=1000;
+	  protected final int MIDDLE_TIME=5000;
+	  protected final int LONG_TIME=9000;
+	  
+	  public void waiting(int time){
+		  try {
+			Thread.sleep(time);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		  
+	  }
+	  
+	public  Components(WebDriver driver){
+		  this.driver=driver;
+		PageFactory.initElements(driver, this);
+	  }
 	  
 	  public  void isElementExist( String item, WebElement welement, boolean refer) {
 		
@@ -60,10 +78,6 @@ public class Components {
 	        }
 	       }
 	  
-//	  public WebElement find(By by){
-//		return  getWaiter().until(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
-//	  }
-
 
 	  public  void clickElement(WebElement webElement, String item) {
 		  TestReporter.writeToReportTitle("Click on ["+item+"]");
@@ -73,19 +87,12 @@ public class Components {
 	  
 	  
 	  public  void clickElementJS(String  xpath, String item) {
-		  try {
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		  
-		//   (new WebDriverWait(driver, 4000)).until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-
+		
+		  waiting(SHORT_TIME);
 		  TestReporter.writeToReportTitle("Click on ["+item+"]");
-			WebElement element = driver.findElement(By.xpath(xpath));
-			JavascriptExecutor js = (JavascriptExecutor)driver;
-			js.executeScript("arguments[0].click();", element);
+		  WebElement element = driver.findElement(By.xpath(xpath));
+		  JavascriptExecutor js = (JavascriptExecutor)driver;
+		   js.executeScript("arguments[0].click();", element);
 	    }
 	  
 
@@ -93,9 +100,27 @@ public class Components {
 	  
 	  public  void checkElementText(String expectedText, String elementName, WebElement element) {
 		  TestReporter.writeToReportTitle("Checking text of element "+elementName);
-        
+		 WebDriverWait driverTextWait = new WebDriverWait(driver, 10);
+		  String elementText;
+		 
+		if(driverTextWait.until(ExpectedConditions.visibilityOf(element)).getTagName().equals("input")){
+			elementText = element.getAttribute("value");
+		}
+		  //elementText= driverTextWait.until(ExpectedConditions.visibilityOf(element)).getText();
+		
+		else {
+			elementText = driverTextWait.until(ExpectedConditions.visibilityOf(element)).getText();
+			}
+			
+			expectedText = expectedText.trim();
+			elementText = elementText.trim();
+			
+			Assert.assertEquals(elementText, expectedText);
+			TestReporter.writeToReportPositiveResult("Text of ["+elementName+"] is correct");
+		  
+		  /*
           	String elementText;
-			if (element.getTagName().equals("input")) {
+          	if (element.getTagName().equals("input")) {
 			elementText = element.getAttribute("value");
 			}else {
 			elementText = element.getText();
@@ -106,6 +131,6 @@ public class Components {
 			
 			Assert.assertEquals(elementText, expectedText);
 			TestReporter.writeToReportPositiveResult("Text of ["+elementName+"] is correct");
-
+*/
 	  }
 }

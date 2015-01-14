@@ -41,8 +41,7 @@ public class AnswerFromGMail extends Components{
 	private WebElement logginButton;
 	
 	public AnswerFromGMail(WebDriver driver){
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
+		super(driver);
 			
 	}
 	

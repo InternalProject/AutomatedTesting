@@ -92,8 +92,7 @@ public class AddStreamPage extends Components{
 	private WebElement submitButton;
 	
 	public AddStreamPage(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+		super(driver);
 	}
 	
 	public void addNewStream(){

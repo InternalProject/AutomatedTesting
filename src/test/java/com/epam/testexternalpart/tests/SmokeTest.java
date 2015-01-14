@@ -1,6 +1,5 @@
 package com.epam.testexternalpart.tests;
 
-import org.openqa.selenium.StaleElementReferenceException;
 import org.testng.annotations.Test;
 
 import com.epam.testexternalpart.core.BaseTest;
@@ -92,7 +91,7 @@ public class SmokeTest extends BaseTest{
 		TestReporter.writeToReportStep("Check elements are present on testComplete tab");
 		pageStream.clickElement(pageStream.testCompleteTab,"testCompleteTab");
 		pageStream.allTextArePresent();	
-		pageStream.checkAllElementArePresentWithoutImport();
+		pageStream.checkAllElementArePresentTestCompletedTab();
 		
 		TestReporter.writeToReportStep("Check elements are present on notActual tab");
 		pageStream.clickElement(pageStream.notActualTab,"notActualTab");
@@ -127,7 +126,7 @@ public class SmokeTest extends BaseTest{
 		pageViewProfile.checkAllTextPresent(fields);		
 		pageViewProfile.checkTextAccordingToFields(candData);		
 	}
-	
+
 	@Test(dataProvider="testData")
 	public void checkElementsEditCandidate(String candData,String fields){
 		TestReporter.writeToReportHeader("Check all elements are present on EditCandidatePage");
@@ -149,8 +148,6 @@ public class SmokeTest extends BaseTest{
 		pageAllCandidate.checkAllTextPresent();
 		pageAllCandidate.checkDefaultColumns(nameColumn);
 		pageAllCandidate.checkColumnsAccordingToCheckBox();		
-		
-		
 	}
 	
 	@Test

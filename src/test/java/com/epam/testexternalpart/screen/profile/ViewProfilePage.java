@@ -53,8 +53,7 @@ public class ViewProfilePage extends Components{
 	private WebElement closePopUpButton;
 	
 	public ViewProfilePage(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+		super(driver);
 	}
 	
 	public void checkElementsPresent(){

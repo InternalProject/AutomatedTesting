@@ -4,7 +4,11 @@
            failures="1"
            errors="0"
            skipped="0"
+<<<<<<< HEAD
            time="19,513">
+=======
+           time="20.546">
+>>>>>>> dbb5e243a5d8bc919fd1d8fccccaeb4e573f8dd4
   <properties />
             <testcase name="streamSearch" time="19,513" classname="com.epam.testexternalpart.tests.SearchTest">
                 <failure type="java.lang.AssertionError"
@@ -56,4 +60,9 @@
   
   
   
+<<<<<<< HEAD
+=======
+            <testcase name="streamSearch" time="20.546" classname="com.epam.testexternalpart.tests.SearchTest" />
+      
+>>>>>>> dbb5e243a5d8bc919fd1d8fccccaeb4e573f8dd4
 </testsuite>

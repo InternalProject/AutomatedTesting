@@ -4,10 +4,18 @@
            failures="0"
            errors="0"
            skipped="0"
+<<<<<<< HEAD
            time="4,702">
   <properties />
   
   
             <testcase name="addCandidateToSeveralDepartment" time="4,702" classname="com.epam.testexternalpart.tests.SeveralStreamTest" />
+=======
+           time="5.302">
+  <properties />
+  
+  
+            <testcase name="addCandidateToSeveralDepartment" time="5.302" classname="com.epam.testexternalpart.tests.SeveralStreamTest" />
+>>>>>>> dbb5e243a5d8bc919fd1d8fccccaeb4e573f8dd4
       
 </testsuite>

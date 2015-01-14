@@ -4,6 +4,7 @@
            failures="0"
            errors="0"
            skipped="0"
+<<<<<<< HEAD
            time="53,050">
   <properties />
   
@@ -13,5 +14,16 @@
                 <testcase name="bannWithButton" time="19,565" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
                 <testcase name="addCandidateManually" time="7,455" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
                 <testcase name="deleteAllCandidates" time="7,730" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
+=======
+           time="120.020">
+  <properties />
+  
+  
+            <testcase name="changeStatus" time="82.289" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
+                <testcase name="deleteAllCandidates" time="7.862" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
+                <testcase name="bannWithButton" time="19.744" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
+                <testcase name="addCandidateManually" time="7.659" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
+                <testcase name="addCandidate" time="2.466" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
+>>>>>>> dbb5e243a5d8bc919fd1d8fccccaeb4e573f8dd4
       
 </testsuite>

@@ -38,8 +38,7 @@ public class AnswerFromYandex extends Components{
 	private WebElement logginButton;
 	
 	public AnswerFromYandex(WebDriver driver){
-		this.driver = driver;
-		PageFactory.initElements(driver, this);			
+		super(driver);		
 	}
 	
 	public void logOn(){

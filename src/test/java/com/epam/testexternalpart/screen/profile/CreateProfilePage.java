@@ -135,8 +135,7 @@ public class CreateProfilePage extends Components{
 	public String phoneNumber;
 	
 	public CreateProfilePage(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+		super(driver);
 	}
 
 

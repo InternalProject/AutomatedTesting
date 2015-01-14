@@ -50,8 +50,7 @@ public class AnswerFromRambler extends Components{
 	private WebElement buttonSubmit;
 			
 	public AnswerFromRambler(WebDriver driver){
-		this.driver = driver;
-		PageFactory.initElements(driver, this);				
+		super(driver);			
 	}
 	
 	public void logOn(){

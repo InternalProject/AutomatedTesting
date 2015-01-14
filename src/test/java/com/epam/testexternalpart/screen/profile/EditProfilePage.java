@@ -133,8 +133,7 @@ public class EditProfilePage extends Components{
 	private List <WebElement> mandatory_fields;
 	
 	public EditProfilePage(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+		super(driver);
 	}
 
 	public void checkElementsPresent() {

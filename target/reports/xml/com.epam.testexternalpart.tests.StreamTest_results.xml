@@ -4,6 +4,7 @@
            failures="0"
            errors="0"
            skipped="0"
+<<<<<<< HEAD
            time="5,425">
   <properties />
   
@@ -16,5 +17,19 @@
                 <testcase name="testAddNewValidStream" time="1,410" classname="com.epam.testexternalpart.tests.StreamTest" />
                 <testcase name="testAddNewInValidStream" time="0,374" classname="com.epam.testexternalpart.tests.StreamTest" />
                 <testcase name="testAddNewInValidStream" time="0,350" classname="com.epam.testexternalpart.tests.StreamTest" />
+=======
+           time="6.261">
+  <properties />
+  
+  
+            <testcase name="testEditStream" time="0.423" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testAddNewInValidStream" time="0.836" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testEditStream" time="0.450" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testAddNewValidStream" time="1.622" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testAddNewInValidStream" time="0.437" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testAddNewInValidStream" time="0.445" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testAddNewInValidStream" time="0.459" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testAddNewValidStream" time="1.589" classname="com.epam.testexternalpart.tests.StreamTest" />
+>>>>>>> dbb5e243a5d8bc919fd1d8fccccaeb4e573f8dd4
       
 </testsuite>

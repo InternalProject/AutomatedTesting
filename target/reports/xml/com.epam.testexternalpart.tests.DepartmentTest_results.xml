@@ -4,6 +4,7 @@
            failures="0"
            errors="0"
            skipped="0"
+<<<<<<< HEAD
            time="64,674">
   <properties />
   
@@ -11,5 +12,14 @@
             <testcase name="testAddDepartmentWithValidName" time="21,699" classname="com.epam.testexternalpart.tests.DepartmentTest" />
                 <testcase name="testEditDepartmentName" time="32,579" classname="com.epam.testexternalpart.tests.DepartmentTest" />
                 <testcase name="testAddDepartment" time="10,396" classname="com.epam.testexternalpart.tests.DepartmentTest" />
+=======
+           time="65.071">
+  <properties />
+  
+  
+            <testcase name="testEditDepartmentName" time="32.849" classname="com.epam.testexternalpart.tests.DepartmentTest" />
+                <testcase name="testAddDepartment" time="10.474" classname="com.epam.testexternalpart.tests.DepartmentTest" />
+                <testcase name="testAddDepartmentWithValidName" time="21.748" classname="com.epam.testexternalpart.tests.DepartmentTest" />
+>>>>>>> dbb5e243a5d8bc919fd1d8fccccaeb4e573f8dd4
       
 </testsuite>

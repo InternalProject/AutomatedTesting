@@ -76,8 +76,7 @@ public class Departments extends Components {
 
 	
 	public Departments(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
+		super(driver);
 	}
 
 	@FindBy(xpath = DEPARTMENT_TABLE_ROW)

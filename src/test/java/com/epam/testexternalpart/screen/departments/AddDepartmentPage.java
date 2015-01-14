@@ -12,8 +12,7 @@ public class AddDepartmentPage extends Components{
 	
 	WebDriver driver;
 	public AddDepartmentPage(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+		super(driver);
 	}
 	
 	public static final String NAME_INPUT = "//input[@id='departmentName']";
