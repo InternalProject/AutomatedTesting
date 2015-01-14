@@ -201,21 +201,18 @@ public class Departments extends Components implements CheckerData{
 		TestReporter.writeToReportTitle("Checking adding Stream according to Department");
 		String currentTabName;
 		
-		List<WebElement> allTabs = new ArrayList<WebElement>();
+		WebElement currentTab;
 				
 		for (int i= 0; i < allDepartmentTabs.size(); i++){
-			allTabs.add(allDepartmentTabs.get(i));
-		}			
 			
-		for (WebElement currentTab : allTabs){
-			waiting(2000);
-			System.out.println(currentTab.getText());
+			currentTab = driver.findElements(By.xpath(DEPARTMENT_ALL_TABS)).get(i);
+			
 			currentTabName = "'" + currentTab.getText() + "'";
 			clickElement(currentTab, currentTabName + " Tab");
 			clickElement(addStreamButton, "add Stream Button");
 			
 			new AddStreamPage(driver).checkDepartment(currentTabName);	
-		}		
+		}				
 	}
 	
 	public void checkTextPresent() {
@@ -236,8 +233,6 @@ public class Departments extends Components implements CheckerData{
 		
 		TestReporter
 				.writeToReportStep("Checking the presence of all elements on Department Page");
-
-		isElementExist("allDepartmentTabs", allDepartmentTabs, true);
 
 		isElementExist("Department Create Button", createDepartmentButton, true);
 		isElementExist("Department Edit Button", editDepartmentButton, true);

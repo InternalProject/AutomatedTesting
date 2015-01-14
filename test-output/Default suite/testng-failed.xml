@@ -7,8 +7,8 @@
         <methods>
           <include name="init"/>
           <include name="tearDown"/>
-          <include name="checkAddStreamAccordingToDepartment"/>
           <include name="startPage"/>
+          <include name="checkElementsPresentDepartmentPage"/>
         </methods>
       </class> <!-- com.epam.testexternalpart.tests.SmokeTest -->
     </classes>

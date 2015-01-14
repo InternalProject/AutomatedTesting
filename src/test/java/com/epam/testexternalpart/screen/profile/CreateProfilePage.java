@@ -37,7 +37,7 @@ public class CreateProfilePage extends Components implements CheckerData{
 	private static final String PROFILE_FORM_FILLDATE_INPUT = "//fieldset//input[@id='fillDate'][@disabled='']";
 	private static final String PROFILE_FORM_COMMENT_INPUT = "//textarea[@id='comment']";
 	private static final String PROFILE_FORM_BUTTON_CREATE= "//fieldset//button[@class='btn btn-primary']";
-	public static final String CRUMBS = "//div[@id='crumds']]";
+	public static final String CRUMBS = "//div[@id='crumds']";
 
 	public static final String MANDATORY_FIELDS = "//fieldset/div[position()<7]//input";	
 	private static final String PROFILE_FORM_ALL_TITTLES = "//fieldset//label[@class='col-lg-2 control-label']";	
