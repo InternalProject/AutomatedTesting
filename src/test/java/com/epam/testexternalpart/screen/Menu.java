@@ -52,8 +52,12 @@ public class Menu extends Components{
 	private WebElement mailSettingsButton;
 	
 	@FindBy(xpath = SEARCH_INPUT)
-	private WebElement searchInput;
-		
+
+	public WebElement searchInput;
+	
+	
+	
+
 	public Menu(WebDriver driver){
 	this.driver=driver;
 	PageFactory.initElements(driver, this);

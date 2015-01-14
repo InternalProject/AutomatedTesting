@@ -1,5 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="12" passed="12">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<testng-results skipped="0" failed="1" total="1" passed="0">
+>>>>>>> 57b50c04c35b59c75fe839973a9f4328210b3bd5
+  <reporter-output>
+    <line>
+      <![CDATA[<br /><b><font size = 2 color = #000099>Check search in AllCandidatesPage</font></b><br/>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br><b><font size = 2 color = #000000>Create candidates for test</font></b><br>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [addCandidateBut]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;</font>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="23350" started-at="2015-01-12T10:16:03Z" finished-at="2015-01-12T10:16:26Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="23350" started-at="2015-01-12T10:16:03Z" finished-at="2015-01-12T10:16:26Z">
+      <class name="com.epam.testexternalpart.tests.SearchTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@a034c31]" name="init" is-config="true" duration-ms="4059" started-at="2015-01-12T12:16:03Z" finished-at="2015-01-12T12:16:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@a034c31]" name="startPage" is-config="true" duration-ms="762" started-at="2015-01-12T12:16:07Z" finished-at="2015-01-12T12:16:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="FAIL" signature="allCandidatesSearch(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@a034c31]" name="allCandidatesSearch" duration-ms="15715" started-at="2015-01-12T12:16:08Z" data-provider="testData" finished-at="2015-01-12T12:16:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ololo1;Ololoev1;Olololoevich1;02.12.2013;sdhgjshgj1@mail.ru;+380505465346;]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Ololo2;Ololoev2;Olololoevich2;02.12.2013;sdhgjshgj2@mail.ru;+380505465347;]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Ololo1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Ololoev]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotVisibleException">
+            <message>
+              <![CDATA[element not visible
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: 932b6296346aba4bbf0d1f8f9544649c
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir8452_2551}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: 932b6296346aba4bbf0d1f8f9544649c
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir8452_2551}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)
+	at com.epam.testexternalpart.screen.profile.CreateProfilePage.createNewCandidate(CreateProfilePage.java:198)
+	at com.epam.testexternalpart.tests.SearchTest.allCandidatesSearch(SearchTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><b><font size = 2 color = #000099>Check search in AllCandidatesPage</font></b><br/>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br><b><font size = 2 color = #000000>Create candidates for test</font></b><br>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [addCandidateBut]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- allCandidatesSearch -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@a034c31]" name="tearDown" is-config="true" duration-ms="2273" started-at="2015-01-12T12:16:24Z" finished-at="2015-01-12T12:16:26Z">
+=======
+<testng-results skipped="0" failed="0" total="1" passed="1">
+=======
+<testng-results skipped="0" failed="1" total="1" passed="0">
+>>>>>>> 5add05477f8b2d5bd1cb3acc4afe8aaaad18fefe
   <reporter-output>
     <line>
       <![CDATA[<br /><b><font size = 2 color = #000099>Check adding Stream according to department Java</font></b><br/>]]>
@@ -5179,12 +5327,22 @@
               <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;All Menu's elements are present</font>]]>
             </line>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- checkMenu -->
         <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@75bd9247]" name="tearDown" is-config="true" duration-ms="5294" started-at="2015-01-14T13:17:46Z" finished-at="2015-01-14T13:17:51Z">
+=======
+        </test-method> <!-- checkAddStreamAccordingToDepartment -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@2c8d66b2]" name="tearDown" is-config="true" duration-ms="4546" started-at="2015-01-14T10:15:50Z" finished-at="2015-01-14T10:15:55Z">
+>>>>>>> a6a6f5699db36c2e6e080e6baa46352bcf4210dc
+=======
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@2c8d66b2]" name="tearDown" is-config="true" duration-ms="4959" started-at="2015-01-14T12:07:22Z" finished-at="2015-01-14T12:07:27Z">
+>>>>>>> 5add05477f8b2d5bd1cb3acc4afe8aaaad18fefe
+>>>>>>> 57b50c04c35b59c75fe839973a9f4328210b3bd5
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.epam.testexternalpart.tests.SmokeTest -->
+      </class> <!-- com.epam.testexternalpart.tests.SearchTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

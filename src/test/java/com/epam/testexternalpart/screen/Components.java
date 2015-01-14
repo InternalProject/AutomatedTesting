@@ -16,7 +16,7 @@ public class Components {
 	  protected WebDriver driver;
 	  protected final int SHORT_TIME=1000;
 	  protected final int MIDDLE_TIME=5000;
-	  protected final int LONG_TIME=9000;
+	  protected final int LONG_TIME=10000;
 	  
 	  public void waiting(int time){
 		  try {
@@ -74,7 +74,7 @@ public class Components {
 
 	  public  void clickElement(WebElement webElement, String item) {
 		  TestReporter.writeToReportTitle("Click on ["+item+"]");
-          (new WebDriverWait(driver, 10000)).until(ExpectedConditions.elementToBeClickable(webElement)).click();
+          (new WebDriverWait(driver, LONG_TIME)).until(ExpectedConditions.elementToBeClickable(webElement)).click();
 	    }
 	  
 	  
