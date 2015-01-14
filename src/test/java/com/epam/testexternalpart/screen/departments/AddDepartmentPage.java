@@ -5,10 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.epam.testexternalpart.core.CheckerData;
 import com.epam.testexternalpart.core.TestReporter;
 import com.epam.testexternalpart.screen.Components;
 
-public class AddDepartmentPage extends Components{
+public class AddDepartmentPage extends Components implements CheckerData{
 	
 	WebDriver driver;
 	public AddDepartmentPage(WebDriver driver) {
@@ -50,9 +51,9 @@ public class AddDepartmentPage extends Components{
 	@FindBy(xpath = LABEL_EXCEL_NAME)
 	public WebElement label_excel_name;
 	
-	public void allTextArePresent(){
+	public void checkTextPresent(){
 		
-		TestReporter.writeToReportTitle("Checking the presence of AddDepartmentPage text");
+		TestReporter.writeToReportStep("Checking the presence of all text on Add Department Page");
 			
 		checkElementText("Enter department information", "Add Department title",
 				labelAddDepartment);		
@@ -62,13 +63,13 @@ public class AddDepartmentPage extends Components{
 				label_excel_name);
 		
 		TestReporter
-		.writeToReportPositiveResult("All text are present on AddDepartmentPage");
+		.writeToReportPositiveResult("All text are present on Add Department Page");
 	}
 	
-	public void allElementsArePresent(){
+	public void checkElementsPresent(){
 		
 		TestReporter
-		.writeToReportTitle("Checking the presence of AddDepartment's elements");
+		.writeToReportStep("Checking the presence of all elements on Add Department Page");
 		
 		isElementExist( "Crumbs", crumbs, true);
 		isElementExist( "AddDepartmentPage name_input", name_input, true);
@@ -76,7 +77,7 @@ public class AddDepartmentPage extends Components{
 		isElementExist( "AddDepartmentPage submit", submit, true);
 		
 		TestReporter
-		.writeToReportPositiveResult("All AddDepartments elements is present");
+		.writeToReportPositiveResult("All elements are present on Add Department Page");
 	}
 	
 	public void addNewDepartment(String depName){
@@ -109,6 +110,4 @@ public class AddDepartmentPage extends Components{
 
 		
 	}
-	
-	
 }

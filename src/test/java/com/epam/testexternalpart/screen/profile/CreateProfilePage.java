@@ -7,10 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.epam.testexternalpart.core.CheckerData;
 import com.epam.testexternalpart.core.TestReporter;
 import com.epam.testexternalpart.screen.Components;
 
-public class CreateProfilePage extends Components{
+public class CreateProfilePage extends Components implements CheckerData{
 	
 	private static final String PROFILE_TITTLE = "//div[@class='container']//h1";
 	private static final String PROFILE_FORM = "//div[@class='well bs-component']";
@@ -138,7 +139,11 @@ public class CreateProfilePage extends Components{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-
+	
+	public void checkTextPresent(){
+		
+		TestReporter.writeToReportStep("Checking the presence of all text on Add Profile Page");
+	}
 
 	public void checkTextPresent(String text){
 		
@@ -147,6 +152,7 @@ public class CreateProfilePage extends Components{
 		checkElementText("Create a new candidate", "Profile Page Title", title);
 		
 		String []textForEachElement=text.split(";");
+		
 		for(int i=0;i<textForEachElement.length;i++){
 			checkElementText(textForEachElement[i], textForEachElement[i], allTittles.get(i));
 		}
@@ -156,7 +162,7 @@ public class CreateProfilePage extends Components{
 	
 	public void checkElementsPresent(){
 		
-		TestReporter.writeToReportTitle("Checking the presence of all elements on Add Profile Page");
+		TestReporter.writeToReportStep("Checking the presence of all elements on Add Profile Page");
 		
 		isElementExist( "Crumbs", crumbs, true);
 		isElementExist( "profileForm", profileForm, true);
@@ -186,18 +192,23 @@ public class CreateProfilePage extends Components{
 			isElementExist( "mandatory_fields", el, true);		
 		
 		isElementExist( "Create Profile Create Button", create_button, true);
+		
 		TestReporter.writeToReportPositiveResult("All elements are present on Add Profile Page");
 	}
 	
 	public void createNewCandidate(String text){
+		
 		TestReporter.writeToReportTitle("Creating new candidate with fields-"+text);
+		
 		String []dataMandatoryFields=text.split(";");
 		mailName = dataMandatoryFields[4];
 		phoneNumber = dataMandatoryFields[5];	
 		for(int i=0;i<dataMandatoryFields.length;i++){
 			mandatory_fields.get(i).sendKeys(dataMandatoryFields[i]);
 		}
+		
 		clickElement(create_button, "Click Create Candidate Button");
+		isElementExist( "Create Profile Create Button", create_button, false);
 	}
 
 	//FillRequiredFields
@@ -232,6 +243,5 @@ public class CreateProfilePage extends Components{
 			}
 			
 			clickElement(create_button,"Create Candidate Button");
-			}
-	
+		}
 }

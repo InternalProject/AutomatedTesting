@@ -19,7 +19,7 @@ public class DepartmentTest extends BaseTest{
 		pageDepartment.clickElement(pageDepartment.deleteDepartmentButton, "deleteDepartmentButton");
 		pageDepartment.isElementExist("delDepPopAp", pageDepartment.delDepPopAp, true);
 		pageDepartment.clickElement(pageDepartment.delDepPopApButton, "deleteDepartmentButton");
-		pageDepartment.isElementExist(depName, pageDepartment.allDep, false);
+		pageDepartment.isElementExist(depName, pageDepartment.allDepartmentTabs, false);
 	}
 
 	@Test(dataProvider="testData")
@@ -46,12 +46,12 @@ public class DepartmentTest extends BaseTest{
 		pageAddDepartment.addNewDepartmentCor(depNameSecond);
 		
 		pageDepartment.checkElementText(depNameSecond, "Dep tab", pageDepartment.getlastDep());
-		pageDepartment.isElementExist(depNameFirst, pageDepartment.allDep, false);
+		pageDepartment.isElementExist(depNameFirst, pageDepartment.allDepartmentTabs, false);
 		
 		pageDepartment.clickElement(pageDepartment.deleteDepartmentButton, "deleteDepartmentButton");
 		pageDepartment.isElementExist("delDepPopAp", pageDepartment.delDepPopAp, true);
 		pageDepartment.clickElement(pageDepartment.delDepPopApButton, "deleteDepartmentButton");
-		pageDepartment.isElementExist(depNameSecond, pageDepartment.allDep, false);
+		pageDepartment.isElementExist(depNameSecond, pageDepartment.allDepartmentTabs, false);
 		
 	}
 }

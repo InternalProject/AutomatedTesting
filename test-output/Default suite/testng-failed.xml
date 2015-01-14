@@ -6,9 +6,7 @@
       <class name="com.epam.testexternalpart.tests.SmokeTest">
         <methods>
           <include name="init"/>
-          <include name="tearDown"/>
-          <include name="startPage"/>
-          <include name="checkEmailTemplates"/>
+          <include name="checkAddStreamAccordingToDepartment"/>
         </methods>
       </class> <!-- com.epam.testexternalpart.tests.SmokeTest -->
     </classes>

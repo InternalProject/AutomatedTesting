@@ -5,11 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.epam.testexternalpart.core.CheckerData;
 import com.epam.testexternalpart.core.TestReporter;
 import com.epam.testexternalpart.screen.Components;
 
 
-public class AddStreamPage extends Components{
+public class AddStreamPage extends Components implements CheckerData{
 	
 	private static final String STREAM_TITLE="//fieldset/legend";
 	
@@ -36,6 +37,7 @@ public class AddStreamPage extends Components{
 	public static final String ADD_STREM_BUTTON = "//button[@class='btn btn-primary']";
 	public static final String INPUT_NAME_STREAM="//input[@id='streamName']";
 	public static final String WRONG_MESS = ".//span[@id='e_name']";
+	public static final String CRUMBS_BACK_TO_DEPARTMENT_PAGE = "//div[@id='crumds']/a";
 	
 	@FindBy(xpath = ADD_STREM_BUTTON)
 	public WebElement add_strem_button;
@@ -45,6 +47,9 @@ public class AddStreamPage extends Components{
 
 	@FindBy(xpath = CRUMBS)
 	public WebElement crumbs;
+	
+	@FindBy(xpath = CRUMBS_BACK_TO_DEPARTMENT_PAGE)
+	public WebElement crumbsBackToDepartmentPage;
 	
 	@FindBy(xpath = STREAM_TITLE)
 	private WebElement title;
@@ -92,6 +97,7 @@ public class AddStreamPage extends Components{
 	private WebElement submitButton;
 	
 	public AddStreamPage(WebDriver driver) {
+		
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -101,8 +107,9 @@ public class AddStreamPage extends Components{
 		submitButton.click();
 	}
 	
-	public void allTextArePresent(){
-		TestReporter.writeToReportTitle("Checking the presence of text on Edit Stream Page");
+	public void checkTextPresent(){
+		
+		TestReporter.writeToReportStep("Checking the presence of text on Add Stream Page");
 		
 		checkElementText("Enter stream information", "AddEditStream title", title);
 		checkElementText("Stream name", "AddStream name Stream", nameTitle);
@@ -111,12 +118,12 @@ public class AddStreamPage extends Components{
 		checkElementText("End date", "AddStream end date title", endDateTitle);
 		checkElementText("Status", "AddStream status title", statusTitle);
 		
-		TestReporter.writeToReportPositiveResult("All text on Stream Page is present");
+		TestReporter.writeToReportPositiveResult("All text on Add Stream Page is present");
 	}
 	
-	public void allElementsArePeresent(){
+	public void checkElementsPresent(){
 		
-		TestReporter.writeToReportTitle("Checking the presence of Stream's elements");
+		TestReporter.writeToReportTitle("Checking the presence of all elements on Add Stream Page");
 		
 		isElementExist( "Crumbs", crumbs, true);
 		isElementExist( "AddStream name field", nameField, true);
@@ -130,13 +137,13 @@ public class AddStreamPage extends Components{
 		
 		isElementExist( "AddStream submit button", submitButton, true);
 		
-		TestReporter.writeToReportPositiveResult("All Streams elements are present");
+		TestReporter.writeToReportPositiveResult("All elements are present on Add Stream Page");
 	}
 	
 	public void checkDepartment(String department){
-		
-		checkElementText(department, "AddStream department name tab " + department, departmentNameField);
-		
+
+        checkElementText(department, "AddStream department name tab " + department, departmentNameField);
+        clickElement(crumbsBackToDepartmentPage, "crumbs Back To Department Page");		
 	}
 
 	public void fillAddStreamInput(String name) {
@@ -149,7 +156,4 @@ public class AddStreamPage extends Components{
 		isElementExist("Added stream",input_name_stream,true);
 
 	}
-	
-	
-	
 }

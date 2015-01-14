@@ -488,10 +488,10 @@ public class StreamPage extends Components {
 	}
 	
 	public void clickAddCandidateButton(){
+		
 		TestReporter.writeToReportTitle("Checking that Stream Create Button reffering to Add Stream Page");
 		addCandidateButton.click();
-		 isElementExist("add Candidate Button",addCandidateButton,false);
-		 TestReporter.writeToReportPositiveResult("Stream Create button reffering to Add Stream Page");
+		isElementExist("add Candidate Button",addCandidateButton,false);
 	}
 
 	public void checkCandExisting(String st,boolean refer) {
@@ -607,18 +607,20 @@ public class StreamPage extends Components {
 
 	public void clickViewCand() {
 		
-		TestReporter.writeToReportTitle("Checking that click on selected candidate reffering to Candidate View Page");
+		TestReporter.writeToReportTitle("Checking that double click on selected candidate reffering to Candidate View Page");
 		
 		Actions action = new Actions(driver);
 		
         (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(STREAM_TABLE_ROW_VIEW)));
 		action.moveToElement(driver.findElement(By.xpath(STREAM_TABLE_ROW_VIEW))).doubleClick().build().perform();
-		
-		TestReporter.writeToReportPositiveResult("click on selected candidate reffering to Candidate View Page");
+
+		isElementExist("add Candidate Button",addCandidateButton,false);
 	}
 
 	public void checkTableAccordingToCandidadate(String field) {
 		
+		TestReporter.writeToReportTitle("Check table fields according to fields of new candidate");
+
 		String []fields = field.split(";");		
 		List<WebElement> row;
 		Boolean flag = false;

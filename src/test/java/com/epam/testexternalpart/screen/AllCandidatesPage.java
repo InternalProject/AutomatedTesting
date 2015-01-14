@@ -3,7 +3,6 @@ package com.epam.testexternalpart.screen;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,9 +11,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.epam.testexternalpart.core.CheckerData;
 import com.epam.testexternalpart.core.TestReporter;
 
-public class AllCandidatesPage extends Components {
+public class AllCandidatesPage extends Components implements CheckerData{
+	
 	private static final String TITLE="//h1";
 	private static final String CHECKBOXES_COL="//td[@class='bs-checkbox']//input";
 	private static final String CHECKBOX_FOR_ALL="//input[@name='btSelectAll']";
@@ -268,9 +269,15 @@ public class AllCandidatesPage extends Components {
 		
 	}
 	
-	public void checkDefaultColumns(String nameColumn){
+	public void checkElementsPresent(){
 		
-		TestReporter.writeToReportTitle("Checking the presence of All Candidates menu - default columns");
+		TestReporter.writeToReportStep("Checking the presence of all elements on All Candidates Page");
+	}
+	
+	public void checkElementsPresent(String nameColumn){
+		
+		TestReporter.writeToReportTitle("Checking the presence of default columns on All Candidates menu - ");
+		
 		String []textForEachElement=nameColumn.split(";");				
 		
 		wating(2000);
@@ -280,7 +287,7 @@ public class AllCandidatesPage extends Components {
 			checkElementText(textForEachElement[i], textForEachElement[i], tableHead.get(i));
 		}
 		
-		TestReporter.writeToReportPositiveResult("All Candidates menu -  default columns are present");
+		TestReporter.writeToReportPositiveResult("Default columns are present on All Candidates menu Page");
 	}
 	
 	public void checkColumnsAccordingToCheckBox(){
@@ -352,13 +359,13 @@ public class AllCandidatesPage extends Components {
 		TestReporter.writeToReportPositiveResult("Column is disabled");
 	}	
 	
-	public void checkAllTextPresent(){
+	public void checkTextPresent(){
 		
-		TestReporter.writeToReportTitle("Checking the presence of All Candidates text");
+		TestReporter.writeToReportStep("Check the presence of all text on All Candidates menu Page");
 
 		checkElementText("All Candidates", "All candidates title", title);
 		
 		TestReporter
-		.writeToReportPositiveResult("All All Candidates text are present");		
+		.writeToReportPositiveResult("All text on All Candidates menu Page is present");		
 	}
 }
