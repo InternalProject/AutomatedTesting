@@ -58,8 +58,7 @@ public class Components {
 				if(welement.get(i).getText().equals(text)){
 					value=true;
 				break;}
-				}
-		 
+				}	 
 		 
 		 TestReporter.writeToReportTitle("Checking the presence of the elemen ["+text+"]");
 	        if (refer) {
