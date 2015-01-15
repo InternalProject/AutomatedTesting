@@ -1,9 +1,12 @@
 package com.epam.testexternalpart.tests;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import com.epam.testexternalpart.core.BaseTest;
 import com.epam.testexternalpart.core.TestReporter;
+import com.thoughtworks.selenium.webdriven.commands.Click;
 
 public class SmokeTest extends BaseTest{
 	
@@ -152,6 +155,24 @@ public class SmokeTest extends BaseTest{
 		
 		TestReporter.writeToReportHeader("Check all elements are present on Mail Settings Page");
 			
+	}
+	
+	@Test
+	public void checkSubgroupPage(){
+		menuComp.clickElement(menuComp.settingsButton, "Click on settingsButton");
+		menuComp.clickElement(menuComp.subgroupsButton, "Click on subgroupsButton");
+		pageAllSubgroup.checkElementsPresent();
+		TestReporter.writeToReportPositiveResult("All elements are present on Department Page");
+	}
+	
+	@Test
+	public void checkConcretSubgroup(){
+		menuComp.clickElement(menuComp.settingsButton, "Click on settingsButton");
+		menuComp.clickElement(menuComp.subgroupsButton, "Click on subgroupsButton");
+		Actions actions = new Actions(driver);
+		actions.moveToElement(driver.findElement(By.xpath("//table[@id='tableSubgroups']//tbody//tr[1]"))).doubleClick().build().perform();
+		//pageAllSubgroup.clickOnSubgroups();
+		TestReporter.writeToReportPositiveResult("Check each subgroup on Separtment Page is exist");
 	}
 	
 }

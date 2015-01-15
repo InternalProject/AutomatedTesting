@@ -1,44 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="SearchStreamTest"
-<<<<<<< HEAD
-           tests="1"
-           failures="1"
-           errors="0"
-           skipped="0"
-<<<<<<< HEAD
-           time="19,513">
-=======
-           time="20.546">
->>>>>>> dbb5e243a5d8bc919fd1d8fccccaeb4e573f8dd4
-  <properties />
-            <testcase name="streamSearch" time="19,513" classname="com.epam.testexternalpart.tests.SearchTest">
-                <failure type="java.lang.AssertionError"
-                  message="Wrong data in new cand expected [true] but found [false]"
-              >
-<![CDATA[java.lang.AssertionError: Wrong data in new cand expected [true] but found [false]
-  org.testng.Assert.fail(Assert.java:94)
-  org.testng.Assert.failNotEquals(Assert.java:494)
-  org.testng.Assert.assertTrue(Assert.java:42)
-  com.epam.testexternalpart.screen.stream.StreamPage.checkCandExisting(StreamPage.java:492)
-  com.epam.testexternalpart.tests.SearchTest.streamSearch(SearchTest.java:27)
-=======
-           tests="2"
+           tests="4"
            failures="2"
            errors="0"
-           skipped="0"
-           time="99.329">
+           skipped="2"
+           time="21,554">
   <properties />
-            <testcase name="streamSearch" time="49.136" classname="com.epam.testexternalpart.tests.SearchTest">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="startPage" time="0,000" classname="com.epam.testexternalpart.tests.SearchTest">
+                <failure type="org.openqa.selenium.WebDriverException"
+                  message="chrome not reachable
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.00 seconds
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
+Session ID: 9ea6b3e8604dc90cb335f5d295a33c76
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir6540_29378}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]"
               >
-<![CDATA[java.lang.NullPointerException
-  com.epam.testexternalpart.screen.stream.StreamPage.performSearch(StreamPage.java:702)
-  com.epam.testexternalpart.tests.SearchTest.streamSearch(SearchTest.java:29)
+<![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.00 seconds
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0501', ip: '10.23.14.67', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
+Session ID: 9ea6b3e8604dc90cb335f5d295a33c76
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir6540_29378}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+  org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+  com.epam.testexternalpart.core.BaseTest.startPage(BaseTest.java:81)
+  sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:606)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+  org.testng.SuiteRunner.run(SuiteRunner.java:254)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+  org.testng.TestNG.run(TestNG.java:1057)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+  org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="allCandidatesSearch" time="21,554" classname="com.epam.testexternalpart.tests.SearchTest">
+                <failure type="org.openqa.selenium.WebDriverException"
+                  message="chrome not reachable
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.01 seconds
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
+Session ID: 9ea6b3e8604dc90cb335f5d295a33c76
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir6540_29378}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]"
+              >
+<![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.01 seconds
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0501', ip: '10.23.14.67', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
+Session ID: 9ea6b3e8604dc90cb335f5d295a33c76
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir6540_29378}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+  org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:377)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:453)
+  org.openqa.selenium.By$ByXPath.findElements(By.java:352)
+  org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:340)
+  org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:75)
+  org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:35)
+  com.sun.proxy.$Proxy8.get(Unknown Source)
+  com.epam.testexternalpart.screen.stream.StreamPage.checkCandExisting(StreamPage.java:479)
+  com.epam.testexternalpart.tests.SearchTest.allCandidatesSearch(SearchTest.java:51)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:606)
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
   org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
   org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -56,97 +126,23 @@
   org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
   org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
   org.testng.TestNG.run(TestNG.java:1057)
-  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
-  org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-  org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-  org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+  org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 ]]>
       </failure>
 
           </testcase>
-            <testcase name="allCandidatesSearch" time="50.193" classname="com.epam.testexternalpart.tests.SearchTest">
-                <failure type="java.lang.AssertionError"
-                  message="expected [true] but found [false]"
-              >
-<![CDATA[java.lang.AssertionError: expected [true] but found [false]
-  org.testng.Assert.fail(Assert.java:94)
-  org.testng.Assert.failNotEquals(Assert.java:494)
-  org.testng.Assert.assertTrue(Assert.java:42)
-  org.testng.Assert.assertTrue(Assert.java:52)
-  com.epam.testexternalpart.screen.stream.StreamPage.searchResultCheck(StreamPage.java:722)
-  com.epam.testexternalpart.tests.SearchTest.allCandidatesSearch(SearchTest.java:60)
->>>>>>> 20639403100fd40db4e4bd30e6be243a406c12c9
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-  org.testng.TestRunner.privateRun(TestRunner.java:767)
-  org.testng.TestRunner.run(TestRunner.java:617)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-  org.testng.SuiteRunner.run(SuiteRunner.java:254)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-  org.testng.TestNG.run(TestNG.java:1057)
-<<<<<<< HEAD
-  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
-  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:93)
-  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
-=======
-  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
->>>>>>> 20639403100fd40db4e4bd30e6be243a406c12c9
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
-<<<<<<< HEAD
-  org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
-  com.sun.proxy.$Proxy0.invoke(Unknown Source)
-  org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:145)
-  org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:87)
-  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
-=======
-  org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-  org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-  org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
->>>>>>> 20639403100fd40db4e4bd30e6be243a406c12c9
-]]>
-      </failure>
-
-          </testcase>
-<<<<<<< HEAD
+  
+            <testcase name="tearDown" time="0.0" classname="com.epam.testexternalpart.tests.SearchTest">
+          <skipped />
+    </testcase>
+            <testcase name="streamSearch" time="0.0" classname="com.epam.testexternalpart.tests.SearchTest">
+          <skipped />
+    </testcase>
   
   
-  
-<<<<<<< HEAD
-=======
-            <testcase name="streamSearch" time="20.546" classname="com.epam.testexternalpart.tests.SearchTest" />
-      
->>>>>>> dbb5e243a5d8bc919fd1d8fccccaeb4e573f8dd4
-=======
-  
-  
-  
->>>>>>> 20639403100fd40db4e4bd30e6be243a406c12c9
 </testsuite>
