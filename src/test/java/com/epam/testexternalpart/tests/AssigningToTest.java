@@ -1,25 +1,14 @@
 package com.epam.testexternalpart.tests;
 
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.epam.testexternalpart.core.BaseTest;
-import com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromGMail;
 import com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromIUa;
 import com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromRambler;
 import com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromYandex;
 
 public class AssigningToTest extends BaseTest{
-	
-	@BeforeClass
-	public void initEmails(){
-
-		pageIUa = new AnswerFromIUa(driver);
-		pageYandex = new AnswerFromYandex(driver);
-		pageRambler = new AnswerFromRambler(driver);
-		pageGmail = new AnswerFromGMail(driver);
-	}
-  
+	  
 	@Test(dataProvider = "testData", priority = 1)
 	  public void addStream(String streamName) {
 		  
@@ -64,23 +53,27 @@ public class AssigningToTest extends BaseTest{
 	
 	@Test(priority = 6)
 	public void responseFromCandidates(){	
-				
+			
+		pageIUa = new AnswerFromIUa();	
 		pageIUa.logOn();
 		pageIUa.enterIntoUnreadMessage();		
-		pageIUa.responseConfirmedAnswer();		
+		pageIUa.responseConfirmedAnswer();
 		
+		pageIUa = new AnswerFromIUa();	
+		pageIUa.logOn();
+		pageIUa.enterIntoReadMessage();
+		pageIUa.responseConfirmedAnswer();
+		
+		pageYandex = new AnswerFromYandex();
 		pageYandex.logOn();
 		pageYandex.enterIntoUnreadMessage();
 		pageYandex.responseNotActualAnswer();
 		
+		pageRambler = new AnswerFromRambler();
 		pageRambler.logOn();
 		pageRambler.enterIntoUnreadMessage();
-		pageRambler.responseNewTimeAnswer();	
-		
-		pageIUa.logOn();
-		pageIUa.enterIntoReadMessage();
-		pageIUa.responseConfirmedAnswer();
-	}
+		pageRambler.responseNewTimeAnswer();			
+	}	
 	
 	@Test(dataProvider = "testData",priority = 7)
 	public void checkConfirmedCand(String streamName, String candidateFields, String row){
@@ -88,7 +81,7 @@ public class AssigningToTest extends BaseTest{
 		pageDepartment.clickSelectedStream(streamName);
 		pageStream.clickConfirmedTab();
 		pageStream.checkCandidates(candidateFields, row);	
-	}
+	}	
 	
 	@Test(dataProvider = "testData",priority = 8)
 	public void checkNotActualCand(String streamName, String candidateFields, String row){
@@ -108,7 +101,10 @@ public class AssigningToTest extends BaseTest{
 
 	@Test(priority = 10)
 	public void checkDublicateAnswer(){	
-				
+		
+		pageTemplates.getTextDuplicateAnswer();
+		
+		pageIUa = new AnswerFromIUa();	
 		pageIUa.logOn();
 		pageIUa.enterIntoUnreadMessage();
 		pageIUa.checkDublicateAnswerMessage();
@@ -122,6 +118,7 @@ public class AssigningToTest extends BaseTest{
 		pageStream.selectCandidatesForTest();
 		pageAssignTest.sendInvitation();
 		
+		pageRambler = new AnswerFromRambler();
 		pageRambler.logOn();
 		pageRambler.enterIntoUnreadMessage();
 		pageRambler.responseNewTimeAnswer();
@@ -135,6 +132,7 @@ public class AssigningToTest extends BaseTest{
 		pageStream.selectCandidatesForTest();
 		pageAssignTest.sendInvitation();
 		
+		pageRambler = new AnswerFromRambler();
 		pageRambler.logOn();
 		pageRambler.enterIntoUnreadMessage();
 		pageRambler.responseNewTimeAnswer();

@@ -37,7 +37,7 @@ public class Menu extends Components{
 	public WebElement allCandidatesButton;
 	
 	@FindBy(xpath = SETTINGS)
-	private WebElement settingsButton;
+	public WebElement settingsButton;
 	
 	@FindBy(xpath = PLACES_FOR_TESTING_BUTTON)
 	public WebElement placeForTestingButton;
@@ -46,7 +46,7 @@ public class Menu extends Components{
 	private WebElement subgroupsButton;
 	
 	@FindBy(xpath = EMAIL_TEMPLATES)
-	private WebElement emailTemplatesButtton;
+	public WebElement emailTemplatesButtton;
 	
 	@FindBy(xpath = MAIL_SETTINGS_BUTTON)
 	private WebElement mailSettingsButton;
