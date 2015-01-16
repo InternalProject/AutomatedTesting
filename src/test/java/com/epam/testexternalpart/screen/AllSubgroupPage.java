@@ -9,7 +9,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AllSubgroupPage extends Components{
+import com.epam.testexternalpart.core.CheckerData;
+import com.epam.testexternalpart.core.TestReporter;
+
+public class AllSubgroupPage extends Components implements CheckerData{
 	
 	public static final String TITTLE = "//h1";
 	public static final String TABLE = "//table[@id='tableSubgroups']";
@@ -17,7 +20,8 @@ public class AllSubgroupPage extends Components{
 	public static final String TABLE_TBODY = "//table[@id='tableSubgroups']//tbody//tr";
 	public static final String CHOOSE_BUTTON= "//div[@class='bootstrap-filestyle input-group']";
 	public static final String IMPORT_BUTTON= "//input[@class='btn btn-primary']";
-	
+	public static final String CRUMBS= "//div[@id='crumds']";
+
 	@FindBy(xpath = TITTLE)
 	public WebElement tittle;
 	
@@ -36,17 +40,24 @@ public class AllSubgroupPage extends Components{
 	@FindBy(xpath = CHOOSE_BUTTON)
 	public WebElement choose_button;
 	
+	@FindBy(xpath = CRUMBS)
+	public WebElement crumbs;
+	
 	public AllSubgroupPage(WebDriver driver){
 			this.driver=driver;
 			PageFactory.initElements(driver, this);
 			}
     
 	public void checkElementsPresent() {
-		isElementExist("Tittle ", tittle, true);
+		
+		TestReporter.writeToReportStep("Check the presence of all elements on Subgroup Page");
+
 		isElementExist("Subgroup table ", table, true);
 		isElementExist("Import_button ", import_button, true);
 		isElementExist("Table thead ", table_thead, true);
 		isElementExist("Choose button ", choose_button, true);
+		
+		TestReporter.writeToReportPositiveResult("All elements are present on Subgroup Page");	
 	}
 
 	public void clickOnSubgroups() {
@@ -54,6 +65,17 @@ public class AllSubgroupPage extends Components{
 		//for(WebElement e: table_tbody){
 		actions.moveToElement(driver.findElement(By.xpath("//table[@id='tableSubgroups']//tbody//tr[1]"))).doubleClick().build().perform();
 		//}
+	}
+
+	public void checkTextPresent(){
+		
+		TestReporter.writeToReportStep("Check the presence of all text on Subgroup Page");
+
+		checkElementText("All Subgroups", "All Subgroups title", tittle);
+		checkElementPartialText("Candidates pagination", "Crumbs", crumbs);
+		
+		TestReporter
+		.writeToReportPositiveResult("All text on Subgroup Page is present");		
 	}
 
 }

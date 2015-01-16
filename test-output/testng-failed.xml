@@ -3,27 +3,15 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.epam.testexternalpart.tests.AssigningToTest">
+      <class name="com.epam.testexternalpart.tests.SmokeTest">
         <methods>
-          <include name="checkBannedCandidate" invocation-numbers="0"/>
-          <include name="invitateSecondTime" invocation-numbers="0"/>
-          <include name="invitateThirdTime" invocation-numbers="0"/>
+          <include name="checkConcretSubgroup"/>
+          <include name="checkElAllCandiadtesMenu" invocation-numbers="0"/>
           <include name="init"/>
           <include name="tearDown"/>
           <include name="startPage"/>
         </methods>
-      </class> <!-- com.epam.testexternalpart.tests.AssigningToTest -->
-=======
-      <class name="com.epam.testexternalpart.tests.PlaceForTestingTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="addNewPlaceForTesting" invocation-numbers="0"/>
-          <include name="init"/>
-          <include name="startPage"/>
-        </methods>
-      </class> <!-- com.epam.testexternalpart.tests.PlaceForTestingTest -->
->>>>>>> dd93fe2814ec95aa9aab850497333b050287ac71
+      </class> <!-- com.epam.testexternalpart.tests.SmokeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

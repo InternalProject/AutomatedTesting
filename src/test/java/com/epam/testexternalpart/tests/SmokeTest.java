@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 
 import com.epam.testexternalpart.core.BaseTest;
 import com.epam.testexternalpart.core.TestReporter;
-import com.thoughtworks.selenium.webdriven.commands.Click;
 
 public class SmokeTest extends BaseTest{
 	
@@ -159,14 +158,18 @@ public class SmokeTest extends BaseTest{
 	
 	@Test
 	public void checkSubgroupPage(){
+		
+		TestReporter.writeToReportHeader("Check all elements are present on Subgroup Page");
+
 		menuComp.clickElement(menuComp.settingsButton, "Click on settingsButton");
 		menuComp.clickElement(menuComp.subgroupsButton, "Click on subgroupsButton");
 		pageAllSubgroup.checkElementsPresent();
-		TestReporter.writeToReportPositiveResult("All elements are present on Department Page");
+		pageAllSubgroup.checkTextPresent();
 	}
 	
 	@Test
 	public void checkConcretSubgroup(){
+		
 		menuComp.clickElement(menuComp.settingsButton, "Click on settingsButton");
 		menuComp.clickElement(menuComp.subgroupsButton, "Click on subgroupsButton");
 		Actions actions = new Actions(driver);

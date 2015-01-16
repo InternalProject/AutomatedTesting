@@ -291,6 +291,7 @@ public class AllCandidatesPage extends Components implements CheckerData{
 		
 		String []textForEachElement=nameColumn.split(";");			
 		
+        (new WebDriverWait(driver, 3000)).until(ExpectedConditions.visibilityOfAllElements(tableHead));
 		for(int i=0;i<textForEachElement.length;i++){		
 			checkElementText(textForEachElement[i], textForEachElement[i], tableHead.get(i));
 		}
