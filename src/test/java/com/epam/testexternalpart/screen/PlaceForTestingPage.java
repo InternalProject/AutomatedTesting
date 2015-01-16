@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class PlaceForTestingPage extends Components{
 	
@@ -16,9 +17,9 @@ public class PlaceForTestingPage extends Components{
 	public String actualLocation;
 	public String actualRoom;
 	
-	public static final String ADD_NEW_TESTING_PLACE = "//div[@class='btn-group']//a[1]";
-	public static final String EDIT_TESTING_PLACE = "//div[@class='btn-group']//a[2]";
-	public static final String DELETE_TESTING_PLACE = "//div[@class='btn-group']//a[3]";
+	public static final String ADD_NEW_TESTING_PLACE = "//div[@class='table-responsive b']/div[3]/a[1]";
+	public static final String EDIT_TESTING_PLACE = "//a[@id='edit-btn']";
+	public static final String DELETE_TESTING_PLACE = "//div[@class='table-responsive b']/div[3]/a[3]";
 	public static final String ADD_TESTING_PLACE_POPUP = "//div[@id='addPlace']//button[@class='btn btn-primary']";
 	public static final String UNIVERSITY_POPUP = "//div[@id='addPlace']//input[@id='universityName']";
 	public static final String BUILDING_POPUP = "//div[@id='addPlace']//input[@id='buildingName']";
@@ -90,25 +91,21 @@ public class PlaceForTestingPage extends Components{
 
 	public void fillInput(String universityName, String buildingName,
 			String location, String room) {
-	
-		
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		university_popup.sendKeys(universityName);
-		building_popup.clear();
 		building_popup.sendKeys(buildingName);
-		location_popup.clear();
-		
-		
-		
 		location_popup.sendKeys(location);
-		
-		room_popup.clear();
 		room_popup.sendKeys(room);
-		
-		
-	}
+}
 
 
 	public void checkAddingNewPlace(String universityName, String buildingName, String location, String room) {
+		boolean flag = false;
 		for(WebElement e:all_places){
 			try{
 				actualUniversityName = e.findElement(By.xpath("./td[2]")).getText();
@@ -121,21 +118,24 @@ public class PlaceForTestingPage extends Components{
 				System.out.println("actualRoom  "+ actualRoom);
 				System.out.println("!!!  "+ (actualUniversityName.equals(universityName) & actualBuildingName.equals(buildingName) & actualLocation.equals(location) & actualRoom.equals(room)));
 				if((actualUniversityName.equals(universityName) & actualBuildingName.equals(buildingName) & actualLocation.equals(location) & actualRoom.equals(room))){
-					System.out.println("111111111111111");
+					flag = true;
 				}
 				else
-					System.out.println("222222222222222222");
-				//	Assert.assertEquals(true, (actualUniversityName.equals(universityName) & actualBuildingName.equals(buildingName) & actualLocation.equals(location) & actualRoom.equals(room)),"New adding place exist.");
+					continue;
 			}
 			catch(StaleElementReferenceException ex){
 				
 			}
+		}
+		if(!flag){
+			Assert.assertEquals(true, (actualUniversityName.equals(universityName) & actualBuildingName.equals(buildingName) & actualLocation.equals(location) & actualRoom.equals(room)),"Adding place not appear.");
 		}
 		
 	}
 
 
 	public void deleteNewPlace(String universityName, String buildingName, String location, String room) {
+		boolean flag = true;
 		for(WebElement e:all_places){
 			try{
 				actualUniversityName = e.findElement(By.xpath("./td[2]")).getText();
@@ -148,22 +148,27 @@ public class PlaceForTestingPage extends Components{
 				System.out.println("actualRoom  "+ actualRoom);
 				System.out.println("!!!  "+ (actualUniversityName.equals(universityName) & actualBuildingName.equals(buildingName) & actualLocation.equals(location) & actualRoom.equals(room)));
 				if((actualUniversityName.equals(universityName) & actualBuildingName.equals(buildingName) & actualLocation.equals(location) & actualRoom.equals(room))){
-					System.out.println("111111111111111");
 					clickElement(e.findElement(checkbox), "Click on checkbox");
 					clickElement(delete_testing_place, "Click on delete_testing_place button");
 					clickElement(delete_button_in_pop_up,"Click on delete button in pop up");
+					flag = false;
 				}
-				//else
-					//Assert.assertEquals(true, (actualUniversityName.equals(universityName) & actualBuildingName.equals(buildingName) & actualLocation.equals(location) & actualRoom.equals(room)),"New adding place exist.");
-								}
+				else
+					continue;
+			}
 			catch(StaleElementReferenceException ex){
 				
 			}
 		}
+		if(!flag){
+			Assert.assertEquals(false, (actualUniversityName.equals(universityName) & actualBuildingName.equals(buildingName) & actualLocation.equals(location) & actualRoom.equals(room)),"Deleted place exist.");
+		}
+		
 	}
 
 
 	public void editNewPlace(String universityName, String buildingName, String location, String room, String editUniversityName, String editBuildingName, String editLocation, String editRoom) {
+		boolean flag = false;
 		for(WebElement e:all_places){
 			try{
 				actualUniversityName = e.findElement(By.xpath("./td[2]")).getText();
@@ -176,11 +181,16 @@ public class PlaceForTestingPage extends Components{
 				System.out.println("actualRoom  "+ actualRoom);
 				System.out.println("!!!  "+ (actualUniversityName.equals(universityName) & actualBuildingName.equals(buildingName) & actualLocation.equals(location) & actualRoom.equals(room)));
 				if((actualUniversityName.equals(universityName) & actualBuildingName.equals(buildingName) & actualLocation.equals(location) & actualRoom.equals(room))){
-					System.out.println("111111111111111");
 					clickElement(e.findElement(checkbox), "Click on checkbox");
 					clickElement(edit_testing_place, "Click on edit_testing_place button");
 					//fillInput(editUniversityName,editBuildingName,editLocation,editRoom);
 					//edit_university_in_pop_up.clear();
+					try {
+						Thread.sleep(SHORT_TIME);
+					} catch (InterruptedException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
 					edit_university_in_pop_up.sendKeys(editUniversityName);
 					edit_building_in_pop_up.clear();
 					edit_building_in_pop_up.sendKeys(editBuildingName);
@@ -193,13 +203,17 @@ public class PlaceForTestingPage extends Components{
 					edit_room_in_pop_up.clear();
 					edit_room_in_pop_up.sendKeys(editRoom);
 					clickElement(edit_button_in_pop_up,"Click on delete button in pop up");
+					flag = true;
 				}
-				//else
-				//Assert.assertEquals(true, (actualUniversityName.equals(universityName) & actualBuildingName.equals(buildingName) & actualLocation.equals(location) & actualRoom.equals(room)),"New adding place exist.");
+				else
+					continue;
 			}
 			catch(StaleElementReferenceException ex){
 				
 			}
+		}
+		if(!flag){
+			Assert.assertEquals(true, (actualUniversityName.equals(universityName) & actualBuildingName.equals(buildingName) & actualLocation.equals(location) & actualRoom.equals(room)),"New adding place exist.");
 		}
 		
 	}

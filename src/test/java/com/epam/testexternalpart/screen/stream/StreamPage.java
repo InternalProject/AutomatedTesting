@@ -700,26 +700,29 @@ public class StreamPage extends Components implements CheckerData {
 	
 	public void performSearch(String word,WebElement field){
 		 TestReporter.writeToReportTitle("Search for ["+word+"]");
-		 if(field.equals(null)){
+		 if(field==null){
 		 searchField.clear();
-		 searchField.sendKeys(word);
+		 searchField.sendKeys(word+ org.openqa.selenium.Keys.ENTER);
 		 }else{
 			 field.clear();
-			 field.sendKeys(word); 
+			 field.sendKeys(word+ org.openqa.selenium.Keys.ENTER); 
 		 }
-		
+	
 	}
 
 	public void searchResultCheck(String word){
+		waiting(3000);
 		Boolean flag = false;
 			for (WebElement currentRow : tableRow){
 				List<WebElement> el = currentRow.findElements(By.xpath(".//td"));
-			
+				
 				for (WebElement el2 : el){			
-					if (el2.getText().contains(word))
+					if (el2.getText().contains(word)){
 						flag = true;
-				break;
+				break;}
 				}
+				
+				
 				Assert.assertTrue(flag);
 				flag = false;	
 			}

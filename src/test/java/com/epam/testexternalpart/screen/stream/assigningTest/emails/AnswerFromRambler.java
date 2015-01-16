@@ -54,7 +54,7 @@ public class AnswerFromRambler extends Components{
 		
 		this.driver = WebDriverFactory.initDriver("chrome");
 		driver.get(site);	
-		PageFactory.initElements(driver, this);				
+		PageFactory.initElements(driver, this);	
 	}
 	
 	public void logOn(){

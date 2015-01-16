@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="31" passed="31">
   <reporter-output>
     <line>
@@ -1520,15 +1521,76 @@
             <param index="0">
               <value>
                 <![CDATA[Autumn 2015]]>
+=======
+<testng-results skipped="0" failed="1" total="3" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on settingsButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on placeForTestingButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click add_testing_place]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click add_testing_place_popup]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on settingsButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on placeForTestingButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on settingsButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on placeForTestingButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on checkbox]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on edit_testing_place button]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on delete button in pop up]</font>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="28221" started-at="2015-01-15T09:13:00Z" finished-at="2015-01-15T09:13:28Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="28221" started-at="2015-01-15T09:13:00Z" finished-at="2015-01-15T09:13:28Z">
+      <class name="com.epam.testexternalpart.tests.PlaceForTestingTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@2b52833d]" name="init" is-config="true" duration-ms="3993" started-at="2015-01-15T11:13:00Z" finished-at="2015-01-15T11:13:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@2b52833d]" name="startPage" is-config="true" duration-ms="178" started-at="2015-01-15T11:13:04Z" finished-at="2015-01-15T11:13:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="FAIL" signature="addNewPlaceForTesting(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@2b52833d]" name="addNewPlaceForTesting" duration-ms="8305" started-at="2015-01-15T11:13:05Z" data-provider="testData" finished-at="2015-01-15T11:13:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ХАА]]>
+>>>>>>> dd93fe2814ec95aa9aab850497333b050287ac71
               </value>
             </param>
             <param index="1">
               <value>
+<<<<<<< HEAD
                 <![CDATA[Семен;Пяточкин;Сергеевич;04.02.1990;vasya.pupkin379@yandex.ru;+087894156114]]>
+=======
+                <![CDATA[23Б]]>
+>>>>>>> dd93fe2814ec95aa9aab850497333b050287ac71
               </value>
             </param>
             <param index="2">
               <value>
+<<<<<<< HEAD
                 <![CDATA[4.0]]>
               </value>
             </param>
@@ -1600,15 +1662,120 @@
             <param index="0">
               <value>
                 <![CDATA[Autumn 2015]]>
+=======
+                <![CDATA[Бекетова]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Boston]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0501', ip: '10.23.14.67', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
+Session ID: 580f5c47bc47d3f86dde7b702b7dbc70
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir3584_21690}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=39.0.2171.95)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0501', ip: '10.23.14.67', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
+Session ID: 580f5c47bc47d3f86dde7b702b7dbc70
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir3584_21690}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:171)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:244)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:167)
+	at com.epam.testexternalpart.screen.PlaceForTestingPage.checkAddingNewPlace(PlaceForTestingPage.java:111)
+	at com.epam.testexternalpart.tests.PlaceForTestingTest.addNewPlaceForTesting(PlaceForTestingTest.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on settingsButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on placeForTestingButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click add_testing_place]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click add_testing_place_popup]</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addNewPlaceForTesting -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@2b52833d]" name="startPage" is-config="true" duration-ms="750" started-at="2015-01-15T11:13:13Z" finished-at="2015-01-15T11:13:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="PASS" signature="deleteNewPlaceForTesting(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@2b52833d]" name="deleteNewPlaceForTesting" duration-ms="3252" started-at="2015-01-15T11:13:14Z" data-provider="testData" finished-at="2015-01-15T11:13:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EDIT]]>
+>>>>>>> dd93fe2814ec95aa9aab850497333b050287ac71
               </value>
             </param>
             <param index="1">
               <value>
+<<<<<<< HEAD
                 <![CDATA[Олег;Ромашкин;Федорович;21.09.1990;pupkin379@rambler.ru;+397894164112]]>
+=======
+                <![CDATA[EDIT building]]>
+>>>>>>> dd93fe2814ec95aa9aab850497333b050287ac71
               </value>
             </param>
             <param index="2">
               <value>
+<<<<<<< HEAD
                 <![CDATA[6.0]]>
               </value>
             </param>
@@ -1703,11 +1870,20 @@
             <param index="2">
               <value>
                 <![CDATA[1.0]]>
+=======
+                <![CDATA[Edit Location]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Edit room]]>
+>>>>>>> dd93fe2814ec95aa9aab850497333b050287ac71
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
+<<<<<<< HEAD
               <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
             </line>
             <line>
@@ -1733,15 +1909,38 @@
             <param index="0">
               <value>
                 <![CDATA[Autumn 2015]]>
+=======
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on settingsButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on placeForTestingButton]</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteNewPlaceForTesting -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@2b52833d]" name="startPage" is-config="true" duration-ms="185" started-at="2015-01-15T11:13:17Z" finished-at="2015-01-15T11:13:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="PASS" signature="editNewPlaceForTesting(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@2b52833d]" name="editNewPlaceForTesting" duration-ms="8401" started-at="2015-01-15T11:13:17Z" data-provider="testData" finished-at="2015-01-15T11:13:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ХАА]]>
+>>>>>>> dd93fe2814ec95aa9aab850497333b050287ac71
               </value>
             </param>
             <param index="1">
               <value>
+<<<<<<< HEAD
                 <![CDATA[Семен;Пяточкин;Сергеевич;04.02.1990;vasya.pupkin379@yandex.ru;+087894156114]]>
+=======
+                <![CDATA[23Б]]>
+>>>>>>> dd93fe2814ec95aa9aab850497333b050287ac71
               </value>
             </param>
             <param index="2">
               <value>
+<<<<<<< HEAD
                 <![CDATA[1.0]]>
               </value>
             </param>
@@ -1876,10 +2075,39 @@
             <param index="0">
               <value>
                 <![CDATA[Autumn 2015]]>
+=======
+                <![CDATA[Бекетова]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Boston]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[EDIT]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[EDIT building]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Edit Location]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Edit room]]>
+>>>>>>> dd93fe2814ec95aa9aab850497333b050287ac71
               </value>
             </param>
           </params>
           <reporter-output>
+<<<<<<< HEAD
             <line>
               <![CDATA[<br /><font size = 2 color = #000000>Click on [Select stream on Department Page]</font>]]>
             </line>
@@ -2008,6 +2236,30 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.epam.testexternalpart.tests.AssigningToTest -->
+=======
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on settingsButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on placeForTestingButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on checkbox]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on edit_testing_place button]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on delete button in pop up]</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- editNewPlaceForTesting -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@2b52833d]" name="tearDown" is-config="true" duration-ms="2495" started-at="2015-01-15T11:13:26Z" finished-at="2015-01-15T11:13:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.epam.testexternalpart.tests.PlaceForTestingTest -->
+>>>>>>> dd93fe2814ec95aa9aab850497333b050287ac71
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

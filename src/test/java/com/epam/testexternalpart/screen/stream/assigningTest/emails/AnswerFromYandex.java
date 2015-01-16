@@ -41,7 +41,7 @@ public class AnswerFromYandex extends Components{
 	public AnswerFromYandex(){
 		this.driver = WebDriverFactory.initDriver("chrome");
 		driver.get(yandex);	
-		PageFactory.initElements(driver, this);			
+		PageFactory.initElements(driver, this);		
 	}
 	
 	public void logOn(){

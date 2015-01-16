@@ -70,7 +70,7 @@ public class AnswerFromIUa extends Components{
 	public AnswerFromIUa(){
 		this.driver = WebDriverFactory.initDriver("chrome");
 		driver.get(iUa);
-		PageFactory.initElements(driver, this);			
+		PageFactory.initElements(driver, this);	
 	}
 	
 	public void logOn(){	

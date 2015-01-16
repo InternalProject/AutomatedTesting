@@ -43,7 +43,7 @@ public class Menu extends Components{
 	public WebElement placeForTestingButton;
 	
 	@FindBy(xpath = SUBGROUP_BUTTON)
-	private WebElement subgroupsButton;
+	public WebElement subgroupsButton;
 	
 	@FindBy(xpath = EMAIL_TEMPLATES)
 	public WebElement emailTemplatesButtton;
@@ -59,8 +59,8 @@ public class Menu extends Components{
 	
 
 	public Menu(WebDriver driver){
-	this.driver=driver;
-	PageFactory.initElements(driver, this);
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
 	}
 
 	public void checkElementsPresent() {
