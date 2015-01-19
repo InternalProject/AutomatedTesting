@@ -3,32 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.epam.testexternalpart.tests.SearchTest">
+      <class name="com.epam.testexternalpart.tests.PlaceForTestingTest">
         <methods>
           <include name="tearDown"/>
+          <include name="addNewPlaceForTesting" invocation-numbers="0"/>
           <include name="init"/>
-          <include name="streamSearch" invocation-numbers="0"/>
           <include name="startPage"/>
-<<<<<<< HEAD
-=======
-          <include name="allCandidatesSearch" invocation-numbers="0"/>
-=======
-          <include name="init"/>
-          <include name="tearDown"/>
-<<<<<<< HEAD
-          <include name="startPage"/>
-          <include name="checkElementsPresentDepartmentPage"/>
-=======
-          <include name="checkAddStreamAccordingToDepartment"/>
-<<<<<<< HEAD
->>>>>>> a6a6f5699db36c2e6e080e6baa46352bcf4210dc
-=======
-          <include name="startPage"/>
->>>>>>> 5add05477f8b2d5bd1cb3acc4afe8aaaad18fefe
->>>>>>> 57b50c04c35b59c75fe839973a9f4328210b3bd5
->>>>>>> 7ccd8ec9fad5ef5338624831fe1b4994dc84ba22
         </methods>
-      </class> <!-- com.epam.testexternalpart.tests.SearchTest -->
+      </class> <!-- com.epam.testexternalpart.tests.PlaceForTestingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
