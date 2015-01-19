@@ -5,9 +5,14 @@
     <classes>
       <class name="com.epam.testexternalpart.tests.AssigningToTest">
         <methods>
+<<<<<<< HEAD
           <include name="checkDublicateAnswer"/>
           <include name="init"/>
+=======
+>>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
           <include name="tearDown"/>
+          <include name="init"/>
+          <include name="checkConcretSubgroup"/>
           <include name="startPage"/>
         </methods>
       </class> <!-- com.epam.testexternalpart.tests.AssigningToTest -->

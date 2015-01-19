@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
     <line>
@@ -89,6 +90,47 @@
           </reporter-output>
         </test-method> <!-- checkDublicateAnswer -->
         <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@2c8d66b2]" name="tearDown" is-config="true" duration-ms="2873" started-at="2015-01-19T12:23:26Z" finished-at="2015-01-19T12:23:28Z">
+=======
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on settingsButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on subgroupsButton]</font>]]>
+    </line>
+    <line>
+      <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Check each subgroup on Separtment Page is exist</font>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="24626" started-at="2015-01-19T11:46:07Z" finished-at="2015-01-19T11:46:32Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="24626" started-at="2015-01-19T11:46:07Z" finished-at="2015-01-19T11:46:32Z">
+      <class name="com.epam.testexternalpart.tests.SmokeTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@432dbb4b]" name="init" is-config="true" duration-ms="4020" started-at="2015-01-19T13:46:07Z" finished-at="2015-01-19T13:46:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@432dbb4b]" name="startPage" is-config="true" duration-ms="396" started-at="2015-01-19T13:46:11Z" finished-at="2015-01-19T13:46:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startPage -->
+        <test-method status="PASS" signature="checkConcretSubgroup()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@432dbb4b]" name="checkConcretSubgroup" duration-ms="17750" started-at="2015-01-19T13:46:12Z" finished-at="2015-01-19T13:46:29Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on settingsButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #000000>Click on [Click on subgroupsButton]</font>]]>
+            </line>
+            <line>
+              <![CDATA[<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Check each subgroup on Separtment Page is exist</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkConcretSubgroup -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@432dbb4b]" name="tearDown" is-config="true" duration-ms="2460" started-at="2015-01-19T13:46:29Z" finished-at="2015-01-19T13:46:32Z">
+>>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
