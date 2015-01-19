@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.epam.testexternalpart.core.WebDriverFactory;
 import com.epam.testexternalpart.screen.Components;
 
 public class AnswerFromRambler extends Components{
@@ -49,14 +50,15 @@ public class AnswerFromRambler extends Components{
 	@FindBy(xpath=BUTTON_INPUT_OK)
 	private WebElement buttonSubmit;
 			
-	public AnswerFromRambler(WebDriver driver){
-		this.driver=driver;
-		PageFactory.initElements(driver, this);		
+	public AnswerFromRambler(){
+		
+		this.driver = WebDriverFactory.initDriver("chrome");
+		driver.get(site);	
+		PageFactory.initElements(driver, this);	
 	}
 	
 	public void logOn(){
 		
-		driver.get(site);
         (new WebDriverWait(driver, 2000)).until(ExpectedConditions.visibilityOf(buttonInput));
 		buttonInput.click();
 		loginField.sendKeys(login);
@@ -74,6 +76,9 @@ public class AnswerFromRambler extends Components{
 		
         (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(newTimeAnswer));
 		clickElement(newTimeAnswer, "click newTimeAnswer");
+		waiting(2000);
+		driver.close();
+		driver.quit();
 	}
 	
 }

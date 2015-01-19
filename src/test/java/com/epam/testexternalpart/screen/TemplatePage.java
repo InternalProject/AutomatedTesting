@@ -50,6 +50,8 @@ public class TemplatePage extends Components implements CheckerData{
 	private static final String ANSWER_DUPLICATION_SAVE_BUTTON = "//div[@id='template-double-answers']/div/div[2]/div/button[@class='btn btn-primary save']";
 	private static final String ANSWER_DUPLICATION_RESET_BUTTON = "//div[@id='template-double-answers']/div/div[2]/div/button[@class='btn btn-default reset']";
 	
+	public static String templateAnswerDuplication;
+	
 	@FindBy(xpath = CRUMBS)
 	private WebElement crumbs;
 	
@@ -250,5 +252,16 @@ public class TemplatePage extends Components implements CheckerData{
 	public void checkElementsPresent() {
 		
 		TestReporter.writeToReportStep("Checking the presence of all elements on Template Page");	
+	}
+
+	public void getTextDuplicateAnswer() {
+
+		Menu menu = new Menu(driver);
+		
+		menu.clickElement(menu.settingsButton,"settingsButton");
+		menu.clickElement(menu.emailTemplatesButtton,"emailTemplatesButtton");
+		clickElement(answerDuplicationTittle, "answerDuplicationTittle");
+		
+		templateAnswerDuplication = answerDuplicationInputBox.getText();
 	}
 }

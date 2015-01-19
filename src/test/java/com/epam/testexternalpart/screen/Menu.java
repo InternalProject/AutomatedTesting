@@ -46,17 +46,13 @@ public class Menu extends Components{
 	public WebElement subgroupsButton;
 	
 	@FindBy(xpath = EMAIL_TEMPLATES)
-	private WebElement emailTemplatesButtton;
+	public WebElement emailTemplatesButtton;
 	
 	@FindBy(xpath = MAIL_SETTINGS_BUTTON)
 	private WebElement mailSettingsButton;
 	
 	@FindBy(xpath = SEARCH_INPUT)
-
-	public WebElement searchInput;
-	
-	
-	
+	public WebElement searchInput;	
 
 	public Menu(WebDriver driver){
 		this.driver=driver;

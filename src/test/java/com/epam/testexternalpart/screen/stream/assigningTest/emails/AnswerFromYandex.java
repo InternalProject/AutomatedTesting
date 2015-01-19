@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.epam.testexternalpart.core.WebDriverFactory;
 import com.epam.testexternalpart.screen.Components;
 
 public class AnswerFromYandex extends Components{
@@ -28,23 +29,23 @@ public class AnswerFromYandex extends Components{
 	@FindBy(xpath=NOT_ACTUAL_ANSWER)
 	private WebElement notActualAnswer;
 	
-	@FindBy(xpath = "//span[@class='nb-input__content']/input[@name='login']")
+	@FindBy(xpath = "//input[@id='b-mail-domik-username11']")
 	private WebElement loginField;
 	
-	@FindBy(xpath = "//span[@class='nb-input__content']/input[@name='passwd']")
+	@FindBy(xpath = "//input[@id='b-mail-domik-password11']")
 	private WebElement passwordField;	
 		
-	@FindBy(xpath = "//span[@class='new-auth-submit new-auth-form-line__item nb-gap_right_s']/button")
+	@FindBy(xpath = "//input[@class='b-mail-button__button']")
 	private WebElement logginButton;
 	
-	public AnswerFromYandex(WebDriver driver){
-		this.driver=driver;
-		PageFactory.initElements(driver, this);	
+	public AnswerFromYandex(){
+		this.driver = WebDriverFactory.initDriver("chrome");
+		driver.get(yandex);	
+		PageFactory.initElements(driver, this);		
 	}
 	
 	public void logOn(){
 		
-		driver.get(yandex);	
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		loginField.sendKeys(login);
 		passwordField.sendKeys(password);
@@ -61,7 +62,10 @@ public class AnswerFromYandex extends Components{
 		
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		clickElement(notActualAnswer,"not Actual Answer");
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		waiting(2000);
+		
+		driver.close();
+		driver.quit();
 	}
 	
 }

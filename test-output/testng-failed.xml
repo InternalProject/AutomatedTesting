@@ -5,8 +5,16 @@
     <classes>
       <class name="com.epam.testexternalpart.tests.SmokeTest">
         <methods>
+<<<<<<< HEAD
           <include name="init"/>
           <include name="checkSubgroupPage"/>
+=======
+          <include name="checkConcretSubgroup"/>
+          <include name="checkElAllCandiadtesMenu" invocation-numbers="0"/>
+          <include name="init"/>
+          <include name="tearDown"/>
+          <include name="startPage"/>
+>>>>>>> 04fefd145a61dfe210c7e947c9fca190f0809118
         </methods>
       </class> <!-- com.epam.testexternalpart.tests.SmokeTest -->
     </classes>
