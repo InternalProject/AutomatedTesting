@@ -3,7 +3,9 @@ package com.epam.testexternalpart.screen;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -76,7 +78,7 @@ public class Components {
 	  public  void clickElement(WebElement webElement, String item) {
 		  TestReporter.writeToReportTitle("Click on ["+item+"]");
 		  waiting(SHORT_TIME);
-          (new WebDriverWait(driver, LONG_TIME)).until(ExpectedConditions.elementToBeClickable(webElement)).click();
+          (new WebDriverWait(driver, LONG_TIME).ignoring(StaleElementReferenceException.class, ElementNotVisibleException.class)).until(ExpectedConditions.elementToBeClickable(webElement)).click();
 	    }
 	  
 	  

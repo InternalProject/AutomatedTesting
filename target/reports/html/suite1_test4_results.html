@@ -12,58 +12,46 @@
 <body>
 <h1>CandidateTest</h1>
 <p>
-  Test duration: 1827,573s
+  Test duration: 0,010s
 </p>
 
-
-
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">com.epam.testexternalpart.tests.AddCandidateTest</td>
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">com.epam.testexternalpart.tests.AddCandidateTest</td>
       </tr>
             
 <tr>
   <td class="method">
-                  bannWithButton
+                  init
       </td>
   <td class="duration">
-    9,805s
+    0,000s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">"Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;"</span><br />
     
-            <div class="testOutput">
-                        <br /><b><font size = 2 color = #000099>Chech Ban button work</font></b><br/>
-                                <br /><font size = 2 color = #000000>Click on [First stream on first dep]</font>
-                                <br><b><font size = 2 color = #000000>1-Create candidate</font></b><br>
-                                <br /><font size = 2 color = #000000>Click on [addCandidateBut]</font>
-                                <br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;</font>
-                                <br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Create Profile Create Button]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Create Profile Create Button]is Not Present</font>
-                                <br /><font size = 2 color = #000000>Check if new candidate was added</font>
-                  </div>
-    
+        
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Wrong data in new cand expected [true] but found [false]</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.IllegalStateException: The driver executable does not exist: D:\AutomatedTesting\target\test-classes\chromedriver.exe</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.testng.Assert.fail(Assert.java:94)<br />
-              org.testng.Assert.failNotEquals(Assert.java:494)<br />
-              org.testng.Assert.assertTrue(Assert.java:42)<br />
-              com.epam.testexternalpart.screen.stream.StreamPage.checkCandExisting(StreamPage.java:489)<br />
-              com.epam.testexternalpart.tests.AddCandidateTest.bannWithButton(AddCandidateTest.java:86)<br />
+              com.google.common.base.Preconditions.checkState(Preconditions.java:197)<br />
+              org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)<br />
+              org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)<br />
+              org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:89)<br />
+              org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:117)<br />
+              com.epam.testexternalpart.core.WebDriverFactory.initDriver(WebDriverFactory.java:18)<br />
+              com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:72)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
               java.lang.reflect.Method.invoke(Method.java:606)<br />
               org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br />
+              org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)<br />
               org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
               org.testng.TestRunner.run(TestRunner.java:617)<br />
               org.testng.SuiteRunner.runTest(SuiteRunner.java:348)<br />
@@ -82,82 +70,105 @@
               org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)<br />
               org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)<br />
                 </div>
+      </td>
+</tr>
+    
+          <tr><td colspan="3">&nbsp;</td></tr>
+      <tr><td colspan="3" class="header skippedConfig">Skipped Configuration</td></tr>
+                    <tr>
+          <td colspan="3" class="group">com.epam.testexternalpart.tests.AddCandidateTest</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0,000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
       </td>
 </tr>
 <tr>
   <td class="method">
-                  deleteAllCandidates
+                  startPage
       </td>
   <td class="duration">
-    0,016s
+    0,000s
   </td>
   <td class="result">
+                               
+    
         
-          <i>Method arguments: </i><span class="arguments">"No matching records found"</span><br />
-    
-            <div class="testOutput">
-                        <br /><b><font size = 2 color = #000099>Delete all Candidates</font></b><br/>
-                  </div>
-    
 
-        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element<br/>
-&nbsp; (Session info: chrome=39.0.2171.95)<br/>
-&nbsp; (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 16 milliseconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;<br/>
-Session ID: bf68ad7e4f7fee82515e59145cd020a1<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir5552_7086}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]</b></a><br />
-    <div class="stackTrace" id="exception-1">
-              sun.reflect.GeneratedConstructorAccessor37.newInstance(Unknown Source)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:526)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)<br />
-              org.openqa.selenium.By$ByXPath.findElement(By.java:357)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
-              com.epam.testexternalpart.screen.departments.Departments.getTableEl(Departments.java:248)<br />
-              com.epam.testexternalpart.tests.AddCandidateTest.deleteAllCandidates(AddCandidateTest.java:34)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:606)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
-              org.testng.TestRunner.run(TestRunner.java:617)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:348)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:254)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
-              org.testng.TestNG.run(TestNG.java:1057)<br />
-              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)<br />
-              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)<br />
-              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)<br />
-              org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)<br />
-              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)<br />
-              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)<br />
-                </div>
       </td>
 </tr>
-      </table>
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0,000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0,000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  startPage
+      </td>
+  <td class="duration">
+    0,000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  tearDown
+      </td>
+  <td class="duration">
+    0,000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+            </table>
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
           <tr>
         <td colspan="3" class="group">com.epam.testexternalpart.tests.AddCandidateTest</td>
       </tr>
@@ -167,38 +178,13 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
                   addCandidate
       </td>
   <td class="duration">
-    10,482s
+    0,000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">"; ; ; ; ; ;"</span><br />
     
-            <div class="testOutput">
-                        <br /><b><font size = 2 color = #000099>Check the possibility of adding ñandidate manually whith wrong data</font></b><br/>
-                                <br /><font size = 2 color = #000000>Click on [First stream on first dep]</font>
-                                <br /><font size = 2 color = #000000>Click on [addCandidateBut]</font>
-                                <br /><font size = 2 color = #000000>Click on [formButtCreate]</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Error mess ¹0]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Error mess ¹0]is Present</font>
-                                <br /><font size = 2 color = #000000>Click on [formButtCreate]</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Error mess ¹1]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Error mess ¹1]is Present</font>
-                                <br /><font size = 2 color = #000000>Click on [formButtCreate]</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Error mess ¹2]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Error mess ¹2]is Present</font>
-                                <br /><font size = 2 color = #000000>Click on [formButtCreate]</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Error mess ¹3]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Error mess ¹3]is Present</font>
-                                <br /><font size = 2 color = #000000>Click on [formButtCreate]</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Error mess ¹4]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Error mess ¹4]is Present</font>
-                                <br /><font size = 2 color = #000000>Click on [formButtCreate]</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Error mess ¹5]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Error mess ¹5]is Present</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [formButtCreate]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[formButtCreate]is Present</font>
-                  </div>
-    
+        
 
       </td>
 </tr>
@@ -207,29 +193,28 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
                   addCandidateManually
       </td>
   <td class="duration">
-    12,956s
+    0,000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">"Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;"</span><br />
     
-            <div class="testOutput">
-                        <br /><b><font size = 2 color = #000099>Check the possibility of adding ñandidate manually</font></b><br/>
-                                <br /><font size = 2 color = #000000>Click on [First stream on first dep]</font>
-                                <br /><font size = 2 color = #000000>Click on [addCandidateBut]</font>
-                                <br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;</font>
-                                <br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Create Profile Create Button]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Create Profile Create Button]is Not Present</font>
-                                <br /><font size = 2 color = #000000>Check if new candidate was added</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>
-                                <br /><font size = 2 color = #000000>Click on [check-box of last cand]</font>
-                                <br /><font size = 2 color = #000000>Click on [deleteButton]</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [delCandPopAp]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[delCandPopAp]is Present</font>
-                                <br /><font size = 2 color = #000000>Click on [deleteCandPopApButton]</font>
-                  </div>
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  bannWithButton
+      </td>
+  <td class="duration">
+    0,000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;"</span><br />
     
+        
 
       </td>
 </tr>
@@ -238,86 +223,33 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
                   changeStatus
       </td>
   <td class="duration">
-    1787,483s
+    0,000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">"Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;", "confirmed", "test completed", "not actual", "banned", "1;Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;"</span><br />
     
-            <div class="testOutput">
-                        <br /><b><font size = 2 color = #000099>Change  Candidat's status manually</font></b><br/>
-                                <br><b><font size = 2 color = #000000>1-Create candidate</font></b><br>
-                                <br /><font size = 2 color = #000000>Click on [First stream on first dep]</font>
-                                <br /><font size = 2 color = #000000>Click on [addCandidateBut]</font>
-                                <br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;</font>
-                                <br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Create Profile Create Button]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Create Profile Create Button]is Not Present</font>
-                                <br /><font size = 2 color = #000000>Check if new candidate was added</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>
-                                <br><b><font size = 2 color = #000000>2-Check candidat's displaying on "Not tested" tab</font></b><br>
-                                <br /><font size = 2 color = #000000>Click on [notTestedCandidate]</font>
-                                <br /><font size = 2 color = #000000>Check if new candidate was added</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>
-                                <br><b><font size = 2 color = #000000>4-Check candidat's displaying on "confirmed" tab</font></b><br>
-                                <br /><font size = 2 color = #000000>Checking that double click on selected candidate reffering to Candidate View Page</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>
-                                <br /><font size = 2 color = #000000>Check Candidate View Page transfering to Edit Candidate</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Tittle]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Tittle]is Not Present</font>
-                                <br /><font size = 2 color = #000000>Click on [Save button]</font>
-                                <br /><font size = 2 color = #000000>Click on [crumbs button]</font>
-                                <br /><font size = 2 color = #000000>Click on [notTestedCandidate]</font>
-                                <br /><font size = 2 color = #000000>Check if new candidate was added</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>
-                                <br><b><font size = 2 color = #000000>4-Check candidat's displaying on "test completed" tab</font></b><br>
-                                <br /><font size = 2 color = #000000>Checking that double click on selected candidate reffering to Candidate View Page</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>
-                                <br /><font size = 2 color = #000000>Check Candidate View Page transfering to Edit Candidate</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Tittle]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Tittle]is Not Present</font>
-                                <br /><font size = 2 color = #000000>Click on [Save button]</font>
-                                <br /><font size = 2 color = #000000>Click on [crumbs button]</font>
-                                <br /><font size = 2 color = #000000>Click on [notTestedCandidate]</font>
-                                <br /><font size = 2 color = #000000>Check if new candidate was added</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>
-                                <br><b><font size = 2 color = #000000>5-Check candidat's displaying on "not actual" tab</font></b><br>
-                                <br /><font size = 2 color = #000000>Checking that double click on selected candidate reffering to Candidate View Page</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>
-                                <br /><font size = 2 color = #000000>Check Candidate View Page transfering to Edit Candidate</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Tittle]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Tittle]is Not Present</font>
-                                <br /><font size = 2 color = #000000>Click on [Save button]</font>
-                                <br /><font size = 2 color = #000000>Click on [crumbs button]</font>
-                                <br /><font size = 2 color = #000000>Click on [notTestedCandidate]</font>
-                                <br /><font size = 2 color = #000000>Check if new candidate was added</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>
-                                <br><b><font size = 2 color = #000000>6-Check candidat's displaying on "Banned" tab</font></b><br>
-                                <br /><font size = 2 color = #000000>Checking that double click on selected candidate reffering to Candidate View Page</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [add Candidate Button]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[add Candidate Button]is Not Present</font>
-                                <br /><font size = 2 color = #000000>Check Candidate View Page transfering to Edit Candidate</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [Profile Tittle]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Profile Tittle]is Not Present</font>
-                                <br /><font size = 2 color = #000000>Click on [Save button]</font>
-                                <br /><font size = 2 color = #000000>Click on [crumbs button]</font>
-                                <br /><font size = 2 color = #000000>Click on [BannedTab]</font>
-                                <br /><font size = 2 color = #000000>Check if new candidate was added</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;candidate was added</font>
-                                <br /><font size = 2 color = #000000>Click on [check-box of last cand]</font>
-                                <br /><font size = 2 color = #000000>Click on [deleteButton]</font>
-                                <br /><font size = 2 color = #000000>Checking the presence of the elemen [delCandPopAp]</font>
-                                <br /><font size = 2 color = #347C17>&nbsp;&nbsp;[delCandPopAp]is Present</font>
-                                <br /><font size = 2 color = #000000>Click on [deleteCandPopApButton]</font>
-                  </div>
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  deleteAllCandidates
+      </td>
+  <td class="duration">
+    0,010s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"No matching records found"</span><br />
     
+        
 
       </td>
 </tr>
       </table>
+
   
 </body>
 </html>
