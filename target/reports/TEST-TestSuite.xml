@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0" errors="0" skipped="0" tests="0" name="TestSuite">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="419.357" tests="36" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre7\bin"/>
@@ -21,12 +21,11 @@
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre7\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\Olha_Myroliubova\AppData\Local\Temp\"/>
-    <property name="line.separator" value="
-"/>
+    <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="D:\extPr\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3856827077298416405.tmp"/>
+    <property name="classworlds.conf" value="D:\extPr\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8931132454990998098.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
     <property name="java.library.path" value="C:\Program Files\Java\jre7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.7.0_67;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Subversion\bin;C:\Program Files\TortoiseGit\bin;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,4 +60,149 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
+  <testcase name="checkAddStreamAccordingToDepartment" classname="com.epam.testexternalpart.tests.SmokeTest" time="18.939"/>
+  <testcase name="checkConcretSubgroup" classname="com.epam.testexternalpart.tests.SmokeTest" time="2.46">
+    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=39.0.2171.99)&#10;  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 14 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;&#10;System info: host: &apos;EPUAKHAW0329&apos;, ip: &apos;10.23.12.108&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;&#10;Session ID: f3995f48829b802444ec1544f6737be6&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir7308_3717}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=39.0.2171.99)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: f3995f48829b802444ec1544f6737be6
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir7308_3717}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteExecuteMethod.execute(RemoteExecuteMethod.java:34)
+	at org.openqa.selenium.remote.RemoteMouse.mouseMove(RemoteMouse.java:88)
+	at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)
+	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)
+	at com.epam.testexternalpart.tests.SmokeTest.checkConcretSubgroup(SmokeTest.java:176)
+</failure>
+    <system-out><![CDATA[[Invoker 1866836963] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@6a4f0359] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
+[Invoker 1866836963] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@6a4f0359] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
+[Invoker 1866836963] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@6a4f0359]
+[Invoker 1866836963] Invoking com.epam.testexternalpart.tests.SmokeTest.checkConcretSubgroup
+Click on [Click on settingsButton]
+Click on [Click on subgroupsButton]
+]]></system-out>
+  </testcase>
+  <testcase name="checkElAllCandiadtesMenu" classname="com.epam.testexternalpart.tests.SmokeTest" time="46.543"/>
+  <testcase name="checkElStreamPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="51.116"/>
+  <testcase name="checkElementsAddCandidate" classname="com.epam.testexternalpart.tests.SmokeTest" time="3.381"/>
+  <testcase name="checkElementsEditCandidate" classname="com.epam.testexternalpart.tests.SmokeTest" time="6.662"/>
+  <testcase name="checkElementsPresentAddDepartmentPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0.415"/>
+  <testcase name="checkElementsPresentAddStreamPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0.8"/>
+  <testcase name="checkElementsPresentDepartmentPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0.202"/>
+  <testcase name="checkElementsViewCandidate" classname="com.epam.testexternalpart.tests.SmokeTest" time="48.034"/>
+  <testcase name="checkEmailTemplatesPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="8.012"/>
+  <testcase name="checkMailSettingsMenu" classname="com.epam.testexternalpart.tests.SmokeTest" time="0"/>
+  <testcase name="checkMenu" classname="com.epam.testexternalpart.tests.SmokeTest" time="0.33"/>
+  <testcase name="checkSubgroupPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="2.631">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.epam.testexternalpart.screen.Components.checkElementPartialText(Components.java:130)
+	at com.epam.testexternalpart.screen.AllSubgroupPage.checkTextPresent(AllSubgroupPage.java:75)
+	at com.epam.testexternalpart.tests.SmokeTest.checkSubgroupPage(SmokeTest.java:167)
+</failure>
+    <system-out><![CDATA[[Invoker 1866836963] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@6a4f0359] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
+[Invoker 1866836963] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@6a4f0359] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
+[Invoker 1866836963] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@6a4f0359]
+[Invoker 1866836963] Invoking com.epam.testexternalpart.tests.SmokeTest.checkSubgroupPage
+Check all elements are present on Subgroup Page
+Click on [Click on settingsButton]
+Click on [Click on subgroupsButton]
+Check the presence of all elements on Subgroup Page
+Checking the presence of the elemen [Subgroup table ]
+[Subgroup table ]is Present
+Checking the presence of the elemen [Import_button ]
+[Import_button ]is Present
+Checking the presence of the elemen [Table thead ]
+[Table thead ]is Present
+Checking the presence of the elemen [Choose button ]
+[Choose button ]is Present
+All elements are present on Subgroup Page
+Check the presence of all text on Subgroup Page
+Checking text of element All Subgroups title
+Text of [All Subgroups title] is correct
+Checking partial text of element Crumbs
+]]></system-out>
+  </testcase>
+  <testcase name="testAddDepartment" classname="com.epam.testexternalpart.tests.DepartmentTest" time="0.423"/>
+  <testcase name="testAddDepartmentWithValidName" classname="com.epam.testexternalpart.tests.DepartmentTest" time="3.226"/>
+  <testcase name="testEditDepartmentName" classname="com.epam.testexternalpart.tests.DepartmentTest" time="5.166"/>
+  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="2.816"/>
+  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="2.462"/>
+  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="2.425"/>
+  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="2.421"/>
+  <testcase name="testAddNewValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="5.045"/>
+  <testcase name="testAddNewValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="4.925"/>
+  <testcase name="testEditStream" classname="com.epam.testexternalpart.tests.StreamTest" time="2.463"/>
+  <testcase name="testEditStream" classname="com.epam.testexternalpart.tests.StreamTest" time="2.425"/>
+  <testcase name="addCandidate" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="10.284"/>
+  <testcase name="addCandidateManually" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="13.031"/>
+  <testcase name="bannWithButton" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="22.501"/>
+  <testcase name="changeStatus" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="56.366"/>
+  <testcase name="deleteAllCandidates" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="12.937"/>
+  <testcase name="addCandidateToSeveralDepartment" classname="com.epam.testexternalpart.tests.SeveralStreamTest" time="6.366">
+    <failure message="Index: 2, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 2, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:38)
+	at com.sun.proxy.$Proxy10.get(Unknown Source)
+	at com.epam.testexternalpart.tests.SeveralStreamTest.addCandidateToSeveralDepartment(SeveralStreamTest.java:16)
+</failure>
+    <system-out><![CDATA[[Invoker 1866836963] Keeping method BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7d7ca0f5] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
+[Invoker 1866836963] Invoking @AfterClass BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7d7ca0f5]
+===== Invoked methods
+  BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7d7ca0f5] 2105319669
+    AddCandidateTest.addCandidate(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7d7ca0f5]; ; ; ; ; ;  2105319669
+    AddCandidateTest.addCandidateManually(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7d7ca0f5]Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;  2105319669
+    AddCandidateTest.bannWithButton(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7d7ca0f5]Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;  2105319669
+    AddCandidateTest.changeStatus(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7d7ca0f5]Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345; confirmed test completed not actual banned 1;Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;  2105319669
+    AddCandidateTest.deleteAllCandidates(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7d7ca0f5]No matching records found  2105319669
+  BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7d7ca0f5] 2105319669
+=====
+[TestRunner] Running test SeveralStreamTest on 1  classes,  included groups:[] excluded groups:[]
+===== Test class
+com.epam.testexternalpart.tests.SeveralStreamTest
+  @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@76c4db49]
+  @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@76c4db49]
+    @Test SeveralStreamTest.addCandidateToSeveralDepartment(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@76c4db49]
+  @AfterClass BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@76c4db49]
+======
+[Invoker 1866836963] Keeping method BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@76c4db49] for class [TestClass name=class com.epam.testexternalpart.tests.SeveralStreamTest]
+[Invoker 1866836963] Invoking @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@76c4db49]
+[Invoker 1866836963] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@76c4db49] for class [TestClass name=class com.epam.testexternalpart.tests.SeveralStreamTest]
+[Invoker 1866836963] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@76c4db49] for class [TestClass name=class com.epam.testexternalpart.tests.SeveralStreamTest]
+[Invoker 1866836963] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@76c4db49]
+[Invoker 1866836963] Invoking com.epam.testexternalpart.tests.SeveralStreamTest.addCandidateToSeveralDepartment
+Click on [Click first_stream]
+Click on [Click addCandidateButton]
+Creating new candidate with fields-Harry;Potter;James;02.12.2013;sdhgjshg1j@mail.ru;+380505465345;
+Click on [Click Create Candidate Button]
+Checking the presence of the elemen [Create Profile Create Button]
+[Create Profile Create Button]is Not Present
+Click on [Click on crumbs]
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver (v2.9.248315) on port 7903
+]]></system-err>
+  </testcase>
+  <testcase name="allCandidatesSearch" classname="com.epam.testexternalpart.tests.SearchTest" time="35.205"/>
+  <testcase name="streamSearch" classname="com.epam.testexternalpart.tests.SearchTest" time="33.452"/>
+  <testcase name="addNewPlaceForTesting" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="9.117"/>
+  <testcase name="deleteNewPlaceForTesting" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="3.235"/>
+  <testcase name="editNewPlaceForTesting" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="8.199"/>
 </testsuite>

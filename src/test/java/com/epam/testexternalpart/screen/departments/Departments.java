@@ -79,7 +79,7 @@ public class Departments extends Components implements CheckerData{
 
 	
 	public Departments(WebDriver driver) {
-		this.driver = driver;
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 

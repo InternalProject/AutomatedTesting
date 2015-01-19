@@ -1,4 +1,49 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.368 sec
+Tests run: 36, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 483.967 sec <<< FAILURE! - in TestSuite
+checkConcretSubgroup(com.epam.testexternalpart.tests.SmokeTest)  Time elapsed: 2.46 sec  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=39.0.2171.99)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: f3995f48829b802444ec1544f6737be6
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir7308_3717}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteExecuteMethod.execute(RemoteExecuteMethod.java:34)
+	at org.openqa.selenium.remote.RemoteMouse.mouseMove(RemoteMouse.java:88)
+	at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)
+	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)
+	at com.epam.testexternalpart.tests.SmokeTest.checkConcretSubgroup(SmokeTest.java:176)
+
+checkSubgroupPage(com.epam.testexternalpart.tests.SmokeTest)  Time elapsed: 2.631 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.epam.testexternalpart.screen.Components.checkElementPartialText(Components.java:130)
+	at com.epam.testexternalpart.screen.AllSubgroupPage.checkTextPresent(AllSubgroupPage.java:75)
+	at com.epam.testexternalpart.tests.SmokeTest.checkSubgroupPage(SmokeTest.java:167)
+
+addCandidateToSeveralDepartment(com.epam.testexternalpart.tests.SeveralStreamTest)  Time elapsed: 6.366 sec  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 2, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:38)
+	at com.sun.proxy.$Proxy10.get(Unknown Source)
+	at com.epam.testexternalpart.tests.SeveralStreamTest.addCandidateToSeveralDepartment(SeveralStreamTest.java:16)
+

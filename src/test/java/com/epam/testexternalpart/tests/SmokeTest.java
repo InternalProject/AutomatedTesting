@@ -1,5 +1,7 @@
 package com.epam.testexternalpart.tests;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import com.epam.testexternalpart.core.BaseTest;
@@ -110,10 +112,12 @@ public class SmokeTest extends BaseTest{
 		TestReporter.writeToReportHeader("Check all elements are present on CandiadtesMenu");
 		
 		menuComp.clickElement(menuComp.allCandidatesButton,"allCandidatesButton");
+
 		pageAllCandidate.checkTextPresent();
 		pageAllCandidate.checkElementsPresent();
 		pageAllCandidate.checkElementsPresent(nameColumn);
 		pageAllCandidate.checkColumnsAccordingToCheckBox();			
+
 	}
 	
 	@Test
@@ -150,6 +154,28 @@ public class SmokeTest extends BaseTest{
 		
 		TestReporter.writeToReportHeader("Check all elements are present on Mail Settings Page");
 			
+	}
+	
+	@Test
+	public void checkSubgroupPage(){
+		
+		TestReporter.writeToReportHeader("Check all elements are present on Subgroup Page");
+
+		menuComp.clickElement(menuComp.settingsButton, "Click on settingsButton");
+		menuComp.clickElement(menuComp.subgroupsButton, "Click on subgroupsButton");
+		pageAllSubgroup.checkElementsPresent();
+		pageAllSubgroup.checkTextPresent();
+	}
+	
+	@Test
+	public void checkConcretSubgroup(){
+		
+		menuComp.clickElement(menuComp.settingsButton, "Click on settingsButton");
+		menuComp.clickElement(menuComp.subgroupsButton, "Click on subgroupsButton");
+		Actions actions = new Actions(driver);
+		actions.moveToElement(driver.findElement(By.xpath("//table[@id='tableSubgroups']//tbody//tr[1]"))).doubleClick().build().perform();
+		//pageAllSubgroup.clickOnSubgroups();
+		TestReporter.writeToReportPositiveResult("Check each subgroup on Separtment Page is exist");
 	}
 	
 }

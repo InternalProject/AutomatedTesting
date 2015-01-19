@@ -21,6 +21,8 @@ import com.epam.testexternalpart.screen.AllCandidatesPage;
 import com.epam.testexternalpart.screen.LoginPage;
 import com.epam.testexternalpart.screen.Menu;
 import com.epam.testexternalpart.screen.PlaceForTestingPage;
+import com.epam.testexternalpart.screen.AllSubgroupPage;
+import com.epam.testexternalpart.screen.SubgroupPage;
 import com.epam.testexternalpart.screen.TemplatePage;
 import com.epam.testexternalpart.screen.departments.AddDepartmentPage;
 import com.epam.testexternalpart.screen.departments.Departments;
@@ -61,6 +63,8 @@ public abstract class BaseTest {
 	protected AssignToTestPage pageAssignTest;
 	protected PlaceForTestingPage pagePlaceForTesting;
 	protected TemplatePage pageTemplates;
+	protected AllSubgroupPage pageAllSubgroup;
+	protected SubgroupPage pageSubgroup;
 
 	
 	@BeforeClass
@@ -88,6 +92,8 @@ public abstract class BaseTest {
 		pageAssignTest = new AssignToTestPage(driver);
 		pagePlaceForTesting = new PlaceForTestingPage(driver);
 		pageTemplates = new TemplatePage(driver);
+		pageAllSubgroup = new AllSubgroupPage(driver);
+		pageSubgroup = new SubgroupPage(driver);
 	}
 	
 
@@ -106,9 +112,7 @@ public abstract class BaseTest {
 		String b = testMethod.getDeclaringClass().getSimpleName();
 		int numberOfParameters = testMethod.getParameterTypes().length;
 
-
 		String path = "D:/extPr/TestExternalPart/AutomatedTesting/data/" + b + ".xlsx";
-
 
 		try {
 			FileInputStream file = new FileInputStream(path);

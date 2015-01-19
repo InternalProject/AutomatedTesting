@@ -8,7 +8,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.epam.testexternalpart.core.WebDriverFactory;
 import com.epam.testexternalpart.screen.Components;
+import com.epam.testexternalpart.screen.TemplatePage;
+import com.gargoylesoftware.htmlunit.WebWindow;
 
 public class AnswerFromIUa extends Components{
 
@@ -16,26 +19,26 @@ public class AnswerFromIUa extends Components{
 	final static String login = "pupkin379";
 	final static String password = "pupkin379p";
 	
-	String templateDublicateAnswer = "Уважаемый кандидат! "
-			+ "Хотим Вам напомнить, что вы уже отвечали на письмо от EPAM Training Center. " 
-			+ "К сожалению, Вы не можете изменить предыдущий ответ. "
-			+ "Если у Вас возникли вопросы или Вы хотите пройти тестирование"
-			+ " в другой день, Вы можете связаться с нами по указанным ниже контактам: "
-			+ "Ирина Савченко "
-			+ "Skype: iryna.savchenko1006 "
-			+ "E-mail: Iryna_Savchenko@epam.com";
-	
 	//private static final String INPUT_BOX_ROW = "//tr[@class='message unread']/td[@class='from']/a/span[text() ='auto_epm-farm_kppp@epam.com']";
 	private static final String INPUT_BOX_ROW = "//div[@class='row new']/a/span[text() ='Rostyslav_Biletskyi@epam.com']";
 	private static final String BODY_MESSAGE= "//div[@class='message_body']";
 	
 	private static final String INPUT_BOX = "//ul[@id='folderInbox']/li/a/span[@class='sidebar-item-name']";
-	private static final String READ_MESSAGES = "//a/span[text()='Rostyslav_Biletskyi@epam.com']";
-	
+	private static final String READ_MESSAGES = "//span[text() ='Rostyslav_Biletskyi@epam.com']";
+	private static final String SETTINGS_BUTTON = "//li/span[@class='icon-ho ho_settings']";
+	private static final String LOGOUT_BUTTON = "//div[@id='accountSettingsPopup']/ul/li[last()]/a";
+	private static final String LOGIN = "//input[@name='login']";
+
 	
 	private static final String CONFIRMED_ANSWER = "//div[@class='message_body']/pre/a[3]";
 	private static final String NOT_ACTUAL_ANSWER = "//div[@class='message_body']/pre/a[4]";
 	private static final String NEW_TIME_ANSWER = "//div[@class='message_body']/pre/a[5]";
+	
+	@FindBy(xpath=SETTINGS_BUTTON)
+	private WebElement settingsButton;
+	
+	@FindBy(xpath=LOGOUT_BUTTON)
+	private WebElement logoutButton;
 	
 	@FindBy(xpath=INPUT_BOX)
 	private WebElement inputBox;
@@ -52,7 +55,7 @@ public class AnswerFromIUa extends Components{
 	@FindBy(xpath=CONFIRMED_ANSWER)
 	private WebElement confirmedAnswer;
 	
-	@FindBy(name="login")
+	@FindBy(xpath=LOGIN)
 	private WebElement loginField;
 	
 	@FindBy(name = "pass")
@@ -64,15 +67,14 @@ public class AnswerFromIUa extends Components{
 	@FindBy(xpath = "//input[@value='Войти']")
 	private WebElement logginButton;
 	
-	public AnswerFromIUa(WebDriver driver){
-		this.driver = driver;
-		PageFactory.initElements(driver, this);			
+	public AnswerFromIUa(){
+		this.driver = WebDriverFactory.initDriver("chrome");
+		driver.get(iUa);
+		PageFactory.initElements(driver, this);	
 	}
 	
-	public void logOn(){
+	public void logOn(){	
 		
-		driver.navigate().to(iUa);
-        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(loginField));
 		loginField.sendKeys(login);
 		passwordField.sendKeys(password);
 		clickElement(logginButton,"logginButton");
@@ -80,30 +82,43 @@ public class AnswerFromIUa extends Components{
 	
 	public void enterIntoUnreadMessage(){
 		
-		clickElement(inputBoxRow,"inputBoxRow");
+		clickElement(inputBoxRow,"inputBoxRow");		
 	}
 	
 	public void enterIntoReadMessage(){
 		
-		clickElement(readMessages, "click readMessages");
+        clickElement(readMessages,"readMessages");
 	}
 	
 	public void responseConfirmedAnswer(){
 		
-		clickElement(confirmedAnswer,"confirmed Answer");
+		clickElement(confirmedAnswer,"confirmed Answer");	
+		waiting(2000);
+		clickElement(settingsButton, "settingsButton");
+		clickElement(logoutButton, "logoutButton");
 		
+		waiting(2000);
+
+		driver.close();
+		driver.quit();
 	}	
 
 	public void checkDublicateAnswerMessage() {
 		
 		String bodyOfMessage= bodyMessage.getText();
-		String []body = bodyOfMessage.trim().split("\\s+");
-		String []template = templateDublicateAnswer.trim().split("\\s+");		
+		String []body = bodyOfMessage.trim().split("\\s+");		
 		
-		for (int i = 0; i < body.length; i++){			
+		String []template = TemplatePage.templateAnswerDuplication.trim().split("\\s+");		
+					
+		for (int i = 0; i < template.length; i++){			
 			Assert.assertTrue(body[i].equals(template[i]));
-		}		
-			}
+		}	
+		
+		waiting(2000);
+
+		driver.close();
+		driver.quit();
+	}
 	
 	
 }

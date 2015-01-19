@@ -37,30 +37,26 @@ public class Menu extends Components{
 	public WebElement allCandidatesButton;
 	
 	@FindBy(xpath = SETTINGS)
-	private WebElement settingsButton;
+	public WebElement settingsButton;
 	
 	@FindBy(xpath = PLACES_FOR_TESTING_BUTTON)
 	public WebElement placeForTestingButton;
 	
 	@FindBy(xpath = SUBGROUP_BUTTON)
-	private WebElement subgroupsButton;
+	public WebElement subgroupsButton;
 	
 	@FindBy(xpath = EMAIL_TEMPLATES)
-	private WebElement emailTemplatesButtton;
+	public WebElement emailTemplatesButtton;
 	
 	@FindBy(xpath = MAIL_SETTINGS_BUTTON)
 	private WebElement mailSettingsButton;
 	
 	@FindBy(xpath = SEARCH_INPUT)
-
-	public WebElement searchInput;
-	
-	
-	
+	public WebElement searchInput;	
 
 	public Menu(WebDriver driver){
-	this.driver=driver;
-	PageFactory.initElements(driver, this);
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
 	}
 
 	public void checkElementsPresent() {

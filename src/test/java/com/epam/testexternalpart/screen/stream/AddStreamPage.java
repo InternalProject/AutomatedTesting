@@ -97,7 +97,6 @@ public class AddStreamPage extends Components implements CheckerData{
 	private WebElement submitButton;
 	
 	public AddStreamPage(WebDriver driver) {
-		
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}

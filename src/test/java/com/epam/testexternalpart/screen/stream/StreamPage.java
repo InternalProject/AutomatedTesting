@@ -622,6 +622,7 @@ public class StreamPage extends Components implements CheckerData {
 		List<WebElement> row;
 		Boolean flag = false;
 		   
+        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(assignTestButton));
 		row = driver.findElements(By.xpath(STREAM_TABLE_ROW + "[" + i + "]/td"));
 		for (String currentField : fields){	
 			for (WebElement el : row){		

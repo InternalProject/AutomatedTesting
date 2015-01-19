@@ -13,13 +13,10 @@ public class WebDriverFactory {
 	public static WebDriver initDriver(String browserName) {
 		if(browserName.contentEquals("chrome")) {
 
-
-
 			System.setProperty("webdriver.chrome.driver", "D:/extPr/TestExternalPart/AutomatedTesting/chromedriver.exe");
 
-
 			driver = new ChromeDriver();
-		   	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		   	//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			driver.manage().deleteAllCookies();
 			return driver;
 		
