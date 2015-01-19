@@ -600,8 +600,8 @@ public class StreamPage extends Components implements CheckerData {
 	}
 
 	public void selectCandidatesForTest() {		
-		 
-        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(checkboxForAll));
+		
+		waiting(2000);
 		clickElement(checkboxForAll, "Select cabdidates to assigning to test");	
 		
         (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(assignTestButton));
@@ -622,7 +622,7 @@ public class StreamPage extends Components implements CheckerData {
 		List<WebElement> row;
 		Boolean flag = false;
 		   
-        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(assignTestButton));
+		waiting(1000);
 		row = driver.findElements(By.xpath(STREAM_TABLE_ROW + "[" + i + "]/td"));
 		for (String currentField : fields){	
 			for (WebElement el : row){		

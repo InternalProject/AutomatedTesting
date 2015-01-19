@@ -97,20 +97,9 @@ public class AssigningToTest extends BaseTest{
 		pageDepartment.clickSelectedStream(streamName);
 		pageStream.clickNotTestedTab();
 		pageStream.checkCandidates(candidateFields, row);	
-	}
-
-	@Test(priority = 10)
-	public void checkDublicateAnswer(){	
-		
-		pageTemplates.getTextDuplicateAnswer();
-		
-		pageIUa = new AnswerFromIUa();	
-		pageIUa.logOn();
-		pageIUa.enterIntoUnreadMessage();
-		pageIUa.checkDublicateAnswerMessage();
 	}	
 	
-	@Test(dataProvider = "testData", priority = 11)
+	@Test(dataProvider = "testData", priority = 10)
 	public void invitateSecondTime(String streamName){	
 				
 		pageDepartment.clickSelectedStream(streamName);
@@ -123,6 +112,17 @@ public class AssigningToTest extends BaseTest{
 		pageRambler.enterIntoUnreadMessage();
 		pageRambler.responseNewTimeAnswer();
 	}
+	
+	@Test(priority = 11)
+	public void checkDublicateAnswer(){	
+		
+		pageTemplates.getTextDuplicateAnswer();
+		
+		pageIUa = new AnswerFromIUa();	
+		pageIUa.logOn();
+		pageIUa.enterIntoUnreadMessage();	
+		pageIUa.checkDublicateAnswerMessage();
+	}	
 	
 	@Test(dataProvider = "testData", priority = 12)
 	public void invitateThirdTime(String streamName){	

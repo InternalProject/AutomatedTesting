@@ -72,7 +72,7 @@ public class AllSubgroupPage extends Components implements CheckerData{
 		TestReporter.writeToReportStep("Check the presence of all text on Subgroup Page");
 
 		checkElementText("All Subgroups", "All Subgroups title", tittle);
-		checkElementPartialText("Candidates pagination", "Crumbs", crumbs);
+		checkElementPartialText("Subgroups pagination", "Crumbs", crumbs);
 		
 		TestReporter
 		.writeToReportPositiveResult("All text on Subgroup Page is present");		

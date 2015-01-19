@@ -167,15 +167,15 @@ public class SmokeTest extends BaseTest{
 		pageAllSubgroup.checkTextPresent();
 	}
 	
-	@Test
-	public void checkConcretSubgroup(){
-		
-		menuComp.clickElement(menuComp.settingsButton, "Click on settingsButton");
-		menuComp.clickElement(menuComp.subgroupsButton, "Click on subgroupsButton");
-		Actions actions = new Actions(driver);
-		actions.moveToElement(driver.findElement(By.xpath("//table[@id='tableSubgroups']//tbody//tr[1]"))).doubleClick().build().perform();
-		//pageAllSubgroup.clickOnSubgroups();
-		TestReporter.writeToReportPositiveResult("Check each subgroup on Separtment Page is exist");
-	}
+//	@Test
+//	public void checkConcretSubgroup(){
+//		
+//		menuComp.clickElement(menuComp.settingsButton, "Click on settingsButton");
+//		menuComp.clickElement(menuComp.subgroupsButton, "Click on subgroupsButton");
+//		Actions actions = new Actions(driver);
+//		actions.moveToElement(driver.findElement(By.xpath("//table[@id='tableSubgroups']//tbody//tr[1]"))).doubleClick().build().perform();
+//		//pageAllSubgroup.clickOnSubgroups();
+//		TestReporter.writeToReportPositiveResult("Check each subgroup on Separtment Page is exist");
+//	}
 	
 }

@@ -13,7 +13,7 @@ public class WebDriverFactory {
 	public static WebDriver initDriver(String browserName) {
 		if(browserName.contentEquals("chrome")) {
 
-			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "D:/Internal_project/Test Framework 1.0/TestExternalPart/chromedriver.exe");
 
 			driver = new ChromeDriver();
 		   	//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

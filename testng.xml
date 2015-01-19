@@ -23,11 +23,11 @@
         </classes>
     </test>
 
-        <!--  x<test name="AssigningToTestTest" verbose="10" parallel="false">
+       <test name="AssigningToTestTest" verbose="10" parallel="false">
         <classes>
             <class name="com.epam.testexternalpart.tests.AssigningToTest"></class>
         </classes>
-    </test>-->
+    </test>
 
         <test name="SeveralStreamTest" verbose="10" parallel="false">
         <classes>

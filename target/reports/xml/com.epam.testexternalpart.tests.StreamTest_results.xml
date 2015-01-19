@@ -4,17 +4,17 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="25,545">
+           time="26.744">
   <properties />
   
   
-            <testcase name="testAddNewInValidStream" time="2,485" classname="com.epam.testexternalpart.tests.StreamTest" />
-                <testcase name="testAddNewInValidStream" time="2,738" classname="com.epam.testexternalpart.tests.StreamTest" />
-                <testcase name="testAddNewValidStream" time="5,228" classname="com.epam.testexternalpart.tests.StreamTest" />
-                <testcase name="testEditStream" time="2,498" classname="com.epam.testexternalpart.tests.StreamTest" />
-                <testcase name="testAddNewInValidStream" time="2,526" classname="com.epam.testexternalpart.tests.StreamTest" />
-                <testcase name="testAddNewInValidStream" time="2,497" classname="com.epam.testexternalpart.tests.StreamTest" />
-                <testcase name="testEditStream" time="2,491" classname="com.epam.testexternalpart.tests.StreamTest" />
-                <testcase name="testAddNewValidStream" time="5,082" classname="com.epam.testexternalpart.tests.StreamTest" />
+            <testcase name="testAddNewInValidStream" time="2.589" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testAddNewValidStream" time="5.511" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testAddNewInValidStream" time="2.834" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testAddNewInValidStream" time="2.604" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testEditStream" time="2.546" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testAddNewValidStream" time="5.384" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testEditStream" time="2.614" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testAddNewInValidStream" time="2.662" classname="com.epam.testexternalpart.tests.StreamTest" />
       
 </testsuite>

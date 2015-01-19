@@ -61,6 +61,7 @@ public class AnswerFromRambler extends Components{
 		
         (new WebDriverWait(driver, 2000)).until(ExpectedConditions.visibilityOf(buttonInput));
 		buttonInput.click();
+        (new WebDriverWait(driver, 2000)).until(ExpectedConditions.visibilityOf(loginField));
 		loginField.sendKeys(login);
 		passwordField.sendKeys(password);
 		buttonSubmit.click();
@@ -68,7 +69,7 @@ public class AnswerFromRambler extends Components{
 	
 	public void enterIntoUnreadMessage(){
 		
-        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(inputBoxRow));
+		waiting(1000);		
 		clickElement(inputBoxRow, "click inputBoxRow");
 	}
 	
