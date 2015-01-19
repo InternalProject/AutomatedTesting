@@ -17,6 +17,8 @@ public class AllSubgroupPage extends Components{
 	public static final String TABLE_TBODY = "//table[@id='tableSubgroups']//tbody//tr";
 	public static final String CHOOSE_BUTTON= "//div[@class='bootstrap-filestyle input-group']";
 	public static final String IMPORT_BUTTON= "//input[@class='btn btn-primary']";
+	public By pagination= By.className("fixed_rows");
+	public By hr = By.cssSelector("tbody>tr:nth-child(1)");
 	
 	@FindBy(xpath = TITTLE)
 	public WebElement tittle;
@@ -26,6 +28,7 @@ public class AllSubgroupPage extends Components{
 	
 	@FindBy(xpath = TABLE)
 	public WebElement table;
+	
 	
 	@FindBy(xpath = TABLE_THEAD)
 	public WebElement table_thead;
@@ -47,6 +50,9 @@ public class AllSubgroupPage extends Components{
 		isElementExist("Import_button ", import_button, true);
 		isElementExist("Table thead ", table_thead, true);
 		isElementExist("Choose button ", choose_button, true);
+		isElementExist("Pagination exists", driver.findElement(pagination), true);
+		isElementExist("hr", driver.findElement(hr), true);
+	//	System.out.println(driver.findElement(hr).getText()+"   $$$$$$$");
 	}
 
 	public void clickOnSubgroups() {

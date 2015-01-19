@@ -15,9 +15,9 @@ import com.epam.testexternalpart.core.TestReporter;
 
 public class Components {
 	  protected WebDriver driver;
-	  protected final int SHORT_TIME=1000;
-	  protected final int MIDDLE_TIME=5000;
-	  protected final int LONG_TIME=10000;
+	  public final int SHORT_TIME=1000;
+	  public final int MIDDLE_TIME=5000;
+	  public final int LONG_TIME=10000;
 	  
 	  public void waiting(int time){
 		  try {

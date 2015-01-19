@@ -1,12 +1,12 @@
 package com.epam.testexternalpart.tests;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import com.epam.testexternalpart.core.BaseTest;
 import com.epam.testexternalpart.core.TestReporter;
-import com.thoughtworks.selenium.webdriven.commands.Click;
+import com.epam.testexternalpart.screen.SubgroupPage;
 
 public class SmokeTest extends BaseTest{
 	
@@ -170,9 +170,15 @@ public class SmokeTest extends BaseTest{
 		menuComp.clickElement(menuComp.settingsButton, "Click on settingsButton");
 		menuComp.clickElement(menuComp.subgroupsButton, "Click on subgroupsButton");
 		Actions actions = new Actions(driver);
-		actions.moveToElement(driver.findElement(By.xpath("//table[@id='tableSubgroups']//tbody//tr[1]"))).doubleClick().build().perform();
-		//pageAllSubgroup.clickOnSubgroups();
+		for(WebElement e: pageAllSubgroup.table_tbody){
+		pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);	
+		actions.moveToElement(e).doubleClick().build().perform();
+		pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);
+		//pageAllSubgroup.waiting(pageAllSubgroup.SHORT_TIME);
+		//pageSubgroup.clickElement(pageSubgroup.crumbs, "Click on crumbs");
+		}
 		TestReporter.writeToReportPositiveResult("Check each subgroup on Separtment Page is exist");
+		pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);
 	}
 	
 }

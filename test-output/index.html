@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-skipped">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Olha_Borodkina\AppData\Local\Temp\testng-eclipse--1523533170\testng-customsuite.xml</span>
+                    <span>C:\Users\Olha_Borodkina\AppData\Local\Temp\testng-eclipse-193390593\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,40 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content skipped suite-Default_suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.epam.testexternalpart.tests.PlaceForTestingTest" hash-for-method="addNewPlaceForTesting(ХАА, 23Б, Бекетова, Boston)">addNewPlaceForTesting(ХАА, 23Б, Бекетова, Boston)</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.epam.testexternalpart.tests.SmokeTest" hash-for-method="checkSubgroupPage">checkSubgroupPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.epam.testexternalpart.tests.PlaceForTestingTest" hash-for-method="deleteNewPlaceForTesting(EDIT, EDIT building, Edit Location, Edit room)">deleteNewPlaceForTesting(EDIT, EDIT building, Edit Location, Edit room)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.epam.testexternalpart.tests.PlaceForTestingTest" hash-for-method="editNewPlaceForTesting(ХАА, 23Б, Бекетова, Boston, EDIT, EDIT building, Edit Location, Edit room)">editNewPlaceForTesting(ХАА, 23Б, Бекетова, Boston, EDIT, EDIT building, Edit Location, Edit room)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content skipped suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -135,100 +116,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.epam.testexternalpart.tests.PlaceForTestingTest</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.epam.testexternalpart.tests.SmokeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addNewPlaceForTesting(ХАА, 23Б, Бекетова, Boston)">
-                  </a> <!-- addNewPlaceForTesting(ХАА, 23Б, Бекетова, Boston) -->
-                  <span class="method-name">addNewPlaceForTesting</span>
-                  <span class="parameters">(ХАА, 23Б, Бекетова, Boston)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=39.0.2171.95)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 13 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: 580f5c47bc47d3f86dde7b702b7dbc70
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir3584_21690}, rotatable=false, locationContextEnabled=true, version=39.0.2171.95, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:171)
-	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:244)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:167)
-	at com.epam.testexternalpart.screen.PlaceForTestingPage.checkAddingNewPlace(PlaceForTestingPage.java:111)
-	at com.epam.testexternalpart.tests.PlaceForTestingTest.addNewPlaceForTesting(PlaceForTestingTest.java:16)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-
-</div> <!-- stack-trace -->
+                  <a name="checkSubgroupPage">
+                  </a> <!-- checkSubgroupPage -->
+                  <span class="method-name">checkSubgroupPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.epam.testexternalpart.tests.PlaceForTestingTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteNewPlaceForTesting(EDIT, EDIT building, Edit Location, Edit room)">
-                  </a> <!-- deleteNewPlaceForTesting(EDIT, EDIT building, Edit Location, Edit room) -->
-                  <span class="method-name">deleteNewPlaceForTesting</span>
-                  <span class="parameters">(EDIT, EDIT building, Edit Location, Edit room)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="editNewPlaceForTesting(ХАА, 23Б, Бекетова, Boston, EDIT, EDIT building, Edit Location, Edit room)">
-                  </a> <!-- editNewPlaceForTesting(ХАА, 23Б, Бекетова, Boston, EDIT, EDIT building, Edit Location, Edit room) -->
-                  <span class="method-name">editNewPlaceForTesting</span>
-                  <span class="parameters">(ХАА, 23Б, Бекетова, Boston, EDIT, EDIT building, Edit Location, Edit room)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-skipped -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Olha_Borodkina\AppData\Local\Temp\testng-eclipse--1523533170\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Olha_Borodkina\AppData\Local\Temp\testng-eclipse-193390593\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -237,7 +143,11 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 &lt;suite name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.epam.testexternalpart.tests.PlaceForTestingTest&quot;/&gt;
+      &lt;class name=&quot;com.epam.testexternalpart.tests.SmokeTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;checkSubgroupPage&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.epam.testexternalpart.tests.SmokeTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -277,24 +187,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'editNewPlaceForTesting')
-data.setCell(0, 2, 'com.epam.testexternalpart.tests.PlaceForTestingTest')
-data.setCell(0, 3, 8401);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addNewPlaceForTesting')
-data.setCell(1, 2, 'com.epam.testexternalpart.tests.PlaceForTestingTest')
-data.setCell(1, 3, 8305);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'deleteNewPlaceForTesting')
-data.setCell(2, 2, 'com.epam.testexternalpart.tests.PlaceForTestingTest')
-data.setCell(2, 3, 3252);
+data.setCell(0, 1, 'checkSubgroupPage')
+data.setCell(0, 2, 'com.epam.testexternalpart.tests.SmokeTest')
+data.setCell(0, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -305,39 +207,44 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">editNewPlaceForTesting(ХАА, 23Б, Бекетова, Boston, EDIT, EDIT building, Edit Location, Edit room)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Click on [Click on settingsButton]</font></span>
-                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Click on [Click on placeForTestingButton]</font></span>
-                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Click on [Click on checkbox]</font></span>
-                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Click on [Click on edit_testing_place button]</font></span>
-                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Click on [Click on delete button in pop up]</font></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">deleteNewPlaceForTesting(EDIT, EDIT building, Edit Location, Edit room)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Click on [Click on settingsButton]</font></span>
-                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Click on [Click on placeForTestingButton]</font></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">addNewPlaceForTesting(ХАА, 23Б, Бекетова, Boston)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Click on [Click on settingsButton]</font></span>
-                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Click on [Click on placeForTestingButton]</font></span>
-                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Click on [Click add_testing_place]</font></span>
-                <span class="reporter-method-output"><br /><font size = 2 color = #000000>Click on [Click add_testing_place_popup]</font></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">13 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.epam.testexternalpart.tests.SmokeTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">checkElementsViewCandidate</span>
+                <br/>
+                <span class="ignored-method-name">checkMailSettingsMenu</span>
+                <br/>
+                <span class="ignored-method-name">checkElementsPresentDepartmentPage</span>
+                <br/>
+                <span class="ignored-method-name">checkMenu</span>
+                <br/>
+                <span class="ignored-method-name">checkElStreamPage</span>
+                <br/>
+                <span class="ignored-method-name">checkAddStreamAccordingToDepartment</span>
+                <br/>
+                <span class="ignored-method-name">checkElementsAddCandidate</span>
+                <br/>
+                <span class="ignored-method-name">checkEmailTemplatesPage</span>
+                <br/>
+                <span class="ignored-method-name">checkElAllCandiadtesMenu</span>
+                <br/>
+                <span class="ignored-method-name">checkElementsPresentAddStreamPage</span>
+                <br/>
+                <span class="ignored-method-name">checkConcretSubgroup</span>
+                <br/>
+                <span class="ignored-method-name">checkElementsPresentAddDepartmentPage</span>
+                <br/>
+                <span class="ignored-method-name">checkElementsEditCandidate</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -346,41 +253,17 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.epam.testexternalpart.tests.PlaceForTestingTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.epam.testexternalpart.tests.SmokeTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">init</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">startPage</span>
-                <span class="method-start">4538 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">addNewPlaceForTesting(ХАА, 23Б, Бекетова, Boston)</span>
-                <span class="method-start">4716 ms</span>
+                <span class="method-name">checkSubgroupPage</span>
+                <span class="method-start">44590 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">startPage</span>
-                <span class="method-start">13075 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">deleteNewPlaceForTesting(EDIT, EDIT building, Edit Location, Edit room)</span>
-                <span class="method-start">13825 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">startPage</span>
-                <span class="method-start">17124 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">editNewPlaceForTesting(ХАА, 23Б, Бекетова, Boston, EDIT, EDIT building, Edit Location, Edit room)</span>
-                <span class="method-start">17309 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">25710 ms</span>
-              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
