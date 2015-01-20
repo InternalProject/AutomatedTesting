@@ -3,19 +3,14 @@
            tests="18"
            failures="1"
            errors="0"
-<<<<<<< HEAD
-           skipped="0"
-           time="26.744">
-=======
            skipped="17"
-           time="0,001">
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
+           time="0,000">
   <properties />
             <testcase name="init" time="0,000" classname="com.epam.testexternalpart.tests.StreamTest">
                 <failure type="java.lang.IllegalStateException"
-                  message="The driver executable does not exist: D:\AutomatedTesting\target\test-classes\chromedriver.exe"
+                  message="The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe"
               >
-<![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\AutomatedTesting\target\test-classes\chromedriver.exe
+<![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
   com.google.common.base.Preconditions.checkState(Preconditions.java:197)
   org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
   org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
@@ -58,6 +53,9 @@
             <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.StreamTest">
           <skipped />
     </testcase>
+            <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.StreamTest">
+          <skipped />
+    </testcase>
             <testcase name="tearDown" time="0.0" classname="com.epam.testexternalpart.tests.StreamTest">
           <skipped />
     </testcase>
@@ -79,7 +77,10 @@
             <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.StreamTest">
           <skipped />
     </testcase>
-            <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.StreamTest">
+            <testcase name="testAddNewInValidStream" time="0.0" classname="com.epam.testexternalpart.tests.StreamTest">
+          <skipped />
+    </testcase>
+            <testcase name="testAddNewInValidStream" time="0.0" classname="com.epam.testexternalpart.tests.StreamTest">
           <skipped />
     </testcase>
             <testcase name="testEditStream" time="0.0" classname="com.epam.testexternalpart.tests.StreamTest">
@@ -94,30 +95,12 @@
             <testcase name="testAddNewValidStream" time="0.0" classname="com.epam.testexternalpart.tests.StreamTest">
           <skipped />
     </testcase>
-            <testcase name="testAddNewInValidStream" time="0.0" classname="com.epam.testexternalpart.tests.StreamTest">
-          <skipped />
-    </testcase>
-            <testcase name="testAddNewInValidStream" time="0.0" classname="com.epam.testexternalpart.tests.StreamTest">
-          <skipped />
-    </testcase>
-            <testcase name="testAddNewInValidStream" time="0.0" classname="com.epam.testexternalpart.tests.StreamTest">
-          <skipped />
-    </testcase>
             <testcase name="testEditStream" time="0.0" classname="com.epam.testexternalpart.tests.StreamTest">
           <skipped />
     </testcase>
+            <testcase name="testAddNewInValidStream" time="0.0" classname="com.epam.testexternalpart.tests.StreamTest">
+          <skipped />
+    </testcase>
   
   
-<<<<<<< HEAD
-            <testcase name="testAddNewInValidStream" time="2.589" classname="com.epam.testexternalpart.tests.StreamTest" />
-                <testcase name="testAddNewValidStream" time="5.511" classname="com.epam.testexternalpart.tests.StreamTest" />
-                <testcase name="testAddNewInValidStream" time="2.834" classname="com.epam.testexternalpart.tests.StreamTest" />
-                <testcase name="testAddNewInValidStream" time="2.604" classname="com.epam.testexternalpart.tests.StreamTest" />
-                <testcase name="testEditStream" time="2.546" classname="com.epam.testexternalpart.tests.StreamTest" />
-                <testcase name="testAddNewValidStream" time="5.384" classname="com.epam.testexternalpart.tests.StreamTest" />
-                <testcase name="testEditStream" time="2.614" classname="com.epam.testexternalpart.tests.StreamTest" />
-                <testcase name="testAddNewInValidStream" time="2.662" classname="com.epam.testexternalpart.tests.StreamTest" />
-      
-=======
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
 </testsuite>

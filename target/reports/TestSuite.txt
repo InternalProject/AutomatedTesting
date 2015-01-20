@@ -1,15 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-<<<<<<< HEAD
-Tests run: 148, Failures: 8, Errors: 0, Skipped: 140, Time elapsed: 3.283 sec <<< FAILURE! - in TestSuite
-init(com.epam.testexternalpart.tests.SmokeTest)  Time elapsed: 0.783 sec  <<< FAILURE!
-java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Project\AutomatedTesting\target\test-classes\.\chromedriver.exe
-=======
-Tests run: 86, Failures: 7, Errors: 0, Skipped: 79, Time elapsed: 1.863 sec <<< FAILURE! - in TestSuite
-init(com.epam.testexternalpart.tests.SmokeTest)  Time elapsed: 0.485 sec  <<< FAILURE!
-java.lang.IllegalStateException: The driver executable does not exist: D:\AutomatedTesting\target\test-classes\chromedriver.exe
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
+Tests run: 150, Failures: 8, Errors: 0, Skipped: 142, Time elapsed: 2.335 sec <<< FAILURE! - in TestSuite
+init(com.epam.testexternalpart.tests.SmokeTest)  Time elapsed: 0.513 sec  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
 	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
 	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
 	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
@@ -18,52 +12,9 @@ java.lang.IllegalStateException: The driver executable does not exist: D:\Automa
 	at com.epam.testexternalpart.core.WebDriverFactory.initDriver(WebDriverFactory.java:18)
 	at com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:72)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-<<<<<<< HEAD
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-
-init(com.epam.testexternalpart.tests.DepartmentTest)  Time elapsed: 0.016 sec  <<< FAILURE!
-java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Project\AutomatedTesting\target\test-classes\.\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:89)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
-	at com.epam.testexternalpart.core.WebDriverFactory.initDriver(WebDriverFactory.java:18)
-	at com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:72)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-=======
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
@@ -88,13 +39,8 @@ java.lang.IllegalStateException: The driver executable does not exist: D:\Intern
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-<<<<<<< HEAD
-init(com.epam.testexternalpart.tests.StreamTest)  Time elapsed: 0.015 sec  <<< FAILURE!
-java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Project\AutomatedTesting\target\test-classes\.\chromedriver.exe
-=======
-init(com.epam.testexternalpart.tests.DepartmentTest)  Time elapsed: 0 sec  <<< FAILURE!
-java.lang.IllegalStateException: The driver executable does not exist: D:\AutomatedTesting\target\test-classes\chromedriver.exe
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
+init(com.epam.testexternalpart.tests.DepartmentTest)  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
 	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
 	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
 	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
@@ -103,15 +49,9 @@ java.lang.IllegalStateException: The driver executable does not exist: D:\Automa
 	at com.epam.testexternalpart.core.WebDriverFactory.initDriver(WebDriverFactory.java:18)
 	at com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:72)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-<<<<<<< HEAD
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-=======
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
@@ -136,13 +76,8 @@ java.lang.IllegalStateException: The driver executable does not exist: D:\Automa
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-<<<<<<< HEAD
-init(com.epam.testexternalpart.tests.AddCandidateTest)  Time elapsed: 0.016 sec  <<< FAILURE!
-java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Project\AutomatedTesting\target\test-classes\.\chromedriver.exe
-=======
 init(com.epam.testexternalpart.tests.StreamTest)  Time elapsed: 0.01 sec  <<< FAILURE!
-java.lang.IllegalStateException: The driver executable does not exist: D:\AutomatedTesting\target\test-classes\chromedriver.exe
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
+java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
 	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
 	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
 	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
@@ -151,15 +86,9 @@ java.lang.IllegalStateException: The driver executable does not exist: D:\Automa
 	at com.epam.testexternalpart.core.WebDriverFactory.initDriver(WebDriverFactory.java:18)
 	at com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:72)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-<<<<<<< HEAD
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-=======
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
@@ -184,13 +113,8 @@ java.lang.IllegalStateException: The driver executable does not exist: D:\Automa
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-<<<<<<< HEAD
-init(com.epam.testexternalpart.tests.AssigningToTest)  Time elapsed: 0.016 sec  <<< FAILURE!
-java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Project\AutomatedTesting\target\test-classes\.\chromedriver.exe
-=======
-init(com.epam.testexternalpart.tests.AddCandidateTest)  Time elapsed: 0.02 sec  <<< FAILURE!
-java.lang.IllegalStateException: The driver executable does not exist: D:\AutomatedTesting\target\test-classes\chromedriver.exe
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
+init(com.epam.testexternalpart.tests.AddCandidateTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
 	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
 	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
 	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
@@ -199,15 +123,9 @@ java.lang.IllegalStateException: The driver executable does not exist: D:\Automa
 	at com.epam.testexternalpart.core.WebDriverFactory.initDriver(WebDriverFactory.java:18)
 	at com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:72)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-<<<<<<< HEAD
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-=======
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
@@ -232,13 +150,8 @@ java.lang.IllegalStateException: The driver executable does not exist: D:\Automa
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-<<<<<<< HEAD
-init(com.epam.testexternalpart.tests.SeveralStreamTest)  Time elapsed: 0.031 sec  <<< FAILURE!
-java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Project\AutomatedTesting\target\test-classes\.\chromedriver.exe
-=======
-init(com.epam.testexternalpart.tests.SeveralStreamTest)  Time elapsed: 0.01 sec  <<< FAILURE!
-java.lang.IllegalStateException: The driver executable does not exist: D:\AutomatedTesting\target\test-classes\chromedriver.exe
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
+init(com.epam.testexternalpart.tests.AssigningToTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
 	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
 	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
 	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
@@ -247,15 +160,9 @@ java.lang.IllegalStateException: The driver executable does not exist: D:\Automa
 	at com.epam.testexternalpart.core.WebDriverFactory.initDriver(WebDriverFactory.java:18)
 	at com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:72)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-<<<<<<< HEAD
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-=======
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
@@ -280,12 +187,8 @@ java.lang.IllegalStateException: The driver executable does not exist: D:\Automa
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
-init(com.epam.testexternalpart.tests.SearchTest)  Time elapsed: 0 sec  <<< FAILURE!
-<<<<<<< HEAD
-java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Project\AutomatedTesting\target\test-classes\.\chromedriver.exe
-=======
-java.lang.IllegalStateException: The driver executable does not exist: D:\AutomatedTesting\target\test-classes\chromedriver.exe
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
+init(com.epam.testexternalpart.tests.SeveralStreamTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
 	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
 	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
 	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
@@ -294,15 +197,46 @@ java.lang.IllegalStateException: The driver executable does not exist: D:\Automa
 	at com.epam.testexternalpart.core.WebDriverFactory.initDriver(WebDriverFactory.java:18)
 	at com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:72)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-<<<<<<< HEAD
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-=======
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+init(com.epam.testexternalpart.tests.SearchTest)  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
+	at com.epam.testexternalpart.core.WebDriverFactory.initDriver(WebDriverFactory.java:18)
+	at com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
@@ -328,11 +262,7 @@ java.lang.IllegalStateException: The driver executable does not exist: D:\Automa
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 
 init(com.epam.testexternalpart.tests.PlaceForTestingTest)  Time elapsed: 0 sec  <<< FAILURE!
-<<<<<<< HEAD
-java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Project\AutomatedTesting\target\test-classes\.\chromedriver.exe
-=======
-java.lang.IllegalStateException: The driver executable does not exist: D:\AutomatedTesting\target\test-classes\chromedriver.exe
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
+java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
 	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
 	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
 	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
@@ -341,13 +271,9 @@ java.lang.IllegalStateException: The driver executable does not exist: D:\Automa
 	at com.epam.testexternalpart.core.WebDriverFactory.initDriver(WebDriverFactory.java:18)
 	at com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:72)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-<<<<<<< HEAD
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-=======
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
+	at java.lang.reflect.Method.invoke(Method.java:606)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)

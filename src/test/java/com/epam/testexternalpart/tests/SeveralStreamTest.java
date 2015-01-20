@@ -13,7 +13,7 @@ public class SeveralStreamTest extends BaseTest{
 		   pageStream.clickElement(pageStream.addCandidateButton, "Click addCandidateButton");
 		   pageCreateProfile.createNewCandidate(candData);
 		   pageStream.clickElement(pageStream.crumbs, "Click on crumbs");
-		   pageDepartment.clickElement(pageDepartment.allDepartmentTabs.get(2), "Click on netTab");
+		   pageDepartment.clickElement(pageDepartment.allDepartmentTabs.get(1), "Click on netTab");
 		   pageDepartment.clickElement(pageDepartment.first_stream, "Click on first_stream");
 		   pageStream.clickElement(pageStream.addCandidateButton, "Click on addCandidateButton");
 		   pageCreateProfile.createNewCandidate(candData);
@@ -22,8 +22,13 @@ public class SeveralStreamTest extends BaseTest{
 		   pageStream.checkMarker(pageCreateProfile.mailName, pageCreateProfile.phoneNumber, streamFirstDepartmentName);
 		   String streamSecondDepartmentName = pageStream.title.getText();
 		   pageStream.clickElement(pageStream.crumbs, "Click on crumbs");
-		   pageDepartment.clickElement(pageDepartment.allDepartmentTabs.get(1), "Click javaTab");
+		   pageDepartment.clickElement(pageDepartment.allDepartmentTabs.get(0), "Click javaTab");
 		   pageDepartment.clickElement(pageDepartment.first_stream, "Click first_stream");
 		   pageStream.checkMarker(pageCreateProfile.mailName, pageCreateProfile.phoneNumber, streamSecondDepartmentName);
+		   pageStream.deleteAddedCand();
+		   pageStream.clickElement(pageStream.crumbs, "Click on crumbs");
+		   pageDepartment.clickElement(pageDepartment.allDepartmentTabs.get(1), "Click on netTab");
+		   pageDepartment.clickElement(pageDepartment.first_stream, "Click on first_stream");
+		   pageStream.deleteAddedCand(pageCreateProfile.mailName, pageCreateProfile.phoneNumber);
 	   }
 }

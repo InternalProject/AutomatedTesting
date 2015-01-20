@@ -4,60 +4,13 @@
            failures="1"
            errors="0"
            skipped="5"
-<<<<<<< HEAD
-           time="0.001">
-  <properties />
-            <testcase name="init" time="0.000" classname="com.epam.testexternalpart.tests.SearchTest">
-                <failure type="org.openqa.selenium.NoSuchWindowException"
-                  message="no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=39.0.2171.99)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 3 milliseconds
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;EPUAKHAW0083&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir6536_17248}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.99, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d5092f7be77d62618720b36951f8a110"
-              >
-<![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=39.0.2171.99)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 3 milliseconds
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EPUAKHAW0083', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=C:\Users\OLESIA~1\AppData\Local\Temp\scoped_dir6536_17248}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.99, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d5092f7be77d62618720b36951f8a110
-  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-  java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-  org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-  org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-  org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-  com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
-  com.epam.testexternalpart.screen.LoginPage.signIn(LoginPage.java:31)
-  com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:75)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:483)
-=======
            time="0,000">
   <properties />
             <testcase name="init" time="0,000" classname="com.epam.testexternalpart.tests.SearchTest">
                 <failure type="java.lang.IllegalStateException"
-                  message="The driver executable does not exist: D:\AutomatedTesting\target\test-classes\chromedriver.exe"
+                  message="The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe"
               >
-<![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\AutomatedTesting\target\test-classes\chromedriver.exe
+<![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
   com.google.common.base.Preconditions.checkState(Preconditions.java:197)
   org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
   org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
@@ -69,7 +22,6 @@ Session ID: d5092f7be77d62618720b36951f8a110
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
   java.lang.reflect.Method.invoke(Method.java:606)
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
   org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
   org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
@@ -101,26 +53,16 @@ Session ID: d5092f7be77d62618720b36951f8a110
             <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.SearchTest">
           <skipped />
     </testcase>
-            <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.SearchTest">
-          <skipped />
-    </testcase>
             <testcase name="tearDown" time="0.0" classname="com.epam.testexternalpart.tests.SearchTest">
           <skipped />
     </testcase>
-<<<<<<< HEAD
             <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.SearchTest">
           <skipped />
     </testcase>
-            <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.SearchTest">
-=======
             <testcase name="allCandidatesSearch" time="0.0" classname="com.epam.testexternalpart.tests.SearchTest">
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
           <skipped />
     </testcase>
             <testcase name="streamSearch" time="0.0" classname="com.epam.testexternalpart.tests.SearchTest">
-          <skipped />
-    </testcase>
-            <testcase name="allCandidatesSearch" time="0.0" classname="com.epam.testexternalpart.tests.SearchTest">
           <skipped />
     </testcase>
   

@@ -3,32 +3,14 @@
            tests="4"
            failures="1"
            errors="0"
-<<<<<<< HEAD
-           skipped="0"
-           time="7.272">
-  <properties />
-            <testcase name="addCandidateToSeveralDepartment" time="7.272" classname="com.epam.testexternalpart.tests.SeveralStreamTest">
-                <failure type="java.lang.IndexOutOfBoundsException"
-                  message="Index: 2, Size: 0"
-              >
-<![CDATA[java.lang.IndexOutOfBoundsException: Index: 2, Size: 0
-  java.util.ArrayList.rangeCheck(ArrayList.java:653)
-  java.util.ArrayList.get(ArrayList.java:429)
-  sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:483)
-  org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:38)
-  com.sun.proxy.$Proxy8.get(Unknown Source)
-  com.epam.testexternalpart.tests.SeveralStreamTest.addCandidateToSeveralDepartment(SeveralStreamTest.java:16)
-=======
            skipped="3"
            time="0,000">
   <properties />
             <testcase name="init" time="0,000" classname="com.epam.testexternalpart.tests.SeveralStreamTest">
                 <failure type="java.lang.IllegalStateException"
-                  message="The driver executable does not exist: D:\AutomatedTesting\target\test-classes\chromedriver.exe"
+                  message="The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe"
               >
-<![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\AutomatedTesting\target\test-classes\chromedriver.exe
+<![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
   com.google.common.base.Preconditions.checkState(Preconditions.java:197)
   org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
   org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
@@ -36,11 +18,10 @@
   org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
   com.epam.testexternalpart.core.WebDriverFactory.initDriver(WebDriverFactory.java:18)
   com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:72)
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:483)
+  java.lang.reflect.Method.invoke(Method.java:606)
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
   org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
   org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
@@ -69,10 +50,10 @@
 
           </testcase>
   
-            <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.SeveralStreamTest">
+            <testcase name="tearDown" time="0.0" classname="com.epam.testexternalpart.tests.SeveralStreamTest">
           <skipped />
     </testcase>
-            <testcase name="tearDown" time="0.0" classname="com.epam.testexternalpart.tests.SeveralStreamTest">
+            <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.SeveralStreamTest">
           <skipped />
     </testcase>
             <testcase name="addCandidateToSeveralDepartment" time="0.0" classname="com.epam.testexternalpart.tests.SeveralStreamTest">

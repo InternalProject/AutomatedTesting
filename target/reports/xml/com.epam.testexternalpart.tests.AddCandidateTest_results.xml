@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="CandidateTest"
-<<<<<<< HEAD
-           tests="5"
-           failures="0"
-           errors="0"
-           skipped="0"
-           time="116.389">
-  <properties />
-=======
            tests="12"
            failures="1"
            errors="0"
            skipped="11"
-           time="0,010">
+           time="0,000">
   <properties />
             <testcase name="init" time="0,000" classname="com.epam.testexternalpart.tests.AddCandidateTest">
                 <failure type="java.lang.IllegalStateException"
-                  message="The driver executable does not exist: D:\AutomatedTesting\target\test-classes\chromedriver.exe"
+                  message="The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe"
               >
-<![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\AutomatedTesting\target\test-classes\chromedriver.exe
+<![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
   com.google.common.base.Preconditions.checkState(Preconditions.java:197)
   org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
   org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
@@ -57,7 +49,6 @@
       </failure>
 
           </testcase>
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
   
             <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.AddCandidateTest">
           <skipped />
@@ -77,13 +68,13 @@
             <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.AddCandidateTest">
           <skipped />
     </testcase>
-            <testcase name="addCandidateManually" time="0.0" classname="com.epam.testexternalpart.tests.AddCandidateTest">
-          <skipped />
-    </testcase>
             <testcase name="deleteAllCandidates" time="0.0" classname="com.epam.testexternalpart.tests.AddCandidateTest">
           <skipped />
     </testcase>
             <testcase name="bannWithButton" time="0.0" classname="com.epam.testexternalpart.tests.AddCandidateTest">
+          <skipped />
+    </testcase>
+            <testcase name="addCandidateManually" time="0.0" classname="com.epam.testexternalpart.tests.AddCandidateTest">
           <skipped />
     </testcase>
             <testcase name="addCandidate" time="0.0" classname="com.epam.testexternalpart.tests.AddCandidateTest">
@@ -94,13 +85,4 @@
     </testcase>
   
   
-<<<<<<< HEAD
-            <testcase name="changeStatus" time="58.601" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
-                <testcase name="addCandidateManually" time="13.605" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
-                <testcase name="deleteAllCandidates" time="9.922" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
-                <testcase name="bannWithButton" time="23.078" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
-                <testcase name="addCandidate" time="11.183" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
-      
-=======
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
 </testsuite>

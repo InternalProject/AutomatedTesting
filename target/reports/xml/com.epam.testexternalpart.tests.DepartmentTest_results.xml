@@ -3,19 +3,14 @@
            tests="8"
            failures="1"
            errors="0"
-<<<<<<< HEAD
-           skipped="0"
-           time="15.831">
-=======
            skipped="7"
            time="0,000">
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
   <properties />
             <testcase name="init" time="0,000" classname="com.epam.testexternalpart.tests.DepartmentTest">
                 <failure type="java.lang.IllegalStateException"
-                  message="The driver executable does not exist: D:\AutomatedTesting\target\test-classes\chromedriver.exe"
+                  message="The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe"
               >
-<![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\AutomatedTesting\target\test-classes\chromedriver.exe
+<![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
   com.google.common.base.Preconditions.checkState(Preconditions.java:197)
   org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
   org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
@@ -58,13 +53,13 @@
             <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
           <skipped />
     </testcase>
+            <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
+          <skipped />
+    </testcase>
+            <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
+          <skipped />
+    </testcase>
             <testcase name="tearDown" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
-          <skipped />
-    </testcase>
-            <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
-          <skipped />
-    </testcase>
-            <testcase name="startPage" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
           <skipped />
     </testcase>
             <testcase name="testAddDepartmentWithValidName" time="0.0" classname="com.epam.testexternalpart.tests.DepartmentTest">
@@ -78,11 +73,4 @@
     </testcase>
   
   
-<<<<<<< HEAD
-            <testcase name="testAddDepartmentWithValidName" time="4.233" classname="com.epam.testexternalpart.tests.DepartmentTest" />
-                <testcase name="testAddDepartment" time="0.552" classname="com.epam.testexternalpart.tests.DepartmentTest" />
-                <testcase name="testEditDepartmentName" time="11.046" classname="com.epam.testexternalpart.tests.DepartmentTest" />
-      
-=======
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
 </testsuite>

@@ -3,19 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.epam.testexternalpart.tests.AssigningToTest">
+      <class name="com.epam.testexternalpart.tests.SeveralStreamTest">
         <methods>
-<<<<<<< HEAD
-          <include name="checkDublicateAnswer"/>
-          <include name="init"/>
-=======
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
           <include name="tearDown"/>
           <include name="init"/>
-          <include name="checkConcretSubgroup"/>
+          <include name="addCandidateToSeveralDepartment" invocation-numbers="0"/>
           <include name="startPage"/>
         </methods>
-      </class> <!-- com.epam.testexternalpart.tests.AssigningToTest -->
+      </class> <!-- com.epam.testexternalpart.tests.SeveralStreamTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
