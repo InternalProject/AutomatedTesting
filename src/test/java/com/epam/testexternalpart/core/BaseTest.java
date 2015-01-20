@@ -112,6 +112,7 @@ public abstract class BaseTest {
 		String b = testMethod.getDeclaringClass().getSimpleName();
 		int numberOfParameters = testMethod.getParameterTypes().length;
 
+
 		String path = "D:/extPr/TestExternalPart/AutomatedTesting/data/" + b + ".xlsx";
 
 		try {

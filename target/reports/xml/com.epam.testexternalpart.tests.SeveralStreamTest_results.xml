@@ -4,16 +4,16 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="6.366">
+           time="6.663">
   <properties />
-            <testcase name="addCandidateToSeveralDepartment" time="6.366" classname="com.epam.testexternalpart.tests.SeveralStreamTest">
+            <testcase name="addCandidateToSeveralDepartment" time="6.663" classname="com.epam.testexternalpart.tests.SeveralStreamTest">
                 <failure type="java.lang.IndexOutOfBoundsException"
                   message="Index: 2, Size: 0"
               >
 <![CDATA[java.lang.IndexOutOfBoundsException: Index: 2, Size: 0
   java.util.ArrayList.rangeCheck(Unknown Source)
   java.util.ArrayList.get(Unknown Source)
-  sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+  sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
   java.lang.reflect.Method.invoke(Unknown Source)
   org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:38)

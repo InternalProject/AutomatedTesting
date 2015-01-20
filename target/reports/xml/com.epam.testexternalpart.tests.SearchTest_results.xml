@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="68.657">
+           time="69.239">
   <properties />
   
   
-            <testcase name="allCandidatesSearch" time="35.205" classname="com.epam.testexternalpart.tests.SearchTest" />
-                <testcase name="streamSearch" time="33.452" classname="com.epam.testexternalpart.tests.SearchTest" />
+            <testcase name="streamSearch" time="33.559" classname="com.epam.testexternalpart.tests.SearchTest" />
+                <testcase name="allCandidatesSearch" time="35.680" classname="com.epam.testexternalpart.tests.SearchTest" />
       
 </testsuite>

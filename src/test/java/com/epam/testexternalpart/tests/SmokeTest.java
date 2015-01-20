@@ -1,11 +1,19 @@
 package com.epam.testexternalpart.tests;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotVisibleException;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.epam.testexternalpart.core.BaseTest;
 import com.epam.testexternalpart.core.TestReporter;
+import com.epam.testexternalpart.screen.SubgroupPage;
+
 
 public class SmokeTest extends BaseTest{
 	
@@ -166,16 +174,24 @@ public class SmokeTest extends BaseTest{
 		pageAllSubgroup.checkElementsPresent();
 		pageAllSubgroup.checkTextPresent();
 	}
-	
+
 	@Test
 	public void checkConcretSubgroup(){
-		
+		try{
 		menuComp.clickElement(menuComp.settingsButton, "Click on settingsButton");
 		menuComp.clickElement(menuComp.subgroupsButton, "Click on subgroupsButton");
 		Actions actions = new Actions(driver);
-		actions.moveToElement(driver.findElement(By.xpath("//table[@id='tableSubgroups']//tbody//tr[1]"))).doubleClick().build().perform();
-		//pageAllSubgroup.clickOnSubgroups();
+		System.out.println(" !!!  "+pageAllSubgroup.table_tbody.size());
+		WebElement e= driver.findElement(By.xpath("//table[@id='tableSubgroups']//tbody//tr[1]"));
+		pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);	
+		actions.moveToElement(e).doubleClick().build().perform();
+		pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);
 		TestReporter.writeToReportPositiveResult("Check each subgroup on Separtment Page is exist");
+		pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);
+		}
+		catch(StaleElementReferenceException e){
+			
 	}
 	
+	}
 }

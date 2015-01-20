@@ -3,6 +3,7 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.epam.testexternalpart.tests.AddCandidateTest">
         <methods>
           <include name="tearDown"/>
@@ -11,6 +12,21 @@
           <include name="startPage"/>
         </methods>
       </class> <!-- com.epam.testexternalpart.tests.AddCandidateTest -->
+=======
+      <class name="com.epam.testexternalpart.tests.AssigningToTest">
+        <methods>
+<<<<<<< HEAD
+          <include name="checkDublicateAnswer"/>
+          <include name="init"/>
+=======
+>>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
+          <include name="tearDown"/>
+          <include name="init"/>
+          <include name="checkConcretSubgroup"/>
+          <include name="startPage"/>
+        </methods>
+      </class> <!-- com.epam.testexternalpart.tests.AssigningToTest -->
+>>>>>>> a894e551d3f816a24015f809dcd27cae062f27b0
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
