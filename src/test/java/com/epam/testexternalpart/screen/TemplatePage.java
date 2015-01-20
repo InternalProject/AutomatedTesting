@@ -254,7 +254,7 @@ public class TemplatePage extends Components implements CheckerData{
 		TestReporter.writeToReportStep("Checking the presence of all elements on Template Page");	
 	}
 
-	public String getTextDuplicateAnswer() {
+	public void getTextDuplicateAnswer() {
 
 		Menu menu = new Menu(driver);
 		
@@ -262,6 +262,6 @@ public class TemplatePage extends Components implements CheckerData{
 		menu.clickElement(menu.emailTemplatesButtton,"emailTemplatesButtton");
 		clickElement(answerDuplicationTittle, "answerDuplicationTittle");
 		
-		return templateAnswerDuplication = answerDuplicationInputBox.getText();
+		templateAnswerDuplication = answerDuplicationInputBox.getText();
 	}
 }
