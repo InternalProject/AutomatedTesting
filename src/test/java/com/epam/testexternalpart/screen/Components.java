@@ -30,8 +30,12 @@ public class Components {
 		  
 	  }
 	  
+	  
+	  
+	  
+	  
 	  public  void isElementExist( String item, WebElement welement, boolean refer) {
-		
+		 
 		 boolean value = isElementPresent(welement);
 		 TestReporter.writeToReportTitle("Checking the presence of the elemen ["+item+"]");
 	        if (refer) {
@@ -41,7 +45,7 @@ public class Components {
 	        } else {
 	            Assert.assertFalse(value,"element ["+item+"] is present on the page");
 	            TestReporter.writeToReportPositiveResult("[" + item + "]"+"is Not Present");
-	        }
+	        }	 
 	        
 }
 	  private boolean isElementPresent(WebElement webElement){

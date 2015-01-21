@@ -25,6 +25,7 @@ public class AddCandidateTest extends BaseTest {
 	   pageDepartment.clickElement(pageDepartment.getTableEl(1,1), "First stream on first dep");
 	   pageDepartment.clickElement( pageStream.addCandidateButton, "addCandidateBut");
 	   pageCreateProfile.createNewCandidateWithout(candData);
+	   
 
    }
   

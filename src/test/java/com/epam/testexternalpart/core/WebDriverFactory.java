@@ -14,6 +14,7 @@ public class WebDriverFactory {
 		if(browserName.contentEquals("chrome")) {
 
 
+
 			System.setProperty("webdriver.chrome.driver", "D:/extPr/TestExternalPart/AutomatedTesting/chromedriver.exe");
 
 

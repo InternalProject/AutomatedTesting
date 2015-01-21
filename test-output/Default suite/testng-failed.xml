@@ -4,6 +4,7 @@
   <test name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.epam.testexternalpart.tests.AddCandidateTest">
         <methods>
           <include name="tearDown"/>
@@ -14,19 +15,27 @@
       </class> <!-- com.epam.testexternalpart.tests.AddCandidateTest -->
 =======
       <class name="com.epam.testexternalpart.tests.AssigningToTest">
+=======
+      <class name="com.epam.testexternalpart.tests.SeveralStreamTest">
+>>>>>>> 3c1685fd21682e646be2ca7e046bb477b36ab759
         <methods>
 <<<<<<< HEAD
           <include name="checkDublicateAnswer"/>
           <include name="init"/>
+          <include name="tearDown"/>
 =======
->>>>>>> 9386b16c4217c3f100b04e49611f6ae275a93151
           <include name="tearDown"/>
           <include name="init"/>
-          <include name="checkConcretSubgroup"/>
+          <include name="addCandidateToSeveralDepartment" invocation-numbers="0"/>
+>>>>>>> 420975fbefd517d76c6dd6a06a82d50a0ba2a4b6
           <include name="startPage"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.epam.testexternalpart.tests.AssigningToTest -->
 >>>>>>> a894e551d3f816a24015f809dcd27cae062f27b0
+=======
+      </class> <!-- com.epam.testexternalpart.tests.SeveralStreamTest -->
+>>>>>>> 3c1685fd21682e646be2ca7e046bb477b36ab759
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

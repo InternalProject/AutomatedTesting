@@ -21,7 +21,7 @@ import com.epam.testexternalpart.screen.departments.Departments;
 public class StreamPage extends Components implements CheckerData {
 	
 	private static final String STREAM_TITLE = "//div[@class='container-fluid']/h1";
-	public static final String CRUMBS = "//div[@id='crumds']";
+	public static final String CRUMBS = "//div[@id='crumds']/a";
 	private static final String STREAM_COLLS_TITLE="//div[@class='fixed-table-header']/table[@class='table-striped table-condensed table table-hover']/thead/tr/th/div[1]";
 	private static final String STREAM_CHECKBOXES_COL="//td[@class='bs-checkbox']//input";
 	private static final String STREAM_CHECKBOX_FOR_ALL="//input[@name='btSelectAll']";
@@ -381,6 +381,7 @@ public class StreamPage extends Components implements CheckerData {
 	}
 	
 	public WebElement getCheckbox(int number){
+		System.out.println("  !   "+Checkbox—ol.size());
 		return Checkbox—ol.get(number);
 	}
 	
@@ -495,6 +496,15 @@ public class StreamPage extends Components implements CheckerData {
 		}
 	
 	public void deleteAddedCand() {
+		
+		clickElement(getCheckbox(0), "check-box of last cand");
+		clickElement(deleteButton,"deleteButton");
+		 isElementExist("delCandPopAp", delCandPopAp, true);
+		 clickElement( delDepPopAp, "deleteCandPopApButton");
+
+	}
+	
+   public void deleteAddedCand(String mailName, String phoneNumber) {
 		
 		clickElement(getCheckbox(0), "check-box of last cand");
 		clickElement(deleteButton,"deleteButton");
@@ -678,12 +688,9 @@ public class StreamPage extends Components implements CheckerData {
 
 		for(WebElement e:all_candidates_in_stream){
 			try{
+			waiting(MIDDLE_TIME);
 			mailNameActual = e.findElement(By.xpath("./td[8]")).getText();
 			phoneNumberActual = e.findElement(By.xpath("./td[6]")).getText();
-			}
-			catch(StaleElementReferenceException ex){
-				
-			}
 			if(mailName.equals(mailNameActual) & phoneNumber.equals(phoneNumberActual)){
 				icon = e.findElement(By.xpath("./td[3]/img"));
 				String imgContent = icon.getAttribute("title");
@@ -693,6 +700,10 @@ public class StreamPage extends Components implements CheckerData {
 				Assert.assertEquals(imgContent.contains(streamDepartmentName.replaceAll("-", ":")), true);
 				Assert.assertEquals(imgContent.contains("not tested"), true);
 
+			}
+			}
+			catch(StaleElementReferenceException ex){
+				
 			}
 		}
 		
