@@ -37,7 +37,7 @@ public class Departments extends Components implements CheckerData{
 	private static final String DEPARTMENT_TABLE_ALL_DELETE_BUTTON = "//table[@id='manualTable']//tr//td[7]//a[2]";
 
 	private static final String DEPARTMENT_ACTIVE_TAB = "//li[@class='active']/a";
-	private static final String DEPARTMENT_ALL_TABS = "//ul[@id='depTab']/li/a";	
+	private static final String DEPARTMENT_ALL_TABS = "//ul[@id='depTab']/li";	
 
 	private static final String DEPARTMENT_TITTLE_TEXT = "//h1[text()='Candidate Automation System']";
 	public int depNumb;
@@ -55,6 +55,14 @@ public class Departments extends Components implements CheckerData{
 	public static final String SECOND_STREAM = "//tbody/tr[2]";
 	public static final String FIRST_STREAM = "//tbody/tr[1]";
 	public static final String FIRST_STREAM_NAME = "//tbody/tr[1]/td[2]";
+	public static final String DEPARTMENT_DOTNET_TAB = "//ul[@id='depTab']/li[2]";
+	public static final String DEPARTMENT_JAVA_TAB = "//ul[@id='depTab']/li[1]";
+	
+	@FindBy(xpath = DEPARTMENT_JAVA_TAB)
+	public WebElement department_java_tab;
+	
+	@FindBy(xpath = DEPARTMENT_DOTNET_TAB)
+	public WebElement department_dotnet_tab;
 	
 	@FindBy(xpath = CRUMBS)
 	public WebElement crumbs;

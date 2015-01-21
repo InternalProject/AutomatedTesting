@@ -3,20 +3,24 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.epam.testexternalpart.tests.SeveralStreamTest">
+      <class name="com.epam.testexternalpart.tests.AssigningToTest">
         <methods>
-<<<<<<< HEAD
+          <include name="checkBannedCandidate"/>
+          <include name="checkConfirmedCand"/>
+          <include name="invitateSecondTime"/>
+          <include name="invitateThirdTime"/>
+          <include name="checkNotActualCand"/>
+          <include name="addCandidates"/>
           <include name="checkDublicateAnswer"/>
+          <include name="assignTest"/>
           <include name="init"/>
-          <include name="tearDown"/>
-=======
-          <include name="tearDown"/>
-          <include name="init"/>
-          <include name="addCandidateToSeveralDepartment" invocation-numbers="0"/>
->>>>>>> 420975fbefd517d76c6dd6a06a82d50a0ba2a4b6
-          <include name="startPage"/>
+          <include name="responseFromCandidates"/>
+          <include name="checkNewTimeCand"/>
+          <include name="checkNotTestedCand"/>
+          <include name="checkAssignedToTestCand"/>
+          <include name="addStream"/>
         </methods>
-      </class> <!-- com.epam.testexternalpart.tests.SeveralStreamTest -->
+      </class> <!-- com.epam.testexternalpart.tests.AssigningToTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
