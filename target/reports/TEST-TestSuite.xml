@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="0.543" tests="150" errors="0" skipped="142" failures="8">
+<testsuite name="TestSuite" time="1,317.477" tests="67" errors="0" skipped="0" failures="7">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_71\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="D:\new_workspace\.metadata\.plugins\org.eclipse.m2e.core\launches\m2conf4792690177461262779.tmp"/>
+    <property name="classworlds.conf" value="D:\new_workspace\.metadata\.plugins\org.eclipse.m2e.core\launches\m2conf4116318070603019056.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_71\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\TortoiseGit\bin;C:\Program Files\Java\jdk1.7.0_71\bin;C:\programs\apache-maven-3.2.5\bin;C:\Program Files\Java\jdk1.7.0_71\bin;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,727 +61,150 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="init" classname="com.epam.testexternalpart.tests.SmokeTest" time="0.513">
-    <failure message="The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:89)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
-	at com.epam.testexternalpart.core.WebDriverFactory.initDriver(WebDriverFactory.java:18)
-	at com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:72)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]></failure>
-    <system-out><![CDATA[[TestRunner] Running the tests in 'smokeMenuTest' with parallel mode:false
-[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@37d179fb priority: 10
-[TestClass] Creating TestClass for [ClassImpl class=com.epam.testexternalpart.tests.SmokeTest]
-[TestClass] Adding method SmokeTest.checkElementsEditCandidate(java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SmokeTest
-[TestClass] Adding method SmokeTest.checkAddStreamAccordingToDepartment()[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SmokeTest
-[TestClass] Adding method SmokeTest.checkSubgroupPage()[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SmokeTest
-[TestClass] Adding method SmokeTest.checkEmailTemplatesPage()[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SmokeTest
-[TestClass] Adding method SmokeTest.checkMailSettingsMenu()[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SmokeTest
-[TestClass] Adding method SmokeTest.checkElStreamPage(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SmokeTest
-[TestClass] Adding method SmokeTest.checkElAllCandiadtesMenu(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SmokeTest
-[TestClass] Adding method SmokeTest.checkElementsPresentAddStreamPage()[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SmokeTest
-[TestClass] Adding method SmokeTest.checkMenu()[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SmokeTest
-[TestClass] Adding method SmokeTest.checkElementsViewCandidate(java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SmokeTest
-[TestClass] Adding method SmokeTest.checkConcretSubgroup()[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SmokeTest
-[TestClass] Adding method SmokeTest.checkElementsPresentAddDepartmentPage()[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SmokeTest
-[TestClass] Adding method SmokeTest.checkElementsAddCandidate(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SmokeTest
-[TestClass] Adding method SmokeTest.checkElementsPresentDepartmentPage()[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SmokeTest
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.init()
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.tearDown()
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.startPage()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkElementsEditCandidate()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkAddStreamAccordingToDepartment()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkSubgroupPage()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkEmailTemplatesPage()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkMailSettingsMenu()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkElStreamPage()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkElAllCandiadtesMenu()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkElementsPresentAddStreamPage()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkMenu()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkElementsViewCandidate()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkConcretSubgroup()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkElementsPresentAddDepartmentPage()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkElementsAddCandidate()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkElementsPresentDepartmentPage()
-[TestRunner] Running the tests in 'DepartmentTest' with parallel mode:false
-[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@6bd7fadd priority: 10
-[TestClass] Creating TestClass for [ClassImpl class=com.epam.testexternalpart.tests.DepartmentTest]
-[TestClass] Adding method DepartmentTest.testAddDepartmentWithValidName(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.DepartmentTest
-[TestClass] Adding method DepartmentTest.testEditDepartmentName(java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.DepartmentTest
-[TestClass] Adding method DepartmentTest.testAddDepartment(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.DepartmentTest
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.init()
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.tearDown()
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.startPage()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.testAddDepartmentWithValidName()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.testEditDepartmentName()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.testAddDepartment()
-[TestRunner] Running the tests in 'StreamTest' with parallel mode:false
-[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@229220cb priority: 10
-[TestClass] Creating TestClass for [ClassImpl class=com.epam.testexternalpart.tests.StreamTest]
-[TestClass] Adding method StreamTest.testEditStream(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.StreamTest
-[TestClass] Adding method StreamTest.testAddNewValidStream(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.StreamTest
-[TestClass] Adding method StreamTest.testAddNewInValidStream(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.StreamTest
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.init()
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.tearDown()
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.startPage()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.testEditStream()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.testAddNewValidStream()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.testAddNewInValidStream()
-[TestRunner] Running the tests in 'CandidateTest' with parallel mode:false
-[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@57380fc priority: 10
-[TestClass] Creating TestClass for [ClassImpl class=com.epam.testexternalpart.tests.AddCandidateTest]
-[TestClass] Adding method AddCandidateTest.changeStatus(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AddCandidateTest
-[TestClass] Adding method AddCandidateTest.deleteAllCandidates(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AddCandidateTest
-[TestClass] Adding method AddCandidateTest.bannWithButton(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AddCandidateTest
-[TestClass] Adding method AddCandidateTest.addCandidateManually(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AddCandidateTest
-[TestClass] Adding method AddCandidateTest.addCandidate(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AddCandidateTest
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.init()
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.tearDown()
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.startPage()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.changeStatus()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.deleteAllCandidates()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.bannWithButton()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.addCandidateManually()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.addCandidate()
-[TestRunner] Running the tests in 'AssigningToTestTest' with parallel mode:false
-[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@1bab05a3 priority: 10
-[TestClass] Creating TestClass for [ClassImpl class=com.epam.testexternalpart.tests.AssigningToTest]
-[TestClass] Adding method AssigningToTest.checkNotTestedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.checkNewTimeCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.checkDublicateAnswer()[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.addStream(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.invitateSecondTime(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.checkAssignedToTestCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.assignTest(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.responseFromCandidates()[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.addCandidates(java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.checkBannedCandidate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.checkConfirmedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.checkNotActualCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[TestClass] Adding method AssigningToTest.invitateThirdTime(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.AssigningToTest
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.init()
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.tearDown()
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.startPage()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkNotTestedCand()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkNewTimeCand()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkDublicateAnswer()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.addStream()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.invitateSecondTime()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkAssignedToTestCand()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.assignTest()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.responseFromCandidates()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.addCandidates()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkBannedCandidate()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkConfirmedCand()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.checkNotActualCand()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.invitateThirdTime()
-[TestRunner] Running the tests in 'SeveralStreamTest' with parallel mode:false
-[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@54231c3 priority: 10
-[TestClass] Creating TestClass for [ClassImpl class=com.epam.testexternalpart.tests.SeveralStreamTest]
-[TestClass] Adding method SeveralStreamTest.addCandidateToSeveralDepartment(java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SeveralStreamTest
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.init()
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.tearDown()
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.startPage()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.addCandidateToSeveralDepartment()
-[TestRunner] Running the tests in 'SearchStreamTest' with parallel mode:false
-[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@5679bca4 priority: 10
-[TestClass] Creating TestClass for [ClassImpl class=com.epam.testexternalpart.tests.SearchTest]
-[TestClass] Adding method SearchTest.allCandidatesSearch(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SearchTest
-[TestClass] Adding method SearchTest.streamSearch(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.SearchTest
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.init()
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.tearDown()
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.startPage()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.allCandidatesSearch()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.streamSearch()
-[TestRunner] Running the tests in 'PlaceForTestingTest' with parallel mode:false
-[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@146e1cbf priority: 10
-[TestClass] Creating TestClass for [ClassImpl class=com.epam.testexternalpart.tests.PlaceForTestingTest]
-[TestClass] Adding method PlaceForTestingTest.deleteNewPlaceForTesting(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.PlaceForTestingTest
-[TestClass] Adding method PlaceForTestingTest.editNewPlaceForTesting(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.PlaceForTestingTest
-[TestClass] Adding method PlaceForTestingTest.addNewPlaceForTesting(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:null] on TestClass class com.epam.testexternalpart.tests.PlaceForTestingTest
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.init()
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.tearDown()
-[XmlMethodSelector] Including method com.epam.testexternalpart.core.startPage()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.deleteNewPlaceForTesting()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.editNewPlaceForTesting()
-[XmlMethodSelector] Including method com.epam.testexternalpart.tests.addNewPlaceForTesting()
-[SuiteRunner] Created 8 TestRunners
-[TestRunner] Running test smokeMenuTest on 1  classes,  included groups:[] excluded groups:[]
-===== Test class
-com.epam.testexternalpart.tests.SmokeTest
-  @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]
-  @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]
-    @Test SmokeTest.checkElementsEditCandidate(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]
-    @Test SmokeTest.checkAddStreamAccordingToDepartment()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]
-    @Test SmokeTest.checkSubgroupPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]
-    @Test SmokeTest.checkEmailTemplatesPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]
-    @Test SmokeTest.checkMailSettingsMenu()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]
-    @Test SmokeTest.checkElStreamPage(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]
-    @Test SmokeTest.checkElAllCandiadtesMenu(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]
-    @Test SmokeTest.checkElementsPresentAddStreamPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]
-    @Test SmokeTest.checkMenu()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]
-    @Test SmokeTest.checkElementsViewCandidate(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]
-    @Test SmokeTest.checkConcretSubgroup()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]
-    @Test SmokeTest.checkElementsPresentAddDepartmentPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]
-    @Test SmokeTest.checkElementsAddCandidate(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]
-    @Test SmokeTest.checkElementsPresentDepartmentPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]
-  @AfterClass BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]
-======
-[Invoker 188787161] Keeping method BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 188787161] Invoking @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]
-Failed to invoke configuration method com.epam.testexternalpart.core.BaseTest.init:The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
+  <testcase name="checkAddStreamAccordingToDepartment" classname="com.epam.testexternalpart.tests.SmokeTest" time="19.921"/>
+  <testcase name="checkConcretSubgroup" classname="com.epam.testexternalpart.tests.SmokeTest" time="7.5"/>
+  <testcase name="checkElAllCandiadtesMenu" classname="com.epam.testexternalpart.tests.SmokeTest" time="45.699"/>
+  <testcase name="checkElStreamPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="2.996">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.epam.testexternalpart.screen.Components.checkElementPartialText(Components.java:132)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkTextPresent(StreamPage.java:460)
+	at com.epam.testexternalpart.tests.SmokeTest.checkElStreamPage(SmokeTest.java:63)
+</failure>
     <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
 [Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
+[Invoker 188787161] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]
+[Invoker 188787161] Invoking com.epam.testexternalpart.tests.SmokeTest.checkElStreamPage
+Check all elements are present on StreamPage
+Checking that click by selected stream reffering to Stream Page
+Click on [First stream on first dep]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Checking the presence of all elements on Stream Page
+Checking the presence of the elemen [Stream Assign Test Button]
+[Stream Assign Test Button]is Present
+Checking the presence of the elemen [Stream Bun Button]
+[Stream Bun Button]is Present
+Checking the presence of the elemen [Stream Delete Button]
+[Stream Delete Button]is Present
+Checking the presence of the elemen [Stream exportCandidateButton]
+[Stream exportCandidateButton]is Present
+Checking the presence of the elemen [Stream all Candidate Tab]
+[Stream all Candidate Tab]is Present
+Checking the presence of the elemen [Stream notTestedCandidate]
+[Stream notTestedCandidate]is Present
+Checking the presence of the elemen [Stream assigned To Test Tab]
+[Stream assigned To Test Tab]is Present
+Checking the presence of the elemen [Stream confirmed Tab]
+[Stream confirmed Tab]is Present
+Checking the presence of the elemen [Stream test Complete Tab]
+[Stream test Complete Tab]is Present
+Checking the presence of the elemen [Stream not Actual Tab]
+[Stream not Actual Tab]is Present
+Checking the presence of the elemen [Stream banned Tab]
+[Stream banned Tab]is Present
+Checking the presence of the elemen [Stream secondPhoneCheckBox]
+[Stream secondPhoneCheckBox]is Present
+Checking the presence of the elemen [Stream UniversityCheckBox]
+[Stream UniversityCheckBox]is Present
+Checking the presence of the elemen [Stream assigned facultyCheckBox]
+[Stream assigned facultyCheckBox]is Present
+Checking the presence of the elemen [Stream degreeCheckBox]
+[Stream degreeCheckBox]is Present
+Checking the presence of the elemen [Stream educationStartCheckBox]
+[Stream educationStartCheckBox]is Present
+Checking the presence of the elemen [Stream graduationYearCheckBox]
+[Stream graduationYearCheckBox]is Present
+Checking the presence of the elemen [Stream additionalEducationCheckBox]
+[Stream additionalEducationCheckBox]is Present
+Checking the presence of the elemen [Stream relevantSkillsCheckBox]
+[Stream relevantSkillsCheckBox]is Present
+Checking the presence of the elemen [Stream howKnowCheckBox]
+[Stream howKnowCheckBox]is Present
+Checking the presence of the elemen [Stream secondPhoneCheckBox]
+[Stream secondPhoneCheckBox]is Present
+Checking the presence of the elemen [Stream attemptCountCheckBox]
+[Stream attemptCountCheckBox]is Present
+Checking the presence of the elemen [Stream statusCheckBox]
+[Stream statusCheckBox]is Present
+Checking the presence of the elemen [Stream commentCheckBox]
+[Stream commentCheckBox]is Present
+Checking the presence of the elemen [Stream estimationCheckBox]
+[Stream estimationCheckBox]is Present
+Checking the presence of the elemen [Stream searchField]
+[Stream searchField]is Present
+Checking the presence of the elemen [Stream add Candidate Button]
+[Stream add Candidate Button]is Present
+All Streams elements are present
+Checking the presence of all text on Stream Page
+Checking text of element Department title
+Text of [Department title] is correct
+Checking partial text of element Crumbs
 ]]></system-out>
   </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="checkAddStreamAccordingToDepartment" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkConcretSubgroup" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkElAllCandiadtesMenu" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkElStreamPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkElementsAddCandidate" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkElementsEditCandidate" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkElementsPresentAddDepartmentPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkElementsPresentAddStreamPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkElementsPresentDepartmentPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkElementsViewCandidate" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkEmailTemplatesPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkMailSettingsMenu" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkMenu" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkSubgroupPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tearDown" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="init" classname="com.epam.testexternalpart.tests.DepartmentTest" time="0.01">
-    <failure message="The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:89)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
-	at com.epam.testexternalpart.core.WebDriverFactory.initDriver(WebDriverFactory.java:18)
-	at com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:72)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]></failure>
-    <system-out><![CDATA[===== Invoked methods
-  BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] 130089388
-    SmokeTest.checkAddStreamAccordingToDepartment()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] 130089388
-    SmokeTest.checkConcretSubgroup()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] 130089388
-    SmokeTest.checkElAllCandiadtesMenu(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]№;First Name;Last Name;Middle Name;Phone;BirthDate;Email;Fill Date;Stream;Department  130089388
-    SmokeTest.checkElStreamPage(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac];№;First Name;Last Name;Middle Name;Phone;BirthDate;Email;Fill Date  130089388
-    SmokeTest.checkElementsAddCandidate(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]First name;Last name;Middle name;Birth date;Email;Phone;Secondary phone;University name;Faculty name;Academic degree;Education start year;Graduation year;Additional education;Relevant skills;Languages;Referrer;Attempt count;Stream;Status;Fill date;Comment  130089388
-    SmokeTest.checkElementsEditCandidate(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj@mail.ru;+380505465345; First name;Last name;Middle name;Birth date;Email;Phone;Secondary phone;University name;Faculty name;Academic degree;Education start year;Graduation year;Additional education;Relevant skills;Languages;Referrer;Attempt count;Stream;Status;Fill date;Comment  130089388
-    SmokeTest.checkElementsPresentAddDepartmentPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] 130089388
-    SmokeTest.checkElementsPresentAddStreamPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] 130089388
-    SmokeTest.checkElementsPresentDepartmentPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] 130089388
-    SmokeTest.checkElementsViewCandidate(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac]Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj@mail.ru;+380505465345; First name;Last name;Middle name;Birth date;Email;Primary phone number;Secondary phone number;University;Faculty;Degree;Education start date;Graduation date;Extra education;Relevant skills;Language;Referrer;Stream;Status;Attempt amount;Filling date;Comment  130089388
-    SmokeTest.checkEmailTemplatesPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] 130089388
-    SmokeTest.checkMailSettingsMenu()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] 130089388
-    SmokeTest.checkMenu()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] 130089388
-    SmokeTest.checkSubgroupPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@7c101ac] 130089388
-=====
-[TestRunner] Running test DepartmentTest on 1  classes,  included groups:[] excluded groups:[]
-===== Test class
-com.epam.testexternalpart.tests.DepartmentTest
-  @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@2542e40c]
-  @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@2542e40c]
-    @Test DepartmentTest.testAddDepartmentWithValidName(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@2542e40c]
-    @Test DepartmentTest.testEditDepartmentName(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@2542e40c]
-    @Test DepartmentTest.testAddDepartment(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@2542e40c]
-  @AfterClass BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@2542e40c]
-======
-[Invoker 188787161] Keeping method BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@2542e40c] for class [TestClass name=class com.epam.testexternalpart.tests.DepartmentTest]
-[Invoker 188787161] Invoking @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@2542e40c]
-Failed to invoke configuration method com.epam.testexternalpart.core.BaseTest.init:The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.DepartmentTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@2542e40c] for class [TestClass name=class com.epam.testexternalpart.tests.DepartmentTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@2542e40c] for class [TestClass name=class com.epam.testexternalpart.tests.DepartmentTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.DepartmentTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@2542e40c] for class [TestClass name=class com.epam.testexternalpart.tests.DepartmentTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@2542e40c] for class [TestClass name=class com.epam.testexternalpart.tests.DepartmentTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.DepartmentTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@2542e40c] for class [TestClass name=class com.epam.testexternalpart.tests.DepartmentTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@2542e40c] for class [TestClass name=class com.epam.testexternalpart.tests.DepartmentTest]
-]]></system-out>
-  </testcase>
-  <testcase name="testAddDepartment" classname="com.epam.testexternalpart.tests.DepartmentTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testAddDepartmentWithValidName" classname="com.epam.testexternalpart.tests.DepartmentTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testEditDepartmentName" classname="com.epam.testexternalpart.tests.DepartmentTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tearDown" classname="com.epam.testexternalpart.tests.DepartmentTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@2542e40c] for class [TestClass name=class com.epam.testexternalpart.tests.DepartmentTest]
-]]></system-out>
-  </testcase>
-  <testcase name="init" classname="com.epam.testexternalpart.tests.StreamTest" time="0.01">
-    <failure message="The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:89)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
-	at com.epam.testexternalpart.core.WebDriverFactory.initDriver(WebDriverFactory.java:18)
-	at com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:72)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]></failure>
-    <system-out><![CDATA[===== Invoked methods
-  BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@2542e40c] 625140748
-    DepartmentTest.testAddDepartment(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@2542e40c]…..  625140748
-    DepartmentTest.testAddDepartmentWithValidName(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@2542e40c]NewDep  625140748
-    DepartmentTest.testEditDepartmentName(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@2542e40c]depNameFirst depNameSecond  625140748
-=====
-[TestRunner] Running test StreamTest on 1  classes,  included groups:[] excluded groups:[]
-===== Test class
-com.epam.testexternalpart.tests.StreamTest
-  @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e]
-  @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e]
-    @Test StreamTest.testEditStream(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e]
-    @Test StreamTest.testAddNewValidStream(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e]
-    @Test StreamTest.testAddNewInValidStream(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e]
-  @AfterClass BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e]
-======
-[Invoker 188787161] Keeping method BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-[Invoker 188787161] Invoking @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e]
-Failed to invoke configuration method com.epam.testexternalpart.core.BaseTest.init:The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-]]></system-out>
-  </testcase>
-  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testAddNewValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testAddNewValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testEditStream" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testEditStream" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tearDown" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-]]></system-out>
-  </testcase>
-  <testcase name="init" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <failure message="The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:89)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
-	at com.epam.testexternalpart.core.WebDriverFactory.initDriver(WebDriverFactory.java:18)
-	at com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:72)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]></failure>
-    <system-out><![CDATA[===== Invoked methods
-  BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e] 1161624942
-    StreamTest.testAddNewInValidStream(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e]…  1161624942
-    StreamTest.testAddNewInValidStream(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e]  1161624942
-    StreamTest.testAddNewInValidStream(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e]12323.0  1161624942
-    StreamTest.testAddNewInValidStream(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e]!!!  1161624942
-    StreamTest.testAddNewValidStream(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e]Hogwarts  1161624942
-    StreamTest.testAddNewValidStream(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e]Sssssss  1161624942
-    StreamTest.testEditStream(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e]1.0  1161624942
-    StreamTest.testEditStream(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@453cfd6e]2.0  1161624942
-=====
-[TestRunner] Running test CandidateTest on 1  classes,  included groups:[] excluded groups:[]
-===== Test class
-com.epam.testexternalpart.tests.AddCandidateTest
-  @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9]
-  @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9]
-    @Test AddCandidateTest.changeStatus(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9]
-    @Test AddCandidateTest.deleteAllCandidates(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9]
-    @Test AddCandidateTest.bannWithButton(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9]
-    @Test AddCandidateTest.addCandidateManually(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9]
-    @Test AddCandidateTest.addCandidate(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9]
-  @AfterClass BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9]
-======
-[Invoker 188787161] Keeping method BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-[Invoker 188787161] Invoking @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9]
-Failed to invoke configuration method com.epam.testexternalpart.core.BaseTest.init:The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-]]></system-out>
-  </testcase>
-  <testcase name="addCandidate" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="addCandidateManually" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="bannWithButton" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="changeStatus" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="deleteAllCandidates" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tearDown" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <skipped/>
+  <testcase name="checkElementsAddCandidate" classname="com.epam.testexternalpart.tests.SmokeTest" time="3.442"/>
+  <testcase name="checkElementsEditCandidate" classname="com.epam.testexternalpart.tests.SmokeTest" time="6.901"/>
+  <testcase name="checkElementsPresentAddDepartmentPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0.391"/>
+  <testcase name="checkElementsPresentAddStreamPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0.754"/>
+  <testcase name="checkElementsPresentDepartmentPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0.193"/>
+  <testcase name="checkElementsViewCandidate" classname="com.epam.testexternalpart.tests.SmokeTest" time="46.254"/>
+  <testcase name="checkEmailTemplatesPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="7.89"/>
+  <testcase name="checkMailSettingsMenu" classname="com.epam.testexternalpart.tests.SmokeTest" time="0"/>
+  <testcase name="checkMenu" classname="com.epam.testexternalpart.tests.SmokeTest" time="0.3"/>
+  <testcase name="checkSubgroupPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="2.764"/>
+  <testcase name="testAddDepartment" classname="com.epam.testexternalpart.tests.DepartmentTest" time="0.37"/>
+  <testcase name="testAddDepartmentWithValidName" classname="com.epam.testexternalpart.tests.DepartmentTest" time="3.219"/>
+  <testcase name="testEditDepartmentName" classname="com.epam.testexternalpart.tests.DepartmentTest" time="5.127"/>
+  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="2.795"/>
+  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="2.424"/>
+  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="2.45"/>
+  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="2.434"/>
+  <testcase name="testAddNewValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="5.025"/>
+  <testcase name="testAddNewValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="5.013"/>
+  <testcase name="testEditStream" classname="com.epam.testexternalpart.tests.StreamTest" time="2.462"/>
+  <testcase name="testEditStream" classname="com.epam.testexternalpart.tests.StreamTest" time="2.608"/>
+  <testcase name="addCandidate" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="10.328"/>
+  <testcase name="addCandidateManually" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="13.021"/>
+  <testcase name="bannWithButton" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="22.515"/>
+  <testcase name="changeStatus" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="56.125"/>
+  <testcase name="deleteAllCandidates" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="9.732"/>
+  <testcase name="addStream" classname="com.epam.testexternalpart.tests.AssigningToTest" time="1.901">
+    <failure message="no such element&#10;  (Session info: chrome=39.0.2171.99)&#10;  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 16 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;&#10;System info: host: &apos;EPUAKHAW0501&apos;, ip: &apos;10.23.14.67&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;&#10;Session ID: 9ce7d911c1941481369fde393069e751&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7944_5728}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=39.0.2171.99)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0501', ip: '10.23.14.67', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
+Session ID: 9ce7d911c1941481369fde393069e751
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Borodkina\AppData\Local\Temp\scoped_dir7944_5728}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor37.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.epam.testexternalpart.screen.departments.Departments.clickSelectedStream(Departments.java:180)
+	at com.epam.testexternalpart.tests.AssigningToTest.addStream(AssigningToTest.java:17)
+</failure>
     <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-]]></system-out>
-  </testcase>
-  <testcase name="init" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <failure message="The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:89)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
-	at com.epam.testexternalpart.core.WebDriverFactory.initDriver(WebDriverFactory.java:18)
-	at com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:72)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]></failure>
-    <system-out><![CDATA[===== Invoked methods
+[Invoker 188787161] Invoking @AfterClass BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9]
+===== Invoked methods
   BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9] 1616188665
     AddCandidateTest.addCandidate(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9]; ; ; ; ; ;  1616188665
     AddCandidateTest.addCandidateManually(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9]Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;  1616188665
     AddCandidateTest.bannWithButton(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9]Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;  1616188665
     AddCandidateTest.changeStatus(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9]Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345; confirmed test completed not actual banned 1;Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;  1616188665
     AddCandidateTest.deleteAllCandidates(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9]No matching records found  1616188665
+  BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@605514f9] 1616188665
 =====
 [TestRunner] Running test AssigningToTestTest on 1  classes,  included groups:[] excluded groups:[]
 ===== Test class
@@ -805,538 +228,177 @@ com.epam.testexternalpart.tests.AssigningToTest
 ======
 [Invoker 188787161] Keeping method BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
 [Invoker 188787161] Invoking @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]
-Failed to invoke configuration method com.epam.testexternalpart.core.BaseTest.init:The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
+[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
+[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
+[Invoker 188787161] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]
+[Invoker 188787161] Invoking com.epam.testexternalpart.tests.AssigningToTest.addStream
+Checking that Stream Create Button reffering to Add Stream Page
+Checking the presence of the elemen [java Tab]
+[java Tab]is Not Present
+Create new Stream with name Autumn 2015
+Click on [AddStreamButton]
 ]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver (v2.9.248315) on port 27710
+]]></system-err>
   </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
+  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="10.07"/>
+  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="9.469"/>
+  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="9.435"/>
+  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="9.442"/>
+  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="9.377"/>
+  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="9.39"/>
+  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="9.395"/>
+  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="4.979"/>
+  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="5.011"/>
+  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="4.998"/>
+  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="5.008"/>
+  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="4.99"/>
+  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="4.993"/>
+  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="5.024"/>
+  <testcase name="assignTest" classname="com.epam.testexternalpart.tests.AssigningToTest" time="28.454">
+    <failure message="Sending invitation is success! expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Sending invitation is success! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.epam.testexternalpart.screen.stream.assigningTest.AssignToTestPage.checkResults(AssignToTestPage.java:103)
+	at com.epam.testexternalpart.tests.AssigningToTest.assignTest(AssigningToTest.java:43)
+</failure>
     <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
 [Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
+[Invoker 188787161] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]
+[Invoker 188787161] Invoking com.epam.testexternalpart.tests.AssigningToTest.assignTest
+Click on [Select stream on Department Page]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Click on [Select cabdidates to assigning to test]
+Click on [Click assignTestButton]
+Send invitation to candidates
+Click on [click sendInvitationButton]
+Invitation were sent
+Check results of sending invitation
+Checking the presence of the elemen [Results pop up]
+[Results pop up]is Present
 ]]></system-out>
   </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="addStream" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="assignTest" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkAssignedToTestCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkAssignedToTestCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkAssignedToTestCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkAssignedToTestCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkAssignedToTestCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkAssignedToTestCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="responseFromCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkConfirmedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkNotActualCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkNewTimeCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkNewTimeCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="invitateSecondTime" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkDublicateAnswer" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="invitateThirdTime" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkBannedCandidate" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tearDown" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="init" classname="com.epam.testexternalpart.tests.SeveralStreamTest" time="0">
-    <failure message="The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:89)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
-	at com.epam.testexternalpart.core.WebDriverFactory.initDriver(WebDriverFactory.java:18)
-	at com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:72)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+  <testcase name="checkAssignedToTestCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="3.948"/>
+  <testcase name="checkAssignedToTestCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="3.976"/>
+  <testcase name="checkAssignedToTestCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="3.962"/>
+  <testcase name="checkAssignedToTestCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="3.969"/>
+  <testcase name="checkAssignedToTestCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="3.992"/>
+  <testcase name="checkAssignedToTestCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="4.011"/>
+  <testcase name="responseFromCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="744.19">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]></failure>
-    <system-out><![CDATA[===== Invoked methods
-  BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] 892136402
-    AssigningToTest.addStream(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015  892136402
-    AssigningToTest.addCandidates(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Олег;Ромашкин;Федорович;21.09.1990;pupkin379@rambler.ru;+397894164112;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем  892136402
-    AssigningToTest.addCandidates(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Денис;Петрушкин;Геннадьевич;16.04.1991;pupkin379@i.ua;+087894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем  892136402
-    AssigningToTest.addCandidates(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Семен;Пяточкин;Сергеевич;04.02.1990;vasya.pupkin379@yandex.ru;+087894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем  892136402
-    AssigningToTest.addCandidates(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Илья;Сметанкин;Олегович;13.05.1992;student19843@mail.ru;+045894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем  892136402
-    AssigningToTest.addCandidates(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Лев;Топорин;Борисович;15.06.1992;student18844@gmail.com;+045894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем  892136402
-    AssigningToTest.addCandidates(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Леонид;Незнающий;Клементьевич;15.06.1992;student@com;+045894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем  892136402
-    AssigningToTest.addCandidates(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Кирилл;Хмельной;Артурович;15.06.1992;student19843@ukr.net;+045894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем  892136402
-    AssigningToTest.checkNotTestedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Кирилл;Хмельной;Артурович;15.06.1992;student19843@ukr.net;+045894156114 1.0  892136402
-    AssigningToTest.checkNotTestedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Леонид;Незнающий;Клементьевич;15.06.1992;student@com;+045894156114 2.0  892136402
-    AssigningToTest.checkNotTestedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Лев;Топорин;Борисович;15.06.1992;student18844@gmail.com;+045894156114 3.0  892136402
-    AssigningToTest.checkNotTestedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Илья;Сметанкин;Олегович;13.05.1992;student19843@mail.ru;+045894156114 4.0  892136402
-    AssigningToTest.checkNotTestedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Семен;Пяточкин;Сергеевич;04.02.1990;vasya.pupkin379@yandex.ru;+087894156114 5.0  892136402
-    AssigningToTest.checkNotTestedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Денис;Петрушкин;Геннадьевич;16.04.1991;pupkin379@i.ua;+087894156114 6.0  892136402
-    AssigningToTest.checkNotTestedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Олег;Ромашкин;Федорович;21.09.1990;pupkin379@rambler.ru;+397894164112 7.0  892136402
-    AssigningToTest.assignTest(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015  892136402
-    AssigningToTest.checkAssignedToTestCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Кирилл;Хмельной;Артурович;15.06.1992;student19843@ukr.net;+045894156114 1.0  892136402
-    AssigningToTest.checkAssignedToTestCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Лев;Топорин;Борисович;15.06.1992;student18844@gmail.com;+045894156114 2.0  892136402
-    AssigningToTest.checkAssignedToTestCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Илья;Сметанкин;Олегович;13.05.1992;student19843@mail.ru;+045894156114 3.0  892136402
-    AssigningToTest.checkAssignedToTestCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Семен;Пяточкин;Сергеевич;04.02.1990;vasya.pupkin379@yandex.ru;+087894156114 4.0  892136402
-    AssigningToTest.checkAssignedToTestCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Денис;Петрушкин;Геннадьевич;16.04.1991;pupkin379@i.ua;+087894156114 5.0  892136402
-    AssigningToTest.checkAssignedToTestCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Олег;Ромашкин;Федорович;21.09.1990;pupkin379@rambler.ru;+397894164112 6.0  892136402
-    AssigningToTest.responseFromCandidates()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] 892136402
-    AssigningToTest.checkConfirmedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Денис;Петрушкин;Геннадьевич;16.04.1991;pupkin379@i.ua;+087894156114 1.0  892136402
-    AssigningToTest.checkNotActualCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Семен;Пяточкин;Сергеевич;04.02.1990;vasya.pupkin379@yandex.ru;+087894156114 1.0  892136402
-    AssigningToTest.checkNewTimeCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Леонид;Незнающий;Клементьевич;15.06.1992;student@com;+045894156114 1.0  892136402
-    AssigningToTest.checkNewTimeCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Олег;Ромашкин;Федорович;21.09.1990;pupkin379@rambler.ru;+397894164112 2.0  892136402
-    AssigningToTest.invitateSecondTime(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015  892136402
-    AssigningToTest.checkDublicateAnswer()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] 892136402
-    AssigningToTest.invitateThirdTime(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015  892136402
-    AssigningToTest.checkBannedCandidate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]Autumn 2015 Олег;Ромашкин;Федорович;21.09.1990;pupkin379@rambler.ru;+397894164112 1.0  892136402
-=====
-[TestRunner] Running test SeveralStreamTest on 1  classes,  included groups:[] excluded groups:[]
-===== Test class
-com.epam.testexternalpart.tests.SeveralStreamTest
-  @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@3c4a19e2]
-  @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@3c4a19e2]
-    @Test SeveralStreamTest.addCandidateToSeveralDepartment(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@3c4a19e2]
-  @AfterClass BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@3c4a19e2]
-======
-[Invoker 188787161] Keeping method BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@3c4a19e2] for class [TestClass name=class com.epam.testexternalpart.tests.SeveralStreamTest]
-[Invoker 188787161] Invoking @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@3c4a19e2]
-Failed to invoke configuration method com.epam.testexternalpart.core.BaseTest.init:The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:50)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:227)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:39)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:213)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:210)
+	at org.openqa.selenium.support.ui.ExpectedConditions$18.apply(ExpectedConditions.java:563)
+	at org.openqa.selenium.support.ui.ExpectedConditions$18.apply(ExpectedConditions.java:556)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.epam.testexternalpart.screen.Components.clickElement(Components.java:81)
+	at com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromYandex.enterIntoUnreadMessage(AnswerFromYandex.java:58)
+	at com.epam.testexternalpart.tests.AssigningToTest.responseFromCandidates(AssigningToTest.java:69)
+</failure>
+    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
+[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
+[Invoker 188787161] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]
+[Invoker 188787161] Invoking com.epam.testexternalpart.tests.AssigningToTest.responseFromCandidates
+Click on [logginButton]
+Click on [inputBoxRow]
+Click on [confirmed Answer]
+Click on [settingsButton]
+Click on [logoutButton]
+Click on [logginButton]
+Click on [readMessages]
+Click on [confirmed Answer]
+Click on [settingsButton]
+Click on [logoutButton]
+Click on [logginButton]
+Click on [inputBoxRow]
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver (v2.9.248315) on port 9888
+Starting ChromeDriver (v2.9.248315) on port 36354
+Starting ChromeDriver (v2.9.248315) on port 12398
+[712.997][SEVERE]: Unable to receive message from renderer
+]]></system-err>
+  </testcase>
+  <testcase name="checkConfirmedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="4.361"/>
+  <testcase name="checkNotActualCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="3.494">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:643)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkNotActualCand(AssigningToTest.java:91)
+</failure>
+    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
+[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
+[Invoker 188787161] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]
+[Invoker 188787161] Invoking com.epam.testexternalpart.tests.AssigningToTest.checkNotActualCand
+Click on [Select stream on Department Page]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Click on [click notActualTab]
+Checking not testing Candidates
 ]]></system-out>
   </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SeveralStreamTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@3c4a19e2] for class [TestClass name=class com.epam.testexternalpart.tests.SeveralStreamTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@3c4a19e2] for class [TestClass name=class com.epam.testexternalpart.tests.SeveralStreamTest]
+  <testcase name="checkNewTimeCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="4.959"/>
+  <testcase name="checkNewTimeCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="4.574">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:643)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkNewTimeCand(AssigningToTest.java:99)
+</failure>
+    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
+[Invoker 188787161] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]
+[Invoker 188787161] Invoking com.epam.testexternalpart.tests.AssigningToTest.checkNewTimeCand
+Click on [Select stream on Department Page]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Click on [click notTestedCandidate]
+Checking not testing Candidates
 ]]></system-out>
   </testcase>
-  <testcase name="addCandidateToSeveralDepartment" classname="com.epam.testexternalpart.tests.SeveralStreamTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tearDown" classname="com.epam.testexternalpart.tests.SeveralStreamTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@3c4a19e2] for class [TestClass name=class com.epam.testexternalpart.tests.SeveralStreamTest]
+  <testcase name="invitateSecondTime" classname="com.epam.testexternalpart.tests.AssigningToTest" time="45.994"/>
+  <testcase name="checkDublicateAnswer" classname="com.epam.testexternalpart.tests.AssigningToTest" time="16.587">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromIUa.checkDublicateAnswerMessage(AnswerFromIUa.java:121)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkDublicateAnswer(AssigningToTest.java:124)
+</failure>
+    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
+[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
+[Invoker 188787161] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@352cebd2]
+[Invoker 188787161] Invoking com.epam.testexternalpart.tests.AssigningToTest.checkDublicateAnswer
+Click on [settingsButton]
+Click on [emailTemplatesButtton]
+Click on [answerDuplicationTittle]
+Click on [logginButton]
+Click on [inputBoxRow]
+Уважаемый
+
 ]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver (v2.9.248315) on port 29501
+]]></system-err>
   </testcase>
-  <testcase name="init" classname="com.epam.testexternalpart.tests.SearchTest" time="0.01">
-    <failure message="The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:89)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
-	at com.epam.testexternalpart.core.WebDriverFactory.initDriver(WebDriverFactory.java:18)
-	at com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:72)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]></failure>
-    <system-out><![CDATA[===== Invoked methods
-  BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@3c4a19e2] 1011489250
-    SeveralStreamTest.addCandidateToSeveralDepartment(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SeveralStreamTest@3c4a19e2]Harry;Potter;James;02.12.2013;sdhgjshg1j@mail.ru;+380505465345;  1011489250
-=====
-[TestRunner] Running test SearchStreamTest on 1  classes,  included groups:[] excluded groups:[]
-===== Test class
-com.epam.testexternalpart.tests.SearchTest
-  @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@79cfb151]
-  @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@79cfb151]
-    @Test SearchTest.allCandidatesSearch(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@79cfb151]
-    @Test SearchTest.streamSearch(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@79cfb151]
-  @AfterClass BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@79cfb151]
-======
-[Invoker 188787161] Keeping method BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@79cfb151] for class [TestClass name=class com.epam.testexternalpart.tests.SearchTest]
-[Invoker 188787161] Invoking @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@79cfb151]
-Failed to invoke configuration method com.epam.testexternalpart.core.BaseTest.init:The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SearchTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@79cfb151] for class [TestClass name=class com.epam.testexternalpart.tests.SearchTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@79cfb151] for class [TestClass name=class com.epam.testexternalpart.tests.SearchTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SearchTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@79cfb151] for class [TestClass name=class com.epam.testexternalpart.tests.SearchTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@79cfb151] for class [TestClass name=class com.epam.testexternalpart.tests.SearchTest]
-]]></system-out>
-  </testcase>
-  <testcase name="allCandidatesSearch" classname="com.epam.testexternalpart.tests.SearchTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="streamSearch" classname="com.epam.testexternalpart.tests.SearchTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tearDown" classname="com.epam.testexternalpart.tests.SearchTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@79cfb151] for class [TestClass name=class com.epam.testexternalpart.tests.SearchTest]
-]]></system-out>
-  </testcase>
-  <testcase name="init" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="0">
-    <failure message="The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:197)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:117)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:112)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:89)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:117)
-	at com.epam.testexternalpart.core.WebDriverFactory.initDriver(WebDriverFactory.java:18)
-	at com.epam.testexternalpart.core.BaseTest.init(BaseTest.java:72)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]></failure>
-    <system-out><![CDATA[===== Invoked methods
-  BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@79cfb151] 2043654481
-    SearchTest.allCandidatesSearch(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@79cfb151]Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345; Ololo1;Ololoev1;Olololoevich1;02.12.2013;sdhgjshgj1@mail.ru;+380505465346; Ololo2;Ololoev2;Olololoevich2;02.12.2013;sdhgjshgj2@mail.ru;+380505465347; Ololo1 Ololoev  2043654481
-    SearchTest.streamSearch(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@79cfb151]Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345; Ololo1;Ololoev1;Olololoevich1;02.12.2013;sdhgjshgj1@mail.ru;+380505465346; Ololo2;Ololoev2;Olololoevich2;02.12.2013;sdhgjshgj2@mail.ru;+380505465347; Ololo1 Ololoev  2043654481
-=====
-[TestRunner] Running test PlaceForTestingTest on 1  classes,  included groups:[] excluded groups:[]
-===== Test class
-com.epam.testexternalpart.tests.PlaceForTestingTest
-  @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@28864ae7]
-  @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@28864ae7]
-    @Test PlaceForTestingTest.deleteNewPlaceForTesting(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@28864ae7]
-    @Test PlaceForTestingTest.editNewPlaceForTesting(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@28864ae7]
-    @Test PlaceForTestingTest.addNewPlaceForTesting(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@28864ae7]
-  @AfterClass BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@28864ae7]
-======
-[Invoker 188787161] Keeping method BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@28864ae7] for class [TestClass name=class com.epam.testexternalpart.tests.PlaceForTestingTest]
-[Invoker 188787161] Invoking @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@28864ae7]
-Failed to invoke configuration method com.epam.testexternalpart.core.BaseTest.init:The driver executable does not exist: D:\Internal_project\Test Framework 1.0\TestExternalPart\chromedriver.exe
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@28864ae7] for class [TestClass name=class com.epam.testexternalpart.tests.PlaceForTestingTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@28864ae7] for class [TestClass name=class com.epam.testexternalpart.tests.PlaceForTestingTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@28864ae7] for class [TestClass name=class com.epam.testexternalpart.tests.PlaceForTestingTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@28864ae7] for class [TestClass name=class com.epam.testexternalpart.tests.PlaceForTestingTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@28864ae7] for class [TestClass name=class com.epam.testexternalpart.tests.PlaceForTestingTest]
-[Invoker 188787161] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@28864ae7] for class [TestClass name=class com.epam.testexternalpart.tests.PlaceForTestingTest]
-]]></system-out>
-  </testcase>
-  <testcase name="addNewPlaceForTesting" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="deleteNewPlaceForTesting" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="editNewPlaceForTesting" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tearDown" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 188787161] Keeping method BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@28864ae7] for class [TestClass name=class com.epam.testexternalpart.tests.PlaceForTestingTest]
-]]></system-out>
-  </testcase>
+  <testcase name="invitateThirdTime" classname="com.epam.testexternalpart.tests.AssigningToTest" time="44.011"/>
+  <testcase name="checkBannedCandidate" classname="com.epam.testexternalpart.tests.AssigningToTest" time="4.066"/>
+  <testcase name="addCandidateToSeveralDepartment" classname="com.epam.testexternalpart.tests.SeveralStreamTest" time="36.56"/>
+  <testcase name="allCandidatesSearch" classname="com.epam.testexternalpart.tests.SearchTest" time="34.863"/>
+  <testcase name="streamSearch" classname="com.epam.testexternalpart.tests.SearchTest" time="33.03"/>
+  <testcase name="addNewPlaceForTesting" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="9.017"/>
+  <testcase name="deleteNewPlaceForTesting" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="3.27"/>
+  <testcase name="editNewPlaceForTesting" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="7.999"/>
 </testsuite>
