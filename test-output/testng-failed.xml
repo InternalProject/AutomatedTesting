@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <class name="com.epam.testexternalpart.tests.AddCandidateTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="addCandidateManually" invocation-numbers="0"/>
+          <include name="init"/>
+          <include name="startPage"/>
+        </methods>
+      </class> <!-- com.epam.testexternalpart.tests.AddCandidateTest -->
+=======
+      <class name="com.epam.testexternalpart.tests.AssigningToTest">
+=======
+      <class name="com.epam.testexternalpart.tests.SeveralStreamTest">
+>>>>>>> 3c1685fd21682e646be2ca7e046bb477b36ab759
+        <methods>
+<<<<<<< HEAD
+          <include name="checkDublicateAnswer"/>
+          <include name="init"/>
+          <include name="tearDown"/>
+=======
+          <include name="tearDown"/>
+          <include name="init"/>
+          <include name="addCandidateToSeveralDepartment" invocation-numbers="0"/>
+>>>>>>> 420975fbefd517d76c6dd6a06a82d50a0ba2a4b6
+          <include name="startPage"/>
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.epam.testexternalpart.tests.AssigningToTest -->
+>>>>>>> a894e551d3f816a24015f809dcd27cae062f27b0
+=======
+      </class> <!-- com.epam.testexternalpart.tests.SeveralStreamTest -->
+>>>>>>> 3c1685fd21682e646be2ca7e046bb477b36ab759
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
