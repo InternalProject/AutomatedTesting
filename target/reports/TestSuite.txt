@@ -1,13 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 67, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 1,504.333 sec <<< FAILURE! - in TestSuite
 checkElStreamPage(com.epam.testexternalpart.tests.SmokeTest)  Time elapsed: 2.996 sec  <<< FAILURE!
+=======
+Tests run: 67, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 957.697 sec <<< FAILURE! - in TestSuite
+checkNotActualCand(com.epam.testexternalpart.tests.AssigningToTest)  Time elapsed: 3.589 sec  <<< FAILURE!
+>>>>>>> b0fbf9aee17bd047c16a1dcd9b21448e2886793c
 java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
+<<<<<<< HEAD
 	at com.epam.testexternalpart.screen.Components.checkElementPartialText(Components.java:132)
 	at com.epam.testexternalpart.screen.stream.StreamPage.checkTextPresent(StreamPage.java:460)
 	at com.epam.testexternalpart.tests.SmokeTest.checkElStreamPage(SmokeTest.java:63)
@@ -72,20 +78,38 @@ java.lang.AssertionError: expected [true] but found [false]
 	at com.epam.testexternalpart.tests.AssigningToTest.checkNotActualCand(AssigningToTest.java:91)
 
 checkNewTimeCand(com.epam.testexternalpart.tests.AssigningToTest)  Time elapsed: 4.574 sec  <<< FAILURE!
+=======
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:647)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkNotActualCand(AssigningToTest.java:91)
+
+checkDublicateAnswer(com.epam.testexternalpart.tests.AssigningToTest)  Time elapsed: 21.346 sec  <<< FAILURE!
+>>>>>>> b0fbf9aee17bd047c16a1dcd9b21448e2886793c
 java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
+<<<<<<< HEAD
 	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:643)
 	at com.epam.testexternalpart.tests.AssigningToTest.checkNewTimeCand(AssigningToTest.java:99)
 
 checkDublicateAnswer(com.epam.testexternalpart.tests.AssigningToTest)  Time elapsed: 16.587 sec  <<< FAILURE!
+=======
+	at com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromIUa.checkDublicateAnswerMessage(AnswerFromIUa.java:120)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkDublicateAnswer(AssigningToTest.java:124)
+
+checkBannedCandidate(com.epam.testexternalpart.tests.AssigningToTest)  Time elapsed: 3.617 sec  <<< FAILURE!
+>>>>>>> b0fbf9aee17bd047c16a1dcd9b21448e2886793c
 java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
+<<<<<<< HEAD
 	at com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromIUa.checkDublicateAnswerMessage(AnswerFromIUa.java:121)
 	at com.epam.testexternalpart.tests.AssigningToTest.checkDublicateAnswer(AssigningToTest.java:124)
+=======
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:647)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkBannedCandidate(AssigningToTest.java:146)
+>>>>>>> b0fbf9aee17bd047c16a1dcd9b21448e2886793c
 

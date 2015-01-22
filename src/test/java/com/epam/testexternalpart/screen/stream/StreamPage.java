@@ -21,7 +21,8 @@ import com.epam.testexternalpart.screen.departments.Departments;
 public class StreamPage extends Components implements CheckerData {
 	
 	private static final String STREAM_TITLE = "//div[@class='container-fluid']/h1";
-	public static final String CRUMBS = "//div[@id='crumds']/a";
+	public static final String CRUMBS = "//div[@id='crumds']";
+	public static final String CRUMBS_BACK = "//div[@id='crumds']/a";
 	private static final String STREAM_COLLS_TITLE="//div[@class='fixed-table-header']/table[@class='table-striped table-condensed table table-hover']/thead/tr/th/div[1]";
 	private static final String STREAM_CHECKBOXES_COL="//td[@class='bs-checkbox']//input";
 	private static final String STREAM_CHECKBOX_FOR_ALL="//input[@name='btSelectAll']";
@@ -143,6 +144,9 @@ public class StreamPage extends Components implements CheckerData {
 	
 	@FindBy(xpath = CRUMBS)
 	public WebElement crumbs;
+	
+	@FindBy(xpath = CRUMBS_BACK)
+	public WebElement crumbs_back;
 	
 	@FindBy(xpath = STREAM_COLLS_TITLE)
 	private List<WebElement> colsTitle;
@@ -681,6 +685,7 @@ public class StreamPage extends Components implements CheckerData {
 
 	public void clickBannedTab() {
 		
+		waiting(5000);
 		clickElement(bannedTab, "click bannedTab");	
 	}
 	

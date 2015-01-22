@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="smokeMenuTest"
            tests="14"
+<<<<<<< HEAD
            failures="1"
            errors="0"
            skipped="0"
@@ -64,5 +65,28 @@
                 <testcase name="checkElementsPresentAddDepartmentPage" time="0,391" classname="com.epam.testexternalpart.tests.SmokeTest" />
                 <testcase name="checkEmailTemplatesPage" time="7,891" classname="com.epam.testexternalpart.tests.SmokeTest" />
                 <testcase name="checkElementsPresentAddStreamPage" time="0,754" classname="com.epam.testexternalpart.tests.SmokeTest" />
+=======
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="202.995">
+  <properties />
+  
+  
+            <testcase name="checkMailSettingsMenu" time="0.001" classname="com.epam.testexternalpart.tests.SmokeTest" />
+                <testcase name="checkElementsPresentAddStreamPage" time="0.910" classname="com.epam.testexternalpart.tests.SmokeTest" />
+                <testcase name="checkElStreamPage" time="53.163" classname="com.epam.testexternalpart.tests.SmokeTest" />
+                <testcase name="checkElementsAddCandidate" time="4.097" classname="com.epam.testexternalpart.tests.SmokeTest" />
+                <testcase name="checkMenu" time="0.367" classname="com.epam.testexternalpart.tests.SmokeTest" />
+                <testcase name="checkElementsViewCandidate" time="48.868" classname="com.epam.testexternalpart.tests.SmokeTest" />
+                <testcase name="checkEmailTemplatesPage" time="8.363" classname="com.epam.testexternalpart.tests.SmokeTest" />
+                <testcase name="checkElementsPresentAddDepartmentPage" time="0.531" classname="com.epam.testexternalpart.tests.SmokeTest" />
+                <testcase name="checkElAllCandiadtesMenu" time="48.408" classname="com.epam.testexternalpart.tests.SmokeTest" />
+                <testcase name="checkElementsEditCandidate" time="7.339" classname="com.epam.testexternalpart.tests.SmokeTest" />
+                <testcase name="checkAddStreamAccordingToDepartment" time="20.213" classname="com.epam.testexternalpart.tests.SmokeTest" />
+                <testcase name="checkConcretSubgroup" time="7.613" classname="com.epam.testexternalpart.tests.SmokeTest" />
+                <testcase name="checkElementsPresentDepartmentPage" time="0.228" classname="com.epam.testexternalpart.tests.SmokeTest" />
+                <testcase name="checkSubgroupPage" time="2.894" classname="com.epam.testexternalpart.tests.SmokeTest" />
+>>>>>>> b0fbf9aee17bd047c16a1dcd9b21448e2886793c
       
 </testsuite>

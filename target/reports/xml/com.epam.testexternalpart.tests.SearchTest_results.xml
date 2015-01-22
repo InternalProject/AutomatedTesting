@@ -4,11 +4,20 @@
            failures="0"
            errors="0"
            skipped="0"
+<<<<<<< HEAD
            time="67,892">
   <properties />
   
   
             <testcase name="allCandidatesSearch" time="34,863" classname="com.epam.testexternalpart.tests.SearchTest" />
                 <testcase name="streamSearch" time="33,029" classname="com.epam.testexternalpart.tests.SearchTest" />
+=======
+           time="71.226">
+  <properties />
+  
+  
+            <testcase name="streamSearch" time="34.682" classname="com.epam.testexternalpart.tests.SearchTest" />
+                <testcase name="allCandidatesSearch" time="36.544" classname="com.epam.testexternalpart.tests.SearchTest" />
+>>>>>>> b0fbf9aee17bd047c16a1dcd9b21448e2886793c
       
 </testsuite>

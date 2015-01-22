@@ -12,8 +12,8 @@ public class SeveralStreamTest extends BaseTest{
 		   String streamFirstDepartmentName = pageStream.title.getText();
 		   pageStream.clickElement(pageStream.addCandidateButton, "Click addCandidateButton");
 		   pageCreateProfile.createNewCandidate(candData);
-		   pageStream.clickElement(pageStream.crumbs, "Click on crumbs");
-		   pageDepartment.clickElement(pageDepartment.allDepartmentTabs.get(1), "Click on netTab");
+		   pageStream.clickElement(pageStream.crumbs_back, "Click on crumbs");
+		   pageDepartment.clickElement(pageDepartment.department_dotnet_tab, "Click on netTab");
 		   pageDepartment.clickElement(pageDepartment.first_stream, "Click on first_stream");
 		   pageStream.clickElement(pageStream.addCandidateButton, "Click on addCandidateButton");
 		   pageCreateProfile.createNewCandidate(candData);
@@ -21,13 +21,13 @@ public class SeveralStreamTest extends BaseTest{
 		   System.out.println("  phoneNumber  "+pageCreateProfile.phoneNumber);
 		   pageStream.checkMarker(pageCreateProfile.mailName, pageCreateProfile.phoneNumber, streamFirstDepartmentName);
 		   String streamSecondDepartmentName = pageStream.title.getText();
-		   pageStream.clickElement(pageStream.crumbs, "Click on crumbs");
-		   pageDepartment.clickElement(pageDepartment.allDepartmentTabs.get(0), "Click javaTab");
+		   pageStream.clickElement(pageStream.crumbs_back, "Click on crumbs");
+		   pageDepartment.clickElement(pageDepartment.department_java_tab, "Click javaTab");
 		   pageDepartment.clickElement(pageDepartment.first_stream, "Click first_stream");
 		   pageStream.checkMarker(pageCreateProfile.mailName, pageCreateProfile.phoneNumber, streamSecondDepartmentName);
 		   pageStream.deleteAddedCand();
-		   pageStream.clickElement(pageStream.crumbs, "Click on crumbs");
-		   pageDepartment.clickElement(pageDepartment.allDepartmentTabs.get(1), "Click on netTab");
+		   pageStream.clickElement(pageStream.crumbs_back, "Click on crumbs");
+		   pageDepartment.clickElement(pageDepartment.department_dotnet_tab, "Click on netTab");
 		   pageDepartment.clickElement(pageDepartment.first_stream, "Click on first_stream");
 		   pageStream.deleteAddedCand(pageCreateProfile.mailName, pageCreateProfile.phoneNumber);
 	   }

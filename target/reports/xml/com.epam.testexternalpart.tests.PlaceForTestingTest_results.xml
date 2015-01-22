@@ -4,6 +4,7 @@
            failures="0"
            errors="0"
            skipped="0"
+<<<<<<< HEAD
            time="20,287">
   <properties />
   
@@ -11,5 +12,14 @@
             <testcase name="addNewPlaceForTesting" time="9,017" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" />
                 <testcase name="editNewPlaceForTesting" time="7,999" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" />
                 <testcase name="deleteNewPlaceForTesting" time="3,271" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" />
+=======
+           time="21.341">
+  <properties />
+  
+  
+            <testcase name="editNewPlaceForTesting" time="8.390" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" />
+                <testcase name="addNewPlaceForTesting" time="9.495" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" />
+                <testcase name="deleteNewPlaceForTesting" time="3.456" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" />
+>>>>>>> b0fbf9aee17bd047c16a1dcd9b21448e2886793c
       
 </testsuite>

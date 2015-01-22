@@ -1,19 +1,13 @@
 package com.epam.testexternalpart.tests;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.epam.testexternalpart.core.BaseTest;
 import com.epam.testexternalpart.core.TestReporter;
-import com.epam.testexternalpart.screen.SubgroupPage;
-
 
 public class SmokeTest extends BaseTest{
 	

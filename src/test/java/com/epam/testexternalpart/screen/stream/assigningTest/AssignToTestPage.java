@@ -74,7 +74,7 @@ public class AssignToTestPage extends Components{
 		new Select(selectUniversity).selectByIndex(1);
 		new Select(selectBuilding).selectByIndex(1);
 		new Select(selectRoom).selectByIndex(1);
-		selectDateTime.sendKeys("29.11.2015 18:30");
+		selectDateTime.sendKeys("29.11.2015 16:30");
 		duration.sendKeys("1.5");
 		deadLine.sendKeys("6");
 		
