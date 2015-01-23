@@ -174,11 +174,11 @@ public class SmokeTest extends BaseTest{
 		try{
 		menuComp.clickElement(menuComp.settingsButton, "Click on settingsButton");
 		menuComp.clickElement(menuComp.subgroupsButton, "Click on subgroupsButton");
-		Actions actions = new Actions(driver);
-		System.out.println(" !!!  "+pageAllSubgroup.table_tbody.size());
-		WebElement e= driver.findElement(By.xpath("//table[@id='tableSubgroups']//tbody//tr[1]"));
+		//Actions actions = new Actions(driver);
+		//System.out.println(" !!!  "+pageAllSubgroup.table_tbody.size());
+		//WebElement e= driver.findElement(By.xpath("//table[@id='tableSubgroups']//tbody//tr[1]"));
 		pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);	
-		actions.moveToElement(e).doubleClick().build().perform();
+		//actions.moveToElement(e).doubleClick().build().perform();
 		pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);
 		TestReporter.writeToReportPositiveResult("Check each subgroup on Separtment Page is exist");
 		pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);

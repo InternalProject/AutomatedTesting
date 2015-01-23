@@ -40,7 +40,7 @@ import com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromYa
 
 public abstract class BaseTest {
 	
-	protected WebDriver driver;
+	WebDriver driver;
 	private final String START_TEST="http://epuakhaw0694:8080/KhPPP/";
 	private final String START_DEPARTMENT="http://epuakhaw0694:8080/KhExternalPreProdPortal/departments";
 
@@ -55,7 +55,7 @@ public abstract class BaseTest {
 	protected EditStreamPage pageEditStream;
 	protected LoginPage LoginPage;
 	protected AllCandidatesPage pageAllCandidate;
-	String tmp = System.getProperty("admin.role");
+	//String tmp = System.getProperty("admin.role");
 	protected AnswerFromIUa pageIUa;
 	protected AnswerFromYandex pageYandex;
 	protected AnswerFromRambler pageRambler;
@@ -80,7 +80,6 @@ public abstract class BaseTest {
 	
 	@BeforeMethod
 	public void startPage() {
-		
 		driver.get(START_DEPARTMENT);
 		pageDepartment = new Departments(driver);
 		pageAddDepartment =new AddDepartmentPage(driver);
@@ -114,12 +113,7 @@ public abstract class BaseTest {
 		String a = testMethod.getName();
 		String b = testMethod.getDeclaringClass().getSimpleName();
 		int numberOfParameters = testMethod.getParameterTypes().length;
-
-
-
-
-		String path = "D:/extPr/TestExternalPart/AutomatedTesting/data/" + b + ".xlsx";
-
+		String path = "D:/AutomatedTesting/data/" + b + ".xlsx";
 
 		try {
 			FileInputStream file = new FileInputStream(path);
