@@ -105,10 +105,16 @@ public class AnswerFromIUa extends Components{
 
 	public void checkDublicateAnswerMessage() {
 		
-		String bodyOfMessage= bodyMessage.getText();
-		String []body = bodyOfMessage.trim().split("\\s+");		
+		waiting(2000);
+		String bodyOfMessage= bodyMessage.getText();		
 		
+		String []body = bodyOfMessage.trim().split("\\s+");			
 		String []template = TemplatePage.templateAnswerDuplication.trim().split("\\s+");		
+
+		for (int i = 0; i < template.length; i++){			
+			System.out.print(body[i]);
+			System.out.print(template[i]);
+		}
 					
 		for (int i = 0; i < template.length; i++){			
 			Assert.assertTrue(body[i].equals(template[i]));

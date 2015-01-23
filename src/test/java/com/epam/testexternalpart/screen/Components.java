@@ -3,7 +3,9 @@ package com.epam.testexternalpart.screen;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -15,9 +17,9 @@ import com.epam.testexternalpart.core.TestReporter;
 
 public class Components {
 	  protected WebDriver driver;
-	  protected final int SHORT_TIME=1000;
-	  protected final int MIDDLE_TIME=5000;
-	  protected final int LONG_TIME=10000;
+	  public final int SHORT_TIME=1000;
+	  public final int MIDDLE_TIME=5000;
+	  public final int LONG_TIME=10000;
 	  
 	  public void waiting(int time){
 		  try {
@@ -28,8 +30,10 @@ public class Components {
 		  
 	  }
 	  
+
+	  
 	  public  void isElementExist( String item, WebElement welement, boolean refer) {
-		
+		 
 		 boolean value = isElementPresent(welement);
 		 TestReporter.writeToReportTitle("Checking the presence of the elemen ["+item+"]");
 	        if (refer) {
@@ -39,7 +43,7 @@ public class Components {
 	        } else {
 	            Assert.assertFalse(value,"element ["+item+"] is present on the page");
 	            TestReporter.writeToReportPositiveResult("[" + item + "]"+"is Not Present");
-	        }
+	        }	 
 	        
 }
 	  private boolean isElementPresent(WebElement webElement){
@@ -76,7 +80,9 @@ public class Components {
 	  public  void clickElement(WebElement webElement, String item) {
 		  TestReporter.writeToReportTitle("Click on ["+item+"]");
 		  waiting(SHORT_TIME);
-          (new WebDriverWait(driver, LONG_TIME)).until(ExpectedConditions.elementToBeClickable(webElement)).click();
+
+          (new WebDriverWait(driver, SHORT_TIME)).until(ExpectedConditions.visibilityOf(webElement)).click();
+
 	    }
 	  
 	  

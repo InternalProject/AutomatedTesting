@@ -1,46 +1,46 @@
 <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
 
-<suite name="Smoke Tests" thread-count="3">
+<suite name="All Tests" parallel="false" thread-count="1">
 
-    <test name="smokeMenuTest" verbose="10" parallel="false">
+    <test name="smokeMenuTest" parallel="false">
         <classes>
             <class name="com.epam.testexternalpart.tests.SmokeTest"></class>
         </classes>
     </test>
-       <test name="DepartmentTest" verbose="10" parallel="false">
+       <test name="DepartmentTest" parallel="false">
         <classes>
             <class name="com.epam.testexternalpart.tests.DepartmentTest"></class>
         </classes>
     </test>
-       <test name="StreamTest" verbose="10" parallel="false">
+       <test name="StreamTest" parallel="false">
         <classes>
             <class name="com.epam.testexternalpart.tests.StreamTest"></class>
         </classes>
     </test>
-       <test name="CandidateTest" verbose="10" parallel="false">
+       <test name="CandidateTest" parallel="false">
         <classes>
             <class name="com.epam.testexternalpart.tests.AddCandidateTest"></class>
         </classes>
     </test>
 
-        <!--  x<test name="AssigningToTestTest" verbose="10" parallel="false">
+       <test name="AssigningToTestTest" parallel="false">
         <classes>
             <class name="com.epam.testexternalpart.tests.AssigningToTest"></class>
         </classes>
-    </test>-->
+    </test>
 
-        <test name="SeveralStreamTest" verbose="10" parallel="false">
+        <test name="SeveralStreamTest" parallel="false">
         <classes>
             <class name="com.epam.testexternalpart.tests.SeveralStreamTest"></class>
         </classes>
     </test>
-        <test name="SearchStreamTest" verbose="10" parallel="false">
+        <test name="SearchStreamTest" parallel="false">
         <classes>
             <class name="com.epam.testexternalpart.tests.SearchTest"></class>
         </classes>
          </test>
          
-        <test name="PlaceForTestingTest" verbose="10" parallel="false">
+        <test name="PlaceForTestingTest" parallel="false">
         <classes>
             <class name="com.epam.testexternalpart.tests.PlaceForTestingTest"></class>
         </classes>

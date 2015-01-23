@@ -39,11 +39,11 @@ import com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromRa
 import com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromYandex;
 
 public abstract class BaseTest {
+	
 	protected WebDriver driver;
-	private final String START_TEST="http://epuakhaw0694:8080/KhExternalPreProdPortal";
-	//private final String START_TEST= "http://epuakhaw0681:8080/KhExternalPreProdPortal";
-	private final String START_DEPARTMENT="http://epuakhaw0694:8080/KhExternalPreProdPortal/departments";
-//	private final String START_DEPARTMENT= "http://epuakhaw0681:8080/KhExternalPreProdPortal/departments";
+	private final String START_TEST="http://epuakhaw0694:8080/KhPPP/";
+//	private final String START_DEPARTMENT="http://epuakhaw0694:8080/KhExternalPreProdPortal/departments";
+
 	protected Menu menuComp;
 	protected Departments pageDepartment;
 	protected CreateProfilePage pageCreateProfile;
@@ -69,16 +69,19 @@ public abstract class BaseTest {
 	
 	@BeforeClass
 	public void init() {
+		
 		driver = WebDriverFactory.initDriver("chrome");//new FirefoxDriver();
-		driver.get(START_TEST);
-		LoginPage=new LoginPage(driver);
-		LoginPage.signIn("admin","admin");	
 		driver.manage().window().maximize();
 	}
 	
 	@BeforeMethod
 	public void startPage() {
-		driver.get(START_DEPARTMENT);
+		LoginPage lp = new LoginPage(driver);
+
+		driver.get(START_TEST);
+		 lp.signIn("Admin_Admin","Admin111"); 
+		 lp.selectExternalPart();
+		//driver.get(START_DEPARTMENT);
 		pageDepartment = new Departments(driver);
 		pageAddDepartment =new AddDepartmentPage(driver);
 		pageAddStream = new AddStreamPage(driver);
@@ -96,23 +99,29 @@ public abstract class BaseTest {
 		pageSubgroup = new SubgroupPage(driver);
 	}
 	
-
 	@AfterClass
 	public void tearDown() {
+		
 		driver.manage().deleteAllCookies();
 		driver.close();
-		driver.quit();
-	
+		if(driver!=null){
+		driver.quit();	
+		}
 	}
 
 	@DataProvider(name = "testData")
 	public Object[][] getTestData(Method testMethod) {
+		
 		Object[][] testData = null;
 		String a = testMethod.getName();
 		String b = testMethod.getDeclaringClass().getSimpleName();
 		int numberOfParameters = testMethod.getParameterTypes().length;
 
-		String path = "data/" + b + ".xlsx";
+
+
+
+		String path = "D:/extPr/TestExternalPart/AutomatedTesting/data/" + b + ".xlsx";
+
 
 		try {
 			FileInputStream file = new FileInputStream(path);

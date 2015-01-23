@@ -1,5 +1,6 @@
 package com.epam.testexternalpart.screen.stream;
 
+import java.util.Arrays;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -22,6 +23,7 @@ public class StreamPage extends Components implements CheckerData {
 	
 	private static final String STREAM_TITLE = "//div[@class='container-fluid']/h1";
 	public static final String CRUMBS = "//div[@id='crumds']";
+	public static final String CRUMBS_BACK = "//div[@id='crumds']/a";
 	private static final String STREAM_COLLS_TITLE="//div[@class='fixed-table-header']/table[@class='table-striped table-condensed table table-hover']/thead/tr/th/div[1]";
 	private static final String STREAM_CHECKBOXES_COL="//td[@class='bs-checkbox']//input";
 	private static final String STREAM_CHECKBOX_FOR_ALL="//input[@name='btSelectAll']";
@@ -143,6 +145,9 @@ public class StreamPage extends Components implements CheckerData {
 	
 	@FindBy(xpath = CRUMBS)
 	public WebElement crumbs;
+	
+	@FindBy(xpath = CRUMBS_BACK)
+	public WebElement crumbs_back;
 	
 	@FindBy(xpath = STREAM_COLLS_TITLE)
 	private List<WebElement> colsTitle;
@@ -381,6 +386,7 @@ public class StreamPage extends Components implements CheckerData {
 	}
 	
 	public WebElement getCheckbox(int number){
+		System.out.println("  !   "+Checkbox—ol.size());
 		return Checkbox—ol.get(number);
 	}
 	
@@ -475,8 +481,13 @@ public class StreamPage extends Components implements CheckerData {
 		  waiting(5000);
 		  
 		  TestReporter.writeToReportTitle("Check if new candidate was added");
+		  System.out.println("xl-"+st);
+		  
+		  
 		  String []textOFLastEl = st.split(";");
 		  String []textForEachElement = tableRow.get(0).getText().split(" ");
+		  
+		  System.out.println(Arrays.toString(textForEachElement));
 		  boolean flag=true;
 		 
 		  for(int i=0;i<2;i++){
@@ -495,6 +506,15 @@ public class StreamPage extends Components implements CheckerData {
 		}
 	
 	public void deleteAddedCand() {
+		
+		clickElement(getCheckbox(0), "check-box of last cand");
+		clickElement(deleteButton,"deleteButton");
+		 isElementExist("delCandPopAp", delCandPopAp, true);
+		 clickElement( delDepPopAp, "deleteCandPopApButton");
+
+	}
+	
+   public void deleteAddedCand(String mailName, String phoneNumber) {
 		
 		clickElement(getCheckbox(0), "check-box of last cand");
 		clickElement(deleteButton,"deleteButton");
@@ -600,8 +620,8 @@ public class StreamPage extends Components implements CheckerData {
 	}
 
 	public void selectCandidatesForTest() {		
-		 
-        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(checkboxForAll));
+		
+		waiting(2000);
 		clickElement(checkboxForAll, "Select cabdidates to assigning to test");	
 		
         (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(assignTestButton));
@@ -622,7 +642,7 @@ public class StreamPage extends Components implements CheckerData {
 		List<WebElement> row;
 		Boolean flag = false;
 		   
-        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOf(assignTestButton));
+		waiting(1000);
 		row = driver.findElements(By.xpath(STREAM_TABLE_ROW + "[" + i + "]/td"));
 		for (String currentField : fields){	
 			for (WebElement el : row){		
@@ -671,6 +691,7 @@ public class StreamPage extends Components implements CheckerData {
 
 	public void clickBannedTab() {
 		
+		waiting(5000);
 		clickElement(bannedTab, "click bannedTab");	
 	}
 	
@@ -678,12 +699,9 @@ public class StreamPage extends Components implements CheckerData {
 
 		for(WebElement e:all_candidates_in_stream){
 			try{
+			waiting(MIDDLE_TIME);
 			mailNameActual = e.findElement(By.xpath("./td[8]")).getText();
 			phoneNumberActual = e.findElement(By.xpath("./td[6]")).getText();
-			}
-			catch(StaleElementReferenceException ex){
-				
-			}
 			if(mailName.equals(mailNameActual) & phoneNumber.equals(phoneNumberActual)){
 				icon = e.findElement(By.xpath("./td[3]/img"));
 				String imgContent = icon.getAttribute("title");
@@ -693,6 +711,10 @@ public class StreamPage extends Components implements CheckerData {
 				Assert.assertEquals(imgContent.contains(streamDepartmentName.replaceAll("-", ":")), true);
 				Assert.assertEquals(imgContent.contains("not tested"), true);
 
+			}
+			}
+			catch(StaleElementReferenceException ex){
+				
 			}
 		}
 		
