@@ -21,7 +21,8 @@ public class AllSubgroupPage extends Components implements CheckerData{
 	public static final String TITTLE = "//h1";
 	public static final String TABLE = "//table[@id='tableSubgroups']";
 	public static final String TABLE_THEAD = "//table[@id='tableSubgroups']//thead//div[1]";
-	public static final String TABLE_TBODY = "//table[@id='tableSubgroups']//tbody//tr";
+	public static final String TABLE_TBODY = "//table[@id='tableSubgroups']//tbody";
+	public static final String EMPTY_TABLE_TBODY = "//table[@id='tableSubgroups']//tbody/tr/td";
 	public static final String CHOOSE_BUTTON= "//div[@class='bootstrap-filestyle input-group']";
 	public static final String IMPORT_BUTTON= "//input[@class='btn btn-primary']";
 	public By pagination= By.className("fixed_rows");
@@ -29,6 +30,9 @@ public class AllSubgroupPage extends Components implements CheckerData{
 
 	public static final String CRUMBS= "//div[@id='crumds']";
 
+	@FindBy(xpath = EMPTY_TABLE_TBODY)
+	public WebElement empty_table_tbody;
+	
 	@FindBy(xpath = TITTLE)
 	public WebElement tittle;
 	
@@ -64,10 +68,6 @@ public class AllSubgroupPage extends Components implements CheckerData{
 		isElementExist("Import_button ", import_button, true);
 		isElementExist("Table thead ", table_thead, true);
 		isElementExist("Choose button ", choose_button, true);
-		isElementExist("Pagination exists", driver.findElement(pagination), true);
-		isElementExist("hr", driver.findElement(hr), true);
-	//	System.out.println(driver.findElement(hr).getText()+"   $$$$$$$");
-
 		
 		TestReporter.writeToReportPositiveResult("All elements are present on Subgroup Page");	
 

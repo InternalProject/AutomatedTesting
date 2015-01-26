@@ -18,6 +18,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 
 import com.epam.testexternalpart.screen.AllCandidatesPage;
+import com.epam.testexternalpart.screen.ConcreteSubgroupPage;
 import com.epam.testexternalpart.screen.LoginPage;
 import com.epam.testexternalpart.screen.Menu;
 import com.epam.testexternalpart.screen.PlaceForTestingPage;
@@ -40,9 +41,9 @@ import com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromYa
 
 public abstract class BaseTest {
 	
-	WebDriver driver;
-	private final String START_TEST="http://epuakhaw0694:8080/KhPPP/";
-	private final String START_DEPARTMENT="http://epuakhaw0694:8080/KhExternalPreProdPortal/departments";
+	protected WebDriver driver;
+	private final String START_TEST="http://epuakhaw0681:9080/KhPPP/";
+	private final String START_DEPARTMENT="http://epuakhaw0681:9080/KhExternalPreProdPortal/departments";
 
 	protected Menu menuComp;
 	protected Departments pageDepartment;
@@ -65,6 +66,7 @@ public abstract class BaseTest {
 	protected TemplatePage pageTemplates;
 	protected AllSubgroupPage pageAllSubgroup;
 	protected SubgroupPage pageSubgroup;
+	protected ConcreteSubgroupPage pageConcreteSubgroup;
 
 	
 	@BeforeClass
@@ -81,6 +83,7 @@ public abstract class BaseTest {
 	@BeforeMethod
 	public void startPage() {
 		driver.get(START_DEPARTMENT);
+		pageConcreteSubgroup= new ConcreteSubgroupPage(driver);
 		pageDepartment = new Departments(driver);
 		pageAddDepartment =new AddDepartmentPage(driver);
 		pageAddStream = new AddStreamPage(driver);
