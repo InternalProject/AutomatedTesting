@@ -153,14 +153,7 @@ public class SmokeTest extends BaseTest{
 		pageTemplates.clickElement(pageTemplates.answerDuplicationTittle, "answerDuplicationTittle");
 		pageTemplates.checkElementsPresentAnswerDuplication();
 	}
-	
-	@Test
-	public void checkMailSettingsMenu(){
 		
-		TestReporter.writeToReportHeader("Check all elements are present on Mail Settings Page");
-			
-	}
-	
 	@Test
 	public void checkSubgroupPage(){
 		

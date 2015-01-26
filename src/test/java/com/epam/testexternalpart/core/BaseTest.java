@@ -41,8 +41,8 @@ import com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromYa
 public abstract class BaseTest {
 	
 	protected WebDriver driver;
-	private final String START_TEST="http://epuakhaw0694:8080/KhPPP/";
-	private final String START_DEPARTMENT="http://epuakhaw0694:8080/KhExternalPreProdPortal/departments";
+	private final String START_TEST="http://epuakhaw0681:9080/KhPPP/";
+	private final String START_DEPARTMENT="http://epuakhaw0681:9080/KhExternalPreProdPortal/departments";
 
 	protected Menu menuComp;
 	protected Departments pageDepartment;

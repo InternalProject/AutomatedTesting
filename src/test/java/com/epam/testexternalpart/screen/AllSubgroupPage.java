@@ -64,7 +64,7 @@ public class AllSubgroupPage extends Components implements CheckerData{
 		isElementExist("Import_button ", import_button, true);
 		isElementExist("Table thead ", table_thead, true);
 		isElementExist("Choose button ", choose_button, true);
-		isElementExist("Pagination exists", driver.findElement(pagination), true);
+		//isElementExist("Pagination exists", driver.findElement(pagination), true);
 		isElementExist("hr", driver.findElement(hr), true);
 	//	System.out.println(driver.findElement(hr).getText()+"   $$$$$$$");
 
