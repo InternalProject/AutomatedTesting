@@ -57,6 +57,9 @@ public class SmokeTest extends BaseTest{
 		pageStream.checkTextPresent();		
 		pageStream.checkElementsPresentAllCandidatesTab();			
 		
+		pageStream.clickElement(pageStream.notTestedCandidate, "not Tested Tab");
+		pageStream.checkElementsPresentNotTestedTabTab();			
+		
 		pageStream.clickElement(pageStream.testCompletedTab, "Test Completed Tab");
 		pageStream.checkElementsPresentTestCompletedTab();	
 		

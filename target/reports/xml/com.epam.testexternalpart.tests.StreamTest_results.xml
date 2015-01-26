@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StreamTest"
+           tests="8"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="25.094">
+  <properties />
+  
+  
+            <testcase name="testEditStream" time="2.451" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testAddNewInValidStream" time="2.413" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testAddNewInValidStream" time="2.434" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testAddNewInValidStream" time="2.405" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testEditStream" time="2.469" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testAddNewInValidStream" time="2.826" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testAddNewValidStream" time="4.951" classname="com.epam.testexternalpart.tests.StreamTest" />
+                <testcase name="testAddNewValidStream" time="5.145" classname="com.epam.testexternalpart.tests.StreamTest" />
+      
+</testsuite>

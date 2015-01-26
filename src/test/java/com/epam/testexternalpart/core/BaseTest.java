@@ -45,6 +45,7 @@ public abstract class BaseTest {
 	private final String START_TEST="http://epuakhaw0681:9080/KhPPP/";
 	private final String START_DEPARTMENT="http://epuakhaw0681:9080/KhExternalPreProdPortal/departments";
 
+
 	protected Menu menuComp;
 	protected Departments pageDepartment;
 	protected CreateProfilePage pageCreateProfile;
@@ -73,9 +74,10 @@ public abstract class BaseTest {
 	public void init() {
 		
 		driver = WebDriverFactory.initDriver("chrome");//new FirefoxDriver();
+
 		driver.get(START_TEST);
 		LoginPage lp = new LoginPage(driver);
-		lp.signIn("Admin_Admin","Admin111");	
+		lp.signIn("o","Admin111");	
 		lp.selectExternalPart();
 		driver.manage().window().maximize();
 	}
@@ -107,6 +109,8 @@ public abstract class BaseTest {
 		driver.manage().deleteAllCookies();
 		driver.close();
 		driver.quit();	
+		
+
 	}
 
 	@DataProvider(name = "testData")
@@ -116,7 +120,9 @@ public abstract class BaseTest {
 		String a = testMethod.getName();
 		String b = testMethod.getDeclaringClass().getSimpleName();
 		int numberOfParameters = testMethod.getParameterTypes().length;
+
 		String path = "D:/AutomatedTesting/data/" + b + ".xlsx";
+
 
 		try {
 			FileInputStream file = new FileInputStream(path);
