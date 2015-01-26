@@ -201,8 +201,8 @@ public class CreateProfilePage extends Components implements CheckerData{
 		TestReporter.writeToReportTitle("Creating new candidate with fields-"+text);
 		
 		String []dataMandatoryFields=text.split(";");
-		mailName = dataMandatoryFields[4];
-		phoneNumber = dataMandatoryFields[5];	
+		mailName = dataMandatoryFields[3];
+		phoneNumber = dataMandatoryFields[4];	
 		for(int i=0;i<dataMandatoryFields.length;i++){
 			mandatory_fields.get(i).sendKeys(dataMandatoryFields[i]);
 		}

@@ -16,7 +16,7 @@ public class WebDriverFactory {
 
 
 
-			System.setProperty("webdriver.chrome.driver", "D:/extPr/TestExternalPart/AutomatedTesting/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "D:/Internal_project/Project/AutomatedTesting/chromedriver.exe");
 
 
 			driver = new ChromeDriver();

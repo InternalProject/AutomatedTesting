@@ -75,7 +75,7 @@ public abstract class BaseTest {
 
 		driver.get(START_TEST);
 		LoginPage lp = new LoginPage(driver);
-		lp.signIn("Admin_Admin","Admin111");	
+		lp.signIn("o","Admin111");	
 		lp.selectExternalPart();
 		driver.manage().window().maximize();
 	}
@@ -122,7 +122,7 @@ public abstract class BaseTest {
 
 
 
-		String path = "D:/extPr/TestExternalPart/AutomatedTesting/data/" + b + ".xlsx";
+		String path = "D:/Internal_project/Project/AutomatedTesting/data/" + b + ".xlsx";
 
 
 		try {

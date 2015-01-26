@@ -38,7 +38,7 @@ public class StreamPage extends Components implements CheckerData {
 	
 	private static final String STREAM_ALL_CANDIDATE_TAB = "//ul[@id='candTab']/li/a[text()='All Candidates']";
 	private static final String STREAM_NOT_TESTED_TAB = "//ul[@id='candTab']/li/a[text()='Not tested']";
-	private static final String STREAM_ASSIGNED_TO_TEST_TAB = "//ul[@id='candTab']/li/a[text()='Assigned to test']";
+	private static final String STREAM_ASSIGNED_TO_TEST_TAB = "//a[@id='assign_test']";
 	private static final String STREAM_CONFIRMED_TAB = "//ul[@id='candTab']/li/a[text()='Confirmed']";
 	private static final String STREAM_TEST_COMPLETE_TAB = "//ul[@id='candTab']/li/a[text()='Test completed']";
 	private static final String STREAM_NOT_ACTUAL_TAB = "//ul[@id='candTab']/li/a[text()='Not actual']";
@@ -534,7 +534,6 @@ public class StreamPage extends Components implements CheckerData {
 		
 		isElementExist( "Stream all Candidate Tab", allCandidateTab, true);
 		isElementExist( "Stream notTestedCandidate", notTestedCandidate, true);
-		isElementExist( "Stream assigned To Test Tab", assignedToTestTab, true);
 		isElementExist( "Stream confirmed Tab", confirmedTab, true);
 		isElementExist( "Stream test Complete Tab", testCompletedTab, true);
 		isElementExist( "Stream not Actual Tab", notActualTab, true);
@@ -569,6 +568,13 @@ public class StreamPage extends Components implements CheckerData {
 		isElementExist( "Stream import Candidate Button", importCandidateButton, true);
 	}
 	
+	public void checkElementsPresentNotTestedTabTab() {
+		
+		TestReporter.writeToReportTitle("Checking the presence of elements on Stream Page on Not Tested Tab");
+
+		isElementExist( "Stream assigned To Test Tab", assignedToTestTab, true);	
+	}
+	
 	public void checkElementsPresentTestCompletedTab(){
 		
 		TestReporter.writeToReportTitle("Checking the presence of elements on Stream Page on Test Completed Tab");
@@ -598,13 +604,15 @@ public class StreamPage extends Components implements CheckerData {
 		Boolean flag = false;
 		
 		for (WebElement ckeckBox : allCheckBoxes){
-			clickElement(ckeckBox,"ckeckBox");
+			clickElement(ckeckBox,ckeckBox.getText());
 			
 	        (new WebDriverWait(driver, 1000)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(STREAM_TABLE_ROW)));
 			row = driver.findElements(By.xpath(STREAM_TABLE_ROW + "[1]/td"));
 					
 			for (String currentField : fields){
-				for (WebElement el : row){			
+				System.out.println("currentField - " + currentField);
+				for (WebElement el : row){	
+					System.out.println(el.getText());
 					if (el.getText().replaceAll("-", ".").equals(currentField))
 						flag = true;
 				}
@@ -747,4 +755,12 @@ public class StreamPage extends Components implements CheckerData {
 				flag = false;	
 			}
 	}
+	
+	public void addCandidatesByImport(){
+		
+		//clickElement(chooseCandidateButton, "chooseCandidateButton");
+		
+	}
+
+	
 }
