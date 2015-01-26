@@ -48,17 +48,17 @@ public class AddCandidateTest extends BaseTest {
 		TestReporter.writeToReportStep("2-Check candidat's displaying on \"Not tested\" tab");
 		pageStream.clickElement(pageStream.notTestedCandidate,"notTestedCandidate");		
 		//pageStream.checkCandExisting(candData,true);
-		TestReporter.writeToReportStep("4-Check candidat's displaying on \"confirmed\" tab");
-		pageStream.clickViewCand();
-		pageViewProfile.clickEditButton();
-		pageEditProfile.changeStatus(status1);
-		pageStream.clickElement(pageStream.confirmedTab,"notTestedCandidate");
-		//pageStream.checkCandExisting(candData,true);
-		TestReporter.writeToReportStep("4-Check candidat's displaying on \"test†completed\" tab");
-		pageStream.clickViewCand();
-		pageViewProfile.clickEditButton();
-		pageEditProfile.changeStatus(status2);
-		pageStream.clickElement(pageStream.testCompletedTab,"notTestedCandidate");
+//		TestReporter.writeToReportStep("4-Check candidat's displaying on \"confirmed\" tab");
+//		pageStream.clickViewCand();
+//		pageViewProfile.clickEditButton();
+//		pageEditProfile.changeStatus(status1);
+//		pageStream.clickElement(pageStream.confirmedTab,"notTestedCandidate");
+//		//pageStream.checkCandExisting(candData,true);
+//		TestReporter.writeToReportStep("4-Check candidat's displaying on \"test†completed\" tab");
+//		pageStream.clickViewCand();
+//		pageViewProfile.clickEditButton();
+//		pageEditProfile.changeStatus(status2);
+//		pageStream.clickElement(pageStream.testCompletedTab,"notTestedCandidate");
 		//pageStream.checkCandExisting(candData,true);
 		TestReporter.writeToReportStep("5-Check candidat's displaying on \"not actual\" tab");
 		pageStream.clickViewCand();
@@ -84,14 +84,14 @@ public class AddCandidateTest extends BaseTest {
 		TestReporter.writeToReportStep("1-Create candidate");
 		pageDepartment.clickElement( pageStream.addCandidateButton, "addCandidateBut");
 		pageCreateProfile.createNewCandidate(candData);
-		pageStream.checkCandExisting(candData,true);
+	//	pageStream.checkCandExisting(candData,true);
 		 TestReporter.writeToReportStep("2-Ban Candidate");
 		 pageStream.clickElement(pageStream.Checkbox—ol.get(0),"CheckboxForFirst");
 		 pageStream.clickElement(pageStream.bunButton,"BanButton");
 		 pageStream.clickElement(pageStream.banButtPopap,"banButtPopap");
 		 TestReporter.writeToReportStep("3-Check candidat's displaying on \"Banned\" tab");
 		 pageStream.clickElement(pageStream.bannedTab,"notTestedCandidate");
-		 pageStream.checkCandExisting(candData,true);
+		// pageStream.checkCandExisting(candData,true);
 		 pageStream.deleteAddedCand();
 
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="181.375" tests="133" errors="0" skipped="118" failures="8">
+<testsuite name="TestSuite" time="3,642.698" tests="83" errors="0" skipped="30" failures="22">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre7\bin"/>
@@ -25,7 +25,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="D:\extPr\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3557920086142967418.tmp"/>
+    <property name="classworlds.conf" value="D:\extPr\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5915366215097867597.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
     <property name="java.library.path" value="C:\Program Files\Java\jre7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.7.0_67;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Subversion\bin;C:\Program Files\TortoiseGit\bin;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,18 +60,243 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="checkAddStreamAccordingToDepartment" classname="com.epam.testexternalpart.tests.SmokeTest" time="19.451"/>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="19.888">
-    <failure message="no such element&#10;  (Session info: chrome=39.0.2171.99)&#10;  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 52 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;&#10;System info: host: &apos;EPUAKHAW0329&apos;, ip: &apos;10.23.12.108&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;&#10;Session ID: 0f9e1140dcd67fc7a34358f565c9146a&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir12848_5800}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=39.0.2171.99)
+  <testcase name="checkAddStreamAccordingToDepartment" classname="com.epam.testexternalpart.tests.SmokeTest" time="19.133"/>
+  <testcase name="checkConcretSubgroup" classname="com.epam.testexternalpart.tests.SmokeTest" time="17.472"/>
+  <testcase name="checkElAllCandiadtesMenu" classname="com.epam.testexternalpart.tests.SmokeTest" time="1.627">
+    <failure message="expected [First Name] but found [Last Name]" type="java.lang.AssertionError">java.lang.AssertionError: expected [First Name] but found [Last Name]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.epam.testexternalpart.screen.Components.checkElementText(Components.java:116)
+	at com.epam.testexternalpart.screen.AllCandidatesPage.checkElementsPresent(AllCandidatesPage.java:296)
+	at com.epam.testexternalpart.tests.SmokeTest.checkElAllCandiadtesMenu(SmokeTest.java:120)
+</failure>
+    <system-out><![CDATA[Check all elements are present on CandiadtesMenu
+Click on [allCandidatesButton]
+Check the presence of all text on All Candidates menu Page
+Checking text of element All candidates title
+Text of [All candidates title] is correct
+Checking partial text of element Crumbs
+Text of [Crumbs] is correct
+All text on All Candidates menu Page is present
+Checking the presence of all elements on All Candidates Page
+Checking the presence of default columns on All Candidates menu - 
+Checking text of element №
+Text of [№] is correct
+Checking text of element First Name
+]]></system-out>
+  </testcase>
+  <testcase name="checkElStreamPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="4.564">
+    <failure message="expected [First Name] but found [Last Name]" type="java.lang.AssertionError">java.lang.AssertionError: expected [First Name] but found [Last Name]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.epam.testexternalpart.screen.Components.checkElementText(Components.java:116)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkDefaultColumns(StreamPage.java:413)
+	at com.epam.testexternalpart.tests.SmokeTest.checkElStreamPage(SmokeTest.java:63)
+</failure>
+    <system-out><![CDATA[Check all elements are present on StreamPage
+Checking that click by selected stream reffering to Stream Page
+Click on [First stream on first dep]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Checking the presence of all elements on Stream Page
+Checking the presence of the elemen [Stream Assign Test Button]
+[Stream Assign Test Button]is Present
+Checking the presence of the elemen [Stream Bun Button]
+[Stream Bun Button]is Present
+Checking the presence of the elemen [Stream Delete Button]
+[Stream Delete Button]is Present
+Checking the presence of the elemen [Stream exportCandidateButton]
+[Stream exportCandidateButton]is Present
+Checking the presence of the elemen [Stream all Candidate Tab]
+[Stream all Candidate Tab]is Present
+Checking the presence of the elemen [Stream notTestedCandidate]
+[Stream notTestedCandidate]is Present
+Checking the presence of the elemen [Stream assigned To Test Tab]
+[Stream assigned To Test Tab]is Present
+Checking the presence of the elemen [Stream confirmed Tab]
+[Stream confirmed Tab]is Present
+Checking the presence of the elemen [Stream test Complete Tab]
+[Stream test Complete Tab]is Present
+Checking the presence of the elemen [Stream not Actual Tab]
+[Stream not Actual Tab]is Present
+Checking the presence of the elemen [Stream banned Tab]
+[Stream banned Tab]is Present
+Checking the presence of the elemen [Stream secondPhoneCheckBox]
+[Stream secondPhoneCheckBox]is Present
+Checking the presence of the elemen [Stream UniversityCheckBox]
+[Stream UniversityCheckBox]is Present
+Checking the presence of the elemen [Stream assigned facultyCheckBox]
+[Stream assigned facultyCheckBox]is Present
+Checking the presence of the elemen [Stream degreeCheckBox]
+[Stream degreeCheckBox]is Present
+Checking the presence of the elemen [Stream educationStartCheckBox]
+[Stream educationStartCheckBox]is Present
+Checking the presence of the elemen [Stream graduationYearCheckBox]
+[Stream graduationYearCheckBox]is Present
+Checking the presence of the elemen [Stream additionalEducationCheckBox]
+[Stream additionalEducationCheckBox]is Present
+Checking the presence of the elemen [Stream relevantSkillsCheckBox]
+[Stream relevantSkillsCheckBox]is Present
+Checking the presence of the elemen [Stream howKnowCheckBox]
+[Stream howKnowCheckBox]is Present
+Checking the presence of the elemen [Stream secondPhoneCheckBox]
+[Stream secondPhoneCheckBox]is Present
+Checking the presence of the elemen [Stream attemptCountCheckBox]
+[Stream attemptCountCheckBox]is Present
+Checking the presence of the elemen [Stream statusCheckBox]
+[Stream statusCheckBox]is Present
+Checking the presence of the elemen [Stream commentCheckBox]
+[Stream commentCheckBox]is Present
+Checking the presence of the elemen [Stream estimationCheckBox]
+[Stream estimationCheckBox]is Present
+Checking the presence of the elemen [Stream searchField]
+[Stream searchField]is Present
+Checking the presence of the elemen [Stream add Candidate Button]
+[Stream add Candidate Button]is Present
+All Streams elements are present
+Checking the presence of all text on Stream Page
+Checking text of element Department title
+Text of [Department title] is correct
+Checking partial text of element Crumbs
+Text of [Crumbs] is correct
+All text is present on Stream Page
+Checking the presence of elements on Stream Page on All Candidates Tab
+Checking the presence of the elemen [Stream choose Candidate Button]
+[Stream choose Candidate Button]is Present
+Checking the presence of the elemen [Stream import Candidate Button]
+[Stream import Candidate Button]is Present
+Click on [Test Completed Tab]
+Checking the presence of elements on Stream Page on Test Completed Tab
+Checking the presence of the elemen [Stream sendPossitiveResultsButton Button]
+[Stream sendPossitiveResultsButton Button]is Present
+Checking the presence of the elemen [Stream sendNegativeResultsButton Button]
+[Stream sendNegativeResultsButton Button]is Present
+Checking the presence of the elemen [Stream estimationCheckBox]
+[Stream estimationCheckBox]is Present
+Checking the presence of Stream's default columns
+Checking text of element 
+Text of [] is correct
+Checking text of element №
+Text of [№] is correct
+Checking text of element First Name
+]]></system-out>
+  </testcase>
+  <testcase name="checkElementsAddCandidate" classname="com.epam.testexternalpart.tests.SmokeTest" time="3.572"/>
+  <testcase name="checkElementsEditCandidate" classname="com.epam.testexternalpart.tests.SmokeTest" time="7.313"/>
+  <testcase name="checkElementsPresentAddDepartmentPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0.476"/>
+  <testcase name="checkElementsPresentAddStreamPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0.741"/>
+  <testcase name="checkElementsPresentDepartmentPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0.22"/>
+  <testcase name="checkElementsViewCandidate" classname="com.epam.testexternalpart.tests.SmokeTest" time="9.014">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkTableAccordingToCandidadate(StreamPage.java:612)
+	at com.epam.testexternalpart.tests.SmokeTest.checkElementsViewCandidate(SmokeTest.java:87)
+</failure>
+    <system-out><![CDATA[Check all elements are present on ViewCandidatePage
+Checking that click by selected stream reffering to Stream Page
+Click on [First stream on first dep]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Checking that Stream Create Button reffering to Add Stream Page
+Checking the presence of the elemen [add Candidate Button]
+[add Candidate Button]is Not Present
+Creating new candidate with fields-Petrov;Petr;Olololoevich;02.12.1993;sdhgjshgj@mail.ru;+380505465345;
+Click on [Click Create Candidate Button]
+Checking the presence of the elemen [Create Profile Create Button]
+[Create Profile Create Button]is Not Present
+Check table fields according to fields of new candidate
+Click on [ckeckBox]
+Click on [click on [[ChromeDriver: chrome on XP (dc39b4b77b5fb93fd8ca13be869b0a09)] -> xpath: //div [@class='col-md-2']//label]]
+Click on [ckeckBox]
+]]></system-out>
+  </testcase>
+  <testcase name="checkEmailTemplatesPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="5.446">
+    <failure message="expected [Available placeholders:] but found []" type="java.lang.AssertionError">java.lang.AssertionError: expected [Available placeholders:] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.epam.testexternalpart.screen.Components.checkElementText(Components.java:116)
+	at com.epam.testexternalpart.screen.TemplatePage.checkElementsPresentSuccessfullTest(TemplatePage.java:215)
+	at com.epam.testexternalpart.tests.SmokeTest.checkEmailTemplatesPage(SmokeTest.java:145)
+</failure>
+    <system-out><![CDATA[Check all elements are present on Email Templates Page
+Checking transfering to Email Template Page
+Click on [Click on settingsButton]
+Click on [Click on emailTemplates]
+Check the presence text on Email Template Page
+Checking partial text of element Crumbs
+Text of [Crumbs] is correct
+Checking text of element invitation Tittle
+Text of [invitation Tittle] is correct
+Checking text of element successfull Test Tittle
+Text of [successfull Test Tittle] is correct
+Checking text of element faild Test Tittle
+Text of [faild Test Tittle] is correct
+Checking text of element answerDuplicationTittle
+Text of [answerDuplicationTittle] is correct
+All text are present on Email Template Page
+Click on [invitationTittle]
+Checking the presence of all elements on Email Invitation Template Page
+Checking text of element invitation Available placeholders Tittle
+Text of [invitation Available placeholders Tittle] is correct
+Checking the presence of the elemen [invitationPlaceholderAuthorEmail]
+[invitationPlaceholderAuthorEmail]is Present
+Checking the presence of the elemen [invitationPlaceholderAuthorname]
+[invitationPlaceholderAuthorname]is Present
+Checking the presence of the elemen [invitationPlaceholderBuilding]
+[invitationPlaceholderBuilding]is Present
+Checking the presence of the elemen [invitationPlaceholderBuildingMap]
+[invitationPlaceholderBuildingMap]is Present
+Checking the presence of the elemen [invitationPlaceholderDate]
+[invitationPlaceholderDate]is Present
+Checking the presence of the elemen [invitationPlaceholderDeadLine]
+[invitationPlaceholderDeadLine]is Present
+Checking the presence of the elemen [invitationPlaceholderDepartment]
+[invitationPlaceholderDepartment]is Present
+Checking the presence of the elemen [invitationPlaceholderDuration]
+[invitationPlaceholderDuration]is Present
+Checking the presence of the elemen [invitationPlaceholderInputBox]
+[invitationPlaceholderInputBox]is Present
+Checking the presence of the elemen [invitationPlaceholderSaveButton]
+[invitationPlaceholderSaveButton]is Present
+Checking the presence of the elemen [invitationPlaceholderResetButton]
+[invitationPlaceholderResetButton]is Present
+Checking the presence of the elemen [invitationPlaceholderRoom]
+[invitationPlaceholderRoom]is Present
+Checking the presence of the elemen [invitationPlaceholderTime]
+[invitationPlaceholderTime]is Present
+Checking the presence of the elemen [invitationPlaceholderUniversity]
+[invitationPlaceholderUniversity]is Present
+All elements are present on Email Invitation Template Page
+Click on [successfullTestTittle]
+Checking the presence of all elements on Email Successfull Test Template Page
+Checking text of element successfull Test Available placeholders Tittle
+]]></system-out>
+  </testcase>
+  <testcase name="checkMailSettingsMenu" classname="com.epam.testexternalpart.tests.SmokeTest" time="0"/>
+  <testcase name="checkMenu" classname="com.epam.testexternalpart.tests.SmokeTest" time="0.326"/>
+  <testcase name="checkSubgroupPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="2.541">
+    <failure message="no such element&#10;  (Session info: chrome=40.0.2214.91)&#10;  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 15 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;&#10;System info: host: &apos;EPUAKHAW0329&apos;, ip: &apos;10.23.12.108&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;&#10;Session ID: dc39b4b77b5fb93fd8ca13be869b0a09&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir5312_27262}, rotatable=false, locationContextEnabled=true, version=40.0.2214.91, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=40.0.2214.91)
   (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 52 milliseconds
+Command duration or timeout: 15 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
 System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: 0f9e1140dcd67fc7a34358f565c9146a
+Session ID: dc39b4b77b5fb93fd8ca13be869b0a09
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir12848_5800}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir5312_27262}, rotatable=false, locationContextEnabled=true, version=40.0.2214.91, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -80,516 +305,54 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:433)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:387)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
-	at com.epam.testexternalpart.screen.LoginPage.signIn(LoginPage.java:38)
-	at com.epam.testexternalpart.core.BaseTest.startPage(BaseTest.java:82)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+	at com.epam.testexternalpart.screen.AllSubgroupPage.checkElementsPresent(AllSubgroupPage.java:67)
+	at com.epam.testexternalpart.tests.SmokeTest.checkSubgroupPage(SmokeTest.java:168)
 </failure>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1402809325] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2]
-Failed to invoke configuration method com.epam.testexternalpart.core.BaseTest.startPage:no such element
-  (Session info: chrome=39.0.2171.99)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 52 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: 0f9e1140dcd67fc7a34358f565c9146a
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir12848_5800}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+    <system-out><![CDATA[Check all elements are present on Subgroup Page
+Click on [Click on settingsButton]
+Click on [Click on subgroupsButton]
+Check the presence of all elements on Subgroup Page
+Checking the presence of the elemen [Subgroup table ]
+[Subgroup table ]is Present
+Checking the presence of the elemen [Import_button ]
+[Import_button ]is Present
+Checking the presence of the elemen [Table thead ]
+[Table thead ]is Present
+Checking the presence of the elemen [Choose button ]
+[Choose button ]is Present
 ]]></system-out>
   </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="checkConcretSubgroup" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkElAllCandiadtesMenu" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkElStreamPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkElementsAddCandidate" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkElementsEditCandidate" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkElementsPresentAddDepartmentPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkElementsPresentAddStreamPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkElementsPresentDepartmentPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkElementsViewCandidate" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkEmailTemplatesPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkMailSettingsMenu" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkMenu" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkSubgroupPage" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tearDown" classname="com.epam.testexternalpart.tests.SmokeTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SmokeTest@65ab90e2] for class [TestClass name=class com.epam.testexternalpart.tests.SmokeTest]
-]]></system-out>
-  </testcase>
-  <testcase name="testAddDepartment" classname="com.epam.testexternalpart.tests.DepartmentTest" time="0.446"/>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.DepartmentTest" time="0.89">
-    <failure message="no such element&#10;  (Session info: chrome=39.0.2171.99)&#10;  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 16 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;&#10;System info: host: &apos;EPUAKHAW0329&apos;, ip: &apos;10.23.12.108&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;&#10;Session ID: c491b0c7968ef226813c3b0b626630ec&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir3108_19003}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=39.0.2171.99)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: c491b0c7968ef226813c3b0b626630ec
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir3108_19003}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
-	at com.epam.testexternalpart.screen.LoginPage.signIn(LoginPage.java:38)
-	at com.epam.testexternalpart.core.BaseTest.startPage(BaseTest.java:82)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</failure>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@4832eebb] for class [TestClass name=class com.epam.testexternalpart.tests.DepartmentTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@4832eebb] for class [TestClass name=class com.epam.testexternalpart.tests.DepartmentTest]
-[Invoker 1402809325] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@4832eebb]
-Failed to invoke configuration method com.epam.testexternalpart.core.BaseTest.startPage:no such element
-  (Session info: chrome=39.0.2171.99)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: c491b0c7968ef226813c3b0b626630ec
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir3108_19003}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.DepartmentTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@4832eebb] for class [TestClass name=class com.epam.testexternalpart.tests.DepartmentTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@4832eebb] for class [TestClass name=class com.epam.testexternalpart.tests.DepartmentTest]
-]]></system-out>
-  </testcase>
-  <testcase name="testAddDepartmentWithValidName" classname="com.epam.testexternalpart.tests.DepartmentTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testEditDepartmentName" classname="com.epam.testexternalpart.tests.DepartmentTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tearDown" classname="com.epam.testexternalpart.tests.DepartmentTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.DepartmentTest@4832eebb] for class [TestClass name=class com.epam.testexternalpart.tests.DepartmentTest]
-]]></system-out>
-  </testcase>
-  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="3.07"/>
-  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.StreamTest" time="3.606">
-    <failure message="no such element&#10;  (Session info: chrome=39.0.2171.99)&#10;  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 23 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;&#10;System info: host: &apos;EPUAKHAW0329&apos;, ip: &apos;10.23.12.108&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;&#10;Session ID: 30a3c4c653cb2fd19b4d5a26314a0d23&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir8644_27193}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=39.0.2171.99)
+  <testcase name="testAddDepartment" classname="com.epam.testexternalpart.tests.DepartmentTest" time="0.433"/>
+  <testcase name="testAddDepartmentWithValidName" classname="com.epam.testexternalpart.tests.DepartmentTest" time="3.162"/>
+  <testcase name="testEditDepartmentName" classname="com.epam.testexternalpart.tests.DepartmentTest" time="5.025"/>
+  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="2.825"/>
+  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="2.406"/>
+  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="2.434"/>
+  <testcase name="testAddNewInValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="2.413"/>
+  <testcase name="testAddNewValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="5.145"/>
+  <testcase name="testAddNewValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="4.95"/>
+  <testcase name="testEditStream" classname="com.epam.testexternalpart.tests.StreamTest" time="2.469"/>
+  <testcase name="testEditStream" classname="com.epam.testexternalpart.tests.StreamTest" time="2.45"/>
+  <testcase name="addCandidate" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="10.383"/>
+  <testcase name="addCandidateManually" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="7.869"/>
+  <testcase name="bannWithButton" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="12.313"/>
+  <testcase name="changeStatus" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="18.123"/>
+  <testcase name="deleteAllCandidates" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="12.886"/>
+  <testcase name="addStream" classname="com.epam.testexternalpart.tests.AssigningToTest" time="1.967">
+    <failure message="no such element&#10;  (Session info: chrome=40.0.2214.91)&#10;  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 23 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;&#10;System info: host: &apos;EPUAKHAW0329&apos;, ip: &apos;10.23.12.108&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;&#10;Session ID: 784f5370cbb7bf8f58a3d2bd384e8839&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir5752_27522}, rotatable=false, locationContextEnabled=true, version=40.0.2214.91, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=40.0.2214.91)
   (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 23 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
 System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: 30a3c4c653cb2fd19b4d5a26314a0d23
+Session ID: 784f5370cbb7bf8f58a3d2bd384e8839
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir8644_27193}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
-	at com.epam.testexternalpart.screen.LoginPage.signIn(LoginPage.java:38)
-	at com.epam.testexternalpart.core.BaseTest.startPage(BaseTest.java:82)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</failure>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@4e021bd] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-[Invoker 1402809325] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@4e021bd]
-Failed to invoke configuration method com.epam.testexternalpart.core.BaseTest.startPage:no such element
-  (Session info: chrome=39.0.2171.99)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 23 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: 30a3c4c653cb2fd19b4d5a26314a0d23
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir8644_27193}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@4e021bd] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@4e021bd] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@4e021bd] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@4e021bd] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@4e021bd] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@4e021bd] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@4e021bd] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@4e021bd] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-]]></system-out>
-  </testcase>
-  <testcase name="testAddNewValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testAddNewValidStream" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testEditStream" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testEditStream" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tearDown" classname="com.epam.testexternalpart.tests.StreamTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.StreamTest@4e021bd] for class [TestClass name=class com.epam.testexternalpart.tests.StreamTest]
-]]></system-out>
-  </testcase>
-  <testcase name="addCandidate" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="10.398"/>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="10.808">
-    <failure message="no such element&#10;  (Session info: chrome=39.0.2171.99)&#10;  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 22 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;&#10;System info: host: &apos;EPUAKHAW0329&apos;, ip: &apos;10.23.12.108&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;&#10;Session ID: 6575b32806ea21b129500357f0d288ac&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir17068_11910}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=39.0.2171.99)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 22 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: 6575b32806ea21b129500357f0d288ac
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir17068_11910}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
-	at com.epam.testexternalpart.screen.LoginPage.signIn(LoginPage.java:38)
-	at com.epam.testexternalpart.core.BaseTest.startPage(BaseTest.java:82)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</failure>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7fcaa2ba] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7fcaa2ba] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-[Invoker 1402809325] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7fcaa2ba]
-Failed to invoke configuration method com.epam.testexternalpart.core.BaseTest.startPage:no such element
-  (Session info: chrome=39.0.2171.99)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 22 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: 6575b32806ea21b129500357f0d288ac
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir17068_11910}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7fcaa2ba] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7fcaa2ba] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7fcaa2ba] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7fcaa2ba] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7fcaa2ba] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7fcaa2ba] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-]]></system-out>
-  </testcase>
-  <testcase name="addCandidateManually" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="bannWithButton" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="changeStatus" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="deleteAllCandidates" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tearDown" classname="com.epam.testexternalpart.tests.AddCandidateTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7fcaa2ba] for class [TestClass name=class com.epam.testexternalpart.tests.AddCandidateTest]
-]]></system-out>
-  </testcase>
-  <testcase name="addStream" classname="com.epam.testexternalpart.tests.AssigningToTest" time="1.855">
-    <failure message="no such element&#10;  (Session info: chrome=39.0.2171.99)&#10;  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 22 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;&#10;System info: host: &apos;EPUAKHAW0329&apos;, ip: &apos;10.23.12.108&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;&#10;Session ID: b17f81ccb2d45d99ba1496c3a8923ad2&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir10728_24633}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=39.0.2171.99)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 22 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: b17f81ccb2d45d99ba1496c3a8923ad2
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir10728_24633}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir5752_27522}, rotatable=false, locationContextEnabled=true, version=40.0.2214.91, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor37.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
@@ -602,62 +365,285 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at com.epam.testexternalpart.screen.departments.Departments.clickSelectedStream(Departments.java:188)
 	at com.epam.testexternalpart.tests.AssigningToTest.addStream(AssigningToTest.java:17)
 </failure>
-    <system-out><![CDATA[===== Invoked methods
-  BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7fcaa2ba] 2143986362
-    AddCandidateTest.addCandidate(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7fcaa2ba]; ; ; ; ; ;  2143986362
-    AddCandidateTest.addCandidateManually(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7fcaa2ba]Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;  2143986362
-    AddCandidateTest.bannWithButton(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7fcaa2ba]Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;  2143986362
-    AddCandidateTest.changeStatus(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7fcaa2ba]Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345; confirmed test completed not actual banned 1;Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;  2143986362
-    AddCandidateTest.deleteAllCandidates(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AddCandidateTest@7fcaa2ba]No matching records found  2143986362
-=====
-[TestRunner] Running test AssigningToTestTest on 1  classes,  included groups:[] excluded groups:[]
-===== Test class
-com.epam.testexternalpart.tests.AssigningToTest
-  @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef]
-  @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef]
-    @Test AssigningToTest.checkNotTestedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef]
-    @Test AssigningToTest.checkNewTimeCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef]
-    @Test AssigningToTest.checkDublicateAnswer()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef]
-    @Test AssigningToTest.addStream(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef]
-    @Test AssigningToTest.invitateSecondTime(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef]
-    @Test AssigningToTest.checkAssignedToTestCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef]
-    @Test AssigningToTest.assignTest(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef]
-    @Test AssigningToTest.responseFromCandidates()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef]
-    @Test AssigningToTest.addCandidates(java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef]
-    @Test AssigningToTest.checkBannedCandidate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef]
-    @Test AssigningToTest.checkConfirmedCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef]
-    @Test AssigningToTest.checkNotActualCand(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef]
-    @Test AssigningToTest.invitateThirdTime(java.lang.String)[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef]
-  @AfterClass BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef]
-======
-[Invoker 1402809325] Keeping method BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1402809325] Invoking @BeforeClass BaseTest.init()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1402809325] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef]
-Click on [buttonLogin]
-Click on [externalPartButton]
-[Invoker 1402809325] Invoking com.epam.testexternalpart.tests.AssigningToTest.addStream
+    <system-out><![CDATA[Click on [buttonLogin]
 Checking that Stream Create Button reffering to Add Stream Page
 Checking the presence of the elemen [java Tab]
 [java Tab]is Not Present
 Create new Stream with name Autumn 2015
 Click on [AddStreamButton]
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver (v2.9.248315) on port 25227
+    <system-err><![CDATA[Starting ChromeDriver (v2.9.248315) on port 28471
 ]]></system-err>
   </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="2.36">
-    <failure message="no such element&#10;  (Session info: chrome=39.0.2171.99)&#10;  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 13 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;&#10;System info: host: &apos;EPUAKHAW0329&apos;, ip: &apos;10.23.12.108&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;&#10;Session ID: b17f81ccb2d45d99ba1496c3a8923ad2&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir10728_24633}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=39.0.2171.99)
+  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="10.333">
+    <failure message="Wrong data in new cand expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Wrong data in new cand expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandExisting(StreamPage.java:500)
+	at com.epam.testexternalpart.tests.AssigningToTest.addCandidates(AssigningToTest.java:26)
+</failure>
+    <system-out><![CDATA[Click on [Select stream on Department Page]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Checking that Stream Create Button reffering to Add Stream Page
+Checking the presence of the elemen [add Candidate Button]
+[add Candidate Button]is Not Present
+Creating new candidates for test
+Click on [Create Candidate Button]
+Check if new candidate was added
+xl-Олег;Ромашкин;Федорович;21.09.1990;pupkin379@rambler.ru;+397894164112;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем
+[1, Ромашкин, Олег, 21-09-1990, 24, +397894164112, pupkin379@rambler.ru, -, 26-01-2015]
+]]></system-out>
+  </testcase>
+  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="9.611">
+    <failure message="Wrong data in new cand expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Wrong data in new cand expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandExisting(StreamPage.java:500)
+	at com.epam.testexternalpart.tests.AssigningToTest.addCandidates(AssigningToTest.java:26)
+</failure>
+    <system-out><![CDATA[Click on [Select stream on Department Page]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Checking that Stream Create Button reffering to Add Stream Page
+Checking the presence of the elemen [add Candidate Button]
+[add Candidate Button]is Not Present
+Creating new candidates for test
+Click on [Create Candidate Button]
+Check if new candidate was added
+xl-Денис;Петрушкин;Геннадьевич;16.04.1991;pupkin379@i.ua;+087894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем
+[1, Петрушкин, Денис, 16-04-1991, 23, +087894156114, pupkin379@i.ua, -, 26-01-2015]
+]]></system-out>
+  </testcase>
+  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="9.717">
+    <failure message="Wrong data in new cand expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Wrong data in new cand expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandExisting(StreamPage.java:500)
+	at com.epam.testexternalpart.tests.AssigningToTest.addCandidates(AssigningToTest.java:26)
+</failure>
+    <system-out><![CDATA[Click on [Select stream on Department Page]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Checking that Stream Create Button reffering to Add Stream Page
+Checking the presence of the elemen [add Candidate Button]
+[add Candidate Button]is Not Present
+Creating new candidates for test
+Click on [Create Candidate Button]
+Check if new candidate was added
+xl-Семен;Пяточкин;Сергеевич;04.02.1990;vasya.pupkin379@yandex.ru;+087894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем
+[1, Пяточкин, Семен, 04-02-1990, 24, +087894156114, vasya.pupkin379@yandex.ru, -, 26-01-2015]
+]]></system-out>
+  </testcase>
+  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="9.648">
+    <failure message="Wrong data in new cand expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Wrong data in new cand expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandExisting(StreamPage.java:500)
+	at com.epam.testexternalpart.tests.AssigningToTest.addCandidates(AssigningToTest.java:26)
+</failure>
+    <system-out><![CDATA[Click on [Select stream on Department Page]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Checking that Stream Create Button reffering to Add Stream Page
+Checking the presence of the elemen [add Candidate Button]
+[add Candidate Button]is Not Present
+Creating new candidates for test
+Click on [Create Candidate Button]
+Check if new candidate was added
+xl-Илья;Сметанкин;Олегович;13.05.1992;student19843@mail.ru;+045894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем
+[1, Сметанкин, Илья, 13-05-1992, 22, +045894156114, student19843@mail.ru, -, 26-01-2015]
+]]></system-out>
+  </testcase>
+  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="9.573">
+    <failure message="Wrong data in new cand expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Wrong data in new cand expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandExisting(StreamPage.java:500)
+	at com.epam.testexternalpart.tests.AssigningToTest.addCandidates(AssigningToTest.java:26)
+</failure>
+    <system-out><![CDATA[Click on [Select stream on Department Page]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Checking that Stream Create Button reffering to Add Stream Page
+Checking the presence of the elemen [add Candidate Button]
+[add Candidate Button]is Not Present
+Creating new candidates for test
+Click on [Create Candidate Button]
+Check if new candidate was added
+xl-Лев;Топорин;Борисович;15.06.1992;student18844@gmail.com;+045894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем
+[1, Топорин, Лев, 15-06-1992, 22, +045894156114, student18844@gmail.com, -, 26-01-2015]
+]]></system-out>
+  </testcase>
+  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="9.554">
+    <failure message="Wrong data in new cand expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Wrong data in new cand expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandExisting(StreamPage.java:500)
+	at com.epam.testexternalpart.tests.AssigningToTest.addCandidates(AssigningToTest.java:26)
+</failure>
+    <system-out><![CDATA[Click on [Select stream on Department Page]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Checking that Stream Create Button reffering to Add Stream Page
+Checking the presence of the elemen [add Candidate Button]
+[add Candidate Button]is Not Present
+Creating new candidates for test
+Click on [Create Candidate Button]
+Check if new candidate was added
+xl-Леонид;Незнающий;Клементьевич;15.06.1992;student@com;+045894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем
+[1, Незнающий, Леонид, 15-06-1992, 22, +045894156114, student@com, -, 26-01-2015]
+]]></system-out>
+  </testcase>
+  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="9.555">
+    <failure message="Wrong data in new cand expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Wrong data in new cand expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandExisting(StreamPage.java:500)
+	at com.epam.testexternalpart.tests.AssigningToTest.addCandidates(AssigningToTest.java:26)
+</failure>
+    <system-out><![CDATA[Click on [Select stream on Department Page]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Checking that Stream Create Button reffering to Add Stream Page
+Checking the presence of the elemen [add Candidate Button]
+[add Candidate Button]is Not Present
+Creating new candidates for test
+Click on [Create Candidate Button]
+Check if new candidate was added
+xl-Кирилл;Хмельной;Артурович;15.06.1992;student19843@ukr.net;+045894156114;+097894164111;ХПИ;Компютерных наук;специалист;2004;2009;компьютерная академия ШАГ;основные понятия по Java;русский, украинский - разговорный, английский - со словарем
+[1, Хмельной, Кирилл, 15-06-1992, 22, +045894156114, student19843@ukr.net, -, 26-01-2015]
+]]></system-out>
+  </testcase>
+  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="4.9">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:651)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:34)
+</failure>
+    <system-out><![CDATA[Click on [Select stream on Department Page]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Click on [click notTestedCandidate]
+Checking not testing Candidates
+]]></system-out>
+  </testcase>
+  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="4.931">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:651)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:34)
+</failure>
+    <system-out><![CDATA[Click on [Select stream on Department Page]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Click on [click notTestedCandidate]
+Checking not testing Candidates
+]]></system-out>
+  </testcase>
+  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="5.003">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:651)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:34)
+</failure>
+    <system-out><![CDATA[Click on [Select stream on Department Page]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Click on [click notTestedCandidate]
+Checking not testing Candidates
+]]></system-out>
+  </testcase>
+  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="5.018">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:651)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:34)
+</failure>
+    <system-out><![CDATA[Click on [Select stream on Department Page]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Click on [click notTestedCandidate]
+Checking not testing Candidates
+]]></system-out>
+  </testcase>
+  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="4.989">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:651)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:34)
+</failure>
+    <system-out><![CDATA[Click on [Select stream on Department Page]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Click on [click notTestedCandidate]
+Checking not testing Candidates
+]]></system-out>
+  </testcase>
+  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="5.038">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:651)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:34)
+</failure>
+    <system-out><![CDATA[Click on [Select stream on Department Page]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Click on [click notTestedCandidate]
+Checking not testing Candidates
+]]></system-out>
+  </testcase>
+  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="4.964">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.epam.testexternalpart.screen.stream.StreamPage.checkCandidates(StreamPage.java:651)
+	at com.epam.testexternalpart.tests.AssigningToTest.checkNotTestedCand(AssigningToTest.java:34)
+</failure>
+    <system-out><![CDATA[Click on [Select stream on Department Page]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Click on [click notTestedCandidate]
+Checking not testing Candidates
+]]></system-out>
+  </testcase>
+  <testcase name="assignTest" classname="com.epam.testexternalpart.tests.AssigningToTest" time="1,687.918">
+    <failure message="chrome not reachable&#10;  (Session info: chrome=40.0.2214.91)&#10;  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 2.01 seconds&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;&#10;System info: host: &apos;EPUAKHAW0329&apos;, ip: &apos;10.23.12.108&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;&#10;Session ID: 784f5370cbb7bf8f58a3d2bd384e8839&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir5752_27522}, rotatable=false, locationContextEnabled=true, version=40.0.2214.91, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=40.0.2214.91)
   (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 13 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 2.01 seconds
 Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
 System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: b17f81ccb2d45d99ba1496c3a8923ad2
+Session ID: 784f5370cbb7bf8f58a3d2bd384e8839
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir10728_24633}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir5752_27522}, rotatable=false, locationContextEnabled=true, version=40.0.2214.91, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -671,11 +657,41 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
-	at com.epam.testexternalpart.screen.LoginPage.signIn(LoginPage.java:38)
-	at com.epam.testexternalpart.core.BaseTest.startPage(BaseTest.java:82)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:227)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:39)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:213)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.epam.testexternalpart.screen.stream.StreamPage.selectCandidatesForTest(StreamPage.java:625)
+	at com.epam.testexternalpart.tests.AssigningToTest.assignTest(AssigningToTest.java:41)
+</failure>
+    <system-out><![CDATA[Click on [Select stream on Department Page]
+Checking the presence of the elemen [javaTab]
+[javaTab]is Not Present
+Click on [Select cabdidates to assigning to test]
+]]></system-out>
+  </testcase>
+  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="1,689.958">
+    <failure message="chrome not reachable&#10;  (Session info: chrome=40.0.2214.91)&#10;  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 2.00 seconds&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;&#10;System info: host: &apos;EPUAKHAW0329&apos;, ip: &apos;10.23.12.108&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;&#10;Session ID: 784f5370cbb7bf8f58a3d2bd384e8839&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir5752_27522}, rotatable=false, locationContextEnabled=true, version=40.0.2214.91, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=40.0.2214.91)
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.00 seconds
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
+Session ID: 784f5370cbb7bf8f58a3d2bd384e8839
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir5752_27522}, rotatable=false, locationContextEnabled=true, version=40.0.2214.91, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at com.epam.testexternalpart.core.BaseTest.startPage(BaseTest.java:86)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
@@ -704,220 +720,47 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 </failure>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1402809325] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef]
-Failed to invoke configuration method com.epam.testexternalpart.core.BaseTest.startPage:no such element
-  (Session info: chrome=39.0.2171.99)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 13 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: b17f81ccb2d45d99ba1496c3a8923ad2
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir10728_24633}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-]]></system-out>
   </testcase>
   <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
     <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
   </testcase>
   <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
     <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
   </testcase>
   <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
     <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
   </testcase>
   <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
     <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
   </testcase>
   <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
     <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
   </testcase>
   <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
     <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
   </testcase>
   <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
     <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
   </testcase>
   <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
     <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
   </testcase>
   <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
     <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
   </testcase>
   <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
     <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
   </testcase>
   <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
     <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
   </testcase>
   <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
     <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
   </testcase>
   <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
     <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
   </testcase>
   <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
-  </testcase>
-  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="addCandidates" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="checkNotTestedCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="assignTest" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
     <skipped/>
   </testcase>
   <testcase name="checkAssignedToTestCand" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
@@ -967,179 +810,11 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
   </testcase>
   <testcase name="tearDown" classname="com.epam.testexternalpart.tests.AssigningToTest" time="0">
     <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.AssigningToTest@62fdfcef] for class [TestClass name=class com.epam.testexternalpart.tests.AssigningToTest]
-]]></system-out>
   </testcase>
-  <testcase name="addCandidateToSeveralDepartment" classname="com.epam.testexternalpart.tests.SeveralStreamTest" time="42.761"/>
-  <testcase name="allCandidatesSearch" classname="com.epam.testexternalpart.tests.SearchTest" time="20.915"/>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.SearchTest" time="21.387">
-    <failure message="no such element&#10;  (Session info: chrome=39.0.2171.99)&#10;  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 22 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;&#10;System info: host: &apos;EPUAKHAW0329&apos;, ip: &apos;10.23.12.108&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;&#10;Session ID: fc40e61890986882f83ab980ad1dab7e&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir16320_17571}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=39.0.2171.99)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 22 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: fc40e61890986882f83ab980ad1dab7e
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir16320_17571}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
-	at com.epam.testexternalpart.screen.LoginPage.signIn(LoginPage.java:38)
-	at com.epam.testexternalpart.core.BaseTest.startPage(BaseTest.java:82)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</failure>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@74e42433] for class [TestClass name=class com.epam.testexternalpart.tests.SearchTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@74e42433] for class [TestClass name=class com.epam.testexternalpart.tests.SearchTest]
-[Invoker 1402809325] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@74e42433]
-Failed to invoke configuration method com.epam.testexternalpart.core.BaseTest.startPage:no such element
-  (Session info: chrome=39.0.2171.99)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 22 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: fc40e61890986882f83ab980ad1dab7e
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir16320_17571}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-]]></system-out>
-  </testcase>
-  <testcase name="streamSearch" classname="com.epam.testexternalpart.tests.SearchTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tearDown" classname="com.epam.testexternalpart.tests.SearchTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.SearchTest@74e42433] for class [TestClass name=class com.epam.testexternalpart.tests.SearchTest]
-]]></system-out>
-  </testcase>
-  <testcase name="addNewPlaceForTesting" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="11.48"/>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="12.06">
-    <failure message="no such element&#10;  (Session info: chrome=39.0.2171.99)&#10;  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 17 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;&#10;System info: host: &apos;EPUAKHAW0329&apos;, ip: &apos;10.23.12.108&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_67&apos;&#10;Session ID: 7daaabd546ebb09d0d72d8554f4d4a7d&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir15196_3169}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=39.0.2171.99)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 17 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: 7daaabd546ebb09d0d72d8554f4d4a7d
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir15196_3169}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
-	at com.epam.testexternalpart.screen.LoginPage.signIn(LoginPage.java:38)
-	at com.epam.testexternalpart.core.BaseTest.startPage(BaseTest.java:82)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</failure>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@3acc0a7c] for class [TestClass name=class com.epam.testexternalpart.tests.PlaceForTestingTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@3acc0a7c] for class [TestClass name=class com.epam.testexternalpart.tests.PlaceForTestingTest]
-[Invoker 1402809325] Invoking @BeforeMethod BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@3acc0a7c]
-Failed to invoke configuration method com.epam.testexternalpart.core.BaseTest.startPage:no such element
-  (Session info: chrome=39.0.2171.99)
-  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 17 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'EPUAKHAW0329', ip: '10.23.12.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_67'
-Session ID: 7daaabd546ebb09d0d72d8554f4d4a7d
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\Olha_Myroliubova\AppData\Local\Temp\scoped_dir15196_3169}, rotatable=false, locationContextEnabled=true, version=39.0.2171.99, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
-]]></system-out>
-  </testcase>
-  <testcase name="startPage" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@3acc0a7c] for class [TestClass name=class com.epam.testexternalpart.tests.PlaceForTestingTest]
-[Invoker 1402809325] Keeping method BaseTest.startPage()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@3acc0a7c] for class [TestClass name=class com.epam.testexternalpart.tests.PlaceForTestingTest]
-]]></system-out>
-  </testcase>
-  <testcase name="deleteNewPlaceForTesting" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="editNewPlaceForTesting" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tearDown" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="0">
-    <skipped/>
-    <system-out><![CDATA[[Invoker 1402809325] Keeping method BaseTest.tearDown()[pri:0, instance:com.epam.testexternalpart.tests.PlaceForTestingTest@3acc0a7c] for class [TestClass name=class com.epam.testexternalpart.tests.PlaceForTestingTest]
-]]></system-out>
-  </testcase>
+  <testcase name="addCandidateToSeveralDepartment" classname="com.epam.testexternalpart.tests.SeveralStreamTest" time="36.23"/>
+  <testcase name="allCandidatesSearch" classname="com.epam.testexternalpart.tests.SearchTest" time="19.637"/>
+  <testcase name="streamSearch" classname="com.epam.testexternalpart.tests.SearchTest" time="17.56"/>
+  <testcase name="addNewPlaceForTesting" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="8.973"/>
+  <testcase name="deleteNewPlaceForTesting" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="3.216"/>
+  <testcase name="editNewPlaceForTesting" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" time="8.928"/>
 </testsuite>

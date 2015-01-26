@@ -41,8 +41,9 @@ import com.epam.testexternalpart.screen.stream.assigningTest.emails.AnswerFromYa
 public abstract class BaseTest {
 	
 	protected WebDriver driver;
-	private final String START_TEST="http://epuakhaw0694:8080/KhPPP/";
-//	private final String START_DEPARTMENT="http://epuakhaw0694:8080/KhExternalPreProdPortal/departments";
+	private final String START_TEST="http://epuakhaw0681:9080/KhPPP/";
+	private final String START_DEPARTMENT="http://epuakhaw0681:9080/KhExternalPreProdPortal/departments";
+
 
 	protected Menu menuComp;
 	protected Departments pageDepartment;
@@ -71,17 +72,18 @@ public abstract class BaseTest {
 	public void init() {
 		
 		driver = WebDriverFactory.initDriver("chrome");//new FirefoxDriver();
+
+		driver.get(START_TEST);
+		LoginPage lp = new LoginPage(driver);
+		lp.signIn("Admin_Admin","Admin111");	
+		lp.selectExternalPart();
 		driver.manage().window().maximize();
 	}
 	
 	@BeforeMethod
 	public void startPage() {
-		LoginPage lp = new LoginPage(driver);
 
-		driver.get(START_TEST);
-		 lp.signIn("Admin_Admin","Admin111"); 
-		 lp.selectExternalPart();
-		//driver.get(START_DEPARTMENT);
+		driver.get(START_DEPARTMENT);
 		pageDepartment = new Departments(driver);
 		pageAddDepartment =new AddDepartmentPage(driver);
 		pageAddStream = new AddStreamPage(driver);
@@ -104,9 +106,9 @@ public abstract class BaseTest {
 		
 		driver.manage().deleteAllCookies();
 		driver.close();
-		if(driver!=null){
 		driver.quit();	
-		}
+		
+
 	}
 
 	@DataProvider(name = "testData")

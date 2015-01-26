@@ -30,7 +30,6 @@ public class Components {
 		  
 	  }
 	  
-
 	  
 	  public  void isElementExist( String item, WebElement welement, boolean refer) {
 		 

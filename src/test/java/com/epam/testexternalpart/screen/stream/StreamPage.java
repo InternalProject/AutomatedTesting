@@ -584,17 +584,15 @@ public class StreamPage extends Components implements CheckerData {
 		TestReporter.writeToReportTitle("Checking that double click on selected candidate reffering to Candidate View Page");
 		
 		Actions action = new Actions(driver);
-		
-        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(STREAM_TABLE_ROW_VIEW)));
+		waiting(500);
 		action.moveToElement(driver.findElement(By.xpath(STREAM_TABLE_ROW_VIEW))).doubleClick().build().perform();
-
 		isElementExist("add Candidate Button",addCandidateButton,false);
 	}
 
 	public void checkTableAccordingToCandidadate(String field) {
 		
 		TestReporter.writeToReportTitle("Check table fields according to fields of new candidate");
-
+		(new WebDriverWait(driver, 5000)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(STREAM_TABLE_ROW)));
 		String []fields = field.split(";");		
 		List<WebElement> row;
 		Boolean flag = false;

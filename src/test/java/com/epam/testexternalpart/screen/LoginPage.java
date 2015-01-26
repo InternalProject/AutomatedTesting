@@ -7,6 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends Components{
  
+	WebDriver loginDriver;
+
 	
 	public LoginPage(WebDriver driver){
 		this.driver=driver;
@@ -33,6 +35,8 @@ public class LoginPage extends Components{
 	@FindBy(xpath=EXTERNAL_PART_BUTTON)
 	public WebElement externalPartButton;
 	
+	
+	
 	public void signIn(String login, String pass){
 		
 		login_input.sendKeys(login);
@@ -41,8 +45,10 @@ public class LoginPage extends Components{
 	}
 	
 	public void selectExternalPart(){
+
 		waiting(SHORT_TIME);
-		clickElement(externalPartButton,"externalPartButton");
+		externalPartButton.click();
 	}
+
 	
 }
