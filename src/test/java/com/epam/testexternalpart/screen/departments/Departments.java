@@ -8,11 +8,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.epam.testexternalpart.core.CheckerData;
 import com.epam.testexternalpart.core.TestReporter;
 import com.epam.testexternalpart.screen.Components;
 import com.epam.testexternalpart.screen.stream.AddStreamPage;
+import com.epam.testexternalpart.screen.stream.StreamPage;
 
 public class Departments extends Components implements CheckerData{
 
@@ -37,7 +40,7 @@ public class Departments extends Components implements CheckerData{
 	private static final String DEPARTMENT_TABLE_ALL_DELETE_BUTTON = "//table[@id='manualTable']//tr//td[7]//a[2]";
 
 	private static final String DEPARTMENT_ACTIVE_TAB = "//li[@class='active']/a";
-	private static final String DEPARTMENT_ALL_TABS = "//ul[@id='depTab']/li";	
+	private static final String DEPARTMENT_ALL_TABS = "//ul[@id='depTab']/li";
 
 	private static final String DEPARTMENT_TITTLE_TEXT = "//h1[text()='Candidate Automation System']";
 	public int depNumb;
@@ -265,6 +268,31 @@ public class Departments extends Components implements CheckerData{
 		String confirmPopUp = "//tr[td[text()='"+name+"']]//div[@class='btn-toolbar disabled-click']//div[@class='modal-footer disabled-click']/a";
 		WebElement confirmPopUpButton = driver.findElement(By.xpath(confirmPopUp));
 		clickElement(confirmPopUpButton, "Delete confirmation");		
+		
+	}
+
+	public void selectDepatment(String departmentName) {
+
+		(new WebDriverWait(driver, 4000)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(DEPARTMENT_ALL_TABS)));
+		WebElement currentDepartment = driver.findElement(By.xpath(DEPARTMENT_ALL_TABS + "/a[text()='" + departmentName + "']"));
+		clickElement(currentDepartment, departmentName);		
+	}
+
+	public void addStreams(String streamName) {
+
+		String []allStreamsName = streamName.split(",");
+		
+		for (int i = 0; i < allStreamsName.length; i++){
+			
+			clickElement(addStreamButton, "addStreamButton");
+			AddStreamPage pageAddStream = new AddStreamPage(driver);
+			pageAddStream.input_name_stream.sendKeys(allStreamsName[i]);
+			pageAddStream.clickElement(pageAddStream.add_strem_button, "add_strem_button");
+			
+			WebElement el = driver.findElement(By.xpath(SELECT_ADDED_STREAM_FIRST_PART + allStreamsName[i] + "']"));
+			clickElement(el, "allStreamsName[i]");			
+			new StreamPage(driver).addCandidatesByImport();
+		}
 		
 	}
 }

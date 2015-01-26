@@ -107,7 +107,6 @@ public class AddDepartmentPage extends Components implements CheckerData{
 		submit.click();
 		isElementExist("AddDepartmentPage-label_name", label_name, true);
 		isElementExist("Wrong Mess", wrongMess, true);
-
 		
 	}
 }
