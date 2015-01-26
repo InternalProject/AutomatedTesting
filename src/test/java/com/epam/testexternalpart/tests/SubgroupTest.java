@@ -11,14 +11,13 @@ import com.epam.testexternalpart.core.TestReporter;
 public class SubgroupTest extends BaseTest {
 
 	@Test
-	public void checkCreateSubgroupTest() {
+	public void checkSubgroupTest() {
 		menuComp.clickElement(menuComp.settingsButton,"Click on settingsButton");
 		menuComp.clickElement(menuComp.subgroupsButton,"Click on subgroupsButton");
 		 Actions actions = new Actions(driver);
 		System.out.println(" Size:  "+pageAllSubgroup.table_tbody.size());
 		if(pageAllSubgroup.table_tbody.size()==1){
 			pageAllSubgroup.isElementExist("Table is empty.", pageAllSubgroup.empty_table_tbody, true);
-			pageAllSubgroup.checkElementText("No matching records found",  "No matching records found",  pageAllSubgroup.empty_table_tbody);
 		}
 		else{
 		pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);

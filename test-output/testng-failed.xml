@@ -3,25 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
       <class name="com.epam.testexternalpart.tests.SubgroupTest">
         <methods>
           <include name="tearDown"/>
+          <include name="checkSubgroupTest"/>
           <include name="init"/>
-          <include name="checkCreateSubgroupTest"/>
           <include name="startPage"/>
         </methods>
       </class> <!-- com.epam.testexternalpart.tests.SubgroupTest -->
-=======
-      <class name="com.epam.testexternalpart.tests.SearchTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="init"/>
-          <include name="streamSearch" invocation-numbers="0 1"/>
-          <include name="startPage"/>
-        </methods>
-      </class> <!-- com.epam.testexternalpart.tests.SearchTest -->
->>>>>>> f20b5694a51682725208b93bf0c6f011723d67bd
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

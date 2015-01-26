@@ -4,12 +4,12 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="21.119">
+           time="20,158">
   <properties />
   
   
-            <testcase name="editNewPlaceForTesting" time="8.929" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" />
-                <testcase name="deleteNewPlaceForTesting" time="3.216" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" />
-                <testcase name="addNewPlaceForTesting" time="8.974" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" />
+            <testcase name="deleteNewPlaceForTesting" time="3,146" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" />
+                <testcase name="addNewPlaceForTesting" time="8,887" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" />
+                <testcase name="editNewPlaceForTesting" time="8,125" classname="com.epam.testexternalpart.tests.PlaceForTestingTest" />
       
 </testsuite>

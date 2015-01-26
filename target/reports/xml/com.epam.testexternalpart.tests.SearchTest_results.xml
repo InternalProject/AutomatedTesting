@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="SearchStreamTest"
-           tests="2"
+           tests="4"
            failures="0"
            errors="0"
            skipped="0"
-           time="37.197">
+           time="79,215">
   <properties />
   
   
-            <testcase name="streamSearch" time="17.560" classname="com.epam.testexternalpart.tests.SearchTest" />
-                <testcase name="allCandidatesSearch" time="19.637" classname="com.epam.testexternalpart.tests.SearchTest" />
+            <testcase name="streamSearch" time="20,371" classname="com.epam.testexternalpart.tests.SearchTest" />
+                <testcase name="streamSearch" time="17,978" classname="com.epam.testexternalpart.tests.SearchTest" />
+                <testcase name="allCandidatesSearch" time="20,382" classname="com.epam.testexternalpart.tests.SearchTest" />
+                <testcase name="allCandidatesSearch" time="20,484" classname="com.epam.testexternalpart.tests.SearchTest" />
       
 </testsuite>

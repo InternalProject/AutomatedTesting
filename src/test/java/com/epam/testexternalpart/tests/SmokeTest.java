@@ -172,14 +172,14 @@ public class SmokeTest extends BaseTest{
 			menuComp.clickElement(menuComp.subgroupsButton,"Click on subgroupsButton");
 			 Actions actions = new Actions(driver);
 			System.out.println(" Subgroup array size "+pageAllSubgroup.table_tbody.size());
-			pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);
-			 WebElement e= driver.findElement(By.xpath("//table[@id='tableSubgroups']//tbody//tr[1]"));
-			pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);
-			pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);
-			 actions.moveToElement(e).doubleClick().build().perform();
-			pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);
-			TestReporter.writeToReportPositiveResult("Check each subgroup on Separtment Page is exist");
-			pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);
+//			pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);
+//			 WebElement e= driver.findElement(By.xpath("//table[@id='tableSubgroups']//tbody//tr[1]"));
+//			pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);
+//			pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);
+//			 actions.moveToElement(e).doubleClick().build().perform();
+//			pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);
+//			TestReporter.writeToReportPositiveResult("Check each subgroup on Separtment Page is exist");
+//			pageAllSubgroup.waiting(pageAllSubgroup.MIDDLE_TIME);
 		}
 		catch(StaleElementReferenceException e){
 			

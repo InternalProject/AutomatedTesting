@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="36.231">
+           time="36,114">
   <properties />
   
   
-            <testcase name="addCandidateToSeveralDepartment" time="36.231" classname="com.epam.testexternalpart.tests.SeveralStreamTest" />
+            <testcase name="addCandidateToSeveralDepartment" time="36,114" classname="com.epam.testexternalpart.tests.SeveralStreamTest" />
       
 </testsuite>
