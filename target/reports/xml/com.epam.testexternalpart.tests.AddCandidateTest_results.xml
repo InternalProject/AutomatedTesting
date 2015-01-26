@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CandidateTest"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="61.574">
+  <properties />
+  
+  
+            <testcase name="bannWithButton" time="12.313" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
+                <testcase name="addCandidateManually" time="7.869" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
+                <testcase name="changeStatus" time="18.123" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
+                <testcase name="deleteAllCandidates" time="12.886" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
+                <testcase name="addCandidate" time="10.383" classname="com.epam.testexternalpart.tests.AddCandidateTest" />
+      
+</testsuite>

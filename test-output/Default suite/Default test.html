@@ -1,0 +1,240 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<<<<<<< HEAD
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jan 26 12:35:47 EET 2015</td>
+</tr>
+<tr><td>Total time:</td><td>11 seconds (11442 ms)</td>
+=======
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jan 26 11:58:42 EET 2015</td>
+</tr>
+<tr><td>Total time:</td><td>93 seconds (93858 ms)</td>
+>>>>>>> f20b5694a51682725208b93bf0c6f011723d67bd
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<<<<<<< HEAD
+<td title='com.epam.testexternalpart.tests.SubgroupTest.checkCreateSubgroupTest()'><b>checkCreateSubgroupTest</b><br>Test class: com.epam.testexternalpart.tests.SubgroupTest<br/>
+<a href="#Output-812748939" onClick='toggleBox("Output-812748939", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-812748939" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-812748939">
+<br /><font size = 2 color = #000000>Click on [Click on settingsButton]</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click on subgroupsButton]</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Table is empty.]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Table is empty.]is Present</font><br/>
+<br /><font size = 2 color = #000000>Checking text of element No matching records found</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;Text of [No matching records found] is correct</font><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.epam.testexternalpart.tests.SubgroupTest@13a8e59b</td></tr>
+=======
+<td title='com.epam.testexternalpart.tests.SearchTest.allCandidatesSearch()'><b>allCandidatesSearch</b><br>Test class: com.epam.testexternalpart.tests.SearchTest<br>Parameters: Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;, Ololo1;Ololoev1;Olololoevich1;02.12.2013;sdhgjshgj1@mail.ru;+380505465346;, Ololo2;Ololoev2;Olololoevich2;02.12.2013;sdhgjshgj2@mail.ru;+380505465347;, Ololo1, Ololoev<br/>
+<a href="#Output-1199907101" onClick='toggleBox("Output-1199907101", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1199907101" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1199907101">
+<br /><b><font size = 2 color = #000099>Check search in AllCandidatesPage</font></b><br/><br/>
+<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font><br/>
+<br><b><font size = 2 color = #000000>Create candidates for test</font></b><br><br/>
+<br /><font size = 2 color = #000000>Click on [addCandidateBut]</font><br/>
+<br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Create Profile Create Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Create Profile Create Button]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Click on [addCandidateBut]</font><br/>
+<br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo1;Ololoev1;Olololoevich1;02.12.2013;sdhgjshgj1@mail.ru;+380505465346;</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Create Profile Create Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Create Profile Create Button]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Click on [addCandidateBut]</font><br/>
+<br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo2;Ololoev2;Olololoevich2;02.12.2013;sdhgjshgj2@mail.ru;+380505465347;</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Create Profile Create Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Create Profile Create Button]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Click on [allCandidatesButton]</font><br/>
+<br><b><font size = 2 color = #000000>Perform search for Ololo1</font></b><br><br/>
+<br /><font size = 2 color = #000000>Search for [Ololo1]</font><br/>
+<br><b><font size = 2 color = #000000>Perform search for Ololoev</font></b><br><br/>
+<br /><font size = 2 color = #000000>Search for [Ololoev]</font><br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.epam.testexternalpart.tests.SearchTest@1100c7e4</td></tr>
+<tr>
+<td title='com.epam.testexternalpart.tests.SearchTest.allCandidatesSearch()'><b>allCandidatesSearch</b><br>Test class: com.epam.testexternalpart.tests.SearchTest<br>Parameters: Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;, Ololo1;Ololoev1;Olololoevich1;02.12.2013;sdhgjshgj1@mail.ru;+380505465346;, Ololo2;Ololoev2;Olololoevich2;02.12.2013;sdhgjshgj2@mail.ru;+380505465347;, mail, sdhgjshgj1<br/>
+<a href="#Output-1908827582" onClick='toggleBox("Output-1908827582", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1908827582" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1908827582">
+<br /><b><font size = 2 color = #000099>Check search in AllCandidatesPage</font></b><br/><br/>
+<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font><br/>
+<br><b><font size = 2 color = #000000>Create candidates for test</font></b><br><br/>
+<br /><font size = 2 color = #000000>Click on [addCandidateBut]</font><br/>
+<br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Create Profile Create Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Create Profile Create Button]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Click on [addCandidateBut]</font><br/>
+<br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo1;Ololoev1;Olololoevich1;02.12.2013;sdhgjshgj1@mail.ru;+380505465346;</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Create Profile Create Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Create Profile Create Button]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Click on [addCandidateBut]</font><br/>
+<br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo2;Ololoev2;Olololoevich2;02.12.2013;sdhgjshgj2@mail.ru;+380505465347;</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Create Profile Create Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Create Profile Create Button]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Click on [allCandidatesButton]</font><br/>
+<br><b><font size = 2 color = #000000>Perform search for mail</font></b><br><br/>
+<br /><font size = 2 color = #000000>Search for [mail]</font><br/>
+<br><b><font size = 2 color = #000000>Perform search for sdhgjshgj1</font></b><br><br/>
+<br /><font size = 2 color = #000000>Search for [sdhgjshgj1]</font><br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.epam.testexternalpart.tests.SearchTest@1100c7e4</td></tr>
+<tr>
+<td title='com.epam.testexternalpart.tests.SearchTest.streamSearch()'><b>streamSearch</b><br>Test class: com.epam.testexternalpart.tests.SearchTest<br>Parameters: Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;, Ololo1;Ololoev1;Olololoevich1;02.12.2013;sdhgjshgj1@mail.ru;+380505465346;, Ololo2;Ololoev2;Olololoevich2;02.12.2013;sdhgjshgj2@mail.ru;+380505465347;, Ololo1, Ololoev<br/>
+<a href="#Output-1399651708" onClick='toggleBox("Output-1399651708", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1399651708" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1399651708">
+<br /><b><font size = 2 color = #000099>Check search in Stream</font></b><br/><br/>
+<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font><br/>
+<br><b><font size = 2 color = #000000>Create candidates for test</font></b><br><br/>
+<br /><font size = 2 color = #000000>Click on [addCandidateBut]</font><br/>
+<br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Create Profile Create Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Create Profile Create Button]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Click on [addCandidateBut]</font><br/>
+<br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo1;Ololoev1;Olololoevich1;02.12.2013;sdhgjshgj1@mail.ru;+380505465346;</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Create Profile Create Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Create Profile Create Button]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Click on [addCandidateBut]</font><br/>
+<br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo2;Ololoev2;Olololoevich2;02.12.2013;sdhgjshgj2@mail.ru;+380505465347;</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Create Profile Create Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Create Profile Create Button]is Not Present</font><br/>
+<br><b><font size = 2 color = #000000>Perform search for Ololo1</font></b><br><br/>
+<br /><font size = 2 color = #000000>Search for [Ololo1]</font><br/>
+<br><b><font size = 2 color = #000000>Perform search for Ololoev</font></b><br><br/>
+<br /><font size = 2 color = #000000>Search for [Ololoev]</font><br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.epam.testexternalpart.tests.SearchTest@1100c7e4</td></tr>
+<tr>
+<td title='com.epam.testexternalpart.tests.SearchTest.streamSearch()'><b>streamSearch</b><br>Test class: com.epam.testexternalpart.tests.SearchTest<br>Parameters: Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;, Ololo1;Ololoev1;Olololoevich1;02.12.2013;sdhgjshgj1@mail.ru;+380505465346;, Ololo2;Ololoev2;Olololoevich2;02.12.2013;sdhgjshgj2@mail.ru;+380505465347;, mail, sdhgjshgj1<br/>
+<a href="#Output-272034091" onClick='toggleBox("Output-272034091", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-272034091" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-272034091">
+<br /><b><font size = 2 color = #000099>Check search in Stream</font></b><br/><br/>
+<br /><font size = 2 color = #000000>Click on [First stream on first dep]</font><br/>
+<br><b><font size = 2 color = #000000>Create candidates for test</font></b><br><br/>
+<br /><font size = 2 color = #000000>Click on [addCandidateBut]</font><br/>
+<br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo;Ololoev;Olololoevich;02.12.2013;sdhgjshgj@mail.ru;+380505465345;</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Create Profile Create Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Create Profile Create Button]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Click on [addCandidateBut]</font><br/>
+<br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo1;Ololoev1;Olololoevich1;02.12.2013;sdhgjshgj1@mail.ru;+380505465346;</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Create Profile Create Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Create Profile Create Button]is Not Present</font><br/>
+<br /><font size = 2 color = #000000>Click on [addCandidateBut]</font><br/>
+<br /><font size = 2 color = #000000>Creating new candidate with fields-Ololo2;Ololoev2;Olololoevich2;02.12.2013;sdhgjshgj2@mail.ru;+380505465347;</font><br/>
+<br /><font size = 2 color = #000000>Click on [Click Create Candidate Button]</font><br/>
+<br /><font size = 2 color = #000000>Checking the presence of the elemen [Create Profile Create Button]</font><br/>
+<br /><font size = 2 color = #347C17>&nbsp;&nbsp;[Create Profile Create Button]is Not Present</font><br/>
+<br><b><font size = 2 color = #000000>Perform search for mail</font></b><br><br/>
+<br /><font size = 2 color = #000000>Search for [mail]</font><br/>
+<br><b><font size = 2 color = #000000>Perform search for sdhgjshgj1</font></b><br><br/>
+<br /><font size = 2 color = #000000>Search for [sdhgjshgj1]</font><br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.epam.testexternalpart.tests.SearchTest@1100c7e4</td></tr>
+>>>>>>> f20b5694a51682725208b93bf0c6f011723d67bd
+</table><p>
+</body>
+</html>

@@ -1,5 +1,6 @@
 package com.epam.testexternalpart.screen.stream;
 
+import java.util.Arrays;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -480,8 +481,13 @@ public class StreamPage extends Components implements CheckerData {
 		  waiting(5000);
 		  
 		  TestReporter.writeToReportTitle("Check if new candidate was added");
+		  System.out.println("xl-"+st);
+		  
+		  
 		  String []textOFLastEl = st.split(";");
 		  String []textForEachElement = tableRow.get(0).getText().split(" ");
+		  
+		  System.out.println(Arrays.toString(textForEachElement));
 		  boolean flag=true;
 		 
 		  for(int i=0;i<2;i++){
@@ -584,17 +590,15 @@ public class StreamPage extends Components implements CheckerData {
 		TestReporter.writeToReportTitle("Checking that double click on selected candidate reffering to Candidate View Page");
 		
 		Actions action = new Actions(driver);
-		
-        (new WebDriverWait(driver, 6000)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(STREAM_TABLE_ROW_VIEW)));
+		waiting(500);
 		action.moveToElement(driver.findElement(By.xpath(STREAM_TABLE_ROW_VIEW))).doubleClick().build().perform();
-
 		isElementExist("add Candidate Button",addCandidateButton,false);
 	}
 
 	public void checkTableAccordingToCandidadate(String field) {
 		
 		TestReporter.writeToReportTitle("Check table fields according to fields of new candidate");
-
+		(new WebDriverWait(driver, 5000)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(STREAM_TABLE_ROW)));
 		String []fields = field.split(";");		
 		List<WebElement> row;
 		Boolean flag = false;

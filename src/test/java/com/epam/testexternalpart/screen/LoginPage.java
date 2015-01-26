@@ -8,10 +8,12 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage extends Components{
  
 	WebDriver loginDriver;
+
 	
 	public LoginPage(WebDriver driver){
-		loginDriver=driver;
-		PageFactory.initElements(loginDriver, this);
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver, this);
 	}
 	
 	public static final String LOGIN_INPUT = "//input[@id='exampleInputEmail1']";
@@ -28,20 +30,29 @@ public class LoginPage extends Components{
 	public WebElement pass_input;
 	
 	@FindBy(xpath=BUTTON_LOGIN)
-	public WebElement button_login;
+	public WebElement buttonLogin;
 	
 	@FindBy(xpath=EXTERNAL_PART_BUTTON)
 	public WebElement externalPartButton;
+	
+	
 	
 	public void signIn(String login, String pass){
 		
 		login_input.sendKeys(login);
 		pass_input.sendKeys(pass);
-		button_login.click();
+		clickElement(buttonLogin,"buttonLogin");
 	}
 	
 	public void selectExternalPart(){
+<<<<<<< HEAD
 		waiting(1000);
+=======
+		waiting(SHORT_TIME);
+>>>>>>> a3b8dfdfd48766cb05e6346784dcbd9e6fbcd63a
 		externalPartButton.click();
+		
 	}
+
+	
 }

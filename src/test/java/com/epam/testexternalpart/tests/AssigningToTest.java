@@ -11,7 +11,6 @@ public class AssigningToTest extends BaseTest{
 	  
 	@Test(dataProvider = "testData", priority = 1)
 	  public void addStream(String streamName) {
-		  
 		  pageDepartment.clickCreateStreamButton();
 		  pageAddStream.fillAddStreamInput(streamName);
 		  pageDepartment.clickSelectedStream(streamName);

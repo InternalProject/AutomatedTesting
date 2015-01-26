@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SearchStreamTest"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="37.197">
+  <properties />
+  
+  
+            <testcase name="streamSearch" time="17.560" classname="com.epam.testexternalpart.tests.SearchTest" />
+                <testcase name="allCandidatesSearch" time="19.637" classname="com.epam.testexternalpart.tests.SearchTest" />
+      
+</testsuite>

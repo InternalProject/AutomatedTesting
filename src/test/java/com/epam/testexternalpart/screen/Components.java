@@ -30,10 +30,6 @@ public class Components {
 		  
 	  }
 	  
-	  
-	  
-	  
-	  
 	  public  void isElementExist( String item, WebElement welement, boolean refer) {
 		 
 		 boolean value = isElementPresent(welement);
@@ -82,8 +78,7 @@ public class Components {
 	  public  void clickElement(WebElement webElement, String item) {
 		  TestReporter.writeToReportTitle("Click on ["+item+"]");
 		  waiting(SHORT_TIME);
-
-          (new WebDriverWait(driver, SHORT_TIME)).until(ExpectedConditions.visibilityOf(webElement)).click();
+		  (new WebDriverWait(driver, SHORT_TIME)).until(ExpectedConditions.visibilityOf(webElement)).click();
 
 	    }
 	  
