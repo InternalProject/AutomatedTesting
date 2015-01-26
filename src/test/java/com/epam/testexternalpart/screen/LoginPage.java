@@ -45,11 +45,7 @@ public class LoginPage extends Components{
 	}
 	
 	public void selectExternalPart(){
-<<<<<<< HEAD
-		waiting(1000);
-=======
 		waiting(SHORT_TIME);
->>>>>>> a3b8dfdfd48766cb05e6346784dcbd9e6fbcd63a
 		externalPartButton.click();
 		
 	}
